@@ -1,0 +1,310 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+  .jsHero-wrapper a {
+    /*display: grid;*/
+    display: inline-flex;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .jsHero-wrapper .cx-button {
+    color: #003399;
+    border: 2px solid #003399;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #003399;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width:767px) {
+    #mobile_padding {
+      margin-top: 2vh;
+      margin-bottom: 0vh;
+    }
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 1.5em;
+      line-height: 1;
+      margin-bottom: 1vh;
+      margin-top: 2vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 21px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 23%;
+      right: 56%;
+      font-size: 12px;
+    }
+
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 1.6em;
+      line-height: 1;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+
+    .text-container .product_description {
+      position: absolute;
+      top: 19%;
+      right: 66%;
+      font-size: 12px;
+    }
+    .smallest-headline {
+      font-size: 20px;
+      margin-bottom: 2vh;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 2.5em;
+      line-height: 1;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 20px;
+      padding: 15px;
+    }
+
+    .smallest-headline {
+      font-size: 20px;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 2.1em;
+      line-height: 1.0;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+
+    .smallest-headline {
+      font-size: 19px;
+      margin-bottom: 2vh;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 2.6em;
+      line-height: 1;
+      margin-bottom: 2vh;
+    }
+
+    .small-headline {
+      font-size: 1.5em;
+      margin-bottom: 1.5vh;
+    }
+    .smallest-headline {
+      font-size: 20px;
+      margin-bottom: 2vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+
+      <div class="left_container col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center" id="mobile_padding">
+        <div class=" cx-heavy-brand-font largest largest-headline" style="color: #003399;"> CROCS FUN LAB <br /> PAW PATROL CLOGS</div>
+        <div class="cta-container text-center flexbox_default">
+          <div class="col-lg-9 col-md-12 col-sm-9 col-xs-12">
+            <a href="$httpUrl('Search-Show','cgid','paw-patrol')$" role="button" class="cx-button full-width">SHOP NOW </a>
+          </div>
+        </div>
+        <div class="MOBILE_IMAGE hidden-md hidden-lg">
+          <a href="$httpUrl('Search-Show','cgid','paw-patrol')$">
+            <img src="/ecom/2017/web/PawpPatrol_GIRLS_MOBILE.jpg?$staticlink$" title="Crocs Fun Lab Paw Patrol Clogs" alt="Crocs Fun Lab Paw Patrol Clogs" class="hidden-md hidden-lg" id="" /></a>
+        </div>
+      </div>
+
+      <div class="right_container text-center col-lg-6 col-md-6 col-sm-6 hidden-sm hidden-xs" style="display:flex;">
+        <a href="$httpUrl('Search-Show','cgid','paw-patrol')$">
+          <img src="/ecom/2017/web/PawPatrol_GIRLS.jpg?$staticlink$" title="Crocs Fun Lab Paw Patrol Clogs" alt="Crocs Fun Lab Paw Patrol Clogs" style="" class="hidden-sm hidden-xs" id="" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<style>
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'girls-footwear', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'girls-footwear', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

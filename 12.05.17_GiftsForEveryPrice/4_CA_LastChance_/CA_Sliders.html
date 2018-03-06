@@ -1,0 +1,152 @@
+<!-- add this to the main20 slot
+<div class="cs_container-fluid">
+    <div class="cs_row">$include('Page-Include', 'cid', 'shoppable-homepage-new-gifts-for-every-price')$</div>
+</div>
+<div class="cs_container-crocs"><!CLOSED IN 60 -->
+
+
+
+<div class="holiday-homepage-carousels-gifts-for-everyone">
+
+    <!-- BEGIN - Shoppable Product Carousel Example 1 -->
+    <!-- Use class background-gray-light to make background gray -->
+    <div class="background-white">
+        <div class="cs_container-crocs">
+            <div class="cs_row">
+                <div class="col-xs-12 clearfix">
+                    <div class="shop-carousel-row">
+
+                        <div class="cx-brand-font cx-copy" style="padding: 15px">
+                            <span class="shop-carousel-title text-uppercase">Shop $20 Styles</span>
+                            <a href="$httpUrl('Search-Show','cgid','surprise-sale')$#&pmin=0&pmax=21" class="shop-carousel-all pull-right text-gray-dark text-uppercase">Shop All <span class="sr-only"></span></a>
+                        </div>
+
+                        <!-- Optional: add a custom card to the end of the carousel -->
+                        <!-- class "shop-carousel-last" must be used and div must be sibling in same div "container" as carousel -->
+                        <div class="shop-carousel-last">
+                            <a href="$httpUrl('Search-Show','cgid','surprise-sale')$#&pmin=0&pmax=21" class="carouselLink text-uppercase cx-heavy-brand-font"><span style="color: #fff">Shop All<br aria-hidden="true">
+                            <div class= "price_div"><span class="">$</span><span class = "price_text">20</span></div><br /><div class="styles_div cx-brand-font">Styles</div></span></a></div>
+
+                        <!-- Same as existing Product Carousel: https://us-bz3.devzing.com/crocs/show_bug.cgi?id=11766#c5 -->
+                        <!-- ...except there are now new parameters you can use 'shop','true' -->
+                        $include('Search-Carousel', 'cgid', 'carousel-styles-under-20-ca', 'sz', '7','shop','true')$
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END - Shoppable Product Carousel Example 1 -->
+
+    <!-- BEGIN - Shoppable Product Carousel Example 2-->
+    <!-- Use class background-gray-light to make background gray -->
+    <div class="background-gray-light">
+        <div class="cs_container-crocs">
+            <div class="cs_row">
+                <div class="col-xs-12 clearfix">
+                    <div class="shop-carousel-row">
+
+                        <div class="cx-brand-font cx-copy" style="padding: 15px">
+                            <span class="shop-carousel-title text-uppercase">Shop $25 Styles</span>
+                            <a href="$httpUrl('Search-Show','cgid','surprise-sale')$#&pmin=21&pmax=26" class="shop-carousel-all pull-right text-gray-dark text-uppercase">Shop All <span class="sr-only"></span></a>
+                        </div>
+
+                        <!-- Optional: add a custom card to the end of the carousel -->
+                        <!-- class "shop-carousel-last" must be used and div must be sibling in same div "container" as carousel -->
+                        <div class="shop-carousel-last">
+                            <a href=" $httpUrl('Search-Show','cgid','surprise-sale')$#&pmin=21&pmax=26" class="carouselLink text-uppercase cx-heavy-brand-font"><span style="color: #fff">Shop All<br aria-hidden="true">
+                            <div class= "price_div"><span class="">$</span><span class = "price_text">25</span></div><br /><div class="styles_div cx-brand-font">Styles</div></span></a></div>
+                        <!-- Same as existing Product Carousel: https://us-bz3.devzing.com/crocs/show_bug.cgi?id=11766#c5 -->
+                        <!-- ...except there are now new parameters you can use 'shop','true' -->
+                        $include('Search-Carousel', 'cgid', 'carousel-styles-under-25-ca', 'sz', '7','shop','true')$
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- END - Shoppable Product Carousel Example 2-->
+
+    <!-- BEGIN - Shoppable Product Carousel Example 3-->
+    <!-- Use class background-gray-light to make background gray -->
+    <div class="background-white">
+        <div class="cs_container-crocs">
+            <div class="cs_row">
+                <div class="col-xs-12 clearfix">
+                    <div class="shop-carousel-row">
+
+                        <div class="cx-brand-font cx-copy" style="padding: 15px">
+                            <span class="shop-carousel-title text-uppercase">Shop $30 Styles</span>
+                            <a href="$httpUrl('Search-Show','cgid','surprise-sale')$#&pmin=26&pmax=31" class="shop-carousel-all pull-right text-gray-dark text-uppercase">Shop All <span class="sr-only"></span></a>
+                        </div>
+
+                        <!-- Optional: add a custom card to the end of the carousel -->
+                        <!-- class "shop-carousel-last" must be used and div must be sibling in same div "container" as carousel -->
+                        <div class="shop-carousel-last">
+                            <a href="$httpUrl('Search-Show','cgid','surprise-sale')$#&pmin=26&pmax=31" class="carouselLink text-uppercase cx-heavy-brand-font"><span style="color: #fff">Shop All<br aria-hidden="true"/>
+                            <div class= "price_div"><span class="">$</span><span class = "price_text">30</span></div><br /><div class="styles_div cx-brand-font">Styles</div></span></a></div>
+                        </div>
+
+                        <!-- Same as existing Product Carousel: https://us-bz3.devzing.com/crocs/show_bug.cgi?id=11766#c5 -->
+                        <!-- ...except there are now new parameters you can use 'shop','true' -->
+                        $include('Search-Carousel', 'cgid', 'carousel-styles-under-30-ca', 'sz', '7','shop','true')$
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END - Shoppable Product Carousel Example 3-->
+
+    <!-- BEGIN - Shoppable Product Carousel Example 4-->
+    <!-- Use class background-gray-light to make background gray -->
+
+    <!-- END - Shoppable Product Carousel Example 4-->
+
+</div>
+
+<style>
+
+.holiday-homepage-carousels-gifts-for-everyone .cx-brand-font .shop-carousel-title {
+  color:  #d41f27;
+}
+
+.holiday-homepage-carousels-gifts-for-everyone .shop-carousel-last .carouselLink {
+    display: table;
+    font-size: 21px;
+    font-family: proxima_novablack,Arial,sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #d41f27;
+}
+.holiday-homepage-carousels-gifts-for-everyone .shop-carousel-last .carouselLink span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.holiday-homepage-carousels-gifts-for-everyone .shop-carousel-last .carouselLink:hover span,
+.holiday-homepage-carousels-gifts-for-everyone .shop-carousel-last .carouselLink:focus span {
+    text-decoration: underline;
+}
+.holiday-homepage-carousels-gifts-for-everyone .shop-carousel .gridDiv .productCard {
+background-color: #fff;
+}
+.holiday-homepage-carousels-gifts-for-everyone .price_text {
+  font-size: 2.5em;
+}
+.holiday-homepage-carousels-gifts-for-everyone .price_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+}
+.holiday-homepage-carousels-gifts-for-everyone .styles_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+}
+</style>

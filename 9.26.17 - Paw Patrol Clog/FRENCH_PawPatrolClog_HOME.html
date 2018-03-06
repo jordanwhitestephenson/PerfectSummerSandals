@@ -1,0 +1,248 @@
+﻿<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+
+
+  .right_container {
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;*/
+  }
+
+  .jsHero-wrapper .cx-button {
+    color:#003399;
+    border: 2px solid #003399;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color:#003399;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (max-width:767px) {
+    #mobile_padding {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    }
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+      margin-top: 2vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 23%;
+      right: 56%;
+      font-size: 12px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.4em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 80%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 19%;
+      right: 66%;
+      font-size: 12px;
+    }
+    .smallest-headline {
+      font-size: 20px;
+      margin-bottom: 2vh;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 20px;
+      padding: 15px;
+    }
+    .left_container img {
+      max-width: 60%;
+    }
+    .smallest-headline {
+      font-size: 20px;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 2.6em;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 100%;
+    }
+    .smallest-headline {
+      font-size: 19px;
+      margin-bottom: 2vh;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 3.4em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.5em;
+      margin-bottom: 1.5vh;
+    }
+    .smallest-headline {
+      font-size: 20px;
+      margin-bottom: 2vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 100%;
+    }
+  }
+
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+
+      <div class="left_container col-lg-6  text-center" id="mobile_padding">
+        <div class="text-container text-center">
+          <a href="$httpUrl('Search-Show','cgid','clogs')$">
+          <img src="/ecom/2017/web/PawPatrol_Desktop_HOME.jpg?$staticlink$" title="" alt="" class="" id=""/>
+        </a>
+        </div>
+      </div>
+
+      <div class="right_container text-center col-lg-6s">
+        <!-- <a href="$httpUrl('Search-Show','cgid','clogs')$"> -->
+          <div class=" cx-heavy-brand-font largest largest-headline" style="color: #003399;"> IL N'Y A PAS DE SABOTS QUI SONT TROP GROS. <br /> IL N'Y A PAS DE CHIOTS QUI SONT TROP PETITS!</div>
+          <div class="cx-brand-font  small-headline" style="color: #444;">Jetez un coup d'œil à notre Pat' Patrouille™ des sabots amusants de Crocs  <br /> Sabots et paquet de 3 breloques.</div>
+        <!-- </a> -->
+        <div class="cta-container text-center">
+          <a href="$httpUrl('Search-Show','cgid','paw-patrol')$" role="button" class="cx-button full-width">MAGASINEZ LES CHAUSSURES DE LA PAT' PATROUILLE™</a> <a href="$httpUrl('Search-Show','cgid','cast-of-characters')$" role="button" class="cx-button full-width"> MAGASINEZ LES CHAUSSURES LABO AMUSANT DE CROCS </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

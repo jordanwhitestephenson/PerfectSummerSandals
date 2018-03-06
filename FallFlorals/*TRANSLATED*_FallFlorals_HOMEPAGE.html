@@ -1,0 +1,230 @@
+<style>
+  /* JS17 DEFAULT CLASSES */
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .jsHero-wrapper .cs_container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+  }
+
+  .jsHero-wrapper .cx-button,
+  .hpCtnr h1,
+  .hpCtnr h2,
+  .hpCtnr h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    font-weight: bold;
+    color: #a14c57;
+  }
+
+  .jsHero-wrapper .cx-button {
+    background-color: #fff;
+    border: 2px solid;
+    color: #a14c57;
+  }
+
+  .jsHero-wrapper .cx-button:hover {
+    background-color: #a14c57;
+    border: 2px solid;
+    color: #fff;
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:focus {
+    text-decoration: none;
+  }
+
+
+  /* END JS17 DEFAULT CLASSES */
+
+  @media (max-width:300px) {
+    .cs_row .product_description_text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .jsHero-wrapper .cs_row {
+      flex-direction: column;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 15px;
+      padding: 8px 25px;
+    }
+    .js-headline {
+      font-size: 2.5em;
+      padding-bottom: 5px;
+      line-height: 38px;
+
+    }
+
+    .product_description {
+      display: flex;
+    }
+    .cs_row .product_description_text {
+      line-height: normal;
+  width: 200px;
+  top: -46px;
+  right: -32%;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: -25px;
+    }
+    .CTA_container {
+      margin-top: 3%;
+      margin-bottom: 4%;
+      padding-right: 7%;
+      padding-left: 7%
+    }
+  }
+
+  @media (min-width:481px) {
+    .jsHero-wrapper .cs_row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2%;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 17px;
+      padding: 13px 25px;
+      width: 90%;
+      display: inline-grid;
+      margin-bottom: 0px;
+    }
+    .js-headline {
+      font-size: 3em;
+      line-height: 43px;
+
+    }
+    #mobile_image {
+      max-width: 100%;
+    }
+    .CTA_container {
+      margin-top: 1%;
+      margin-bottom: 2%;
+    }
+  }
+
+  @media (min-width:768px) {
+    .js-headline {
+      font-size: 2em;
+      padding-top: 6px;
+      padding-bottom: 6px;
+        line-height: 32px;
+
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+      padding-bottom: 2%;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 9px 25px;
+      font-size: 1em;
+    }
+    .jsHero-wrapper .cs_row {
+      align-items: flex-start;
+    }
+    .CTA_container {
+      margin-top: 1%;
+      margin-bottom: 0%;
+    }
+    #RainBoots {
+      max-width: 76%;
+    }
+  }
+
+  @media (min-width:960px) {
+    .js-headline {
+      font-size: 3em;
+      padding-bottom: 7px;
+        line-height: 45px;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+      padding-bottom: 1%;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 15px 25px;
+      font-size: 1.1em;
+    }
+    .jsHero-wrapper .cs_row {
+      align-items: center;
+    }
+    .CTA_container {
+      margin-top: 3%;
+      margin-bottom: 0%;
+    }
+    #RainBoots {
+      max-width: 107%;
+    }
+  }
+
+
+.cx-copy.largest {
+  font-size: 22px;
+}
+.CTA_container {
+  display: flex;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+  .DESKTOP-MD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+</style>
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row text-center">
+      <div class = "DESKTOP hidden-xs hidden-sm col-md-7 col-lg-7">
+      <a href = "$httpUrl('Product-Show','pid','204630','cid','4HJ','cgid','womens-new')$">
+          <img src="/ecom/2017/web/FallFloral_Desktop.png?$staticlink$" title="Bottes Freesail Chelsea de Crocs" alt="" class="" id="RainBoots" />
+      </a>
+        </div>
+        <div class = "MOBILE hidden-md hidden-lg col-xs-12">
+          <a href = "$httpUrl('Search-Show','cgid','fall-print-shoes')$">
+          <img src="/ecom/2017/web/Floral_Home_Mobile.png?$staticlink$" title="Bottes Freesail Chelsea de Crocs" alt="" class="" id="RandBoots_Mobile" />
+            </a>
+              <p class="cx-copy text-center col-xs-12 hidden-sm hidden-md hidden-lg product_description_text">Freesail de Crocs <br> Bottes Chelsa </p>
+        </div>
+
+
+      <div class="col-xs-12 col-lg-5 col-md-5 col-sm-12 text-center">
+        <div class="text_container larger">
+          <h1 class="DESKTOP-LG cx-heavy-brand-font js-headline hidden-xs hidden-sm hidden-md"> AMOUREUSE <br> DES FLEURS </h1>
+          <h1 class="DESKTOP-MD cx-heavy-brand-font js-headline hidden-xs hidden-lg">  AMOUREUSE <br>DES FLEURS </h1>
+          <a href="$httpUrl('Search-Show','cgid','fall-print-shoes')$">
+          <h1 class="MOBILE cx-heavy-brand-font js-headline hidden-sm hidden-md hidden-lg"> AMOUREUSE <br>DES FLEURS </h1>
+        </a>
+          <div class="DESKTOP-LG hidden-xs hidden-sm hidden-md cx-copy largest cx-brand-font">Pas seulement au printemps! Nos motifs floraux illuminent<br> la grisaille toute l'année.</div>
+          <div class="DESKTOP-MD hidden-xs hidden-lg hidden-xs cx-copy largest cx-brand-font">Pas seulement au printemps! Nos motifs floraux illuminent la grisaille toute l'année.</div>
+          <div class="MOBILE hidden-sm hidden-md cx-copy hidden-lg largest cx-brand-font">Pas seulement au printemps! Nos motifs floraux illuminent<br> la grisaille toute l'année.</div>
+        </div>
+
+        <div class="DESKTOP-LG CTA_container cx-heavy-brand-font text-center hidden-xs">
+          <a href="$httpUrl('Search-Show','cgid','fall-print-shoes')$"  class="DESKTOP cx-button full-width cx-heavy-brand-font">MOTIFS FLORAUX AUTOMNE</a>
+          <a href="$httpUrl('Search-Show','cgid','womens-new')$"  class="DEKSTOP cx-button full-width cx-heavy-brand-font">NOUVEAUTÉS FEMME </a>
+        </div>
+        <div class="MOBILE DESKTOP-LG CTA_container cx-heavy-brand-font text-center hidden-sm hidden-md hidden-lg">
+          <a href="$httpUrl('Search-Show','cgid','fall-print-shoes')$" class="MOBILE cx-button full-width cx-heavy-brand-font hidden-sm hidden-md hidden-lg">MOTIFS FLORAUX AUTOMNE</a>
+          <a href="$httpUrl('Search-Show','cgid','womens-new')$" class="MOBILE cx-button full-width cx-heavy-brand-font hidden-sm hidden-md hidden-lg">NOUVEAUTÉS FEMME</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

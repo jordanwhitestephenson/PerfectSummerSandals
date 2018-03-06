@@ -1,0 +1,148 @@
+<script>
+    //if(new RegExp('[\?&]cy=([^&#]*)').exec(window.location.href) == null){
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '[[Global :: Google Analytics :: Property ID]]', 'auto');
+        ga('require', 'displayfeatures');
+
+        (function(){
+            if(urlParam("adid") != null){
+                var adid = urlParam("adid");
+
+                if(adid.match("^exacttarget_email_")){
+            		var adidParts = adid.split("_");
+
+            		if(adidParts.length >= 7 && adidParts[3].match("[0-9]{6}")){
+            			var source = adidParts[2] + "_" + adidParts[3] + "_" + adidParts[4];
+            			var content = adidParts[adidParts.length - 1];
+            			var campaign = (adidParts[5] == "t5" ? "none" : adidParts[5]);
+                        var medium = "email";
+            		} else {
+            			var source = adid.substring("exacttarget_email_".length);
+                		var content = "";
+            			var campaign = "unknown";
+                        var medium = "email";
+            		}
+
+                    setCampaignVars(campaign, source, medium, content);
+            	} else if(adid.match("linkshare") || urlParam("siteid") != null){
+            		if(adid.match("linkshare")){
+            			var siteid = adid.substring("linkshare_".length);
+            		} else {
+            			var siteid = urlParam("siteid");
+            		}
+
+            		var source = "none";
+
+                    $.ajax({
+                        dataType: "jsonp",
+                        url: "[lib[Affiliate Lookup Table JSON]]",
+                        jsonp: false,
+                        jsonpCallback: "affiliateTableUA",
+                        cache: true,
+                        success: function(data){
+                    		if(typeof data[siteid] !== "undefined"){
+                				source = data[siteid];
+                    		} else if(document.referrer != null && document.referrer != ""){
+                    			var matches = document.referrer.match(/^https?\:\/\/(?:www\.)?([^\/?#]+)(?:[\/?#]|$)/i);
+                				if(matches && typeof matches[1] !== "undefined"){
+                					source = matches[1];
+                				}
+                    		}
+
+                            setCampaignVars(siteid, source, "affiliate", "");
+                            sendPageView();
+                        }
+                    });
+
+                    return;
+            	}
+
+            }
+
+            sendPageView();
+
+            function setCampaignVars(campaign, source, medium, content){
+                ga('set', 'campaignName', campaign);
+                ga('set', 'campaignSource', source);
+                ga('set', 'campaignMedium', medium);
+                ga('set', 'campaignContent', content);
+            }
+
+            function sendPageView(){
+                ga('require', 'ec');
+                ga('set', '&cu', '[[Currency Code]]');
+
+                if(pageData.pageType == "product"){
+                    ga('ec:addProduct', {
+                      'id': pageData.productID,
+                      'name': pageData.name,
+                      'category': pageData.categoryID
+                    });
+                    ga('ec:setAction', 'detail');
+                }
+                else if(pageData.pageType == "cart"){
+                    $.each(app.config.cart.cartItems, function(index, product){
+                        addProduct(product);
+                    });
+
+                    ga('ec:setAction','checkout', {
+                        'step': 1
+                    });
+                }
+                else if(pageData.pageType == "checkout"){
+                    $.each(app.config.cart.cartItems, function(index, product){
+                        addProduct(product);
+                    });
+
+                    ga('ec:setAction','checkout', {
+                        'step': 2
+                    });
+                }
+                else if(pageData.pageType == "confirm"){
+                    $.each(pageData.orderItems, function(index, product){
+                        addProduct(product);
+                    });
+
+                    ga('ec:setAction','checkout', {
+                        'step': 3
+                    });
+
+                    ga('ec:setAction', 'purchase', {
+                      'id': pageData.orderID,
+                      'revenue': String(pageData.orderValue),
+                      'tax': String(pageData.orderTax),
+                      'shipping': String(pageData.orderShipping)
+                    });
+                }
+
+                ga('set', 'location',
+window.location.href.replace(window.location.hash, "").replace(/(=|,)([^=]+)(%40|@)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/gi,"$1"));
+
+                ga('send', 'pageview');
+            }
+
+            function addProduct(product){
+                ga('ec:addProduct', {
+                  'id': product.id,
+                  'name': product.name,
+                  'category': product.categoryID,
+                  'price': String(product.unitPrice),
+                  'quantity': product.qty
+                });
+            }
+
+            function urlParam(name){
+                var results = new RegExp('[\?&]'+name+'=([^&#]*)').exec(window.location.href);
+                if(results==null){
+                   return null;
+                } else{
+                   return results[1] || 0;
+                }
+            }
+        })();
+    //}
+</script>

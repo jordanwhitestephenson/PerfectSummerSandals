@@ -1,0 +1,567 @@
+<!-- Proxima -->
+<link rel="stylesheet" type="text/css" media="screen" href="/on/demandware.static/Sites-crocs_us-Site/-/default/css/proxima.css" />
+<style>
+#headerTopPromo {
+	display: none !important;
+}
+#riskFreeContainer {
+	display: none;
+}
+/* Transition effects */
+@keyframes fadeout {
+	0% {opacity: 1;transform: scale(1);}
+	50% {opacity: 1;transform: scale(.95);}
+	100% {opacity: 0; transform: scale(.95);}
+}
+@keyframes fadein {
+	0% {opacity: 1;transform: scale(1);}
+	50% {opacity: 1;transform: scale(.95);}
+	100% {opacity: 0; transform: scale(.95);}
+}
+.caya-lp .caya-tab {
+	opacity: 1;
+	transform: scale(1);
+}
+.caya-lp .current > div, .caya-lp .current .caya-animation, .caya-lp .current .caya-section {
+	animation-name: fadein;
+	animation-duration: .8s;
+	animation-direction: reverse;
+}
+.caya-lp .past > div, .caya-lp .past .caya-animation, .caya-lp .past .caya-section {
+	animation-name: fadeout;
+	animation-duration: .8s;
+	animation-fill-mode: both;
+}
+.caya-lp .hidden {
+	display: none;
+}
+/* Video Styles */
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 10px;} .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.position-relative {
+	position: relative;
+}
+.display-flex {
+	display: flex;
+	align-items: center;
+}
+.swiperCarousel .sidePrev, .swiperCarousel .sideNext {
+	text-align: left;
+}
+.caya-lp {
+	font-size: 16px;
+	position: relative;
+	min-height: 400px;
+}
+.caya-lp .proxima-black {
+	font-family: 'proxima_novablack', arial, sans-serif;
+}
+.caya-lp .proxima-regular {
+	font-family: 'proxima_novaregular', arial, sans-serif;
+}
+.caya-lp p {
+	font-family: 'proxima_novaregular', arial, sans-serif;
+	color: #444;
+	line-height: 1.1;
+}
+.caya-lp p.collection-text {
+	margin-bottom: 10px;
+}
+.caya-lp p.caya-header {
+	font-family: 'proxima_novablack', arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+.caya-lp p.caya-header-ugc {
+	text-transform: none;
+}
+.caya-lp p.text-dark-orange {
+	color: #db3b00;
+}
+.caya-lp p.text-darker-orange {
+	color: #C23400;
+}
+.caya-lp p.text-cyan {
+	color: #0b96b3;
+}
+.caya-lp p.text-blue {
+	color: #004775;
+}
+.caya-lp p.text-pink {
+	color: #dd2354;
+}
+.caya-lp img {
+	max-width: 100%;
+}
+.caya-lp .caya-section {
+	margin-bottom: 40px;
+}
+/* Start nav */
+.caya-nav-wrapper {
+	background: #ebebeb;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.caya-nav-item {
+	display: inline-block;
+	padding: 0;
+	line-height: 38px;
+	color: #444;
+	font-family: 'proxima_novaregular', arial, sans-serif;
+	text-transform: uppercase;
+	min-width: 200px;
+}
+.caya-nav-item.active, .caya-nav-item:hover {
+	font-family: 'proxima_novablack', arial, sans-serif;
+}
+.caya-lp .caya-product-wrapper .caya-cta {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #004775;
+	border-color: #004775;
+}
+.caya-lp .caya-product-wrapper .caya-cta:hover {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #fff;
+	background: #004775;
+	border-color: #004775;
+}
+.caya-lp .caya-giff-wrapper {
+	padding: 15px 0;
+	overflow: hidden;
+}
+.caya-lp .caya-giff-wrapper .caya-cta {
+	margin-bottom: 0;
+	color: #004775;
+	border-color: #004775;
+}
+.caya-lp .caya-giff-wrapper .caya-cta:hover {
+	margin-bottom: 0;
+	color: #fff;
+	background: #004775;
+	border-color: #004775;
+}
+.caya-lp .caya-giff-wrapper img {
+	margin-bottom: 10px;
+}
+.caya-lp .caya-giff-wrapper div {
+	z-index: 2;
+}
+.caya-lp .caya-giff-wrapper div.giff-bg-box {
+	width: 100%;
+	height: 300px;
+	margin-left: -50%;
+	left: 50%;
+	top: 50%;
+	margin-top: -150px;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+.caya-lp .caya-manifesto-wrapper .caya-cta {
+	color: #004775;
+	border-color: #004775;
+}
+.caya-lp .caya-manifesto-wrapper .caya-cta:hover {
+	color: #fff;
+	background: #004775;
+	border-color: #004775;
+}
+.caya-lp .caya-cta {
+	font-family:'proxima_novablack', arial, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+	border: 2px solid #444;
+	color: #444;
+	line-height: 2;
+	padding: 8px 15px 5px;
+	display: inline-block;
+	letter-spacing: 0;
+	min-width: 180px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.caya-lp .caya-cta:hover {
+	border: 2px solid #444;
+	background: #444;
+	color: #fff;
+}
+.caya-lp .caya-hero-wrapper {
+	background: #004775;
+	margin-top: 0;
+}
+.caya-lp .caya-hero-inner {
+	background: #fff;
+}
+.caya-lp .hero-copy-container {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 15px;
+}
+.caya-lp h1 {
+	font-family: 'proxima_novablack', arial, sans-serif;
+	color: #004775;
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 42px;
+}
+.caya-lp h1 sup {
+	vertical-align: text-top;
+	line-height: 32px;
+	font-size: .6em;
+}
+/* Custom Product CTA's */
+.caya-lp .isabella-wrapper .caya-cta {
+	border-color: #dd2354;
+	color: #dd2354;
+}
+.caya-lp .isabella-wrapper .caya-cta:hover {
+	background: #dd2354;
+	color: #fff;
+}
+.caya-lp .swiftwater-wrapper .caya-cta {
+	border-color: #004775;
+	color: #004775;
+}
+.caya-lp .swiftwater-wrapper .caya-cta:hover {
+	background: #004775;
+	color: #fff;
+}
+.caya-lp .crocband-wrapper .caya-cta {
+	border-color: #0b96b3;
+	color: #0b96b3;
+}
+.caya-lp .crocband-wrapper .caya-cta:hover {
+	background: #0b96b3;
+	color: #fff;
+}
+.caya-lp .citilane-wrapper .caya-cta {
+	border-color: #dc3d03;
+	color: #dc3d03;
+}
+.caya-lp .citilane-wrapper .caya-cta:hover {
+	background: #dc3d03;
+	color: #fff;
+}
+.caya-lp .caya-news {
+	margin-bottom: 10px;
+}
+/* CAYA PRODUCT SLIDER */
+#cayaProductSlider .swiper-pagination {
+	display: none;
+}
+#cayaProducts .caya-header {
+	margin-top: 10px;
+	font-size: 20px;
+}
+#mothersDaySlider .sidePrev, #mothersDaySlider .sideNext, #mothersDaySlider .swiper-pagination {
+	display: none;
+}
+@media (max-width: 480px) {
+	.caya-lp span.xs-break {
+		display: block;
+	}
+}
+@media (max-width: 767px) {
+	.caya-nav-wrapper {
+		height: 38px;
+		overflow: hidden;
+		transition: all .4s ease-out;
+	}
+	.caya-nav-wrapper .caya-nav-item {
+		display: block;
+	}
+	.caya-nav-wrapper .caya-nav-group {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		transition: all .4s ease-out;
+	}
+	.caya-nav-wrapper.expanded .caya-nav-group {
+		top: 0 !important;
+	}
+	.caya-nav-wrapper button.caya-navbar-toggle {
+		position: relative;
+		width: 40px;
+		height: 38px;
+		padding: 0;
+		margin: 0;
+		float: right;
+		z-index: 3;
+	}
+	.caya-nav-wrapper .icon-bar {
+    position: absolute;
+    height: 4px;
+		width: 15px;
+		display: block;
+    margin-top: 0;
+    left: 36%;
+    top: 17px;
+    transform: rotate(45deg);
+    margin-left: -3px;
+		background: #444;
+		transition: all .4s ease-out;
+		border-radius: 1px;
+	}
+	.caya-nav-wrapper .icon-bar.bar-right {
+		transform: rotate(-45deg);
+    margin-left: 5px;
+	}
+	.caya-nav-wrapper.expanded {
+		height: 114px;
+	}
+	.caya-nav-wrapper.expanded .icon-bar.bar-right, .caya-nav-wrapper.expanded .icon-bar {
+		margin-left: 0;
+	}
+}
+@media (min-width: 768px) {
+	.caya-lp .col-md-35 {
+		width: 35%;
+	}
+	.caya-lp .col-md-offset-35 {
+		margin-left: 7.5%;
+	}
+	.caya-lp .hero-copy-container {
+		background: #fff;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		height: 330px;
+		width: 330px;
+		right: 5%;
+		top: 2vw;
+		z-index: 2;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.caya-lp .caya-hero-wrapper img {
+		float: left;
+	}
+	.caya-lp .display-flex-md {
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: -webkit-flex;     /* NEW - Chrome */
+		display:flex;
+		align-items: center;
+	}
+	.caya-lp h1 {
+		font-size: 56px;
+		line-height: 58px;
+	}
+	.caya-lp .caya-hero-wrapper {
+		margin-top: -30px;
+	}
+	.caya-lp .caya-giff-wrapper img {
+		margin-bottom: 0;
+	}
+	.caya-lp .caya-giff-wrapper div.giff-bg-box {
+		display: block;;
+	}
+	.caya-lp .caya-section.john-second-video {
+		margin-bottom: 9px;
+	}
+}
+@media (min-width: 960px) {
+	.caya-lp .hero-copy-container {
+		height: 370px;
+		width: 370px;
+		right: 10%;
+		top: 50%;
+		margin-top: -185px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.caya-lp h1 span {
+		margin-left: 12px;
+	}
+	/* CAYA PRODUCT SLIDER */
+	#cayaProductSlider .swiper-slide {
+		width: 240px;
+	}
+}
+</style>
+
+<div id="cayaNav" class="caya-nav-wrapper">
+	<div class="cs_container-crocs">
+		<div class="cs_row">
+			<div class="col-xs-12">
+				<button type="button" class="caya-navbar-toggle">
+					<span class="sr-only">Toggle Come As You Are navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar bar-right"></span>
+				</button>
+				<div class="caya-nav-group">
+					<a id="navTab1" href="#ComeAsYouAre-Home" class="caya-nav-item">Come As You Are</a><!-- Keep #navTab1 -->
+					<a id="navTab2" href="#ComeAsYouAre-Videos" class="caya-nav-item">Videos</a><!-- Keep #navTab2 -->
+					<a id="navTab3" href="#ComeAsYouAre-Products" class="caya-nav-item">Products</a><!-- Keep #navTab3 -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="caya-lp"><!-- Pull in content assets below -->
+	$include('Page-Include','cid','come-as-you-are-home')$
+	$include('Page-Include','cid','come-as-you-are-videos')$
+	$include('Page-Include','cid','come-as-you-are-product')$
+</div><!-- /.caya-lp -->
+<script>
+$(document).ready(function(){
+	// init slider
+	app.carousel.carousels.testWideCarousel = new Swiper ("#cayaProductSlider", {
+		a11y: true,
+		nextButton: '.sideNext',
+		prevButton: '.sidePrev',
+		roundLengths: true,
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		effect: 'slide',
+		slidesPerView: 4,
+		spaceBetween: 15,
+		// Responsive breakpoints
+		breakpoints: {
+	    // when window width is <= 320px
+	    320: {
+	      slidesPerView: 1,
+	      spaceBetween: 0
+	    },
+			// when window width is <= 480px
+	    480: {
+	      slidesPerView: 2,
+	      spaceBetween: 10
+	    },
+	    // when window width is <= 767px
+	    767: {
+	      slidesPerView: 3,
+	      spaceBetween: 15
+	    }
+		}
+	});
+	// init mothers' day slider
+	app.carousel.carousels.testWideCarousel = new Swiper ("#mothersDaySlider", {
+		a11y: true,
+		nextButton: '.sideNext',
+		prevButton: '.sidePrev',
+		roundLengths: true,
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		effect: 'slide',
+		autoplay: 3500
+	});
+
+	// Run cayaPageNav() on hash change
+	window.onhashchange = cayaPageNav;
+
+	// Vars for lazy load. Keeps lazy load from firing multiple times
+	var x = true, y = true, z = true;
+
+	cayaPageNav();
+	// Page Nav Function
+	function cayaPageNav(){
+		// Tests for ? and removes it from the hash variable if present
+		var hashlong = window.location.hash;
+		var pos = hashlong.indexOf("?");
+		var hash = (pos == -1 ? hashlong : hashlong.slice(0,pos));
+		// Remove .active from nav
+		$('.caya-nav-item').each(function(){$(this).removeClass('active')});
+
+		// Scroll to top
+		$("html, body").animate({scrollTop:0},300);
+
+		/* Stop Video on Page Nav */
+		function pauseVidsCAYA() {
+			$.each($("iframe[src*='vimeo']"), function(){
+				var msg = JSON.stringify({method: "pause"});
+				this.contentWindow.postMessage(msg, '*');
+			});
+		};
+		// Get height of nav item
+		var navHeight = $('.caya-nav-item').css('height');
+
+		switch(hash) {
+			case "#ComeAsYouAre-Home":
+				$('#cayaVideos').removeClass('current').addClass('past');
+				$('#cayaProducts').removeClass('current').addClass('past');
+				$('#navTab1').addClass('active');
+				// Positions nav on mobile
+				$('.caya-nav-group').css('top',0);
+				// Lazy load
+				x && $('#cayaMain .lazy-load').each(function() {$(this).attr('src',$(this).attr('data-src'))});x=false;
+				// Pause videos
+				pauseVidsCAYA();
+				// Make current page animate in and hide non-active pages
+				setTimeout(function() {
+					$('#cayaVideos').addClass('hidden');
+					$('#cayaProducts').addClass('hidden');
+					$('#cayaMain').removeClass('past').removeClass('hidden').addClass('current');
+					// Fix for sliders
+					$('.caya-lp .current div').on('animationend', function(){window.dispatchEvent(new Event('resize'))});
+				},800);
+			break;
+			case "#ComeAsYouAre-Videos":
+				$('#cayaMain').removeClass('current').addClass('past');
+				$('#cayaProducts').removeClass('current').addClass('past');
+				$('#navTab2').addClass('active');
+				// Positions nav on mobile
+				$('.caya-nav-group').css('top',parseInt(navHeight, 10)*-1+'px');
+				//Lazy load
+				y && $('#cayaVideos .lazy-load').each(function() {$(this).attr('src',$(this).attr('data-src'))});y=false;
+				// Pause videos
+				pauseVidsCAYA();
+				//Make current page animate in and hide non-active pages
+				setTimeout(function() {
+					$('#cayaMain').addClass('hidden');
+					$('#cayaProducts').addClass('hidden');
+					$('#cayaVideos').removeClass('past').removeClass('hidden').addClass('current');
+				},800);
+			break;
+			case "#ComeAsYouAre-Products":
+				$('#cayaMain').removeClass('current').addClass('past');
+				$('#cayaVideos').removeClass('current').addClass('past');
+				$('#navTab3').addClass('active');
+				// Positions nav on mobile
+				$('.caya-nav-group').css('top',parseInt(navHeight, 10)*-2+'px');
+				//Lazy load
+				$('#cayaProducts .lazy-load').each(function() {$(this).attr('src',$(this).attr('data-src'))});z=false;
+				//Make current page animate in and hide non-active pages
+				setTimeout(function() {
+					$('#cayaMain').addClass('hidden');
+					$('#cayaVideos').addClass('hidden');
+					$('#cayaProducts').removeClass('past').removeClass('hidden').addClass('current');
+				},800);
+			break;
+			default:
+				$('#cayaVideos').removeClass('current').addClass('past');
+				$('#cayaProducts').removeClass('current').addClass('past');
+				$('#navTab1').addClass('active');
+				// Positions nav on mobile
+				$('.caya-nav-group').css('top',0);
+				//Lazy load
+				z && $('#cayaMain .lazy-load').each(function() {$(this).attr('src',$(this).attr('data-src'))});x=false;
+				// Pause videos
+				pauseVidsCAYA();
+				//Make current page animate in and hide non-active pages
+				setTimeout(function() {
+					$('#cayaVideos').addClass('hidden');
+					$('#cayaProducts').addClass('hidden');
+					$('#cayaMain').removeClass('past').removeClass('hidden').addClass('current');
+					// Fix for sliders
+					$('.caya-lp .current div').on('animationend', function(){window.dispatchEvent(new Event('resize'))});
+				},800);
+		} // switch
+	} // end cayaPageNav()
+
+	/* Toggle mobile nav */
+	$('button.caya-navbar-toggle').click(function() {
+		$('#cayaNav').toggleClass('expanded');
+	});
+
+	/* Add current state to #ComeAsYouAre in main nav */
+	$('#comeasyouare a').addClass('selected');
+	$('#comeasyouare a').trigger('focusin');
+
+});
+</script>

@@ -1,0 +1,218 @@
+<style>
+  /* JS17 ADDITIONS */
+
+  @media (max-width: 480px) {
+    .MOBILE .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.0em;
+      padding-top: 17px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 19px;
+    }
+    .MOBILE .product_discription {
+      position: absolute;
+        right: 53%;
+        top: 82%;
+        font-size: 9px;
+        line-height: 11px;
+    }
+}
+
+
+  @media (min-width:481px) {
+    .MOBILE .flexbox .cx-heavy-brand-font.headline {
+      font-size: 1.7em;
+      padding-top: 21px;
+      padding-bottom: 12px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 19px;
+    }
+    .MOBILE .product_discription {
+      position: absolute;
+  right: 56%;
+  top: 77%;
+  font-size: 12px;
+  line-height: 13px;
+    }
+
+
+  }
+
+  @media (min-width:768px) {
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 1.2em;
+      padding-bottom: 6px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 16px;
+    }
+    .flexbox_default .product_discription {
+      position: absolute;
+      right: 61%;
+      top: 70%;
+      font-size: 10px;
+      line-height: 11px
+
+    }
+
+  }
+
+  @media (min-width:960px) {
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.1em;
+      padding-bottom: 10px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 21px;
+    }
+    .flexbox_default .product_discription {
+      position: absolute;
+      right: 59%;
+      top: 76%;
+      font-size: 11px;
+      line-height: 13px
+
+    }
+  }
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background: none;
+  }
+  .flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .flexbox .cx-heavy-brand-font.headline {
+    line-height: 1em;
+    color: #990066;
+
+  }
+
+  .flexbox .cx-copy.largest {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+ .flexbox_default {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+ }
+
+ .flexbox img {
+   max-width: 90%;
+ }
+ .flexbox .cx-copy.larger {
+   margin-bottom: 0px;
+ }
+ .MOBILE {
+   margin-bottom: 5%;
+ }
+
+</style>
+
+<div class="jsHero-wrapper jscatBanner-wrapper">
+  <!-- KEEP .hpHero-wrapper for Homepage Hero -->
+  <div class="cs_container">
+    <!--  IMPORTANT .content-container-hero sets pointer-events: none; so clickthrough the the <a> in the background image works. - .content-container-hero should be used with .img-container-hero above -->
+    <div class="cs_row flexbox_default hidden-xs hidden-sm">
+      <div class= "col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <a href="http://www.crocs.ca/on/demandware.store/Sites-crocs_ca-Site/en_CA/Product-Show?pid=204957&cid=92O">
+        <img src="/ecom/2017/web/SlingBack_Roka_Womens_Desktop.png?$staticlink$" title="Chaussures Eve à brides arrière et à motifs de Crocs pour femmes" alt="Chaussures Eve à brides arrière et à motifs de Crocs pour femmes" class="" />
+        <p class="cx-copy text-center product_discription">Crocs pour femmes <br> Chaussures Eve à motifs <br> Chaussures à brides arrière</p>
+      </a>
+      </div>
+      <div class= "col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <div class="cx-heavy-brand-font headline text-center">CHAUSSURES À BRIDES ARRIÈRE SONT DE RETOUR</div>
+        <p class="cx-copy larger text-center hidden-xs">La polyvalence des chaussures à talons plats. L'élégance féminine d'un talon à motifs. Le confort des sandales.</p>
+      </div>
+    </div>
+    <div class="MOBILE cs_row  hidden-md hidden-lg">
+      <div class= "col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <a href="http://www.crocs.ca/on/demandware.store/Sites-crocs_ca-Site/en_CA/Product-Show?pid=204957&cid=92O">
+        <img src="/ecom/2017/web/SlingBack_Roka_Womens_Desktop.png?$staticlink$" title="Chaussures Eve à brides arrière et à motifs de Crocs pour femmes" alt="Chaussures Eve à brides arrière et à motifs de Crocs pour femmes" class="" />
+        </a>
+        <p class="cx-copy text-center product_discription">Crocs pour femmes <br> Chaussures Eve à motifs<br>Chaussures à brides arrière</p>
+      </div>
+      <div class= "col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <div class="cx-heavy-brand-font headline text-center">CHAUSSURES À BRIDES ARRIÈRE SONT DE RETOUR</div>
+        <p class="cx-copy larger text-center hidden-xs">La polyvalence des chaussures à talons plats. <br> L'élégance féminine d'un talon à motifs. <br> Le confort des sandales.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<style>
+
+.jscatBanner-h-wrapper h1 {
+  font-size: 18px;
+  font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+  text-align: center;
+  color: #444;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-top:10px;
+}
+.jscatBanner-h-wrapper h2 {
+  font-size: 15px;
+  font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+  letter-spacing: 0;
+  line-height: 1;
+  color: #444;
+  text-align: center;
+}
+.breadcrumbs {
+  display: none;
+}
+@media (max-width: 480px) {
+  .responsiveCategory .itemCount {
+    float: none;
+    margin-right: 0;
+    font-size: 15px;
+    color: #444;
+  }
+  .responsiveCategory .responsivePagination {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .jscatBanner-h-wrapper h1 {
+    text-align: left;
+    font-size: 28px;
+  }
+  .jscatBanner-h-wrapper h2 {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+@media (min-width: 960px) {
+  .breadcrumbs {
+    display: block;
+  }
+}
+</style>
+<div class="jscatBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'womens-new', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'womens-new', 'attr', 'CategoryH2')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

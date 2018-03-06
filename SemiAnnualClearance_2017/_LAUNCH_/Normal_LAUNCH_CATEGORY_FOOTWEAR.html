@@ -1,0 +1,333 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  body, a{
+    color: #cc0000;
+  }
+
+  .jsHero-wrapper .cx-button {
+    border: 2px solid #cc0000;
+    color: #cc0000;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+  .jsHero-wrapper .cx-button:hover, .jsHero-wrapper .cx-button:focus {
+    border: 2px solid #cc0000;
+    color: #fff;
+    background-color: #cc0000;
+  }
+
+  .discount-headline {
+    color: #444;
+  }
+
+  .cta-container {
+    width: 100%;
+  }
+
+  .col-lg-6.less-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexbox_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width:320px) {
+    .crocs_club_early_access {
+      width: 80%;
+      margin-bottom: 1.3vh;
+    }
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.7vh;
+    }
+    .largest-headline {
+      font-size: 4.0em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      margin-bottom: 0.9vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 1vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 10px;
+      padding: 8px;
+    }
+    .mobile-container-padding {
+      padding: 15px 0px 15px 0px;
+    }
+    #smaller-mobile-font {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 321px) {
+    .crocs_club_early_access {
+      width: 80%;
+      margin-bottom: 1.3vh;
+    }
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 4.5em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1em;
+      letter-spacing: 2px;
+      margin-bottom: 0.9vh;
+    }
+    .small-headline {
+      font-size: 1.0em;
+      letter-spacing: 2px;
+      margin-bottom: 1vh;
+    }
+    .cta-container .cx-button {
+      font-size: 11px;
+      padding: 7px;
+    }
+    .mobile-container-padding {
+      padding: 15px 0px 15px 0px;
+    }
+    .margin-top-mobile {
+
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+
+
+  }
+
+  @media (min-width: 481px) {
+    .crocs_club_early_access {
+      width: 60%;
+      margin-bottom: 1vh;
+    }
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 5.0em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1.1em;
+      letter-spacing: 3px;
+      margin-bottom: 0.5vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 16px;
+      padding: 15px;
+    }
+    .mobile-container-padding {
+      padding: 5px 0px 5px 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+
+    .crocs_club_early_access {
+      width: 40%;
+      margin-bottom: 1.5vh;
+    }
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 5.0em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1.1em;
+      letter-spacing: 3px;
+      margin-bottom: 0.5vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 15px;
+      padding: 12px;
+    }
+    .mobile-container-padding {
+      padding: 5px 0px 5px 0px;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .crocs_club_early_access {
+      width: 40%;
+      margin-bottom: 2vh;
+    }
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 6.2em;
+      line-height: 0.9;
+    }
+    .fine-headline {
+      font-size: 1.4em;
+      letter-spacing: 3px;
+      margin-bottom: 1vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 18px;
+      padding: 15px;
+    }
+
+    #max-width {
+      max-width: 110%;
+    }
+    .mobile-container-padding {
+      padding: 5px 0px 5px 0px;
+    }
+  }
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+
+      <div class="left_container col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mobile-container-padding">
+        <a href="$httpUrl('Search-Show','cgid','outlet')$">
+        <div class="text-container text-center">
+          <div class="crocs_club_early_access margin-top-mobile" /></div>
+          <div class="cx-brand-font fine-headline">SEMI-ANNUAL CLEARANCE EVENT</div>
+          <div class="cx-heavy-brand-font larger larger-headline">TAKE AN ADDITIONAL</div>
+          <div class="cx-heavy-brand-font largest largest-headline">50% OFF</div>
+          <div class="cx-brand-font small-headline">CLEARANCE PRICES</div>
+        </div>
+        <div class="flexbox_column">
+          <div class="col-lg-4 col-md-6 col-sm-7 col-xs-11">
+            <button type="button" class="cx-button full-width cx-brand-font" id = "smaller-mobile-font"> SHOP ALL CLEARANCE </button>
+          </div>
+          <p class="cx-brand-font discount-headline">Discount applied in cart.*</p>
+        </div>
+          </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<style>
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW, DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,103 @@
+﻿<!--
+	***GENERAL catBanner NOTES***
+	1. To uniformly adjust the font size, change it for .catBanner-wrapper per screen size. All child elements defined in em.
+	  - Default font-sizes are p{1.2em}, p.sm-head{1.5em}, p.md-head{2em}, p.lg-head{3em}, p.fine-print{17px}
+	2. To adjust position of hero img on mobile add: @media (max-width:480px) {.catBanner-wrapper .img-container-hero img{margin-left: xxx;}}
+			- Don't go below -530px
+	3. Screen sizes are xs(0-480), sm(481-767), md(768-959), lg(960+)
+	4. .content-container-hero sets {pointer-events:none;} for lg and md screens to allow .img-container-hero in <a> to be clicked
+-->
+<style>
+  #headerTopPromo {
+    display: none !important;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+  /* Add custom styling below */
+
+  .catBanner-wrapper {
+    background: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+  }
+
+  .catBanner-wrapper .cs_container.content-container-hero p {
+
+    text-align: center;
+  }
+
+  .catBanner-wrapper .cs_container.content-container-hero p.lg-head {
+    font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    font-size: 5.8em;
+  }
+
+  .catBanner-wrapper p.promo-text {
+    font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    font-size: 2.1em;
+  }
+  .catBanner-wrapper p.sm-head {
+    font-size: 1.2em;
+  }
+  .catBanner-wrapper p.wildsummer-fineprint {
+    font-size: 1.1em;
+    -webkit-font-smoothing: antialiased
+  }
+
+  @media (min-device-width: 320px) and (max-device-width: 480px) {
+    #wildsummer50Off {
+      font-size: 5em;
+      color: #444444;
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    .catBanner-wrapper {
+      min-height: 200px;
+      font-size: 22px;
+    }
+  }
+
+  .wildsummer.sm-head {
+    font-size: 1em;
+    font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    color: #d42127;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  .wildsummer {
+    font-size: 10px;
+    font-family: proxima_novaregular, arial, helvetica, sans-serif!important;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #wildsummer50Off {
+    font-size: 5em;
+  }
+
+  #cs_wildsale_background {
+    background: url("/ecom/2017/web/WildSummerSaleBackground.png?$staticlink$");
+    width: 100%;
+  }
+
+  #wildsummer-fineprint {
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased
+  }
+</style>
+<div class="hpHero-wrapper catBanner-wrapper catBanner-wrapper-sale">
+  <!-- KEEP .hpHero-wrapper and .catBanner-wrapper for category banners. -->
+  <div class="cs_container content-container-hero" id="cs_wildsale_background">
+    <div class="cs_row">
+			<div class="col-xs-12 ">
+				<div class="copy-container text-center ">
+					<p class="wildsummer sm-head">Solde d'été de folie </p>
+					<p class="lg-head text-uppercase " id="wildsummer50Off ">Moins 50 %</p>
+					<p id="wildsummer-fineprint ">Certains modèles. Rabais dans le panier&#42;</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

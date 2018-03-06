@@ -1,0 +1,751 @@
+<style>
+  /*.swiperCarouselWrapper {
+  overflow:visible;
+}*/
+.promo-drawer {
+  display: none;
+}
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .jsWAYSTOWEAR-wrapper {
+    min-height: 1px;
+  }
+
+  .flexbox-column {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexbox_default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .deskop-paragraph {
+    font-size: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.3;
+    background-color: white;
+  }
+
+  .slider-margin-top {
+    margin-top: 2.5vh;
+  }
+
+  .mobile-paragraph {
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.3;
+    margin-top: 25px;
+    margin-bottom: 3vw;
+  }
+
+  .jsWAYSTOWEAR-wrapper img {
+    max-width: 100%;
+  }
+
+  .ways-to-wear-shoe-description {
+    color: #444;
+    line-height: 1.2;
+  }
+
+
+  .jsWAYSTOWEAR-wrapper .cx-button,
+  .jsWAYSTOWEAR-wrapper .cx-button .hpCtnr h1,
+  .jsWAYSTOWEAR-wrapper .cx-button .hpCtnr h2,
+  .jsWAYSTOWEAR-wrapper .cx-button .hpCtnr h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    font-weight: bold;
+    color: #a14c57;
+  }
+
+  .jsWAYSTOWEAR-wrapper .cx-button {
+    background-color: #fff;
+    border: 2px solid;
+    color: #996600;
+    padding: 15px 19px;
+
+  }
+
+
+  .jsWAYSTOWEAR-wrapper .cx-button:hover {
+    background-color: #996600;
+    border: 2px solid;
+    color: #fff;
+    padding: 15px 19px;
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:focus {
+    text-decoration: none;
+  }
+
+  .tan-headline {
+    color: #996600;
+    margin-top: 1%;
+    margin-bottom: 4%;
+  }
+
+  .CTA_seperation_margin {
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+  }
+  /* END JS17 DEFAULT CLASSES */
+
+
+  @media (max-width: 480px) {
+    .tan-headline {
+      font-size: 1.2em;
+      margin-top: 5%;
+      margin-bottom: 4%;
+      line-height: 1.1em;
+    }
+
+    .grey-header .now-trending-headline {
+      font-size: 1em;
+      letter-spacing: 4px;
+      margin-bottom: 5px;
+    }
+    .grey-header .crocs-in-wild-headline {
+      font-size: 1.8em;
+      margin-bottom: 5px;
+    }
+    .grey-header .crocs-rock-headline {
+      font-size: 0.8em;
+      letter-spacing: 9px;
+      margin-bottom: 0px;
+    }
+
+    .jsWAYSTOWEAR-wrapper.waysto .cs_container-crocs {
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .jsWAYSTOWEAR-wrapper .cx-button {
+      font-size: 14px;
+    }
+    .ways-to-wear-shoe-description {
+      font-size: 13px;
+    }
+    .gray-headers-text-container {
+      padding-top: 8%;
+      padding-bottom: 8%;
+    }
+  }
+
+  @media (min-width:481px) {
+    .clog-rules-container #BlackAndWhiteClassicCrocs {
+      margin-top: -11%;
+      margin-left: -7%;
+    }
+    .tan-headline {
+      font-size: 1.5em;
+      margin-top: 1%;
+      margin-bottom: 4%;
+      line-height: 1.1em;
+    }
+    .FeminineFun_Shoes {
+      z-index: 4;
+      position: absolute;
+      top: 179px;
+      width: 20%;
+      right: 18%;
+    }
+    .grey-header .now-trending-headline {
+      font-size: 2.0em;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+    .grey-header .crocs-in-wild-headline {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .grey-header .crocs-rock-headline {
+      font-size: 1.6em;
+      letter-spacing: 9px;
+      margin-bottom: 0px;
+    }
+    .jsWAYSTOWEAR-wrapper .swiper-wrapper {
+      margin-left: 0px;
+    }
+    .jsWAYSTOWEAR-wrapper .cx-button {
+      font-size: 20px;
+    }
+    .ways-to-wear-shoe-description {
+      font-size: 15px;
+    }
+    .gray-headers-text-container {
+      padding-top: 4%;
+      padding-bottom: 4%;
+    }
+  }
+
+  @media (min-width:768px) {
+    .clog-rules-container #BlackAndWhiteClassicCrocs {
+      margin-top: -11%;
+      margin-left: -1%;
+    }
+    .grey-header .now-trending-headline {
+      font-size: 2.5em;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+    .tan-headline {
+      font-size: 1.5em;
+      margin-top: 1%;
+      margin-bottom: 4%;
+      line-height: 1.1em;
+    }
+    .black_and_white_woman {
+      z-index: 2;
+      right: 10%;
+      position: absolute;
+      top: -16px;
+    }
+
+    .heidi_look_alike {
+      z-index: 3;
+      position: absolute;
+      top: 72px;
+      right: 43%;
+    }
+
+    .FeminineFun_Shoes {
+      z-index: 4;
+      position: absolute;
+      width: 24%;
+      top: 210px;
+      right: 26%;
+    }
+    .feminine_gray_layer {
+      height: 300px;
+    }
+    .jsWAYSTOWEAR-wrapper .cx-button {
+      font-size: 20px;
+    }
+    .gray-headers-text-container {
+      padding-top: 4%;
+      padding-bottom: 4%;
+    }
+  }
+
+  @media (min-width:960px) {
+    .clog-rules-container #BlackAndWhiteClassicCrocs {
+      margin-top: -11%;
+      margin-left: 5%;
+    }
+
+    .grey-header .now-trending-headline {
+      font-size: 2.5em;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+    .grey-header .crocs-in-wild-headline {
+      font-size: 4em;
+      margin-bottom: 10px;
+    }
+    .grey-header .crocs-rock-headline {
+      font-size: 1.3em;
+      letter-spacing: 9px;
+      margin-bottom: 10px;
+    }
+    .tan-headline {
+      font-size: 2.5em;
+      margin-top: 1%;
+      margin-bottom: 4%;
+      line-height: 1.2em;
+    }
+    .black_and_white_woman {
+      z-index: 2;
+      right: 6%;
+      position: absolute;
+      top: -26px;
+    }
+    .heidi_look_alike {
+      z-index: 3;
+      position: absolute;
+      top: 46px;
+      right: 40%;
+    }
+    .FeminineFun_Shoes {
+      z-index: 4;
+    position: absolute;
+    top: 195px;
+    width: 33%;
+    right: 17%;
+    }
+    .jsWAYSTOWEAR-wrapper .swiper-wrapper {
+      margin-left: 0px;
+    }
+    .jsWAYSTOWEAR-wrapper.waysto .cs_container-crocs {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .jsWAYSTOWEAR-wrapper .cx-button {
+      font-size: 20px;
+    }
+    .ways-to-wear-shoe-description {
+      font-size: 15px;
+    }
+    .gray-headers-text-container {
+      padding-top: 4%;
+      padding-bottom: 4%;
+    }
+  }
+  /*//TOP PORTION//*/
+
+  .jsWAYSTOWEAR-wrapper .grey-header {
+    background-color: #ebebeb;
+    margin-bottom: 2%
+  }
+  /*//END TOP PORTION*/
+
+  .clog-rules-container #BlackAndWhiteClassicCrocs {
+    position: relative;
+  }
+  /*<FEMININE CSS>*/
+
+  .feminine_gray_layer {
+    background-color: #ebebeb;
+    z-index: 1;
+    position: relative;
+    height: 400px;
+  }
+
+
+  .feminine_white_layer {
+    background-color: #fff;
+    height: 106px;
+  }
+
+  .swiper_mobile {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+  }
+
+  .jordans-swiper {
+    margin-top: 15px;
+  }
+  /*<END FEMININE CSS>*/
+</style>
+<div class="jsWAYSTOWEAR-wrapper waysto">
+  <div class="grey-header text-center flexbox-column">
+    <section class="gray-headers-text-container">
+      <div class="cx-brand-font now-trending-headline">LA TENDANCE DU MOMENT</div>
+    <div class="cx-heavy-brand-font largest crocs-in-wild-headline">CROCS EN SAUVAGE</div>
+    <div class="cx-brand-font smaller crocs-rock-headline">CHANGEZ L'APPARENCE</div>
+    </section>
+  </div>
+
+  <div class="cs_container-crocs">
+    <div class="clog-rules-container">
+      <div class="cx-heavy-brand-font larger tan-headline text-center">RÈGLES CROCS : <br> DES CLASSIQUES POUR UNE RAISON</div>
+      <div class="flexbox_default DESKTOP" style="padding-left: 5px; padding-right: 5px;">
+        <img src="XLandingPageManTop.png?$staticlink$" alt="" style="padding-left: 1vw; padding-right: 1vw;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" />
+        <img src="XLandingPageWomanTop.png?$staticlink$" alt="" style="padding-left: 1vw; padding-right: 1vw;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" />
+      </div>
+      <img src="XLandingPageClassicCrocs_Top_Trans.png?$staticlink$" class="DESKTOP hidden-sm hidden-xs" alt="" id="BlackAndWhiteClassicCrocs" />
+      <img src="XLandingPageClassicCrocs_Top_Trans.png?$staticlink$" class="MOBILE hidden-md hidden-lg" alt="" id="BlackAndWhiteClassicCrocs" style="margin-top: -40px; margin-bottom: -15px" />
+    </div>
+
+    <div class="clogs-classic-overall-container flexbox_default ">
+      <div class="col-lg-6 col-md-6 col-sm-6 BREAKDANCER hidden-xs">
+        <img src="XLandingPage_BreakDancer_ReallyCropped.png?$staticlink$" alt="" />
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center clogs-classic-text-and-image">
+        <div class="clogs-classic-text-container">
+          <p class="cx-brand-font larger text-center deskop-paragraph hidden-sm hidden-xs"> Quelle est la première règle pour porter des sabots classiques?  Il n'y en a aucune! C'est une façon adorable de montrer vos chaussettes rayées audacieuses. C'est une présence rebelle sous des jeans roulés.  Ils sont charmants et fonctionnels avec un short,  une jupe et un haut
+            à motifs. </p>
+          <p class="cx-brand-font larger text-center mobile-paragraph hidden-md hidden-lg"> Quelle est la première règle pour porter des sabots classiques? Il n'y en a aucune! C'est une façon adorable de montrer vos chaussettes rayées audacieuses. C'est une présence rebelle sous des jeans roulés. Ils sont charmants et fonctionnels avec un short, une jupe et un haut à motifs.</p>
+        </div>
+        <a href = " $httpUrl('Product-Show','pid','12132','cid','260','cgid','classic-styles')$">
+        <div class="clogs-classic-photo-container hidden-xs hidden-sm">
+          <img src="XLandingPage_ClassicCAMOClog.png?$staticlink$" title = "Classic Realtree&reg; V2" alt="Classic Realtree&reg; V2" />
+          <!-- <p class="cx-brand-font text-center" style="color:#444"> Classic Realtree&reg; V2 </p> -->
+        </div>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="slider_and_CTA">
+      <div class="jordans-swiper" style="">
+        <div class="swiperCarouselWrapper productCarousel sweater-slide-wrapper">
+          <div id="WaysToWearSlider" class="adaCarousel outsideNavigation swiper-container-horizontal">
+            <div class="sidePrev text-left">
+              <button type="button" tabindex="-1" class=""><span class="sr-only">previous item</span><span aria-hidden=”true”></span></button>
+            </div>
+            <!-- <div class = "ya"> -->
+            <div class="swiper-wrapper" style="">
+              <!-- Slide -->
+              <div tabindex="" class="swiper-slide">
+                <a href="$httpUrl('Product-Show','pid','10001','cid','410','cgid','classic-styles')$">
+              <img class="lazy-load" src="SwiftwaterEdit_BlueClassic.jpg?$staticlink$" title="Sabots classiques"  alt="" />
+              <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                Sabots classiques
+              </p>
+            </a>
+              </div>
+              <!-- end slide -->
+              <!-- Slide -->
+              <div tabindex="" class="swiper-slide">
+                <a href="  $httpUrl('Product-Show','pid','204637','cid','100','cgid','classic-styles')$">
+              <img class="lazy-load image-hero" src="SwiftwaterEdit_Tropical.jpg?$staticlink$" title="Chaussures classiques à motifs tropicaux Sabots IV" alt="" />
+              <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                Chaussures classiques à motifs tropicaux Sabots IV
+              </p>
+            </a>
+              </div>
+              <!-- end slide -->
+              <div tabindex="" class="swiper-slide swiper-slide-active">
+                <a href=" $httpUrl('Product-Show','pid','204612','cid','6JY','cgid','classic-styles')$">
+              <img class="lazy-load" src="SwiftwaterEdit_PinkFloral.jpg?$staticlink$" title="Sabots classiques à motifs Sabots" alt="Sabots classiques à motifs Sabots" />
+              <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                Sabots classiques à motifs<br />Sabots
+              </p>
+            </a>
+              </div>
+
+              <!-- end slide -->
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="swiper-pagination"></div>
+          <div class="sideNext text-left">
+            <button tabindex="-1" type="button" class=""><span class="sr-only">next item</span><span aria-hidden=”true”></span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="CTA_seperation_margin flexbox-column">
+        <div class = "col-lg-6 col-md-6 col-sm-8 col-xs-11">
+        <a href = "$httpUrl('Search-Show','cgid','classic-styles')$" role="button" class="cx-button full-width tan-color" >MAGASINER LES CLASSIQUES</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <FEMININE FUN CONTAINER> -->
+  <div class="feminine_fun">
+    <div class="cx-heavy-brand-font larger tan-headline text-center hidden-sm hidden-xs">PLAISIR FÉMININ: <br> SORTIR AVEC LES CROCS ISABELLA</div>
+
+    <div class="DESKTOP feminine_gray_layer hidden-sm hidden-xs ">
+      <div class="cs_container-crocs">
+        <div class="col-lg-12 col-md-12">
+          <a href = "$httpUrl('Product-Show','pid','202465','cid','6N6','cgid','isabella-collection-womens')$">
+          <img src="XLandingPage_HeidiLookAlike.png?$staticlink$" alt="" class="heidi_look_alike col-lg-6 col-md-5 col-sm-12">
+
+          <img src="FeminineFun_NoShadow.png?$staticlink$" title= "Sandales Isabella de Crocs pour femmes" alt="" class="FeminineFun_Shoes col-lg-4 col-md-4">
+          </a>
+          <img src="XLandingPage_BlackWhiteWoman.png?$staticlink$" alt="" class="black_and_white_woman col-lg-5 col-md-5">
+        </div>
+      </div>
+    </div>
+    <div class="feminine_white_layer hidden-sm hidden-xs">
+    </div>
+    <div class="MOBILE hidden-md hidden-lg">
+      <div class="cs_container-crocs flexbox-column">
+        <div class="cx-heavy-brand-font larger tan-headline text-center hidden-md hidden-lg">PLAISIR FÉMININ: <br> SORTIR AVEC LES CROCS ISABELLA</div>
+        <a href = "$httpUrl('Product-Show','pid','202465','cid','6N6','cgid','isabella-collection-womens')$">
+        <img src="XLandingPage_HeidiLookAlike.png?$staticlink$" alt="" class="heidi_look_alike col-xs-12">
+      </a>
+      </div>
+    </div>
+
+    <div class="cs_container-crocs">
+      <div class="col-lg-6 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+        <p class="DESKTOP cx-brand-font larger text-center deskop-paragraph hidden-sm hidden-xs"> Une panoplie de styles impertinents à courroies qui sont légers et qui ont un bout ouvert pour montrer votre pédicure. Nous les aimons agencés à une robe d'été, à des capris blancs ou à des jeans. Ils offrent également un éclat parfait lorsqu'ils sont portés avec du kaki ou du denim et un t-shirt à motifs pour l'heure festive près de la piscine de l'hôtel.</p>
+        <p class="MOBILE cx-brand-font larger text-center mobile-paragraph hidden-md hidden-lg" style=""> Une panoplie de styles impertinents à courroies qui sont légers et qui ont un bout ouvert pour montrer votre pédicure. Nous les aimons agencés à une robe d'été, à des capris blancs ou à des jeans. Ils offrent également un éclat parfait lorsqu'ils sont portés avec du kaki ou du denim et un t-shirt à motifs pour l'heure festive près de la piscine de l'hôtel.
+        </p>
+      </div>
+
+      <div class="jordans-swiper" style="">
+        <div class="swiperCarouselWrapper productCarousel sweater-slide-wrapper">
+          <div id="WaysToWearSlider" class="adaCarousel outsideNavigation swiper-container">
+            <div class="sidePrev text-left">
+              <button type="button" tabindex="-1" class=""><span class="sr-only">article précédent</span><span aria-hidden=”true”></span></button>
+            </div>
+            <!-- <div class = "ya"> -->
+            <div class="swiper-wrapper" style="">
+              <!-- Slide -->
+              <div tabindex="" class="swiper-slide">
+                <div style="width:100%">
+                  <a href="$httpUrl('Product-Show','pid','204774','cid','81D','cgid','isabella-collection-womens')$">
+                <img class="lazy-load" src="SwiftwaterEdit_Tan.jpg?$staticlink$" title="Crocs pour femmes Chaussures à bride arrière Isabella" alt="" />
+                <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                Crocs pour femmes<br />Chaussures à bride arrière Isabella
+                </p>
+              </a>
+                </div>
+              </div>
+              <!-- end slide -->
+              <!-- Slide -->
+              <div tabindex="" class="swiper-slide">
+                <div style="width:100%">
+                  <a href=" $httpUrl('Product-Show','pid','202467','cid','001','cgid','isabella-collection-womens')$">
+                <img class="lazy-load image-hero" src="SwiftwaterEdit_BrownFlips.jpg?$staticlink$" title="  Crocs pour femmes Sandales Isabella avec bride en T"  alt="" />
+                <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                    Crocs pour femmes<br />Sandales Isabella avec bride en T
+                </p>
+              </a>
+                </div>
+              </div>
+              <!-- end slide -->
+
+
+              <div tabindex="" class="swiper-slide swiper-slide-active">
+                <div style="width:100%">
+                  <a href=" $httpUrl('Product-Show','pid','204857','cid','41O','cgid','isabella-collection-womens')$">
+                <img class="lazy-load" src="SwiftwaterEdit_BlueFlips.jpg?$staticlink$" alt="" title="Isabella de Crocs pour femmes Tongs à talon compensé et à imprimés " />
+                <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                  Isabella de Crocs pour femmes<br />Tongs à talon compensé et à imprimés
+                </p>
+              </a>
+                </div>
+
+              </div>
+              <!-- end slide -->
+
+              <!-- end slide -->
+            </div>
+          </div>
+          <!-- </div> -->
+          <div class="swiper-pagination"></div>
+          <div class="sideNext text-left">
+            <button tabindex="-1" type="button" class=""><span class="sr-only">article suivant</span><span aria-hidden=”true”></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="CTA_seperation_margin flexbox-column">
+        <div class ="col-lg-6 col-md-6 col-sm-8 col-xs-11">
+        <a href="$httpUrl('Search-Show','cgid','isabella-collection-womens')$" role="button" class="cx-button full-width tan-color"> MAGASINER LES CHAUSSURES ISABELLA DE CROCS POUR FEMMES</a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- </FEMININE!!!!> -->
+
+
+  <!-- <STREET SMARTS> -->
+  <div class="STREET-SMARTS cs_container-crocs">
+    <div class="cx-heavy-brand-font larger tan-headline text-center"> MILIEU URBAIN : <br> VIVRE SA VIE EN CITILANE</div>
+    <div class="DESKTOP_STREET_SMARTS flexbox_default">
+      <div class="flexbox-column">
+        <img src="XLandingPage_WhiteOutfitGirl.png?$staticlink$" alt="" id="" class="DESKTOP hidden-sm hidden-xs" />
+        <img src="XLandingPage_WhiteOutfitGirl.png?$staticlink$" alt="" id="" class="MOBILE hidden-md hidden-lg col-lg-12" />
+        <div class="MOBILE cx-brand-font text-center mobile-paragraph hidden-md hidden-lg col-xs-12" style="border-top: none;">
+          Inspiré des espadrilles sans-gêne classiques avec une allure de surf. Personnellement, nous préférons les Rokas sous des leggings ou un t-shirt habillé.  Les hommes peuvent mélanger les choses en les associant avec un denim à lisière et un Richelieu détaché pour une allure bon chic bon genre.
+        </div>
+      </div>
+      <div class="cx-panel col-lg-6 col-lg-pull-1 col-md-6 col-md-pull-1 hidden-sm hidden-sm hidden-xs">
+        <div class="DESKTOP cx-panel-body cx-brand-font text-center deskop-paragraph" style="border-top: none;">
+          Inspiré des espadrilles sans-gêne classiques avec une allure de surf. Personnellement, nous préférons les Rokas sous des leggings ou un t-shirt habillé.  Les hommes peuvent mélanger les choses en les associant avec un denim à lisière et un Richelieu détaché pour une allure bon chic bon genre.
+        </div>
+      </div>
+    </div>
+
+    <div class="jordans-swiper" style="">
+      <div class="swiperCarouselWrapper productCarousel sweater-slide-wrapper">
+        <div id="WaysToWearSlider" class="adaCarousel outsideNavigation swiper-container-horizontal">
+          <div class="sidePrev text-left">
+            <button type="button" tabindex="-1" class=""><span class="sr-only">article précédent</span><span aria-hidden=”true”></span></button>
+          </div>
+          <!-- <div class = "ya"> -->
+          <div class="swiper-wrapper" style="">
+            <!-- Slide -->
+            <div tabindex="" class="swiper-slide">
+              <a href=" $httpUrl('Product-Show','pid','204622','cid','101','cgid','women-citilane-collection')$">
+                    <img class="lazy-load" src="RokaWhite.jpg?$staticlink$" title= "CitiLane pour femmes Sans-gêne Roka"  alt="" />
+                    <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                      CitiLane pour femmes <br /> Sans-gêne Roka
+                    </p>
+                  </a>
+            </div>
+            <!-- end slide -->
+            <!-- Slide -->
+            <div tabindex="" class="swiper-slide">
+              <a href=" $httpUrl('Product-Show','pid','204623','cid','0CV','cgid','women-citilane-collection')$">
+                    <img class="lazy-load image-hero" src="RokaFloral.jpg?$staticlink$" title= "Sans-gêne CitiLane pour femmes Sans-gêne" alt="" />
+                    <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                    Sans-gêne CitiLane pour femmes<br />Sans-gêne
+                    </p>
+                  </a>
+            </div>
+            <!-- end slide -->
+            <div tabindex="" class="swiper-slide swiper-slide-active">
+              <a href=" $httpUrl('Product-Show','pid','204884','cid','0DA','cgid','women-citilane-collection')$">
+                    <img class="lazy-load" src="RokaGrey.jpg?$staticlink$" title="CitiLane pour femmes  Roka Court" alt="" />
+                    <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                      CitiLane pour femmes<br /> Roka Court
+                    </p>
+                  </a>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <div class="swiper-pagination"></div>
+        <div class="sideNext text-left">
+          <button tabindex="-1" type="button" class=""><span class="sr-only">article suivant</span><span aria-hidden=”true”></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="flexbox-column CTA_seperation_margin">
+      <div class = "col-lg-6 col-md-6 col-sm-8 col-xs-11">
+      <a href = "$httpUrl('Search-Show','cgid','women-citilane-collection')$" role="button" class="cx-button full-width tan-color">MAGASINER LES CHAUSSURES CITILANE</a>
+    </div>
+    </div>
+  </div>
+  <!-- </STREET SMARTS> -->
+
+  <!-- <ATHLETIC_ATTITUDE> -->
+  <div class="ATHLETIC_ATTITUDE cs_container-crocs">
+    <div class="cx-heavy-brand-font larger tan-headline text-center">ATTITUDE ATHLÉTIQUE : <br> SWIFTWATER EN MOUVEMENT</div>
+    <div class="flexbox_default">
+      <section class="first_container flexbox_default">
+
+        <div class="col-lg-6 col-md-7 col-sm-7 flexbox-column hidden-sm hidden-xs">
+          <p class="DESKTOP-LG cx-brand-font larger text-center deskop-paragraph hidden-md hidden-sm hidden-xs" style="margin-bottom: 4vw; margin-top: 4vw;">  Réchauffez-vous. Détendez-vous. Faites en sorte que toutes vos courses soient faites dans le confort total alors que vous parcourez la ville. Grâce à leur inspiration sportive, elles s'harmonisent mieux avec un pantalon de yoga, un chandail à capuchon ou un débardeur, une jupe plus longue et une blouse sans manches </p>
+          <p class="DESKTOP-MD cx-brand-font larger text-center deskop-paragraph hidden-lg hidden-sm hidden-xs" style="margin-bottom: 4vw; margin-top: 4vw;">  Réchauffez-vous. Détendez-vous. Faites en sorte que toutes vos courses soient faites dans le confort total alors que vous parcourez la ville. Grâce à leur inspiration sportive, elles s'harmonisent mieux avec un pantalon de yoga, un chandail à capuchon ou un débardeur, une jupe plus longue et une blouse sans manches</p>
+          <a href = "$httpUrl('Product-Show','pid','203997','cid','066','cgid','swiftwater-collection-womens')$"><img src="AthleticBlackSideShoe.jpg?$staticlink$" alt="" title= "Sans-gênes Swiftwater à courroie croisée pour femmes" class="hidden-sm hidden-xs" id="" /></a>
+        </div>
+        <div class="col-lg-6 col-md-5 col-sm-5 hidden-xs hidden-sm">
+          <img src="XLandingPage_WomanWhiteHoodie.jpg?$staticlink$" alt="" id="" />
+        </div>
+      </section>
+    </div>
+    <section class="second_container flexbox_default">
+      <img src="DesktopSwiftwaterPolaroids.jpg?$staticlink$" alt="" id="" class="DESKTOP hidden-sm hidden-xs" />
+      <img src="SwiftwaterMobile.jpg?$staticlink$" alt="" id="" class="MOBILE col-xs-12 hidden-md hidden-lg" />
+    </section>
+    <p class="MOBILE cx-brand-font larger text-center mobile-paragraph hidden-md hidden-lg col-xs-12">  Réchauffez-vous. Détendez-vous. Faites en sorte que toutes vos courses soient faites dans le confort total alors que vous parcourez la ville. Grâce à leur inspiration sportive, elles s'harmonisent mieux avec un pantalon de yoga, un chandail à capuchon ou un débardeur, une jupe plus longue et une blouse sans manches.</p>
+
+    <div class="jordans-swiper" style="">
+      <div class="swiperCarouselWrapper productCarousel sweater-slide-wrapper">
+        <div id="WaysToWearSlider" class="adaCarousel outsideNavigation swiper-container-horizontal">
+          <div class="sidePrev text-left">
+            <button type="button" tabindex="-1" class=""><span class="sr-only">article précédent</span><span aria-hidden=”true”></span></button>
+          </div>
+          <!-- <div class = "ya"> -->
+          <div class="swiper-wrapper" style="">
+            <!-- Slide -->
+            <div tabindex="" class="swiper-slide">
+              <a href=" $httpUrl('Product-Show','pid','203998','cid','4HP','cgid','swiftwater-collection-womens')$">
+                    <img class="lazy-load" src="PurpleFlip.jpg?$staticlink$" title="Women's Swiftwater Sandal" alt="Swiftwater pour femmes Sandales à sangles" />
+                    <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                      Swiftwater pour femmes<br />Sandales à sangles
+                    </p>
+                  </a>
+            </div>
+            <!-- end slide -->
+            <!-- Slide -->
+            <div tabindex="" class="swiper-slide">
+              <a href=" $httpUrl('Product-Show','pid','204804','cid','410','cgid','swiftwater-collection-womens')$" class="flexbox-column">
+                    <img class="lazy-load image-hero" src="SwiftwaterEdit_1.jpg?$staticlink$"  title= "Swiftwater pour femmes<br />Sandales à sangles" alt="Swiftwater pour femmes<br />Sandales à sangles" />
+                    <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                    Swiftwater pour femmes<br />Sandales à sangles
+                    </p>
+                  </a>
+            </div>
+            <!-- end slide -->
+            <div tabindex="" class="swiper-slide swiper-slide-active">
+              <a href="  $httpUrl('Product-Show','pid','204597','cid','019','cgid','swiftwater-collection-womens')$">
+                    <img class="lazy-load" src="PinkFlip.jpg?$staticlink$" title = "Women's Swiftwater Mesh Sandal" alt="  Swiftwater pour femmes  Sandales en filet" />
+                    <p class = "cx-brand-font ways-to-wear-shoe-description text-center">
+                        Swiftwater pour femmes<br /> Sandales en filet
+                    </p>
+                  </a>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+        <div class="swiper-pagination"></div>
+        <div class="sideNext text-left">
+          <button tabindex="-1" type="button" class=""><span class="sr-only">article suivant</span><span aria-hidden=”true”></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="flexbox-column CTA_seperation_margin">
+      <div class = "col-lg-6 col-md-6 col-sm-8 col-xs-11">
+          <a href = "$httpUrl('Search-Show','cgid','swiftwater-collection-womens')$" role="button" class="cx-button tan-color full-width">MAGASINER LES SANDALES SWIFTWATER POUR FEMMES</a>
+      </div>
+    </div>
+  </div>
+  <!-- </ENDING_ATHLETIC_ATTITUDE> -->
+
+</div>
+
+
+<script type="text/javascript">
+  app.productCarousel = {
+    init: function() {
+      $(".productCarousel>div").each(function() {
+        var $this = $(this);
+
+        var carouselID = "productCarousel" + Math.ceil(Math.random() * 1000000000000000);
+        $this.attr("id", carouselID);
+
+        $this.find("a").not(".carouselLink").attr("tabindex", "-1");
+
+        var thisSwiper = app.carousel.carousels[carouselID] = new Swiper('#' + carouselID, {
+          a11y: true,
+          nextButton: '.sideNext',
+          prevButton: '.sidePrev',
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          roundLengths: false,
+          breakpoints: {
+            1119: {
+              slidesPerView: 3,
+              slidesPerGroup: 3
+            },
+            879: {
+              slidesPerView: 3,
+              slidesPerGroup: 3
+            },
+            659: {
+              slidesPerView: 2,
+              slidesPerGroup: 2
+            },
+            399: {
+              slidesPerView: 2,
+              slidesPerGroup: 1,
+              freeModeSticky: true,
+              // slidesPerRow: 3,
+              setWrapperSize: false,
+              autoHeight: false,
+              slidesOffsetBefore: -10, // in px
+              slidesOffsetAfter: -10, // in px
+              spaceBetween: -5,
+              initialSlide: 1,
+              centeredSlides: true // in px
+              // slidesOffsetAfter: -20
+            }
+          }
+        });
+
+        if (pageData.pageType == 'category' || pageData.pageType == 'search') {
+          app.quickView.init($this);
+        }
+        app.producttile.initPromotions($this);
+        app.producttile.initSwatchHover($this);
+      });
+    }
+  };
+</script>

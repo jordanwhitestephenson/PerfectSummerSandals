@@ -1,0 +1,737 @@
+<style>
+	.crocs-at-work footer,
+	.crocs-at-work header,
+	.crocs-at-work section {
+		display: block
+	}
+.promo-drawer {
+	display: none;
+}
+	.crocs-at-work div,
+	.crocs-at-work h1,
+	.crocs-at-work h2,
+	.crocs-at-work h3,
+	.crocs-at-work h4,
+	.crocs-at-work h5,
+	.crocs-at-work h6,
+	.crocs-at-work p,
+	.crocs-at-work blockquote,
+	.crocs-at-work a,
+	.crocs-at-work acronym,
+	.crocs-at-work address,
+	.crocs-at-work big,
+	.crocs-at-work cite,
+	.crocs-at-work code,
+	.crocs-at-work del,
+	.crocs-at-work dfn,
+	.crocs-at-work em,
+	.crocs-at-work img,
+	.crocs-at-work ins,
+	.crocs-at-work kbd,
+	.crocs-at-work q,
+	.crocs-at-work s,
+	.crocs-at-work samp,
+	.crocs-at-work small,
+	.crocs-at-work strike,
+	.crocs-at-work strong,
+	.crocs-at-work sub,
+	.crocs-at-work sup,
+	.crocs-at-work tt,
+	.crocs-at-work var,
+	.crocs-at-work b,
+	.crocs-at-work u,
+	.crocs-at-work i,
+	.crocs-at-work center,
+	.crocs-at-work dl,
+	.crocs-at-work dt,
+	.crocs-at-work dd,
+	.crocs-at-work ol,
+	.crocs-at-work ul,
+	.crocs-at-work li,
+	.crocs-at-work fieldset,
+	.crocs-at-work form,
+	.crocs-at-work label,
+	.crocs-at-work legend,
+	.crocs-at-work table,
+	.crocs-at-work caption,
+	.crocs-at-work tbody,
+	.crocs-at-work tfoot,
+	.crocs-at-work thead,
+	.crocs-at-work tr,
+	.crocs-at-work th,
+	.crocs-at-work td,
+	.crocs-at-work canvas,
+	.crocs-at-work embed,
+	.crocs-at-work footer,
+	.crocs-at-work header,
+	.crocs-at-work output,
+	.crocs-at-work ruby,
+	.crocs-at-work section,
+	.crocs-at-work summary,
+	.crocs-at-work time,
+	.crocs-at-work mark,
+	.crocs-at-work audio,
+	.crocs-at-work video {
+		border: 0;
+		font: inherit;
+		font-size: 100%;
+		margin: 0;
+		padding: 0;
+		vertical-align: baseline
+	}
+	/*
+	html {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-text-size-adjust: 100%;
+		-webkit-overflow-scrolling: touch
+	}
+	*/
+
+	.crocs-at-work *,
+	.crocs-at-work :before,
+	.crocs-at-work :after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit
+	}
+
+	.crocs-at-work {
+		word-wrap: break-word
+	}
+
+	.crocs-at-work h1,
+	.crocs-at-work h2,
+	.crocs-at-work h3,
+	.crocs-at-work h4,
+	.crocs-at-work h5,
+	.crocs-at-work h6,
+	.crocs-at-work p {
+		margin: 0;
+		padding: 0
+	}
+
+	.crocs-at-work a {
+		text-decoration: none
+	}
+
+	.crocs-at-work strong {
+		font-weight: 700
+	}
+
+	.crocs-at-work em {
+		font-style: italic
+	}
+
+	.crocs-at-work dl,
+	.crocs-at-work dd {
+		margin: 0
+	}
+
+	.crocs-at-work table {
+		border-collapse: collapse;
+		border-spacing: 0
+	}
+
+	.crocs-at-work address {
+		font-style: normal
+	}
+
+	.crocs-at-work fieldset {
+		padding: 0;
+		margin: 0;
+		border: 0
+	}
+
+	.crocs-at-work img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		border: 0
+	}
+
+	.crocs-at-work:before {
+		content: "small";
+		display: none
+	}
+
+	@media(min-width:48em) {
+		.crocs-at-work:before {
+			content: "medium"
+		}
+	}
+
+	@media(min-width:64em) {
+		.crocs-at-work:before {
+			content: "large"
+		}
+	}
+
+	.crocs-at-work .button {
+		display: inline-block;
+		color: #186172;
+		background-color: transparent;
+		border: .1875em solid #186172;
+		padding: .875em 1em .75em;
+		text-transform: uppercase;
+		font-family: proxima_novablack, Tahoma, sans-serif;
+		font-size: .875em;
+		font-weight: 700;
+		-webkit-transition: background-color .25s ease-in-out;
+		transition: background-color .25s ease-in-out
+	}
+
+	.crocs-at-work .button:visited {
+		color: #186172
+	}
+
+	.crocs-at-work .button:hover {
+		background-color: #186172;
+		color: #fff;
+		text-decoration: none
+	}
+
+	.crocs-at-work .button:active {
+		background-color: #a3c0c7
+	}
+
+	.crocs-at-work .button--alt-1 {
+		border-color: #d70000;
+		color: #d70000
+	}
+
+	.crocs-at-work .button--alt-1:visited {
+		color: #d70000
+	}
+
+	.crocs-at-work .button--alt-1:hover {
+		background-color: #d70000;
+		color: #fff;
+	}
+
+	.crocs-at-work .button--alt-1:active {
+		background-color: #ef9999
+	}
+
+	.crocs-at-work .button--alt-2 {
+		border-color: #5a5a5a;
+		color: #5a5a5a
+	}
+
+	.crocs-at-work .button--alt-2:visited {
+		color: #5a5a5a
+	}
+
+	.crocs-at-work .button--alt-2:hover {
+		background-color:#5a5a5a;
+		color: #fff;
+	}
+
+	.crocs-at-work .button--alt-2:active {
+		background-color: #ccc
+	}
+
+	@media(min-width:30em) {
+		.crocs-at-work .button {
+			padding: .875em 1.5em .75em
+		}
+	}
+
+	.crocs-at-work h1,
+	.crocs-at-work h2,
+	.crocs-at-work h3 {
+		font-family: proxima_novablack, Tahoma, sans-serif;
+		font-weight: 700;
+		line-height: 1.125;
+		text-transform: uppercase
+	}
+
+	.crocs-at-work h2 {
+		font-size: 1.75em;
+		margin-bottom: 0em
+	}
+
+	@media(min-width:30em) {
+		.crocs-at-work h2 {
+			font-size: 2.25em
+		}
+	}
+
+	.crocs-at-work a {
+		color: #444;
+	}
+
+	.crocs-at-work a:visited {
+		color: #444;
+	}
+
+	.crocs-at-work a:hover {
+		color: #444;
+		text-decoration: underline
+	}
+
+	.crocs-at-work a:active {
+		color: #444;
+	}
+
+	.crocs-at-work {
+		color: #444;
+		font-family: proxima_novaregular, Tahoma, sans-serif;
+		font-size: 1em;
+		font-weight: 400;
+		line-height: 1.375
+	}
+
+	.crocs-at-work p {
+		margin: 0 0 1.5rem
+	}
+
+
+	.crocs-at-work .content-pod {
+		text-align: center
+	}
+
+	.crocs-at-work .content-pod__title {
+		font-size: 1.625em;
+		margin-bottom: .625em;
+		color: #186172
+	}
+
+	.crocs-at-work .content-pod--alt-1 .content-pod__title {
+		color: #d70000
+	}
+
+	.crocs-at-work .content-pod--alt-2 .content-pod__title {
+		color: #5a5a5a
+	}
+
+	.crocs-at-work .content-pod__image-wrap {
+		margin-bottom: 1em;
+		display: block
+	}
+
+	.crocs-at-work .content-pod__image {
+		margin: 0 auto
+	}
+
+	.crocs-at-work .content-pod--horiz {
+		margin: 0 auto
+	}
+
+	.crocs-at-work .content-pod--horiz+.content-pod--horiz {
+		margin-top: 4em
+	}
+
+	@media(min-width:48em) {
+		.crocs-at-work .content-pod--horiz {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			max-width: 58.0625rem
+		}
+		.crocs-at-work .content-pod--horiz+.crocs-at-work {
+			margin-top: 6em
+		}
+		.crocs-at-work .content-pod--horiz .content-pod__text-wrap {
+			width: calc(50% - 2.5em)
+		}
+		.crocs-at-work .content-pod--horiz .content-pod__image-wrap {
+			width: calc(50% - 1.25em);
+			margin-bottom: 0
+		}
+		.crocs-at-work .content-pod--image-wide .content-pod__text-wrap {
+			width: calc(40% - 2.5em)
+		}
+		.crocs-at-work .content-pod--image-wide .content-pod__image-wrap {
+			width: calc(60% - 1.25em)
+		}
+		.crocs-at-work .content-pod--image-last .content-pod__text-wrap {
+			-webkit-box-ordinal-group: 1;
+			-ms-flex-order: 0;
+			order: 0
+		}
+		.crocs-at-work .content-pod--image-last .content-pod__image-wrap {
+			-webkit-box-ordinal-group: 2;
+			-ms-flex-order: 1;
+			order: 1
+		}
+	}
+
+	.crocs-at-work .content-pod-list {
+		padding: 0 0 4em
+	}
+
+	@media(min-width:48em) {
+		.crocs-at-work .content-pod-list {
+			padding-bottom: 6em
+		}
+	}
+
+	@media(max-width:47.99em) {
+		.crocs-at-work .grid__item {
+			margin: 0 auto
+		}
+		.crocs-at-work .grid__item+.grid__item {
+			margin-top: 4em
+		}
+	}
+
+	@media(min-width:48em) {
+		.crocs-at-work .grid--3 {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between
+		}
+		.crocs-at-work .grid--3 .grid__item {
+			width: 32%
+		}
+		.crocs-at-work .grid--3 .grid__item+.grid__item {
+			margin-left: 2%
+		}
+	}
+
+	.crocs-at-work .hero {
+		background-color: #f0f0f0;
+		text-align: center
+	}
+
+	.crocs-at-work .hero__inner-wrap {
+		padding: 1.5em 1em
+	}
+
+	.crocs-at-work .hero__logo {
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 1.75em
+	}
+
+	.crocs-at-work .hero__title {
+		margin-bottom: .625em;
+		font-size: 1.625em;
+		font-weight: 700;
+		color: #186172
+	}
+
+	@media(min-width:30em) {
+		.crocs-at-work .hero__title {
+			font-size: 1.75em
+		}
+	}
+
+	@media(min-width:48em) {
+		.crocs-at-work .hero {
+			position: relative
+		}
+		.crocs-at-work .hero__inner-wrap {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: end;
+			-ms-flex-pack: end;
+			justify-content: flex-end;
+			padding: 2.5em 1em
+		}
+		.crocs-at-work .hero__inner-wrap:before {
+			content: '';
+			width: 50%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			background-image: url("hero.jpg?$staticlink$");
+			background-repeat: no-repeat;
+			background-size: auto 100%;
+			background-position: center right
+		}
+		.crocs-at-work .hero__content {
+			width: 50%
+		}
+	}
+
+	@media(min-width:60em) {
+		.crocs-at-work .hero__inner-wrap {
+			padding: 3.5em 1.25em
+		}
+		.crocs-at-work .hero__title {
+			font-size: 2.375em
+		}
+	}
+
+	.crocs-at-work .review-pod {
+		max-width: 18.5em
+	}
+
+	.crocs-at-work .review-pod.grid__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column
+	}
+
+	.crocs-at-work .review-pod.grid__item .review-pod__text-wrap {
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1
+	}
+
+	.crocs-at-work .review-pod.grid__item .content-pod__cta {
+		-ms-flex-item-align: center;
+		align-self: center
+	}
+
+	.crocs-at-work .review-pod__rating {
+		margin: 0 auto 1em
+	}
+
+	.crocs-at-work .review-pod__quote {
+		margin-bottom: 1.5em
+	}
+
+	.crocs-at-work .quote__content {
+		font-size: 1.125em;
+		margin-bottom: .625em
+	}
+
+	.crocs-at-work .quote__cite {
+		font-size: .875em
+	}
+
+	.crocs-at-work .quote__location {
+		font-style: italic
+	}
+
+	.crocs-at-work .reviews {
+		text-align: center;
+		padding: 0 0 4em
+	}
+
+	.crocs-at-work .reviews__header {
+		margin-bottom: 2em
+	}
+
+	.crocs-at-work .reviews__title {
+		margin-bottom: .25em
+	}
+
+	.crocs-at-work .reviews__description {
+		margin-bottom: 0
+	}
+
+	@media(min-width:48em) {
+		.crocs-at-work .reviews {
+			padding-bottom: 6em
+		}
+	}
+
+	.crocs-at-work .social-media-gallery {
+		text-align: center
+	}
+
+	.crocs-at-work .social-media-gallery__title {
+		text-transform: none
+	}
+
+	.crocs-at-work .page-width {
+		max-width: 58.0625rem;
+		margin: 0 auto
+	}
+
+	.crocs-at-work .content-wrap {
+		padding: 4em 1em
+	}
+
+	@media(min-width:48em) {
+		.crocs-at-work .content-wrap {
+			padding: 6em 1em
+		}
+	}
+
+	.crocs-at-work .olapic-carousel-links a.olapic-gallery-link {
+
+		color: #444;
+		font-family: 'proxima_novaregular', Arial, sans-serif;
+		font-weight: bold;
+		margin: 6px 0;
+		border: 1px solid #444;
+		display: inline-block;
+		width: auto;
+		font-size: 18px;
+		line-height: 1.1;
+		padding: 5px;
+	}
+
+	.crocs-at-work .olapic-header {
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		margin: 0px 0 20px 0;
+		text-align: center;
+	}
+  @media (max-width: 480px){
+    #crocs_at_work_logo_image {
+      width: 35%;
+      margin-top: -15px;
+      margin-bottom: 0%;
+    }
+  }
+
+  @media(min-width: 481px) {
+    #crocs_at_work_logo_image {
+      width: 35%;
+      margin-bottom: 0px;
+    }
+  }
+</style>
+
+<div class="crocs-at-work">
+	<div class="hero">
+		<div class="hero__inner-wrap page-width">
+			<div class="hero__content">
+				<img class="hero__logo" id = "crocs_at_work_logo_image" src="CrocsAtWork-Logo.svg?$staticlink$" alt="Crocs At Work" />
+				<div class="hero__title" style="font-family: proxima_novablack, Tahoma, sans-serif;font-weight: 700;line-height: 1.125; text-transform: uppercase">Certifiably<br />Comfortable&trade;</div>
+				<p class="hero__description">Designed for people in healthcare, hospitality and other on-your-feet service industries, the Crocs At Work Collection is about more than safety and functionality. They feature the world-class comfort of Crocs, slip-resistant treads, elegantly simple
+					design and the smart features your job demands.</p>
+				<a class="hero__cta button" href="$httpUrl('Search-Show','cgid','healthcare-shoes')$">Shop All Medical Footwear</a>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrap">
+		<div class="page-width">
+			<div class="content-pod-list">
+				<div class="content-pod content-pod--horiz content-pod--image-last content-pod--alt-1">
+					<a href="$httpUrl('Product-Show','pid','10073','cid','001','cgid','healthcare-shoes')$" class="content-pod__image-wrap">
+						<img class="content-pod__image" src="two-people.jpg?$staticlink$" title = ""alt="Two people wearing Crocs" />
+					</a>
+					<div class="content-pod__text-wrap">
+						<h2 class="content-pod__title">Exceeding Standards</h2>
+						<p class="content-pod__description">Do your shoes live up to your career specialty? Crocs Specialist Clogs include thicker construction at the toes and metatarsal areas, increased arch support, higher heels and nubbed Croslite™ foam footbeds for a massage-like experience with every
+							step.
+						</p>
+						<a class="button button--alt-1 " href="$httpUrl('Product-Show','pid','10073','cid','001','cgid','healthcare-shoes')$">Shop Specialist</a>
+					</div>
+				</div>
+				<div class="content-pod content-pod--horiz">
+					<a href="$httpUrl('Product-Show','pid','204046','cid','0J2','cgid','healthcare-shoes')$" class="content-pod__image-wrap">
+						<img class="content-pod__image" src="inside-shoe.jpg?$staticlink$" title= "" alt="Inside of a Crocs Neria Pro Graphic Clog" />
+					</a>
+					<div class="content-pod__text-wrap">
+						<h2 class="content-pod__title">Style, Upgraded</h2>
+						<p class="content-pod__description">Brighten your shift every step of the day with lightweight Neria Pro Graphic clogs featuring inspired graphics. Designed with a relaxed fit—a little movement in the heel is normal—means a dose of freedom without sacrificing the security of a closed-toe
+							shoe. Plus, Triple Crocs Comfort™: contoured molded footbeds with moisture wicking liners to get you through the rounds.</p>
+						<a class="button " href="$httpUrl('Product-Show','pid','204046','cid','0J2','cgid','healthcare-shoes')$">Shop Neria pro graphic clog</a>
+					</div>
+				</div>
+				<div class="content-pod content-pod--horiz content-pod--image-last content-pod--alt-2">
+					<a href="$httpUrl('Product-Show','pid','10876','cid','067','cgid','healthcare-shoes')$" class="content-pod__image-wrap">
+						<img class="content-pod__image" src="treads.jpg?$staticlink$" title = "" alt="Crocs Lock slip-resistant treads" />
+					</a>
+					<div class="content-pod__text-wrap">
+						<h2 class="content-pod__title">Tread With Confidence</h2>
+						<p class="content-pod__description" style="font-size: 15.5px;">Our Crocs Lock™slip-resistant treads add traction for those times when the workplace floors become slippery. Croslite™ foam construction results in easy to clean shoes that rinse and dry quickly. Some styles are also ASTM F2913 tested, CE Ceritfied,
+							and meet or exceed EN ISO 20347:2012, OB, SRC.</p>
+						<a class="button button--alt-2 " href="$httpUrl('Product-Show','pid','10876','cid','067','cgid','healthcare-shoes')$">Shop Mercy Work</a>
+					</div>
+				</div>
+				<div class="content-pod content-pod--horiz content-pod--image-wide content-pod--alt-1">
+					<a href="$httpUrl('Search-Show','cgid','healthcare-shoes')$" class="content-pod__image-wrap">
+						<img class="content-pod__image" src="CrocsAtWork-LP_0001_2.png?$staticlink$" alt="" />
+					</a>
+					<div class="content-pod__text-wrap">
+						<h2 class="content-pod__title">Nurse Your Patients, Not Your Feet</h2>
+						<p class="content-pod__description">The Crocs At Work Collection is proof that work shoes don’t have to be boring or leave you feeling flat-footed and fatigued. With a combination of comfort, style and safety features, they take care of your feet so you can take care of your patients
+							and make the rounds with energy to spare.</p>
+						<a class="button button--alt-1 " href=" $httpUrl('Search-Show','cgid','healthcare-shoes')$">Shop all medical footwear</a>
+					</div>
+				</div>
+			</div>
+			<section class="reviews">
+				<header class="reviews__header">
+					<h2 class="reviews__title">Tested by the Best</h2>
+					<p class="reviews__description">These reviews speak for themselves.</p>
+				</header>
+				<div class="review-pod-list grid grid--3">
+					<div class="content-pod review-pod grid__item">
+						<a href="$httpUrl('Product-Show','pid','10876','cid','067','cgid','healthcare-shoes')$" class="content-pod__image-wrap">
+							<img class="content-pod__image" src="CAW-LandingPage-Products_0002_mercy3.jpg?$staticlink$" title= "Mercy Work" alt="Mercy Work product" />
+						</a>
+						<div class="content-pod__text-wrap review-pod__text-wrap">
+							<h2 class="content-pod__title">Mercy Work</h2>
+							<img class="review-pod__rating" src="rating-stars.jpg?$staticlink$" alt="5 star rating" />
+							<blockquote class="quote review-pod__quote">
+								<p class="quote__content">"These are my favorite work shoes! They are so comfortable and that helps for a 8 hour shift!"</p>
+								<footer>
+									<cite class="quote__cite">
+										<div class="quote__author">Rachel</div>
+										<div class="quote__location">Port Kent, NY</div>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+						<a class="button content-pod__cta" href="$httpUrl('Product-Show','pid','10876','cid','067','cgid','healthcare-shoes')$">Shop Mercy Work</a>
+					</div>
+					<div class="content-pod review-pod grid__item">
+						<a href="$httpUrl('Product-Show','pid','204046','cid','0J2','cgid','healthcare-shoes')$" class="content-pod__image-wrap">
+							<img class="content-pod__image" src="CAW-LandingPage-Products_0000_neria1.jpg?$staticlink$" title= "Neria Pro Graphic Clog" alt="Neria Pro Graphic Clog" />
+						</a>
+						<div class="content-pod__text-wrap review-pod__text-wrap">
+							<h2 class="content-pod__title">Neria Pro<br />Graphic Clog</h2>
+							<img class="review-pod__rating" src="rating-stars.jpg?$staticlink$" alt="5 star rating" />
+							<blockquote class="quote review-pod__quote">
+								<p class="quote__content">"Love them. Look and feel great. Wear them to work (as a nurse) and to play. Biking&#x2F;walking in the rain. Very comfortable."</p>
+								<footer>
+									<cite class="quote__cite">
+										<div class="quote__author">Gretchen</div>
+										<div class="quote__location">Saginaw, MI</div>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+						<a class="button content-pod__cta" href="$httpUrl('Product-Show','pid','204046','cid','0J2','cgid','healthcare-shoes')$">Shop Neria Pro Graphic Clog</a>
+					</div>
+					<div class="content-pod review-pod grid__item">
+						<a href="$httpUrl('Product-Show','pid','10073','cid','001','cgid','healthcare-shoes')$" class="content-pod__image-wrap">
+							<img class="content-pod__image" src="CAW-LandingPage-Products_0001_specialistNew.jpg?$staticlink$" title= "Specialist" alt="Specialist product" />
+						</a>
+						<div class="content-pod__text-wrap review-pod__text-wrap">
+							<h2 class="content-pod__title">Specialist</h2>
+							<img class="review-pod__rating" src="rating-stars.jpg?$staticlink$" alt="5 star rating" />
+							<blockquote class="quote review-pod__quote">
+								<p class="quote__content">"I have every color of the &quot;specialist&quot;. So comfy for work. No slipping. They are awesome."</p>
+								<footer>
+									<cite class="quote__cite">
+										<div class="quote__author">Penny</div>
+										<div class="quote__location">Englewood, CO</div>
+									</cite>
+								</footer>
+							</blockquote>
+						</div>
+						<a class="button content-pod__cta" href="$httpUrl('Product-Show','pid','10073','cid','001','cgid','healthcare-shoes')$">Shop Specialist</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="social-media-gallery">
+				<h2 class="social-media-gallery__title">Share Your #CrocsAtWork</h2>
+				<div class="clear"></div>
+				<div class="js-olapic olapic-carousel" data-source="signal" aria-live="polite" data-widgets="Homepage">
+					<div class="olapic-carousel-header displayFlex">
+					</div>
+				</div>
+				<div class="clear"></div>
+			</section>
+		</div>
+	</div>
+</div>

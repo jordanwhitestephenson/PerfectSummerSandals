@@ -1,0 +1,50 @@
+<!-- ADN Tracker[공통] start -->
+<script type="text/javascript">
+var adn_param = adn_param || [];
+if(pageData.pageType === "home") {
+  adn_param.push([{
+   ui:'100287',
+   ut:'Home'
+  }]);
+}
+if(pageData.pageType === "product") {
+  adn_param.push([{
+   ui:'100287',
+   ut:'Item',
+   items:
+     {i: pageData.productID}
+  }]);
+}
+
+
+if(pageData.pageType === "cart") {
+  var cartArray =   pageData.cartItems;
+  var itemsInCart = [];
+  for (i = 0; i < cartArray.length; i++) {
+    var productIDs = cartArray[i].id
+    itemsInCart.push(productIDs)
+  }
+  adn_param.push([{
+   ui:'100287',
+   ut:'Cart',
+   items: itemsInCart
+  }]);
+
+}
+
+
+
+if(pageData.pageType === "confirm") {
+  adn_param.push([{
+   ui:'100287',
+   ut:'Purchase',
+   uo: pageData.orderID,
+   up: String(pageData.orderValue)
+  }]);
+}
+
+
+
+</script>
+<script type="text/javascript" async src="//fin.rainbownine.net/js/adn_tags_1.0.0.js"></script>
+<!-- ADN Tracker[공통] end -->

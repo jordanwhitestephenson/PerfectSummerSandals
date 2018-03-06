@@ -1,0 +1,324 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .right_container {
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;*/
+  }
+
+  .jsHero-wrapper .cx-button {
+    color: #666633;
+    border: 2px solid #666633;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #666633;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (max-width:767px) {
+    #mobile_padding {
+      margin-top: 0vh;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+      margin-top: 2vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 23%;
+      right: 56%;
+      font-size: 12px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.4em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 16px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 80%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 19%;
+      right: 66%;
+      font-size: 12px;
+    }
+    .smallest-headline {
+      font-size: 19px;
+      margin-bottom: 2vh;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 3.0em;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 19px;
+      padding: 15px;
+    }
+    .left_container img {
+      max-width: 60%;
+    }
+    .smallest-headline {
+      font-size: 20px;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 3.4em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 100%;
+    }
+    .smallest-headline {
+      font-size: 19px;
+      margin-bottom: 2vh;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 3.1em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.5em;
+      margin-bottom: 1.5vh;
+    }
+    .smallest-headline {
+      font-size: 20px;
+      margin-bottom: 2vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 22px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 100%;
+    }
+  }
+
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+    <div class="js_row">
+
+      <div class="left_container col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 text-center" id="mobile_padding">
+        <div class="DESKTOP right_container text-center hidden-sm hidden-xs">
+            <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #666633;">UP YOUR <br /> CLOG GAME </div>
+        </div>
+
+        <div class="MOBILE right_container text-center hidden-md hidden-lg">
+          <div class="text-container text-center">
+            <img src="/ecom/2017/web/CelebrateClassic_ClassicPage.jpg?$staticlink$" title="" alt="" class="" id="" />
+          </a>
+          </div>
+          <a href="$httpUrl('Search-Show','cgid','clogs')$">
+            <div class="cx-heavy-brand-font largest largest-headline" style="color: #666633;">UP YOUR <br /> CLOG GAME </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-container text-center hidden-sm hidden-xs col-lg-6 col-md-6">
+
+        <img src="/ecom/2017/web/CelebrateClassic_ClassicPage.jpg?$staticlink$" title="" alt="" class="" id="" />
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+<style>
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW, DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'classic-styles', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'classic-styles', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

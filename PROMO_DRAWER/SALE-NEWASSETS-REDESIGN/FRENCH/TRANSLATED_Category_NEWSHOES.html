@@ -1,0 +1,338 @@
+<style>
+  .jsNewSaleHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .jsNewSaleHero-wrapper .cx-button {
+    color: #666600;
+    border: 2px solid #666600;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsNewSaleHero-wrapper .cx-button:hover,
+  .jsNewSaleHero-wrapper .cx-button:focus {
+    background-color: #666600;
+    color: #fff;
+  }
+
+  .jsNewSaleHero-wrapper .js_row-FOOTWEAR {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /*@media (max-width:767px) {
+
+    }
+  }*/
+
+  #mobile_padding {
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+  }
+
+  @media (max-width:320px) {
+
+    .jsNewSaleHero-wrapper .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .jsNewSaleHero-wrapper .largest-headline {
+      font-size: 5.0em;
+      line-height: 0.8;
+      letter-spacing: 5px;
+      margin-bottom: 0vh;
+      margin-top: 1vh;
+    }
+
+    .jsNewSaleHero-wrapper .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+
+    .jsNewSaleHero-wrapper .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .jsNewSaleHero-wrapper .text-container .product_description {
+      position: absolute;
+      top: 23%;
+      right: 56%;
+      font-size: 12px;
+    }
+    .jsNewSaleHero-wrapper .left_container img {
+      max-width: 75%;
+    }
+    .jsNewSaleHero-wrapper .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 1vh;
+      word-spacing: 0px;
+      line-height: 1.1;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .jsNewSaleHero-wrapper .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .jsNewSaleHero-wrapper .largest-headline {
+      font-size: 5.4em;
+      line-height: 1;
+      letter-spacing: 1 margin-bottom: -1vh;
+    }
+
+    .jsNewSaleHero-wrapper .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0vh;
+    }
+    .jsNewSaleHero-wrapper .cta-container .cx-button {
+      font-size: 15px;
+      padding: 7px;
+    }
+
+    .jsNewSaleHero-wrapper .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .jsNewSaleHero-wrapper .left_container img {
+      max-width: 70%;
+    }
+    .jsNewSaleHero-wrapper .text-container .product_description {
+      position: absolute;
+      top: 19%;
+      right: 66%;
+      font-size: 12px;
+    }
+    .jsNewSaleHero-wrapper .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 1vh;
+      word-spacing: 1px;
+      line-height: 1.0;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .jsNewSaleHero-wrapper .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .jsNewSaleHero-wrapper .largest-headline {
+      font-size: 6.5em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .jsNewSaleHero-wrapper .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .jsNewSaleHero-wrapper .cta-container .cx-button {
+      font-size: 14px;
+      padding: 15px;
+    }
+    .jsNewSaleHero-wrapper .left_container img {
+      max-width: 60%;
+    }
+    .jsNewSaleHero-wrapper .smallest-headline {
+      font-size: 17px;
+      margin-bottom: 1vh;
+      word-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    .jsNewSaleHero-wrapper .cta-container .cx-button {
+      width: 42%
+    }
+    .BUTTON-CONTAINER {
+      width: 95%;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .jsNewSaleHero-wrapper .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .jsNewSaleHero-wrapper .largest-headline {
+      font-size: 6.4em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .jsNewSaleHero-wrapper .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .jsNewSaleHero-wrapper .cta-container .cx-button {
+      font-size: 14px;
+      padding: 12px;
+    }
+    .jsNewSaleHero-wrapper .left_container img {
+      max-width: 131%;
+    }
+    .jsNewSaleHero-wrapper .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 1vh;
+      word-spacing: 3px;
+      line-height: 1.3;
+    }
+
+
+    .fancy-container-sale:before,
+    .fancy-container-sale:after {
+      background-color: #666600;
+      content: "";
+      display: inline-block;
+      height: 15px;
+      position: relative;
+      vertical-align: super;
+      width: 55%;
+    }
+
+    .fancy-container-sale:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-sale:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+
+    .jsNewSaleHero-wrapper .cta-container .cx-button {
+      width: 25%
+    }
+    .jsNewSaleHero-wrapper .BUTTON-CONTAINER {
+      width: 85%;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .jsNewSaleHero-wrapper .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .jsNewSaleHero-wrapper .largest-headline {
+      font-size: 8.5em;
+      letter-spacing: 5px;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .jsNewSaleHero-wrapper .small-headline {
+      font-size: 1.5em;
+      margin-bottom: 0vh;
+    }
+    .jsNewSaleHero-wrapper .smallest-headline {
+      font-size: 20px;
+      word-spacing: 3px;
+      line-height: 1.1;
+      margin-bottom: 1vh;
+    }
+
+    .jsNewSaleHero-wrapper .cta-container .cx-button {
+      font-size: 1.1vw;
+      padding: 12px;
+    }
+    .jsNewSaleHero-wrapper .cta-container .cx-button {
+      width: 25%
+    }
+    .jsNewSaleHero-wrapper .BUTTON-CONTAINER {
+      width: 60%;
+    }
+
+    .fancy-container-sale:before,
+    .fancy-container-sale:after {
+      background-color: #666600;
+      content: "";
+      display: inline-block;
+      height: 15px;
+      position: relative;
+      vertical-align: super;
+      width: 55%;
+    }
+
+    .fancy-container-sale:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-sale:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+  }
+
+  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .jsNewSaleHero-wrapper .col-lg-6.less-padding,
+  .jsNewSaleHero-wrapper .cs_container-crocs.less-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .jsNewSaleHero-wrapper .cta-container .cx-button {
+    margin: 0px 10px 0px 10px
+  }
+
+  .less-width {
+    width: 90%;
+  }
+</style>
+
+<div class="jsNewSaleHero-wrapper">
+  <div class="cs_container-fluid less-padding">
+    <div class="js_row-FOOTWEAR">
+      <div class="text-center" id="mobile_padding" style="width: 100%;">
+        <div class="DESKTOP right_container" style="margin-bottom: 10px">
+
+          <div class="cx-brand-font small-headline" style="color:#444;font-weight: bold; letter-spacing: 3px;">NOUVELLES CHAUSSURES EN</div>
+          <div class="cx-heavy-brand-font largest-headline" style="color: #666600;">
+            <span class="">SOLDE</span>
+          </div>
+          <div class="cx-brand-font small-headline" style="color:#444;font-weight: bold; letter-spacing: 3px;  margin-bottom: 1vh;">
+             ÉCONOMISEZ JUSQU'À 50%
+          </div>
+          <p class="DESKTOP hidden-sm hidden-xs cx-brand-font smallest-headline" style="color: #444">
+            <!-- Discount shoes for women. Who doesn't love a great shoe sale? <br /> These stylish women's shoes on sale will be sure to get you on your way for less.</p> <p style="font-size: 14px;" class ="hidden-sm hidden-xs">-->Prix indiqué.*</p>
+          </p>
+          <p class="MOBILE hidden-md hidden-lg cx-brand-font smallest-headline" style="color: #444; margin-top: 8px;">
+            <!--Discount shoes for women. Who doesn't love a great shoe sale? These stylish women's shoes on sale will be sure to get you on your way for less. </p> <p style="font-size: 11px; " class = "hidden-md hidden-lg">-->Prix indiqué.*</p>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

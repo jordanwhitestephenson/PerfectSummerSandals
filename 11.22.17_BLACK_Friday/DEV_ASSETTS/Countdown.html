@@ -1,0 +1,281 @@
+
+<div class="holiday-countdown cs_container-fluid text-center">
+    <div class="cs_row">
+        <div class="col-sm-12 hidden-xs">
+            <div class="cx-copy largest museo-slab">
+                The hottest deals of the season!
+            </div>
+            <div class="cdt-wrapper cx-heavy-brand-font" style="display: none;">
+                <div class="cdt-column js-cdt-days-hide">
+                    <div class="cdt-digits cdt-days"></div>
+                    <div class="cdt-label museo-slab text-uppercase">Days</div>
+                </div>
+                <div class="cdt-separator js-cdt-days-hide">
+                    <div class="cdt-digits">:</div>
+                    <div class="cdt-label museo-slab" aria-hidden="true">&nbsp;</div>
+                </div>
+                <div class="cdt-column">
+                    <div class="cdt-digits cdt-hours"></div>
+                    <div class="cdt-label museo-slab text-uppercase" aria-label="Hours">Hrs</div>
+                </div>
+                <div class="cdt-separator">
+                    <div class="cdt-digits">:</div>
+                    <div class="cdt-label museo-slab" aria-hidden="true">&nbsp;</div>
+                </div>
+                <div class="cdt-column">
+                    <div class="cdt-digits cdt-minutes"></div>
+                    <div class="cdt-label museo-slab text-uppercase" aria-label="Minutes">Min</div>
+                </div>
+                <div class="cdt-separator">
+                    <div class="cdt-digits">:</div>
+                    <div class="cdt-label museo-slab" aria-hidden="true">&nbsp;</div>
+                </div>
+                <div class="cdt-column">
+                    <div class="cdt-digits cdt-seconds"></div>
+                    <div class="cdt-label museo-slab text-uppercase" aria-label="Seconds">Sec</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <h3 class="cx-heading museo-slab">
+                The countdown is on.
+                <span class="visible-xs">Shop before they’re gone.</span>
+            </h3>
+            <a href="$url('Search-Show','cgid','crocs-doorbusters')$" class="cx-button text-uppercase">Shop Doorbusters</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/ecom/2017/web/holiday-countdown/yeOldTimer.min.js?$staticlink$"></script>
+<script>
+$(function() {
+    var win = $(window),
+        timerActivated = false;
+        resizeEvents = 'resize.cdt orientationchange.cdt',
+        options = {
+            utcOffset:   -7, /* Denver MST */
+            year:      2017,
+            month:       10, /* November, zero-based */
+            day:         24, /* not zero-based */
+            hour:         0,
+            min:          0,
+            $tmrWrapper:   $('.cdt-wrapper'),
+            $daysElem:     $('.cdt-wrapper .cdt-days'),
+            $daysWrapElem: $('.cdt-wrapper .js-cdt-days-hide'),
+            $hrsElem:      $('.cdt-wrapper .cdt-hours'),
+            $minElem:      $('.cdt-wrapper .cdt-minutes'),
+            $secElem:      $('.cdt-wrapper .cdt-seconds')
+        },
+        hasMinWidth = function() {
+            return win.width() > 480;
+        },
+        initTimer = function() {
+            if (!timerActivated && hasMinWidth()) {
+                $.yeOldTimer(options);
+                timerActivated = true;
+                win.off(resizeEvents);
+            }
+        };
+    // active timer if viewport width is greater than 480px, or, defer until screen is resized or rotated to an acceptable width
+    hasMinWidth() ? initTimer() : win.on(resizeEvents, initTimer);
+});
+</script>
+
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3454173, 2017-09-21T16:11:10-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: MuseoSlab-500 by exljbris
+ * URL: https://www.myfonts.com/fonts/exljbris/museo-slab/500/
+ * Copyright: Copyright (c) 2009 by Jos Buivenga. All rights reserved.
+ * Licensed pageviews: Unlimited
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3454173
+ *
+ * © 2017 MyFonts Inc
+*/
+-->
+<link type="text/css" rel="stylesheet" href="/ecom/2017/web/holiday-countdown/MyFontsWebfontsKit.css?$staticlink$">
+<style>
+.black-friday-hero {
+    background-color: #d41f27;
+    color: #fff;
+    min-width: 320px;
+}
+.black-friday-hero .black-friday-hero-border {
+    margin: 10px 0;
+    position: relative;
+}
+.black-friday-hero .black-friday-hero-content {
+    max-width: 510px;
+    margin: 0 auto;
+}
+.black-friday-hero .black-friday-text {
+    max-width: 320px;
+    margin: 0 auto;
+}
+.black-friday-hero h2,
+.black-friday-hero h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    line-height: 0.85em;
+    color: #fff;
+    text-shadow: -5px 5px 0 #000;
+    margin: 5px 0;
+}
+.black-friday-hero h2 {
+    font-size: 66px;
+    letter-spacing: 1px;
+}
+.black-friday-hero h3 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.black-friday-hero .btn-col-1 {
+    padding-right: 6px;
+}
+.black-friday-hero .btn-col-2 {
+    padding-left: 6px;
+}
+.black-friday-hero .cx-button {
+    font-size: 16px;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    line-height: 1em;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    padding: 15px;
+}
+.black-friday-hero .cx-button:hover,
+.black-friday-hero .cx-button:focus {
+    background-color: #fff;
+    color: #d41f27;
+}
+.black-friday-hero .black-friday-corner {
+    position: absolute;
+    width: 39px;
+    height: 36px;
+    background: 0 0 no-repeat url('/ecom/2017/web/holiday-countdown/black-friday-corners.png?$staticlink$');
+}
+.black-friday-hero .black-friday-corner-tl {
+    top: -14px;
+    left: -2px;
+}
+.black-friday-hero .black-friday-corner-tr {
+    top: -14px;
+    right: -2px;
+    background-position: -39px 0;
+}
+.black-friday-hero .black-friday-corner-bl {
+    bottom: -14px;
+    left: -2px;
+    background-position: 0 -36px;
+}
+.black-friday-hero .black-friday-corner-br {
+    bottom: -14px;
+    right: -2px;
+    background-position: -39px -36px;
+}
+@media (max-width: 380px) {
+    .black-friday-hero .cx-button {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+}
+@media (min-width: 481px) {
+    .black-friday-hero .black-friday-hero-border {
+        border: 2px solid #fff;
+        margin: 25px 0;
+        padding: 16px 37px;
+    }
+    .black-friday-hero h2 {
+        font-size: 82px;
+    }
+    .black-friday-hero h3 {
+        font-size: 42px;
+    }
+}
+@media (min-width: 768px) {
+    .black-friday-hero h2 {
+        font-size: 113px;
+    }
+    .black-friday-hero .cx-button {
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+}
+
+.holiday-countdown {
+    background-color: #f0f0f0;
+    color: #d41f27;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+.holiday-countdown .museo-slab {
+    font-family: 'MuseoSlab-500', Cambria, Georgia, serif;
+    color: #d41f27;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.holiday-countdown .cx-heading {
+    font-size: 18px;
+    margin: 0;
+}
+.holiday-countdown p.cx-copy {
+    margin-bottom: 0;
+}
+.holiday-countdown .cx-button {
+    font-size: 18px;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    line-height: 1em;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: 2px solid #d41f27;
+    color: #d41f27;
+}
+.holiday-countdown .cx-button:hover,
+.holiday-countdown .cx-button:focus {
+    color: #fff;
+    background-color: #d41f27;
+    outline-color: #d41f27;
+}
+.holiday-countdown .cdt-wrapper {
+    margin-bottom: 5px;
+}
+.holiday-countdown .cdt-wrapper > div {
+    display: inline-block;
+}
+.holiday-countdown .cdt-column {
+    min-width: 90px;
+}
+.holiday-countdown .cdt-digits {
+    font-size: 60px;
+}
+.holiday-countdown .cdt-label {
+    margin-top: -5px;
+    letter-spacing: 3px;
+}
+@media (min-width: 481px) {
+    .holiday-countdown {
+        padding: 20px 15px 15px;
+    }
+    .holiday-countdown .cx-heading {
+        font-size: 20px;
+    }
+    .holiday-countdown .cx-button {
+        font-size: 22px;
+        min-width: 327px;
+        padding: 14px 25px;
+    }
+}
+</style>

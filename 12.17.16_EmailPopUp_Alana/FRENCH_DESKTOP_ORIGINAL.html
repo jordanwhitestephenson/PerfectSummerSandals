@@ -1,0 +1,108 @@
+<style type="text/css">
+
+	.email-signup-popup-error-invalid,
+	.email-signup-popup-error-exists {
+		display: none !important;
+	}
+
+	.error-invalid .email-signup-popup-error-invalid,
+	.error-exists .email-signup-popup-error-exists {
+		display: block !important;
+	}
+
+	.email-signup-success,
+	.signup-success form {
+		display: none;
+	}
+
+	.signup-success .email-signup-success {
+		display: block;
+	}
+
+	.email-signup-lightbox #cboxLoadedContent {
+		background-color: #004976;
+	}
+
+	.email-signup-popup-desktop {
+		padding: 10px 25px;
+		width: 650px;
+	}
+
+	.email-signup-popup-desktop form {
+		padding: 45px 30px;
+		background-color: #FFF;
+		background-image: url('IMG-EmailSignUp-Desktop-229x388px.jpg?$staticlink$');
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: contain;
+	}
+
+	.email-signup-popup-desktop form h2 {
+		color: #db3b00;
+		font-family: 'proxima_novablack', arial, sans-serif;
+		border-bottom: 2px solid #db3b00;
+		font-size: 34px;
+		margin-top: 0;
+		padding-bottom: 8px;
+		margin-bottom: 10px;
+	}
+
+	.email-signup-popup-desktop form button {
+		background-color: #db3b00;
+		border-color: #db3b00;
+		color: #FFF;
+		font-family: 'proxima_novablack', arial, sans-serif;
+	}
+
+	.email-signup-popup-desktop button:hover {
+		border-color: #444;
+	}
+
+	.email-signup-popup-desktop .email-signup-success h2 {
+		color: #db3b00;
+		font-family: 'proxima_novablack', arial, sans-serif;
+		font-size: 37px;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	.email-signup-success {
+		background-color: #FFF;
+		background-image: url('IMG-EmailSignUp-Desktop-229x388px.jpg?$staticlink$');
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: contain;
+		padding: 50px 0;
+	}
+
+	.email-signup-popup-desktop .email-signup-success button {
+		font-family: 'proxima_novablack', arial, sans-serif;
+	}
+
+</style>
+
+<div class="email-signup-popup-desktop cs_container-fluid">
+    <form class="cx-form cs_row">
+		<div class="col-xs-8">
+			<h2 class="cx-heading">BE FIRST TO KNOW</h2>
+			<span class="cx-heading cx-brand-font smaller">Sign up to learn about new arrivals, special offers and more. Enjoy 20% off your first purchase.</span><br/>
+			<br/>
+			<br/>
+			<ul class="text-left cx-copy">
+				<li>
+					<label>Enter your email address</label>
+					<input type="email"/>
+					<span class="email-signup-popup-error-invalid errormessage">Invalid email</span>
+					<span class="email-signup-popup-error-exists errormessage">Already signed up!</span>
+				</li>
+			</ul>
+			<button class="cx-button" type="submit">JOIN NOW</button>
+		</div>
+    </form>
+    <div class="email-signup-success cs_row">
+		<div class="col-xs-8 text-center">
+			<h2 class="cx-heading">THANKS FOR SIGNING UP</h2>
+			<button class="cx-button cx-button-reverse action-close">CLOSE</button>
+		</div>
+    </div>
+</div>

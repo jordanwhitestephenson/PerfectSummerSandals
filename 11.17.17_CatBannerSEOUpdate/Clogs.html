@@ -1,0 +1,134 @@
+<style>
+  .catBanner-wrapper {
+    background: none;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    min-height: 20px;
+  }
+
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .display-flex-cat-banner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .catBanner-wrapper {
+    border-bottom: 2px solid #ebebeb;
+    /*margin-bottom: 20px;*/
+  }
+
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+    .breadcrumbs {
+      display: none;
+    }
+    .catBanner-wrapper.scalable_text {
+      font-size: 65%
+    }
+    .catBanner-wrapper.scalable_text img {
+      width:  75%
+    }
+    .catBanner-wrapper.scalable_text .copy-container {
+      padding-top: 0.5em;
+      padding-bottom: 1.0em;
+    }
+    .display-flex-cat-banner {
+      margin-bottom: 0em;
+    }
+
+  }
+
+  @media (min-width: 481px) {
+    .display-flex-cat-banner {
+      margin-bottom: 1em;
+    }
+    .catBanner-wrapper.scalable_text {
+      font-size: 70%
+    }
+    .catBanner-wrapper.scalable_text img {
+      width:  60%
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-wrapper.scalable_text {
+      font-size: 100%
+    }
+    .catBanner-wrapper.scalable_text img {
+      width:  100%
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+    .display-flex-cat-banner {
+      margin-bottom: 0em;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+    .catBanner-wrapper.scalable_text {
+      font-size: 85%
+    }
+
+  }
+</style>
+<div class="hpHero-wrapper catBanner-wrapper scalable_text">
+  <div class="cs_container-crocs">
+    <div class="cs_row text-center display-flex-cat-banner">
+      <div class="col-xs-12 col-md-6 col-sm-12 col-xs-12">
+        <!-- UPDATE LINK BELOW -->
+        <a href="$httpUrl('Product-Show','pid','204046','cid','0J2')$">
+          <!-- END LINK UPDATE -->
+
+          <!-- UPDATE IMAGE BELOW -->
+          <img src="/ecom/2017/web/Oct-nonEmail_catBanners-womens_0000_204046-0J2.jpg?$staticlink$" alt="" />
+          <!-- </END UPDATE IMAGE> -->
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-6 col-sm-12 col-xs-12 copy-container">
+        <div class="cx-brand-font text-center" style="font-size: 1.5em;">
+          <!-- UPDATE SEO COPY BELOW -->
+          Women's Neria Pro Graphic Clog
+          <!--UPDATE SEO COPY END-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

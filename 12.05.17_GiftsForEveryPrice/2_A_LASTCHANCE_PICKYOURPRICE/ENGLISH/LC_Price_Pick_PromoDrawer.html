@@ -1,0 +1,172 @@
+<style>
+  .jsHero-pick-your-price,
+  .jsHero-pick-your-price .cs_container-crocs {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: relative;
+  }
+
+
+  .jsHero-pick-your-price .black_background_bottom {
+    background-color: #444;
+    width: 100%;
+    height: 23%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .jsHero-pick-your-price .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .jsHero-pick-your-price .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .jsHero-pick-your-price .black-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+
+  .jsHero-pick-your-price .larger-headline {
+    margin-bottom: 0vh;
+    margin-top: 0px;
+    font-size: 26px;
+
+  }
+
+  .jsHero-pick-your-price .largest-headline {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .jsHero-pick-your-price .thin-headline {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+  }
+
+  .jsHero-pick-your-price .small-headline {
+    font-size: 1.1em;
+    margin-bottom: 0em;
+  }
+
+  .jsHero-pick-your-price .top_container {
+    height: 77%;
+    border: 0.5px solid #444;
+    background: #fff;
+  }
+
+  .jsHero-pick-your-price .medium-headline {
+    line-height: .9;
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 15px;
+    color: #d41f27;
+    background-color: #fff;
+    margin-bottom: 3px;
+   }
+
+
+
+  .jsHero-pick-your-price .second-largest-headline {
+    font-size: 2.0em;
+    /*margin-top: 7px;*/
+    line-height: .9;
+  }
+
+  .jsHero-pick-your-price .fancy-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 5%;
+
+  }
+
+  .jsHero-pick-your-price .percent_off {
+    font-size: 1.1em;
+  }
+
+  .jsHero-pick-your-price .cx-button {
+    border-color: #d41f27;
+    width: 65%;
+    margin-top:10px;
+    border-width: 2px;
+    color: #d41f27;
+    background-color: #fff;
+
+  }
+  .jsHero-pick-your-price .cx-button:hover,  .jsHero-pick-your-price .cx-button:focus  {
+    color: #fff;
+    background-color: #d41f27;
+  }
+  .find_headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+  .find_headline:before, .find_headline:after {
+  background-color: #d41f27;
+  content: '\a0';
+  flex-grow: 1;
+  height: 1px;
+  position: relative;
+  top: 0.5em;
+}
+.find_headline:before {
+  margin-right:10px;
+}
+.find_headline:after {
+  margin-left:10px;
+}
+.jsHero-pick-your-price .disclaimer_text {
+  color: #444;
+font-size: 0.8em;
+margin-top: 20;
+margin-top: 10%;
+}
+</style>
+
+<div class="jsHero-pick-your-price">
+  <a href="$httpUrl('Search-Show','cgid','crocs-deals')$">
+    <div class="cs_container-crocs" style="height:100%; max-width: 100%; ">
+      <div class="top_container flexbox_column text-center" style="">
+        <div class="cx-brand-font text-uppercase fancy-headline" style="width: 95%; color:#d41f27;">LAST CHANCE</div>
+        <div class="cx-heavy-brand-font text-uppercase largest-headline" style="width: 95%; color:#d41f27;">PICK YOUR PRICE</div>
+        <div class="cx-heavy-brand-font text-uppercase find_headline " style="color: #444;">FIND YOUR KICKS</div>
+        <p class="cx-brand-font disclaimer_text" style="color: #444;">Select styles only. Prices as marked.*</p>
+
+      </div>
+      <div class="black_background_bottom flexbox_row text-center">
+        <div class=" black-container text-center" style="color:#fff; width: 95%;">
+          <p class="cx-brand-font small-headline text-center">
+            SHOP NOW
+          </p>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

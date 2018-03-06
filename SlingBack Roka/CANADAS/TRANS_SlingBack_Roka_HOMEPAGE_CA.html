@@ -1,0 +1,135 @@
+﻿<style>
+  /* JS17 ADDITIONS */
+
+  @media (max-width: 480px) {
+    .flexbox .cx-button {
+      font-size: initial;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.3em;
+      padding-top: 0px;
+    }
+    .flexbox .cx-copy.largest {
+      font-size: 22px;
+    }
+  }
+
+  @media (min-width:481px) {
+    .flexbox .cx-button {
+      font-size: small;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2em;
+    }
+    .flexbox .cx-copy.largest {
+      font-size: 19px;
+    }
+    .container {
+      padding-top: 1em;
+    }
+  }
+
+  @media (min-width:768px) {
+    .flexbox .cx-button {
+      font-size: small;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2em;
+    }
+    .flexbox .cx-copy.largest {
+      font-size: 19px;
+    }
+    .container {
+      padding-top: 1em;
+    }
+  }
+
+  @media (min-width:960px) {
+    .flexbox .cx-button {
+      font-size: large;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 3.0em;
+      padding-top: 9px;
+    }
+    .flexbox .cx-copy.largest {
+      font-size: 22px;
+    }
+    .container {
+      padding-top: 1em;
+    }
+  }
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background: none;
+  }
+  .flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .flexbox .cx-heavy-brand-font.headline {
+    line-height: 1em;
+    color: #444;
+  }
+
+  .flexbox .cx-copy.largest {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .flexbox .cx-button {
+    padding: 8px 25px;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    margin: 3px 0;
+    border: 2px solid #444;
+  }
+  .flexbox .cx-button.full-width {
+    width: 90%;
+  }
+  .flexbox .cx-copy.smaller {
+    line-height: 13px;
+    padding-bottom: 5px;
+
+  }
+ .container {
+   margin-top: 6px;
+ }
+
+
+</style>
+<div class="jsHero-wrapper">
+  <!-- KEEP .hpHero-wrapper for Homepage Hero -->
+  <div class="cs_container">
+    <!--  IMPORTANT .content-container-hero sets pointer-events: none; so clickthrough the the <a> in the background image works. - .content-container-hero should be used with .img-container-hero above -->
+    <div class="cs_row container">
+        <center>
+      <div class="flexbox col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+
+        <div class="MOBILE col-xs-12  col-md-6 col-lg-6 flexbox hidden-sm hidden-md hidden-lg">
+          <a href="http://www.crocs.ca/on/demandware.store/Sites-crocs_ca-Site/en_CA/Product-Show?pid=204686&cid=6MS">
+          <img src="/ecom/2017/web/SlingBackRoka_Desktop.png?$staticlink$" title="Chukka CitiLane Roka de Crocs pour hommes et chaussures Eve à brides arrière et à motifs de Crocs pour femmes " alt="Chukka CitiLane Roka de Crocs pour hommes et chaussures Eve à brides arrière et à motifs de Crocs pour femmes " class=""/>
+        </a>
+          <p class="cx-copy smaller text-center"> Chukka CitiLane Roka de Crocs pour hommes <br> et chaussures Eve à brides arrière et à motifs de Crocs pour femmes </p>
+
+       </div>
+        <div class="MOBILE cx-heavy-brand-font text-center headline hidden-sm hidden-md hidden-lg">NOUVEAUTÉS CLASSIQUES</div>
+        <div class="cx-heavy-brand-font text-center headline hidden-xs">NOUVEAUTÉS CLASSIQUES</div>
+        <h3 class="MOBILE cx-copy largest text-center hidden-sm hidden-md hidden-lg">Voici deux styles intemporels uniques qui prennent leur place chez Crocs : les chukkas et les chaussures à brides arrière.</h3>
+        <h3 class="cx-copy largest text-center hidden-xs">Voici deux styles intemporels uniques <br> qui prennent leur place chez Crocs :<br> les chukkas et les chaussures à brides arrière.</h3>
+        <a href="$httpUrl('Search-Show','cgid','womens-new')$" role="button" class="cx-button full-width cx-heavy-brand-font bold">MAGASINER LES NOUVEAUTÉS POUR FEMMES</a> <a href="$httpUrl('Search-Show','cgid','mens-new')$" class="cx-button full-width cx-heavy-brand-font">MAGASINER LES NOUVEAUTÉS POUR HOMMES</a><a href="$httpUrl('Search-Show','cgid','new-arrivals')$" class="cx-button full-width cx-heavy-brand-font">MAGASINER TOUTES LES NOUVEAUTÉS</a>
+      </div>
+
+      <div class="col-xs-12  col-md-6 col-lg-6 flexbox hidden-xs">
+          <a href="$httpUrl('Search-Show','cgid','new-arrivals')$">
+        <img src="/ecom/2017/web/SlingBackRoka_Desktop.png?$staticlink$" title="Chukka CitiLane Roka de Crocs pour hommes et chaussures Eve à brides arrière et à motifs de Crocs pour femmes " alt="Chukka CitiLane Roka de Crocs pour hommes et chaussures Eve à brides arrière et à motifs de Crocs pour femmes " class=""/>
+        <p class="cx-copy smaller text-center"> Chukka CitiLane Roka de Crocs pour hommes <br> et chaussures Eve à brides arrière et à motifs de Crocs pour femmes </p>
+        </a>
+     </div>
+    </div>
+  </div>
+</div>

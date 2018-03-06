@@ -1,0 +1,111 @@
+
+
+<style>
+  .jsFALL_LastChance-wrapper,
+  .jsFALL_LastChance-wrapper .cs_container-crocs {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: relative;
+  }
+
+
+  .jsFALL_LastChance-wrapper .black_background_bottom {
+    background-color: #444;
+    width: 100%;
+    height: 23%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .jsFALL_LastChance-wrapper .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .jsFALL_LastChance-wrapper .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .jsFALL_LastChance-wrapper .black-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+
+  .jsFALL_LastChance-wrapper .larger-headline {
+    font-size: 2.0em;
+        margin-bottom: 0.5vh;
+        margin-top: 0px;
+  }
+
+  .jsFALL_LastChance-wrapper .largest-headline {
+    font-size: 3.2em;
+    line-height: 0.8;
+    margin-bottom: 2px;
+  }
+
+  .jsFALL_LastChance-wrapper .thin-headline {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+  }
+
+  .jsFALL_LastChance-wrapper .small-headline {
+    font-size: 12px;
+    margin-bottom: 0em;
+  }
+
+  .jsFALL_LastChance-wrapper .top_container {
+    height: 77%;
+        border: 1px solid #444;
+  }
+  .jsFALL_LastChance-wrapper .cx-button.promo-drawer-button {
+    color: #7B1B30;
+    border-color: #7B1B30;
+    padding: 10px 20px 10px 20px;
+  }
+  .jsFALL_LastChance-wrapper .cx-button.promo-drawer-button:hover,   .jsFALL_LastChance-wrapper .cx-button.promo-drawer-button:focus {
+    color: #fff;
+    background-color:#7B1B30;
+    padding: 10px 15px;
+  }
+</style>
+
+<div class="jsFALL_LastChance-wrapper">
+  <a href="$httpUrl('Search-Show','cgid','crocs-deals')$">
+    <div class="cs_container-crocs" style="height:100%; max-width: 100%;background-color: #fff;">
+      <div class="top_container flexbox_column text-center" style="">
+        <div class="cx-brand-font top-headline" style="color: #7B1B30; letter-spacing: 3px; margin-top: 5px; font-size: 18px;">LAST CHANCE</div>
+          <div class="cx-heavy-brand-font larger-headline " style="color:#7B1B30;">FALL FAVES</div>
+          <div class="cx-heavy-brand-font largest-headline" id = "colored_div_3" style=""></div>
+          <button type="button" class="cx-button promo-drawer-button flexbox_column" style="width: 65%;">SHOP ALL</button>
+      </div>
+
+      <div class="black_background_bottom flexbox_row text-center">
+        <div class=" black-container" style="color:#fff; width: 95%;">
+          <p class="cx-brand-font small-headline">
+            Select styles. Discount applied in cart.*
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </a>
+</div>
+
+<script type="text/javascript">
+   var message = "25% OFF";
+   var colors = new Array("#7B1B30","#FF5A1F","#cc6600","#996633", "#996633", "#7B1B30", "#FF5A1F" ); // red, green, blue
+   for (var i = 0; i < message.length; i++)
+      document.getElementById('colored_div_3').innerHTML += "<span style=\"color:" + colors[(i % colors.length)] + ";\">" + message[i] + "</span>";
+</script>

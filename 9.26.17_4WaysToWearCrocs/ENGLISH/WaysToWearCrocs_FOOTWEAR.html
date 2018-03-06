@@ -1,0 +1,287 @@
+<style>
+  .jsHero-wrapper.DESKTOP {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    /*background: url("/ecom/2017/web/WaysToWearCrocs_BACKGROUND copy.jpg?$staticlink$");*/
+  }
+
+  .jsHero-wrapper.MOBILE {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+
+  .jsHero-wrapper .cx-button {
+    color: #996600;
+    border: 2px solid #996600;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #996600;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.5em;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+      margin-top: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 1.0vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 20px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 7%;
+      font-size: 17px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 3vh;
+    }
+    #margin-left-mobile {
+      margin-left: 0px;
+    }
+    .mobile_croctober_orange_crocs {
+      margin-top: -40px;
+      /*margin-left: 6%;*/
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 3.0em;
+      line-height: 0.7;
+      margin-bottom: 2vh;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 1.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 20px;
+      padding: 12px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 11%;
+      font-size: 17px;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 2vh;
+    }
+    .mobile_croctober_orange_crocs {
+      margin-top: -40px;
+      /*margin-left: 11%;*/
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 9vw;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 3.2vw;
+      margin-bottom: 2vh;
+    }
+    .cta-container .cx-button {
+      font-size: 20px;
+      padding: 15px;
+    }
+    .left_container img {
+      max-width: 80%;
+    }
+    .smallest-headline {
+      font-size: 2vw;
+      margin-bottom: 1vh;
+    }
+    .mobile_croctober_orange_crocs {
+      margin-top: -40px;
+      /*margin-left: 11%;*/
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 3.5vw;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 1.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 33vw;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 2vh;
+    }
+    .left_container {
+      margin-top: 2vw;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 3em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 2vh;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 2vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: none;
+    }
+    .left_container {
+      margin-top: 2vw;
+    }
+  }
+
+
+
+  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+
+  .mobile_overall_container {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .background_image {
+    background: url("/ecom/2017/web/WaysToWearCrocs_Background_Try1.jpg?$staticlink$");
+    background-size: contain;
+    background-repeat: round;
+  }
+  .flexbox_column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+</style>
+
+<div class="jsHero-wrapper DESKTOP ">
+
+  <div class="cs_container-crocs" style="padding-right: 0%; padding-left: 0%;">
+    <a href="$httpUrl('Page-Show','cid','ways-to-wear-crocs')$">
+      <section class="DESKTOP flexbox_row hidden-xs hidden-sm">
+        <div class="left_container flexbox_column text-center col-lg-6 col-md-6" style="">
+          <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #444;">FRESH TAKES</div>
+          <div class="cx-brand-font small-headline" style="color: #444;">Check out our favorite ways to pair-up <br /> our most popular collections.</div>
+          <div class="cta-container text-center col-lg-9" style="margin-bottom: 1.5vw">
+            <button type="button" class="cx-button full-width">EXPLORE NOW</button>
+          </div>
+        </div>
+        <img src="/ecom/2017/web/WaysToWearCrocs_CAT_DESKTOP.png?$staticlink$" />
+      </section>
+
+      <section class="MOBILE-CONTAINER mobile_overall_container hidden-md hidden-lg col-xs-12 col-sm-12 flexbox_column">
+        <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #444;">FRESH TAKES</div>
+        <div class="cx-brand-font small-headline text-center" style="color: #444;">Check out our favorite ways to pair-up <br /> our most popular collections.</div>
+        <div class="cta-container text-center col-sm-10 col-xs-10" style="margin-bottom: 1.5vw">
+          <button type="button" class="cx-button full-width">EXPLORE NOW</button>
+        </div>
+        <img src="/ecom/2017/web/WaysToWearCrocs_CAT_DESKTOP.png?$staticlink$" style="width: 118%"/>
+      </section>
+    </a>
+  </div>
+</div>

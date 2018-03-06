@@ -1,0 +1,47 @@
+<div id="flash_sale">
+
+</div>
+
+
+
+<script>
+  $.ajax({
+    'type': 'GET',
+    'url': 'https://api.github.com/repos/jordanwhitestephenson/RedRockTire/contents',
+      'success': function(content) {
+        try {
+          for (var i = 0; i < content.length; i++) {
+            let targetName = content[i].name
+            var targetHTML;
+            if (targetName === 'index.html') {
+              targetHTML = content[i].download_url
+              $.ajax({
+                'type': 'GET',
+                'url': targetHTML,
+                'success': function(newHTML) {
+                  try {
+                      $('#flash_sale').html(newHTML)
+                  }
+                  catch(e) {
+
+                  }
+                }
+              })
+
+
+            }
+          }
+          console.log(content, targetHTML)
+        } catch (e) {
+          // omniture not loaded
+        }
+
+        // document.getElementById("flash_sale").innerHTML = targetHTML
+        $('#Js_LiteRideSignup').hide()
+        app.ajax.loader.end();
+      },
+    'error': function(err) {
+      console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+    }
+  })
+</script>

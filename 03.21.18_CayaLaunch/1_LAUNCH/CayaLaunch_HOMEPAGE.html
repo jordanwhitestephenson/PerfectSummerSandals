@@ -1,0 +1,465 @@
+<style>
+  .caya_launch {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+
+
+  }
+
+  .caya_launch a:hover,
+  .caya_launch a:focus {
+    text-decoration: none;
+  }
+
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    margin-top: 15px;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+
+
+
+  @media (max-width: 480px) {
+    .caya_launch {
+      font-size: 95%;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17), #8ad1cd);
+    }
+    .caya_launch .col-xs-12 {
+      /* padding-right: 0px;
+      padding-left: 0px; */
+      margin-top: 5px;
+    }
+    .caya_launch .cx-button {
+      font-size: 5.5vw;
+      line-height: 1.0;
+      padding: 10px 5px 9px 5px;
+      font-family: 'proxima_novablack', Arial, sans-serif;
+      border-width: 2px;
+      margin: 3px 0px;
+      color: #444;
+      background-color: #fff;
+      border-color: #444;
+    }
+
+    .caya_launch .one-day-only-headline {
+      font-size: 6.2vw;
+      line-height: 1.1;
+      letter-spacing: 0.5px;
+    }
+    .caya_launch .medium-headline {
+      font-size: 1.8em;
+      margin-top: 2px;
+      margin-bottom: 0.3em;
+    }
+    .caya_launch .cs_container-fluid {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 1em;
+    }
+    .caya_launch .col-md-6 {
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-bottom: 0.5em;
+    }
+
+    .caya_launch .thin-headline {
+      font-size: 1.45em;
+      margin-bottom: 0.5em;
+      margin-top: 0.7em;
+    }
+
+    .caya_launch h2 {
+      line-height: 0.9;
+          font-size: 12.0vw;
+          margin-bottom: 5px;
+    }
+    .caya_launch .cx-button:hover,
+    .caya_launch .cx-button:focus {
+      color: #fff;
+      background-color: #444;
+      border-color: #fff;
+    }
+
+    .caya_launch .paragraph_text {
+      font-size: 4.9vw;
+      line-height: 1.3em;
+    }
+    .caya_launch .product_text {
+      margin-top: -7px;
+      font-size: 1.0em;
+      margin-bottom: 4px;
+    }
+    .caya_launch .flexbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .caya_launch .cta_container {
+      flex-direction: column;
+    }
+
+    .caya_launch .left_container {
+      margin-bottom: 0em;
+      margin-top: 0em;
+    }
+
+    .caya_launch .fancy-headline {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      width: 90%;
+    }
+
+
+    .caya_launch .cs_container-crocs {
+      padding-left: 0px;
+      padding-right: 0px;
+      flex-direction: column;
+    }
+    .caya_launch .svg_caya {
+      margin-bottom: -10px;
+    }
+
+
+  }
+
+  @media (min-width: 481px) {
+    .caya_launch {
+      font-size: 85%;
+      background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), #caeae7);;
+    }
+    .caya_launch .product_text {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .caya_launch .cs_container-crocs {
+      flex-direction: column;
+      margin-bottom: 1.5em;
+    }
+
+
+    .caya_launch .paragraph_text {
+      font-size: 1.2em;
+      line-height: 1.3em;
+      margin-bottom: 0.5em;
+    }
+
+    .caya_launch .thin-headline {
+      font-size: 1.45em;
+      margin-bottom: 0.5em;
+      margin-top: 0.7em;
+    }
+
+    .caya_launch .cx-button:hover,
+    .caya_launch .cx-button:focus {
+      color: #fff;
+      background-color: #444;
+      border-color: #444;
+    }
+
+    .caya_launch .cx-button {
+      color: #444;
+      background-color: #fff;
+      border-color: #444;
+      text-align: center;
+      font-size: 17px;
+      font-family: 'proxima_novablack', Arial, sans-serif;
+      padding: 9px 5px 8px 5px;
+      border-width: 1.5px;
+    }
+
+    .caya_launch .left_container {
+      margin-bottom: 0em;
+      margin-top: 0em;
+    }
+
+    .caya_launch h3 {
+      line-height: 0.9;
+      font-size: 1.8em;
+      margin-bottom: 5px;
+      z-index: 1;
+
+    }
+    .caya_launch .medium-headline {
+      font-size: 2.2em;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .caya_launch h2 {
+      line-height: 0.9;
+      font-size: 4.5em;
+    }
+    .caya_launch .one-day-only-headline {
+      font-size: 1.8em;
+      letter-spacing: 0.5px;
+    }
+    .caya_launch .fancy-headline {
+      font-size: 2.0em;
+      margin-bottom: 15px;
+      width: 75%;
+    }
+    .caya_launch .flex_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .caya_launch img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .caya_launch .funLabButton {
+      padding-left: 5px;
+      padding-right: 5px;
+
+    }
+
+    .caya_launch .svg_caya {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -0.5em;
+    }
+
+
+  }
+
+  @media (min-width: 768px) {
+    .caya_launch h2 {
+      font-size: 5.5em;
+    }
+    .caya_launch {
+      font-size: 75%;
+    }
+    .caya_launch .cs_container-crocs {
+      flex-direction: row;
+      margin-bottom: 0em;
+    }
+
+    .caya_launch .cx-button {
+      font-size: 13px;
+      padding: 12px 0px 13px 0px;
+    }
+
+
+    .caya_launch img {
+      width: 100%;
+      margin-top: 1em;
+      margin-bottom: 0em;
+    }
+
+    .caya_launch .cs_container-crocs {
+      height: 325px;
+      width: 980px;
+    }
+    .caya_launch .svg_caya {
+      width: 65%;
+      margin-bottom: -1em;
+      margin-top: -1em;
+    }
+
+  }
+
+  @media (min-width: 980px) {
+    .caya_launch .cx-button {
+      font-size: 20px;
+    }
+    .caya_launch {
+      font-size: 90%;
+    }
+    .caya_launch .left_container {
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+    .caya_launch img {
+      max-width: 100%;
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+
+    .caya_launch .cs_container-crocs {
+      height: 385px;
+      width: 1145px;
+    }
+    .caya_launch .svg_caya {
+      width: 65%;
+      margin-bottom: 0em;
+      margin-top: 0em;
+    }
+
+  }
+
+
+
+  .caya_launch .left_container,
+  .caya_launch .cyber-monday-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .caya_launch .cta_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
+  .caya_launch .right_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caya_launch .col-xs-6 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .caya_launch .fancy-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3px;
+  }
+
+  .caya_launch .fancy-headline:before,
+  .caya_launch .fancy-headline:after {
+    background-color: #444;
+    content: '\a0';
+    flex-grow: 1;
+    height: 2px;
+    position: relative;
+    top: 0.5em;
+  }
+
+  .caya_launch .fancy-headline:before {
+    margin-right: 10px;
+  }
+
+  .caya_launch .fancy-headline:after {
+    margin-left: 10px;
+  }
+
+  .caya_launch .overall_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .caya_launch .left_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+
+  .caya_launch .cs_container-crocs {
+    display: flex;
+  }
+
+
+
+  .caya_launch .cta_overall {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .caya_launch .funLabButton .col-sm-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .caya_launch .funLabButton {
+    display: flex;
+    justify-content: center;
+  }
+
+  .caya_launch .flex_box_column {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+</style>
+
+
+<div class="caya_launch">
+  <div class="cs_container-fluid" style="display:flex; align-items: center; justify-content: center; align-content: center;">
+    <div class="cs_container-crocs">
+      <section class="left_container col-xs-12 col-sm-12 col-md-7 col-lg-6">
+        <div class="flex_box" style="width: 100%;">
+          <a href="$httpUrl('Page-Show','cid','come-as-you-are')$" class = "flex_box_column">
+            <object data="CAYA_2-line.svg?$staticlink$" type="image/svg+xml" class = "svg_caya">
+              <img src="CAYA_2-line.svg?$staticlink$" />
+            </object>
+            <p class="DESKTOP hidden-xs cx-brand-font text-center paragraph_text" style="color:#444">We are unapologetically optimistic<br />about our mission to make the world more <br />comfortable, one pair of shoes at a time,<br />and we're singing it from the rooftops.</p>
+              <p class="MOBILE hidden-sm hidden-md hidden-lg cx-brand-font text-center paragraph_text" style="color:#444">We are unapologetically optimistic<br />about our mission to make the <br />world more comfortable, one pair<br /> of shoes at a time, and we're<br /> singing it from the rooftops.</p>
+          </a>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cta_overall hidden-xs hidden-sm" style="">
+            <div class="col-xs-12 btn-col-1 text-center funLabButton">
+                <div class="col-xs-12 col-sm-10 col-md-7"><a href="$httpUrl('Page-Show','cid','come-as-you-are')$" class="cx-button full-width text-uppercase text-center">COME AS YOU ARE</a></div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-md-6 col-lg-6 col-xs-12" style="display: flex; align-items: center; justify-content: center; flex-direction: column">
+        <div class="caya-div VIDEO_CONTAINER col-xs-12 col-sm-10 col-md-12">
+          <!-- <a id = "Caya_Drew_Play_Video">
+            <img src = "DrewCAYA.jpg?$staticlink$" />
+          </a> -->
+          <div class="embed-container">
+            <iframe class="lazy-load" alt="Come As You Are Video" src="https://player.vimeo.com/video/251714818?color=bad82f43d6#t=&amp;title=0&amp;byline=0&amp;portrait=0&autopause=0" data-src="https://player.vimeo.com/video/206473173?color=7ab800#t=s&amp;title=0&amp;byline=0&amp;portrait=0&autopause=0"
+              frameborder="0"></iframe>
+            <noscript><iframe alt="Come As You Are Video" src="https://player.vimeo.com/video/251714818?color=bad82f43d6#t=0m3s&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" ></iframe></noscript>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 btn-col-1 text-center funLabButton cta_overall hidden-md hidden-lg" style="">
+              <div class="col-xs-12 col-sm-11 col-md-8"><a href="$httpUrl('Page-Show','cid','come-as-you-are')$" class="cx-button full-width text-uppercase text-center">COME AS YOU ARE</a></div>
+
+        </div>
+      </section>
+
+
+    </div>
+  </div>
+</div>
+
+<script>
+// $('#Caya_Drew_Play_Video').on('click', function() {
+//   $('.embed-container').removeClass('hidden')
+//   $('#Caya_Drew_Play_Video').addClass('hidden')
+// })
+</script>

@@ -1,0 +1,133 @@
+<style>
+  .sitewide-wrapper .proxima-black {
+    font-family: 'proxima_novablack', arial, sans-serif;
+  }
+
+  .sitewide-wrapper .proxima-regular {
+    font-family: 'proxima_novaregular', arial, sans-serif;
+  }
+
+  .CC_Banner.sitewide-wrapper.main-sitewide-wrapper {
+    background: #023567;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -ms-transition: 1s all ease;
+  }
+
+  .CC_Banner.sitewide-wrapper.main-sitewide-wrapper:hover {
+    background: #023567;
+  }
+
+  .Other_Banner.sitewide-wrapper.main-sitewide-wrapper:hover {
+    background: #d41f3c;
+  }
+
+  .Other_Banner.sitewide-wrapper.main-sitewide-wrapper {
+    background: #d41f3c;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -ms-transition: 1s all ease;
+  }
+
+  @media (max-width: 480px) {
+    .sitewide-wrapper p {
+      line-height: 1.1;
+      margin: 0;
+      text-transform: uppercase !important;
+      padding: 7px 0 6px 0;
+      font-size: 3.3vw;
+    }
+  }
+
+  .sitewide-wrapper span.VD-crown {
+    background: none;
+    display: inline-block;
+  }
+
+  .sitewide-wrapper .link:hover {
+    text-decoration: underline;
+  }
+
+  .sitewide-wrapper p,
+  .sitewide-wrapper p:visited {
+    color: #fff;
+  }
+
+  .sitewide-wrapper span.CTA {
+    display: inline-block;
+  }
+
+  @media (min-width: 481px) {
+    .sitewide-wrapper.main-sitewide-wrapper p {
+      text-transform: none;
+      letter-spacing: 0px;
+      font-size: 1.3em;
+      margin: 8px 0px 8px 0px;
+      text-transform: uppercase !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sitewide-wrapper span.CTA {
+      display: inline-block;
+    }
+    .sitewide-wrapper .mobile-hide {
+      display: inline-block;
+    }
+    .sitewide-wrapper.main-sitewide-wrapper p {
+      padding: 0;
+      margin: 0;
+      letter-spacing: 1px;
+      font-size: 1.3em;
+
+    }
+  }
+</style>
+<div class="sitewide-wrapper main-sitewide-wrapper CC_Banner">
+  <!--KEEP .sitewide-wrapper for sitwide banner -->
+  <div class="cs_container-fluid">
+    <div class="cs_row text-center">
+      <div class="col-xs-12">
+        <p class="proxima-regular vd-crown text-uppercase hidden-xs">Sign-up below to receive early access to the new Drew Barrymore ♥ Crocs Color-Block Collection</p>
+        <p class="proxima-regular vd-crown text-uppercase hidden-sm hidden-md hidden-lg">Sign-up below to receive early access to the new Drew Barrymore ♥ Crocs Color-Block Collection</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="$httpUrl('Search-Show','cgid','crocs-deals')$" class="sitewide-wrapper main-sitewide-wrapper Other_Banner">
+  <!--KEEP .sitewide-wrapper for sitwide banner -->
+  <div class="cs_container-fluid">
+    <div class="cs_row text-center">
+      <div class="col-xs-12">
+        <p class="proxima-regular vd-crown text-uppercase hidden-xs">50% OFF SELECT STYLES. 24 HOURS ONLY!* <span class=""></span> <span class="proxima-black">SHOP NOW</span></p>
+        <p class="proxima-regular vd-crown text-uppercase hidden-sm hidden-md hidden-lg">50% OFF SELECT STYLES. 24 HOURS ONLY!*
+          <Br /><span class="proxima-black"> SHOP NOW</span></p>
+      </div>
+    </div>
+  </div>
+</a>
+
+<script type="text/javascript">
+  if (app.config.verifiedCategoryID === undefined || app.config.verifiedCategoryID === 'default') {
+    $('.CC_Banner').show()
+    $('.Other_Banner').hide()
+  }
+  else if (app.config.verifiedCategoryID === 'crocs-deals') {
+    $('.CC_Banner').hide()
+    $('.Other_Banner').hide()
+  } else {
+    $('.CC_Banner').hide()
+    $('.Other_Banner').show()
+  }
+</script>

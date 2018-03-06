@@ -1,0 +1,415 @@
+﻿<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+
+  .right_container {
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;*/
+  }
+
+  .jsHero-wrapper .cx-button {
+    color: #444;
+    border: 2px solid #444;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width:959px) {
+    #mobile_padding {
+      margin-top: 0.5vh;
+      margin-bottom: 1.5vh;
+    }
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 1;
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+
+    .small-headline {
+      font-size: 0.8em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 23%;
+      right: 56%;
+      font-size: 12px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 13px;
+      margin-bottom: 0vh;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.5em;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 19%;
+      right: 66%;
+      font-size: 12px;
+    }
+    .smallest-headline {
+      font-size: 12px;
+      margin-bottom: 0vh;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 2.5em;
+      line-height: 1;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 19px;
+      padding: 15px;
+    }
+    .left_container img {
+      max-width: 60%;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 0vh;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 3.4em;
+      line-height: 1;
+      margin-bottom: 1.1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 131%;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 0vh;
+    }
+
+    .orange-border {
+      border-right: 2px solid #cc3300;
+      border-left: 2px solid #cc3300;
+      height: 4.8em;
+      margin-bottom: 15px;
+    }
+    .orange-border-top {
+      border-right: 2px solid #cc3300;
+      border-left: 2px solid #cc3300;
+      height: 1.1em;
+      overflow: hidden;
+    }
+
+    .fancy-container-thanksgiving:before,
+    .fancy-container-thanksgiving:after {
+      background-color: #cc3300;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      vertical-align: text-top;
+      width: 50%;
+    }
+
+    .fancy-container-thanksgiving:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-thanksgiving:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:before,
+    .fancy-container-thanksgiving-bottom:after {
+      background-color: #cc3300;
+      content: "";
+      display: inline-block;
+      height: 3px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 4.5em;
+          line-height: 1.1;
+          margin-bottom: 1.2vh;
+    }
+
+    .small-headline {
+      font-size: 2.0em;
+      margin-bottom: 1vh;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 1vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 160%;
+    }
+
+    .orange-border {
+      border-right: 2px solid #cc3300;
+      border-left: 2px solid #cc3300;
+      height: 6.8em;
+      margin-bottom: 20px;
+    }
+    .orange-border-top {
+      border-right: 2px solid #cc3300;
+      border-left: 2px solid #cc3300;
+      height: 1.2em;
+      overflow: hidden;
+    }
+
+    .fancy-container-thanksgiving:before,
+    .fancy-container-thanksgiving:after {
+      background-color: #cc3300;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      vertical-align: text-top;
+      width: 50%;
+    }
+
+    .fancy-container-thanksgiving:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-thanksgiving:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:before,
+    .fancy-container-thanksgiving-bottom:after {
+      background-color: #cc3300;
+      content: "";
+      display: inline-block;
+      height: 3px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .jsHero-wrapper .col-lg-6.less-padding,
+  .jsHero-wrapper .cs_container-crocs.less-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .happy-thanksgiving-headline {
+    color: #444;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs less-padding">
+    <div class="js_row flexbox_column" style="margin-top: 15px;">
+      <div class="text-center col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-9 col-sm-offset-1 col-xs-12 col-xs-offset-0" id="mobile_padding">
+        <div class="DESKTOP right_container ">
+          <a href="$httpUrl('Search-Show','cgid','footwear')$">
+            <div class="DESKTOP hidden-sm hidden-xs cx-brand-font thin-headline happy-thanksgiving-headline" style="color: #444; margin-bottom: 10px;font-size: 1.2em;letter-spacing: 3px;">
+ SOLDE HEUREUSE ACTION DE GRÂCES
+            </div>
+            <div class="MOBILE hidden-md hidden-lg cx-brand-font thin-headline happy-thanksgiving-headline" style="color: #444; margin-bottom: 5px;font-size: 14px; letter-spacing: 2px;">
+ SOLDE HEUREUSE ACTION DE GRÂCES
+            </div>
+            <div class="DESKTOP cx-heavy-brand-font thin-headline thanksgiving orange-border-top hidden-sm hidden-xs" style="color: #444;">
+              <span class="fancy-container-thanksgiving">DERNIÈRE CHANCE!</span>
+            </div>
+            <div class="MOBILE cx-heavy-brand-font thin-headline thanksgiving orange-border-top hidden-md hidden-lg" style="color: #444;">
+              <span class="fancy-container-thanksgiving">DERNIÈRE CHANCE!</span>
+            </div>
+            <section class="orange-border">
+              <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #cc3300;">RABAIS DE 30%</div>
+
+              <div class="cx-heavy-brand-font small-headline fancy-container-thanksgiving-bottom" style="color: #444; overflow: hidden; "> SUR L'ENSEMBLE DE NOTRE SITE WEB</div>
+            </section>
+          </a>
+          <div class="DESKTOP cta-container text-center flexbox_column">
+            <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 less-padding" style="margin-bottom:5px;">
+              <a href="$httpUrl('Search-Show','cgid','footwear')$" role="button" class="cx-button full-width">MAGASINER TOUT</a>
+            </div>
+          </div>
+
+
+
+        </div>
+        <p class="cx-brand-font smallest-headline" style="color: #444">
+ Des exclusions s'appliquent. Rabais appliqué dans le panier.*
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

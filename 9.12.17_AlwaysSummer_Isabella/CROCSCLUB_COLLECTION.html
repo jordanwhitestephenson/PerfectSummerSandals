@@ -1,0 +1,343 @@
+<style>
+  /* JS17 DEFAULT CLASSES */
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .jsHero-wrapper .cs_container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+  }
+
+  .jsHero-wrapper .cx-button,
+  .hpCtnr h1,
+  .hpCtnr h2,
+  .hpCtnr h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    font-weight: bold;
+    color: #663366;
+  }
+
+  .js-headline {
+    color: #663366;
+  }
+
+  .jsHero-wrapper .cx-button {
+    background-color: #fff;
+    border: 2px solid;
+    color: #663366;
+    padding: 13px 25px;
+    margin: 8px 0;
+  }
+
+  .jsHero-wrapper .cx-button:hover {
+    background-color: #663366;
+    border: 2px solid;
+    color: #fff;
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:focus {
+    text-decoration: none;
+  }
+
+  .js-headline {
+    line-height: normal;
+  }
+  /* END JS17 DEFAULT CLASSES */
+
+  @media (max-width:300px) {
+    .cs_row .product_description_text {
+      display: none;
+    }
+    .cs_row #product_description_text {
+      margin-bottom: -35px;
+      line-height: normal;
+      width: 110px;
+      top: -147px;
+      font-size: 12px;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .jsHero-wrapper .cs_row {
+      flex-direction: column;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 19px;
+    }
+    .js-headline {
+      font-size: 2.5em;
+      line-height: 38px;
+    }
+    #mobile_image {
+      max-width: 100%;
+    }
+
+    .product_description {
+      display: flex;
+    }
+    .CTA_container {
+      margin-bottom: 4%;
+      padding-right: 7%;
+      padding-left: 7%
+    }
+    .cs_row #product_description_text {
+      margin-bottom: -35px;
+          line-height: normal;
+          width: 110px;
+          top: -156px;
+          font-size: 11px;
+          -webkit-font-smoothing: antialiased;
+    }
+    #crocs_club_logo_MOBILE {
+      width: 88%;
+      margin-bottom: 4px;
+    }
+    #Mobile_Button {
+      padding: 7px 0px 5px 0px;
+    }
+
+  }
+
+  @media (min-width:481px) {
+    .jsHero-wrapper .cs_row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 15px;
+      width: 75%;
+      display: inline-grid;
+      margin-bottom: 0px;
+    }
+    .js-headline {
+      font-size: 3em;
+      line-height: 47px;
+    }
+    #mobile_image {
+      max-width: 100%;
+    }
+    .CTA_container {
+      margin-bottom: 2%;
+    }
+    .cs_row #product_description_text {
+      margin-bottom: -35px;
+      line-height: normal;
+      width: 110px;
+      top: -186px;
+      font-size: 12px;
+      -webkit-font-smoothing: antialiased;
+    }
+    #crocs_club_text_mobile {
+      font-size: 23px;
+      margin-top: 3px;
+    }
+  }
+
+  @media (min-width:768px) {
+    .js-headline {
+      font-size: 2.0em;
+      line-height: 30px;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 13px;
+      width: 92%;
+    }
+    .CTA_container {
+      margin-bottom: 0%;
+    }
+    #RainBoots {
+      max-width: 100%;
+    }
+
+    .cx-copy.largest {
+      font-size: 18px;
+    }
+    .cs_row #product_description_text {
+      margin-bottom: -35px;
+      line-height: normal;
+      width: 110px;
+      top: -159px;
+      font-size: 12px;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  @media (min-width:960px) {
+    .js-headline {
+      font-size: 3.4em;
+      line-height: 48px;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+      align-items: center;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 1.1em;
+      width: 84%;
+    }
+    .CTA_container {
+      margin-bottom: 0%;
+    }
+
+    .cx-copy.largest {
+      font-size: 23px;
+    }
+    .cs_row #product_description_text {
+      margin-bottom: -35px;
+      line-height: normal;
+      width: 130px;
+      right: -31%;
+      top: -55px;
+      font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  .CTA_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+
+  .DESKTOP-MD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .crocs_club_logo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    color: #336699;
+    font-size: 25px;
+  }
+  #crocs_club_logo_MOBILE {
+    max-width: 100%;
+  }
+
+</style>
+<div class="jsHero-wrapper">
+  <div class="cs_container">
+
+    <div class="cs_row text-center">
+      <div class="col-xs-12 col-lg-6 col-md-6 col-sm-12 text-center">
+        <div class="text_container larger">
+          <div class="MOBILE col-md-6 col-lg-6 hidden-md hidden-lg">
+            <a href="$httpUrl('Product-Show','pid','204774','cid','81D','cgid','isabella-collection-womens')$">
+              <img src="/ecom/2017/web/AlwaysSummer_Cat_Desktop.png?$staticlink$" title="Crocs Isabella slingback" alt="" class="" id="mobile_image" />
+              <p class="cx-copy text-center col-xs-12 product_description_text" id = "product_description_text"> Women's Crocs Isabella <br> Slingback </p>
+          </a>
+          </div>
+          <div class="crocs_club_logo col-xs-12">
+            <img src="/ecom/2017/web/CCFL_LOGO_WORDMARK.svg?$staticlink$" title="Womne's Crocs Freesail Chelsea Boot" alt="" class="" id="crocs_club_logo_MOBILE" />
+          </div>
+          <h1 class="DESKTOP-LG cx-heavy-brand-font js-headline hidden-xs"> KEEP IT FLIRTY <br> THIS FALL </h1>
+          <h1 class="MOBILE cx-heavy-brand-font js-headline hidden-sm hidden-md hidden-lg"> KEEP IT FLIRTY <br> THIS FALL </h1>
+
+        </div>
+        <div class="DESKTOP-LG CTA_container cx-heavy-brand-font">
+          <a href=" $httpUrl('Search-Show','cgid','isabella-collection-womens')$" role="button" class="DESKTOP cx-button full-width cx-heavy-brand-font hidden-xs">SHOP CROCS ISABELLA COLLECTION</a>
+          <a href=" $httpUrl('Search-Show','cgid','isabella-collection-womens')$" role="button" class="MOBILE cx-button full-width cx-heavy-brand-font hidden-sm hidden-md hidden-lg" id="Mobile_Button">SHOP CROCS ISABELLA COLLECTION</a>
+        </div>
+      </div>
+      <div class="DESKTOP col-md-6 col-lg-6 hidden-xs hidden-sm">
+        <a href="$httpUrl('Product-Show','pid','204774','cid','81D','cgid','isabella-collection-womens')$">
+          <img src="/ecom/2017/web/AlwaysSummer_Cat_Desktop.png?$staticlink$" title="Women's Crocs Isabella Slingback" alt="" class="" id="RainBoots" />
+          <p class="cx-copy text-center col-xs-12 product_description_text" id = "product_description_text">  Women's Crocs Isabella<br>Slingback</p>
+      </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .jscatBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .jscatBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jscatBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .jscatBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="jscatBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'womens-new', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'womens-new', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

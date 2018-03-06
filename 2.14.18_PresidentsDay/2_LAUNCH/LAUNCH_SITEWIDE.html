@@ -1,0 +1,79 @@
+<style>
+.sitewide-wrapper .proxima-black {
+  font-family: 'proxima_novablack', arial, sans-serif;
+}
+.sitewide-wrapper .proxima-regular {
+  font-family: 'proxima_novaregular', arial, sans-serif;
+}
+.sitewide-wrapper.main-sitewide-wrapper {
+  background:#be0002;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+}
+.sitewide-wrapper.main-sitewide-wrapper:hover {
+  background:#be0002;
+}
+@media (max-width: 480px){
+.sitewide-wrapper p {
+  line-height: 1.1;
+  margin:0;
+  text-transform: uppercase !important;
+    padding: 7px 0 6px 0;
+  font-size: 3.6vw;
+}
+}
+
+.sitewide-wrapper span.VD-crown {
+  background: none;
+  display: inline-block;
+}
+.sitewide-wrapper .link:hover {
+  text-decoration: underline;
+}
+.sitewide-wrapper p, .sitewide-wrapper p:visited {
+  color: #fff;
+}
+
+.sitewide-wrapper span.CTA{
+  display: inline-block;
+}
+@media (min-width: 481px){
+  .sitewide-wrapper.main-sitewide-wrapper p {
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 1.3em;
+    margin: 8px 0px 8px 0px;
+  }
+}
+@media (min-width: 768px){
+  .sitewide-wrapper span.CTA{
+    display: inline-block;
+  }
+   .sitewide-wrapper .mobile-hide {
+    display: inline-block;
+  }
+  .sitewide-wrapper.main-sitewide-wrapper p {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+  }
+}
+
+</style>
+<a href="$httpUrl('Search-Show','cgid','footwear')$" class="sitewide-wrapper main-sitewide-wrapper"> <!--KEEP .sitewide-wrapper for sitwide banner -->
+  <div class="cs_container-fluid">
+    <div class="cs_row text-center">
+      <div class="col-xs-12">
+        <p class="proxima-regular vd-crown text-uppercase hidden-xs"><span class="cx-brand-font">HAPPY PRESIDENTS' DAY! 25% OFF SITEWIDE.* <span class="proxima-black">SHOP NOW</span></p>
+        <p class="proxima-regular vd-crown text-uppercase hidden-sm hidden-md hidden-lg"><span class="cx-brand-font">HAPPY PRESIDENTS' DAY! 25% OFF SITEWIDE.* <br><span class="proxima-black">SHOP NOW</span></p>
+      </div>
+    </div>
+  </div>
+</a>

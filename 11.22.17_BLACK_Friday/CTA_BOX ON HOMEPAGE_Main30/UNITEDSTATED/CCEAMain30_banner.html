@@ -1,0 +1,123 @@
+<style>
+  .border-red {
+    position: relative;
+    text-align: center;
+  }
+
+.border-red .cx-button {
+border-width: 2px;
+}
+
+  .border-red span {
+    background: #ffffff;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    margin-top: -1em;
+    font-size: 3.0vmin;
+    color: #d41f27;
+  }
+
+  .border-red:before {
+    background: #d41f27;
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 0em;
+    width: 100%;
+  }
+
+  .bottom-border:after {
+    background: #d41f27;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 98.6%;
+    width: 100%;
+  }
+
+  .border-red:before {
+    left: 0;
+    margin-bottom: 15px;
+  }
+
+  .bottom-border {
+    justify-content: center;
+    border-right: 3px #d41f27 solid;
+    border-left: 3px #d41f27 solid;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+
+  @media (max-width: 480px) {
+    .bottom-holiday-container .cx-button {
+     font-size: 3.6vw;
+     padding: 10px 10px;
+     border: 2px solid #444;
+    }
+    .black-friday-bottom-headline {
+      font-size: 6.0vw;
+      color: #d41f27;
+      display: block;
+    }
+  }
+  @media (min-width: 481px) {
+    .bottom-holiday-container .cx-button {
+      padding: 10px 15px;
+    }
+    .bottom-holiday-container {
+      margin-bottom: 4%;
+    }
+  }
+  .long_button .cx-button:hover, .long_button .cx-button:focus {
+    background-color: #d41f27;
+    color: #fff;
+  }
+
+    .long_button .cx-button {
+      color: #d41f27;
+    }
+.bottom-holiday-container .mobile_cta .col-xs-6 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+</style>
+
+
+<br />
+<br />
+<ul class="cs_row upsell-container bottom-holiday-container text-center col-lg-12"  id="ccContainerScroll">
+
+  <div class="text-uppercase cx-heavy-brand-font border-red hidden-xs">
+    <div class="bottom-border">
+      <span class="black-friday-bottom-headline">Black Friday - 40% OFF OR MORE SITEWIDE</span>
+      <li class="col-xs-12 col-md-8 col-xs-12">
+        <div class="cs_row" style= "margin-top: 1em;">
+          <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','women-footwear')$" class="cx-button cx-heavy-brand-font full-width text-uppercase">Shop Women's</a></div>
+          <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','men-footwear')$" class="cx-heavy-brand-font cx-button full-width text-uppercase">Shop Men's</a></div>
+          <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','footwear-kids')$" class="cx-button full-width cx-heavy-brand-font text-uppercase">Shop Kids'</a></div>
+            <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','fuzz-collection')$" class="cx-button full-width cx-heavy-brand-font text-uppercase">Shop Fuzz</a></div>
+          <div class="col-xs-12 btn-col-1">
+            <a href="$httpUrl('Search-Show','cgid','crocs-doorbusters')$" class="cx-button full-width text-uppercase cx-heavy-brand-font" style="margin-bottom: 15px;">Shop Doorbusters</a>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+  <div class="text-uppercase mobile_cta cx-heavy-brand-font hidden-sm hidden-lg hidden-md"><span class="black-friday-bottom-headline text-center">Black Friday <br /> 40% OFF OR MORE SITEWIDE</span>
+      <li class="col-xs-12 col-md-8 col-xs-12">
+        <div class="cs_row">
+          <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','women-footwear')$" class="cx-heavy-brand-font cx-button full-width text-uppercase">Shop Women's</a></div>
+          <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','men-footwear')$" class="cx-heavy-brand-font cx-button full-width text-uppercase">Shop Men's</a></div>
+          <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','footwear-kids')$" class="cx-heavy-brand-font cx-button full-width text-uppercase">Shop Kids'</a></div>
+            <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','fuzz-collection')$" class="cx-button cx-heavy-brand-font full-width text-uppercase">Shop Fuzz</a></div>
+          <div class="col-xs-12 btn-col-1 long_button" style="padding-left: 5px; padding-right: 5px;">
+            <a href="$httpUrl('Search-Show','cgid','crocs-doorbusters')$" class="cx-heavy-brand-font cx-button full-width text-uppercase" style="color: #444;">Shop Doorbusters</a>
+          </div>
+        </div>
+      </li>
+  </div>
+</ul>

@@ -1,0 +1,454 @@
+<style>
+  /* SS17 ADDITIONS */
+.sitewide-wrapper.main-sitewide-wrapper {
+  display: none;
+}
+  .cx-cta {
+    color: #336666;
+    font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    font-size: 18px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid #336666;
+    line-height: 1;
+    padding: 10px 0 10px;
+    letter-spacing: .1px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .cx-cta:hover {
+    background: #336666;
+    color: #fff
+  }
+
+  .cx-cta-single {
+    min-width: 150px;
+    padding: 14px 15px 11px;
+    margin: 4px auto;
+    float: none;
+    display: inline-block
+  }
+
+  .cta-group-1-xs,
+  .cta-group-2-xs,
+  .cta-group-4-xs {
+    overflow: hidden
+  }
+
+  .cta-group-1-xs .cx-cta {
+    width: calc(25% - 4px)
+  }
+
+  .cta-group-2-xs .cx-cta {
+    width: calc(50% - 4px)
+  }
+
+  @media (max-width:767px) {
+    .cta-group-1-xs .cx-cta:nth-of-type(even),
+    .cta-group-2-xs .cx-cta:nth-of-type(even) {
+      margin-right: 0;
+      margin-left: 2px
+    }
+    .hpHero-wrapper img.dynamic-img {
+      max-width: initial
+    }
+  }
+
+  .cta-group-4-xs .cx-cta {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0
+  }
+  .cta-group-4-sm .cx-cta {
+  width: calc(25% - 8px);
+    margin-left: 0;
+    margin-right: 0
+  }
+
+  @media (min-width:481px) {
+    .cta-group-1-sm .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-2-sm .cx-cta {
+      width: calc(50% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-4-sm .cx-cta {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0
+    }
+  }
+
+  @media (min-width:768px) {
+    .cta-group-1-md .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-2-md .cx-cta {
+      width: calc(50% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-4-md .cx-cta {
+      width: calc(100% - 50px);
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .flexbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+        padding-bottom: 15px;
+    }
+  }
+
+  @media (min-width:960px) {
+    .cta-group-1-lg .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .catBanner-wrapper .copy-container {
+      margin-top: 6%;
+    }
+    .cta-group-2-lg .cx-cta {
+      width: calc(50% - -47px);
+      margin-right: 4px;
+      margin-left: 4px;
+    }
+
+    .flexbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding-bottom: 15px;
+    }
+    .cta-group-4-lg .cx-cta {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0
+    }
+  }
+
+  .proxima-novaregular {
+    font-family: proxima_novaregular, arial, helvetica, sans-serif
+  }
+
+  .proxima-novablack {
+    font-family: proxima_novablack, arial, helvetica, sans-serif
+  }
+
+  .hpHero-wrapper {
+    min-height: 1px
+  }
+
+  .hpHero-wrapper img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hpHero-wrapper.ss17 {
+    background: 0 0
+  }
+
+  .hpHero-wrapper.ss17 p {
+    font-size: 1em
+  }
+
+  .hpHero-wrapper.ss17 p.text-lg {
+    font-size: 3em
+  }
+
+  .hpHero-wrapper.ss17 p.text-md {
+    font-size: 2em
+  }
+
+  .hpHero-wrapper.ss17 p.text-sm {
+    font-size: 1.2em
+  }
+
+  .hpHero-wrapper.ss17 p.text-xs {
+    font-size: .8em
+  }
+
+  .hpHero-wrapper.ss17 p.fine-print {
+    font-family: proxima_novaregular, arial, sans-serif;
+    text-transform: none;
+    font-size: 12px
+  }
+
+  .hpHero-wrapper.ss17 .cs_container-fluid {
+    border-bottom: 2px solid #ebebeb
+  }
+
+  .hpHero-wrapper.has-swiper .hpHero-swiper-pagination {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0
+  }
+
+  .hpHero-wrapper.has-swiper .hpHero-swiper-pagination .swiper-pagination-bullet {
+    margin: 0 5px;
+    width: 12px;
+    height: 12px
+  }
+
+  @media (min-width:768px) {
+    .hpHero-wrapper.has-swiper .hpHero-swiper-pagination .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px
+    }
+  }
+
+  .hpHero-wrapper.has-swiper .sideNext,
+  .hpHero-wrapper.has-swiper .sidePrev {
+    display: none
+  }
+
+  @media (min-width:1170px) {
+    .hpHero-wrapper.has-swiper .slide-container {
+      max-width: 1170px;
+      margin: 0 auto;
+      width: 100%
+    }
+  }
+
+  @media (min-width:768px) {
+    .hpHero-wrapper.has-swiper .swiper-slide {
+      min-height: 450px
+    }
+    .hpHero-wrapper.has-swiper .insideNavigation.swiperCarousel {
+      width: calc(100% - 80px);
+      margin-left: 40px;
+      margin-right: 40px;
+      position: relative
+    }
+    .hpHero-wrapper.has-swiper .sideNext,
+    .hpHero-wrapper.has-swiper .sidePrev {
+      display: block;
+      background: #fff
+    }
+    .hpHero-wrapper.has-swiper .sidePrev {
+      left: -40px
+    }
+    .hpHero-wrapper.has-swiper.sideNext {
+      right: -40px
+    }
+    .hpHero-wrapper .vertical-center-md {
+      display: flex;
+      align-items: center;
+      min-height: 450px
+    }
+    .hpHero-wrapper .self-vertical-baseline-md {
+      align-self: baseline
+    }
+  }
+</style>
+<style>
+.sitewide-wrapper {
+    display: none;
+  }
+
+  .hpHero-wrapper {
+    background: none;
+  }
+
+
+  .hpHero-wrapper {
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .hpHero-wrapper p.headline-black {
+    font-family: 'proxima_novablack', arial, sans-serif;
+    font-size: 4.9em;
+    color: rgb(51, 102, 102);
+  }
+  .hpHero-wrapper p.headline-black-mobile {
+    font-family: 'proxima_novablack', arial, sans-serif;
+    font-size: 4.9em;
+    color: rgb(51, 102, 102);
+    line-height: 60px;
+    margin-top: 0px;
+  }
+
+  .hpHero-wrapper p.fine-print {
+    font-size: 16px;
+    font-weight: initial;
+    color: #336666;
+    font-family: 'proxima_novaregular', arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hpHero-wrapper .cx-cta {
+    border-color: rgb(51, 102, 102);
+    color: rgb(51, 102, 102);
+  }
+
+  .hpHero-wrapper .cx-cta:hover {
+    border-color: rgb(51, 102, 102);
+    background: rgb(51, 102, 102);
+    color: #fff;
+  }
+
+  @media (min-width: 960px) {
+    .hpHero-wrapper p.headline-black {
+      font-size: 4.9em;
+      line-height: 46px;
+      font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    }
+  }
+
+  .hpHero-wrapper p.headline-black.smaller-headline {
+    font-size: 2.4em;
+    line-height: 32px;
+  }
+  .hpHero-wrapper p.headline-black.smaller-headline-mobile {
+    font-size: 2.2em;
+    margin-top: 1px;
+    line-height: 32px;
+  }
+
+  .hpHero-wrapper p.headline-black.smaller-headline.even-smaller-headline {
+    font-size: 1.5em;
+    line-height: 20px;
+  }
+  .hpHero-wrapper p.headline-black.smaller-headline.even-smaller-headline-mobile {
+    font-size: 1.9em;
+    margin-top: 1px;
+    line-height: 26px;
+  }
+}
+.hpHero-wrapper .copy-container {
+  color: #336666;
+}
+.alarmclock {
+height: 59px;
+}
+#poloroidMove {
+  padding-top: 5px;
+}
+</style>
+<div class="hpHero-wrapper catBanner-wrapper">
+  <!-- KEEP .hpHero-wrapper for Homepage Hero -->
+  <div class="cs_container">
+    <!--  IMPORTANT .content-container-hero sets pointer-events: none; so clickthrough the the <a> in the background image works. - .content-container-hero should be used with .img-container-hero above -->
+    <div class="cs_row">
+      <div class="col-xs-12 col-lg-6">
+        <a href="$httpUrl('Search-Show','cgid','dotw')$">
+          <div class="copy-container hidden-xs hidden-sm">
+            <img class="alarmclock" src="/ecom/2017/web/170502-FlashSale-clock-1-2 copy.gif?$staticlink$" alt="" />
+            <p class="headline-black text-uppercase text-center smaller-headline">Flash Sale</p>
+            <p class="headline-black text-uppercase text-center">40% OFF</p>
+            <p class="headline-black text-uppercase text-center smaller-headline even-smaller-headline">Select Styles* <br> Ends at midnight </p>
+            <p class="fine-print text-center">  *Discount applied in cart.</p>
+            <!-- <div class="cta-group-4-xs cta-group-2-md col-md-12 col-lg-12 cta-group-2-lg flexbox">
+              <a class="cx-cta" href="$httpUrl('Search-Show','cgid','dotw')$">Save Now</a>
+            </div> -->
+          </div>
+          <div class="copy-container hidden-lg hidden-md MOBILE">
+            <img class="alarmclock" src="/ecom/2017/web/170502-FlashSale-clock-1-2 copy.gif?$staticlink$" alt="" />
+            <p class="headline-black text-uppercase text-center smaller-headline-mobile mobile">Flash Sale</p>
+            <p class="headline-black-mobile  text-uppercase text-center">40% OFF</p>
+            <p class="headline-black text-uppercase text-center smaller-headline even-smaller-headline-mobile">Select Styles* <br> Ends at midnight </p>
+            <p class="fine-print text-center">  *Discount applied in cart.</p>
+            <!-- <div class="cta-group-4-xs cta-group-2-md col-md-12 col-lg-12 cta-group-2-lg flexbox">
+              <a class="cx-cta" href="$httpUrl('Search-Show','cgid','dotw')$">Save Now</a>
+            </div> -->
+          </div>
+
+        </a>
+      </div>
+      <div class="main-shoe-hero hidden-xs hidden-sm hidden-md col-xs-12 col-md-6">
+        <img src="/ecom/2017/web/V2POLAROIDSCategory.png?$staticlink$" title="Crocs Flash Sale" alt="" class="hidden-xs hidden-sm" id = "poloroidMove" />
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.catBanner-wrapper {
+    background: none;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+  }
+
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    #cx-anniversary-title-below {
+      color: #5a8100;
+      -webkit-font-smoothing: antialiased;
+      font-size: 1.4em;
+      margin-left: 10px;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+}
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid','dotw', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid','dotw', 'attr', 'CategoryH2')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

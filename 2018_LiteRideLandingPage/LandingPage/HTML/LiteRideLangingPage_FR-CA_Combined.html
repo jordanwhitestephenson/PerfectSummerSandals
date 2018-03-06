@@ -1,0 +1,861 @@
+<style>
+  #riskFreeContainer {
+    display: none;
+  }
+
+  .productCarousel .outsideNavigation .sideNext,
+  .productCarousel .outsideNavigation .sidePrev {
+    display: none;
+  }
+
+  .promo-drawer {
+    display: none;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    margin-top: 15px;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .display-flex-end {
+    display: flex;
+    /*justify-content: flex-end;*/
+  }
+
+  .swiperCarousel .sidePrev,
+  .swiperCarousel .sideNext {
+    text-align: left;
+  }
+
+
+  .MOBILE_SWIPER img {
+    max-width: 85%;
+  }
+
+  #liteRideMain .cx-button,
+  .people_love .cx-button,
+  .JSEdit .cta_row .cx-button {
+    font-size: 1.3em;
+    line-height: 1.3;
+    padding: 10px 5px 9px 5px;
+    margin: auto auto auto auto;
+    border: 2px solid #444;
+  }
+
+
+  #liteRideMain .swiper-slide>a {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  @media (max-width: 480px) {
+    .parts_science h3 {
+      font-size: 2em;
+      padding-top: 0.4em;
+      line-height: 1.0;
+      margin-bottom: 0.2em;
+
+    }
+    .parts_science.MOBILE h3 {
+      font-size: 6vw;
+      line-height: 1.0;
+      margin-bottom: 0em;
+      padding-top: 0em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .parts_science.MOBILE {
+      margin-top: 1em;
+    }
+    .product_and_tall_man {
+      flex-direction: column-reverse;
+      margin-top: 1em;
+    }
+    .product_and_tall_woman {
+      flex-direction: column;
+      margin-top: 1em;
+    }
+    .liteRideHeadline {
+      font-size: 1.5em;
+      margin-top: 2.5em;
+      margin-bottom: 0.4em;
+      line-height: 1.0;
+    }
+    .liteRideHeadline.revolutionary_headline_mobile {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
+    .single_gray_square {
+      background: rgba(220, 215, 215, 0.37);
+      height: 240px;
+      margin: 15px auto 15px auto;
+      padding: 10px 15px 10px 15px;
+    }
+    .lite_ride_product {
+      margin: 20px 0px 35px 0px;
+    }
+    .lite_ride_product_men {
+      margin: 10px 0px 25px 0px;
+    }
+    .green_line {
+      color: #444;
+      font-size: 1.2em;
+      padding-top: 4px;
+      margin-top: 1em;
+    }
+    .black_literide_background {
+      flex-direction: column;
+    }
+    #liteRideMain .cx-button.black_background_button,
+    .JSEdit .cta_row .cx-button {
+      background-color: #fff;
+      color: #444;
+      border: 2px #444 solid;
+      margin: 5px 0px 5px 0px;
+    }
+
+    #liteRideMain .cx-button.black_background_button:hover,
+    .cx-button.black_background_button:focus {
+      background-color: #444;
+      color: #fff;
+      border: 2px #fff solid;
+    }
+
+    .lite_ride_logo {
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+    }
+    .lite_ride_logo img {
+      width: 40%;
+      margin: auto 0 auto 0
+    }
+    /* .mens_product_mobile {
+      margin-top: -20px;
+    } */
+    .JSEdit .disclaimer_text {
+      align-self: center;
+    }
+    .liteRidePara {
+      font-size: 4.5vw;
+    }
+    #liteThird .image-hero  {
+      width: 75%;
+      margin-top: 0.5em;
+    }
+
+    #liteFirst .image-hero {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+    }
+    #liteSecond .image-hero {
+      padding-top: 2.6em;
+      width: 91%;
+    }
+    .JSEdit .product_description.womens_coming_soon {
+      margin-top: 1em;
+    }
+    .JSEdit .disclaimer_text {
+      color: #fff;
+      font-size: 2.5vw;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  @media (min-width: 481px) {
+    .parts_science h3 {
+      font-size: 3.0vw;
+      margin-top: 1.0em;
+      margin-bottom: 0.8em;
+      display: flex;
+      justify-content: center;
+    }
+    #liteRideMain {
+      font-size: 80%;
+    }
+    .liteRideHeadline {
+      font-size: 1.5em;
+      margin-top: 1em;
+      margin-bottom: 0.4em;
+      line-height: 1.0;
+    }
+    .single_gray_square {
+      background: rgba(220, 215, 215, 0.37);
+      width: 220px;
+      height: 190px;
+      margin: 15px auto 15px auto;
+      padding: 10px 15px 10px 15px;
+    }
+    .green_line {
+      color: #fff;
+      font-size: 1.5em;
+      padding-top: 8px;
+    }
+    .black_background_content_container.cs_container-crocs {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #liteRideMain .cx-button.black_background_button {
+      background-color: rgba(255, 255, 255, 0);
+      color: #fff;
+      border: 2px #fff solid;
+      margin: 5px 0px 5px 0px;
+    }
+
+    #liteRideMain .cx-button.black_background_button:hover,
+    .cx-button.black_background_button:focus {
+      background-color: #fff;
+      color: #444;
+      border: 2px #fff solid;
+    }
+
+    .lite_ride_logo {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    .JSEdit .cta_row {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+    }
+    .lite_ride_product {
+      margin: 20px 0px 35px 0px;
+    }
+    .lite_ride_product_men {
+      margin: 20px 0px 30px 0px;
+    }
+    /* .mens_product_mobile {
+      margin-top: -15px;
+    } */
+    .JSEdit .disclaimer_text {
+      align-self: center;
+    }
+    .liteRidePara {
+      font-size: 2.0vw;
+    }
+    .JSEdit .product_description.womens_coming_soon {
+      margin-top: 1em;
+    }
+    .JSEdit .disclaimer_text {
+      color: #fff;
+      font-size: 11px;
+      margin-bottom: 10px;
+    }
+
+
+
+  }
+
+  @media (min-width: 768px) {
+    #liteRideMain {
+      font-size: 80%;
+    }
+    .liteRideHeadline {
+      font-size: 2.3em;
+    }
+    .single_gray_square {
+      width: 260px;
+      height: 200px;
+    }
+    .black_background_content_container.cs_container-crocs {
+      height: 600px;
+    }
+    .parts_science h3 {
+      font-size: 2.0em;
+    }
+    .JSEdit .disclaimer_text {
+      align-self: baseline;
+    }
+    .liteRidePara {
+      font-size: 1.1em;
+    }
+    .desktop_padding_top {
+      margin-top: 1.5em;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .single_gray_square {
+      width: 275px;
+      height: 225px;
+    }
+    #liteRideMain {
+      font-size: 100%;
+    }
+    .black_background_content_container.cs_container-crocs {
+      width: 1370px;
+      height: 655px;
+    }
+    /* CAYA PRODUCT SLIDER */
+  }
+
+  .MOBILE_SWIPER {
+    margin-top: 15px;
+  }
+
+
+  .black_literide_background {
+    background: url('LiteRide_Background_Horizontal_RGB.jpg?$staticlink$');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex_column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .black_content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lite_ride_product,
+  .lite_ride_product_men {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+
+  .parts_science h3 span {
+    font-size: 0.5em;
+    border-bottom: 2px #81bc00 solid;
+    font-style: italic;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .lazy-load {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #liteRideMain .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  #liteRideMain .outsideNavigation .sideNext,
+  .outsideNavigation .sidePrev {
+    /*background: rgba(255, 255, 255, 0);*/
+  }
+
+  .liteRideHeadline {
+    color: #2e5185;
+  }
+
+  .liteRidePara {
+    line-height: 1.2;
+  }
+
+  .lite_product_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product_and_tall_man,
+  .product_and_tall_woman {
+    display: flex;
+    align-items: center;
+  }
+
+  #liteRideMain .a_href {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #liteRideMain .cta_row {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #liteRideMain .product_description,
+  .JSEdit .product_description {
+    color: #444;
+    padding-top: 6px;
+  }
+
+  .lite-ride-carousels .cx-brand-font .shop-carousel-title {
+    color: #d41f27;
+  }
+
+
+
+  .lite-ride-carousels .shop-carousel-last .carouselLink {
+    display: table;
+    font-size: 21px;
+    font-family: proxima_novablack, Arial, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: url('LiteRide_Background_Horizontal_RGB.jpg?$staticlink$');
+  }
+
+  .lite-ride-carousels .shop-carousel-last .carouselLink span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .lite-ride-carousels .shop-carousel-last .carouselLink:hover span,
+  .lite-ride-carousels .shop-carousel-last .carouselLink:focus span {
+    text-decoration: underline;
+  }
+
+
+
+  .gray_square_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .single_gray_square_content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .green_line {
+    border-top: #81bc00 2px solid;
+  }
+
+  .circle_container {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+  }
+
+  .mobile_slide_headline {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 0.2em;
+    line-height: 0.9;
+  }
+
+  .hundred_percent_amazing span {
+    font-size: 0.5em;
+    color: #fff
+  }
+
+  .hundred_percent_amazing h3 {
+    color: #fff;
+    font-size: 3em;
+    line-height: 0.5;
+  }
+
+  .hundred_percent_amazing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+  }
+  .hundred_percent_amazing.first_slide {
+    margin-top: 1.0em;
+    margin-bottom: 1em;
+  }
+  .hundred_percent_amazing.second_slide {
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+  }
+  .hundred_percent_amazing.last_slide {
+    margin-top: -1.7em;
+    padding-bottom: 9px;
+  }
+
+
+
+
+  .revolutionary_mobile_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0.4em;
+  }
+
+  .MOBILE.gray_square_container .sidePrev,
+  .MOBILE.gray_square_container .sideNext {
+    width: 25px;
+  }
+
+  .MOBILE.gray_square_container .swiperCarouselWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MOBILE.gray_square_container .swiperCarouselWrapper button {
+    font-size: 3em;
+    padding: 0px 4px 0px 4px;
+  }
+
+  .JSEdit .insideNavigation .sidePrev {
+    left: -10px;
+  }
+
+  .JSEdit .insideNavigation .sideNext {
+    right: -10px;
+  }
+
+  .JSEdit .fancy-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+  .JSEdit .fancy-headline:before,
+  .JSEdit .fancy-headline:after {
+    background-color: #444;
+    content: '\a0';
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 0.5em;
+  }
+
+  .JSEdit .fancy-headline:before {
+    margin-right: 10px;
+  }
+
+  .JSEdit .fancy-headline:after {
+    margin-left: 10px;
+  }
+
+  .JSEdit .widget_container {
+    margin-bottom: 2em;
+  }
+  #liteRideMain .product_description,
+  .JSEdit .product_description {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #80bc01;
+    border-bottom: 2px solid #80bc01;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.1em;
+  }
+  .opacity_image {
+    opacity: 0.2;
+  }
+
+</style>
+
+<!-- START CAYA MAIN -->
+<div id="#liteRideMain" class="caya-tab past JSEdit">
+  <!-- #liteRideMain is manditory, do not change -->
+  <div class="caya-hero-wrapper caya-div cs_container-fluid" id="liteRideMain">
+    <div class="cs_row position-relative">
+      <div class="hero-copy-container text-center">
+        <div class="lite_ride_logo">
+          <object data="LiteRide_Logo_RGB.svg?$staticlink$" alt="Logo LiteRide™" type="image/svg+xml">
+            <img src="LiteRide_Logo_RGB.png?$staticlink$" alt="Logo LiteRide&trade;"/>
+          </object>
+        </div>
+      </div>
+
+      <div class="DESKTOP_BLACK hidden-xs black_literide_background cs_container-fluid" style="width: 100%">
+        <div class="black_background_content_container cs_container-crocs">
+          <div class="">
+            <div class="parts_science">
+              <h3 class="cx-heavy-brand-font text-center" style="color: #fff;">CRÉÉES À PARTS ÉGALES PAR LA SCIENCE <span class="">et </span> LA MAGIE</h3>
+            </div>
+
+            <div class="black_content_container">
+              <div class="col-sm-12 col-md-6 display-flex" style="flex-direction: column">
+                <img src="Callouts_Square_Layout.png?$staticlink$" class="img-responsive"/>
+                <p class="cx-brand-font text-center disclaimer_text">
+ * Lorsque l'on compare la mousse LiteRide&trade; à la mousse classique Croslite&trade;.
+                </p>
+              </div>
+
+              <div class="flex_column col-md-6 hidden-sm">
+                <h3 class="cx-heavy-brand-font text-center text-uppercase green_line" style="">Examiner plus attentivement</h3>
+                <div class="caya-div VIDEO_CONTAINER col-xs-12 col-md-12 col-lg-9">
+                  <div class="embed-container">
+                    <iframe class="lazy-load" alt="Logo LiteRide™" src="https://player.vimeo.com/video/252387317?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" data-src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <noscript><iframe src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></noscript>
+                  </div>
+                </div>
+                <!-- <div class="cta_row " style="">
+                  <div class="col-lg-6 col-md-9 col-xs-12 btn-col-1 text-center"><a href="$httpUrl('Search-Show','cgid','literide-men')$" class="cx-button black_background_button full-width text-uppercase text-center">SHOP MEN'S</a></div>
+                  <div class="col-lg-6 col-md-9 col-xs-12 btn-col-1 text-center"><a href="$httpUrl('Search-Show','cgid','literide-women')$" class="cx-button black_background_button full-width text-uppercase text-center">SHOP WOMEN'S</a></div>
+                </div> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="MOBILE_BLACK hidden-sm hidden-md hidden-lg black_literide_background position-relative" style="width: 100%;">
+        <div class="parts_science  MOBILE">
+          <h3 class="cx-heavy-brand-font text-center" style="color: #fff;">CRÉÉES À PARTS ÉGALES</h3>
+          <h3 class="cx-heavy-brand-font text-center" style="color: #fff;">PAR LA SCIENCE <span class="">et </span> LA MAGIE</h3>
+        </div>
+        <div class="swiperCarouselWrapper productCarousel_liteRide_mobile sweater-slide-wrapper">
+          <div id="WaysToWearSlider" class="adaCarousel  swiper-container">
+            <div class="swiper-wrapper" style="">
+              <!-- Slide -->
+              <div tabindex="" class="swiper-slide" id="liteFirst">
+                <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$" class="swiper-slide"><img class="lazy-load image-hero" src="Slide1.png?$staticlink$" title="Sabots LiteRide" alt=""/></a>
+                <div class="hundred_percent_amazing first_slide">
+                  <h3 class="cx-heavy-brand-font text-center">25 %</h3>
+                  <h3 class="cx-heavy-brand-font text-center"><span>PLUS LÉGERS*</span></h3>
+                </div>
+                <div class="circle_container">
+                  <img class="one_circle" src="WhiteCircle.png?$staticlink$" title="" alt=""/>
+                  <img class="one_circle" src="GreenCircle.png?$staticlink$" title="" alt=""/>
+                  <img class="one_circle" src="GreenCircle.png?$staticlink$" title="" alt=""/>
+                </div>
+              </div>
+              <div tabindex="" id="liteSecond" class="swiper-slide">
+                <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$"><img class="lazy-load image-hero" src="Slide2.png?$staticlink$" title="Sabots LiteRide" alt=""/></a>
+                <div class="hundred_percent_amazing second_slide">
+                  <h3 class="cx-heavy-brand-font text-center">40 %</h3>
+                  <h3 class="cx-heavy-brand-font text-center"><span>PLUS DOUX*</span></h3>
+                </div>
+                <div class="circle_container">
+                  <img class="one_circle" src="GreenCircle.png?$staticlink$" title="" alt=""/>
+                  <img class="one_circle" src="WhiteCircle.png?$staticlink$" title="" alt=""/>
+                  <img class="one_circle" src="GreenCircle.png?$staticlink$" title="" alt=""/>
+                </div>
+              </div>
+              <!-- end slide -->
+              <div tabindex="" id="liteThird" class="swiper-slide">
+                <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$"><img class="lazy-load image-hero" src="Slide3_MOBILE.png?$staticlink$" title="Sabots LiteRide" alt=""/></a>
+                <div class="hundred_percent_amazing last_slide">
+                  <h3 class="cx-heavy-brand-font text-center">100 %</h3>
+                  <h3 class="cx-heavy-brand-font text-center"><span>INCROYABLES</span></h3>
+                </div>
+
+                <div class="circle_container">
+                  <img class="one_circle" src="GreenCircle.png?$staticlink$" title="" alt=""/>
+                  <img class="one_circle" src="GreenCircle.png?$staticlink$" title="" alt=""/>
+                  <img class="one_circle" src="WhiteCircle.png?$staticlink$" title="" alt=""/>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="sideNext text-left">
+              <div tabindex="-1" type="bullet" class=""><span class="swiper-pagination-progressbar-fill"></span><span aria-hidden=”false”>&rsaquo;</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- end of mobile swiper  -->
+        <p class="cx-brand-font text-center disclaimer_text">
+ Lorsque l'on compare la mousse LiteRide&trade; à la mousse classique Croslite&trade;.
+        </p>
+      </div>
+
+      <!-- end of mobile black container  -->
+    </div>
+    <!-- </div> -->
+    <div class="MOBILE_VIDEO flex_column hidden-sm hidden-md hidden-lg col-xs-12">
+      <h3 class="cx-heavy-brand-font text-center text-uppercase green_line" style="">Examiner plus attentivement</h3>
+      <div class="caya-div VIDEO_CONTAINER col-xs-12">
+        <div class="embed-container">
+          <iframe class="lazy-load" alt="LiteRide™ " src="https://player.vimeo.com/video/252387317?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" data-src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <noscript><iframe alt="LiteRide™ " src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></noscript>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- //REVOLUTIONARY div// -->
+  <div class="REVOLUTIONARY cs_container-crocs">
+    <div class="text_container">
+      <h2 class="DESKTOP hidden-xs cx-heavy-brand-font text-center liteRideHeadline"> DOUCEUR ENLISANTE <img src="greenDot.jpg?$staticlink$" style="margin-top: auto; margin-bottom: 0.2em"/> RÉVOLUTIONNAIRE <br />CONFORT NOVATEUR</h2>
+      <p class="DESKTOP hidden-xs cx-brand-font text-center liteRidePara">
+ LiteRide&trade; constitue la dernière innovation dans le monde légendaire du confort Crocs.<br />Ce matériel à cellules fermées est encore plus léger et plus doux que la mousse Croslite&trade;<br />offrant un mélange agréable de soutien et de douceur enlisante sous les pieds.
+      </p>
+      <div class="revolutionary_mobile_container hidden-sm hidden-md hidden-lg">
+        <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> RÉVOLUTIONNAIRE </div>
+        <img src="greenDot.jpg?$staticlink$" style="margin-top: auto; margin-bottom: 0.1em"/>
+        <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> DOUCEUR ENLISANTE</div>
+        <img src="greenDot.jpg?$staticlink$" style="margin-top: auto; margin-bottom: 0.1em"/>
+        <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> CONFORT NOVATEUR</div>
+      </div>
+      <p class="MOBILE  hidden-sm hidden-md hidden-lg cx-brand-font text-center liteRidePara">
+ LiteRide&trade; constituent la dernière innovation dans le monde légendaire du confort Crocs. Ce matériel à cellules fermées est encore plus léger et plus doux que la mousse Croslite&trade;, offrant un mélange agréable de soutien et de douceur enlisante sous les pieds.
+      </p>
+    </div>
+    <div class="product_and_tall_man">
+      <div class="lite_product_container col-sm-6">
+        <div class="lite_ride_product_men">
+          <div class="a_href">
+            <img src="LightRideClog.jpg?$staticlink$" class="img-responsive opacity_image" title="Sabots LiteRide&trade;"/>
+            <p class="cx-brand-font product_description text-center mens_product_mobile" style="color:#2f5184">DISPONIBLES<br><span style="font-weight: bold">01.03.2018</p>
+            </div>
+        </div>
+        <div class="lite_ride_product_men">
+          <div class="a_href">
+            <img src="LiteRideSlide.jpg?$staticlink$" class="img-responsive opacity_image" title="Mules LiteRide&trade;"/>
+          <p class="cx-brand-font product_description text-center mens_product_mobile" style="color:#2f5184">DISPONIBLES<br><span style="font-weight: bold">01.03.2018</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-10 col-sm-6 display-flex">
+        <div>
+            <img src="MenOnFigure.jpg?$staticlink$" class="img-responsive desktop_padding_top" title="Sabots LiteRide&trade;"/>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- //REVOLUTIONARY div// -->
+
+  <!-- //ATHLETICALLY div// -->
+  <div class="ATHLETICALLY cs_container-crocs">
+    <div class="text_container">
+      <h2 class="DESKTOP hidden-xs cx-heavy-brand-font text-center liteRideHeadline"> CONFORT INSPIRÉ DE L'ATHLÉTISME</h2>
+      <p class="DESKTOP hidden-xs cx-brand-font text-center liteRidePara"> Parfaite pour les échauffements et les refroidissements, et les sorties de fins de semaine<br />en ville, la mousse LiteRide&trade; sera la prochaine percée du confort de classe mondiale.</p>
+      <h2 class="MOBILE hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline"> CONFORT INSPIRÉ<br /> DE L'ATHLÉTISME</h2>
+      <p class="MOBILE hidden-sm hidden-md hidden-lg cx-brand-font text-center liteRidePara"> Parfaite pour les échauffements et les refroidissements, et les sorties de fins de semaine en ville, la mousse LiteRide&trade; sera la prochaine percée du confort de classe mondiale.</p>
+    </div>
+    <div class="product_and_tall_woman">
+      <div class="col-xs-12 col-sm-5 col-md-6 display-flex-end">
+        <div>
+            <img src="WomanOnFigure.jpg?$staticlink$" class="img-responsive desktop_padding_top" title="Sabots LiteRide&trade;"/>
+          </div>
+      </div>
+      <div class="lite_product_container col-xs-12 col-sm-7 col-md-6">
+        <div class="lite_ride_product">
+          <div class="a_href">
+            <img src="LiteRideClog_2.jpg?$staticlink$" class="img-responsive opacity_image" title="Sabots LiteRide&trade;"/>
+          <p class="cx-brand-font product_description text-center womens_coming_soon" style="color:#2f5184">DISPONIBLES<br><span style="font-weight: bold">01.03.2018</p>
+          </div>
+        </div>
+        <div class="lite_ride_product">
+          <div>
+            <img src="LiteRideSandal.jpg?$staticlink$" class="img-responsive opacity_image" title="Sandales LiteRide&trade; pour femmes"/>
+            <p class="cx-brand-font product_description text-center womens_coming_soon" style="color:#2f5184">DISPONIBLES<br><span style="font-weight: bold">01.03.2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- <REVIEWS> -->
+
+  <!-- <REVIEWS> -->
+  <!-- <div class="text-center fancy-headline">#ComeAsYouAre</div>
+  <div class="cs_container-crocs widget_container">
+    <div class="olapic-header">
+      <div class="olapic-carousel-subtitle">Unique starts with you. Share your photos and #ComeAsYouAre.</div>
+      <button aria-disabled="false" type="button" class="olapic-upload-link cx-button cx-button-cta">Upload a Photo</button>
+    </div>
+    <div class="js-olapic olapic-carousel" data-source="signal" data-location="pdp-top" data-useproduct="true" data-useproductcategory="true" data-widgets="Homepage"></div>
+  </div> -->
+</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+$(".productCarousel_liteRide_mobile>div").each(function() {
+    var $this = $(this);
+
+    var carouselID = "productCarousel" + Math.ceil(Math.random() * 1000000000000000);
+    $this.attr("id", carouselID);
+
+    $this.find("a").not(".carouselLink").attr("tabindex", "-1");
+
+    var thisSwiper = app.carousel.carousels[carouselID] = new Swiper('#' + carouselID, {
+        a11y: true,
+        roundLengths: false,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            centeredSlides: true,
+          },
+
+      }
+    });
+});
+</script>

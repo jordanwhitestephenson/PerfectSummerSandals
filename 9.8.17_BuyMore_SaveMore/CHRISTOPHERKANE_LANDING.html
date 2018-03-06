@@ -1,0 +1,695 @@
+<style>
+#headerTopPromo {
+	display: none !important;
+}
+#riskFreeContainer {
+	display: none;
+}
+.ck-lp .cs_container a:hover, .cs_container a:focus, .cs_container a:active {
+	text-decoration: none;
+}
+.text-uppsercase {
+	text-transform: uppercase;
+}
+.proxima-novaregular {
+	font-family:proxima_novaregular,arial,helvetica,sans-serif
+}
+.proxima-novablack {
+	font-family:proxima_novablack,arial,helvetica,sans-serif
+}
+.padding-O {
+	padding-right: 0;
+	padding-left: 0;
+}
+.cs_row {
+	padding: 0;
+}
+.cs_row_padding {
+	padding: 0 15px;
+}
+.ck-lp {
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 30px;
+}
+.ck-lp h2 {
+	color: #000000;
+	margin: 15px auto;
+	text-align: center;
+}
+.ck-lp .flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.ck-lp .margin0 {
+	margin: 0;
+}
+.ck-lp .italic {
+	font-style: italic;
+}
+.ck-lp h1, .ck-lp h2 {
+	color: #000000;
+	font-size: 1.6em;
+	line-height: 1;
+	letter-spacing: 1px;
+}
+.ck-lp img {
+	max-width: 100%;
+}
+.ck-lp .ck-section {
+	margin-top: 10px;
+}
+.ck-lp #logo-container {
+    position: absolute;
+    z-index: 90;
+    background: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    padding: 15px;
+    text-align: center;
+}
+.ck-lp .ck-logo {
+	margin-top: 15%;
+}
+.ck-lp p {
+	line-height: 1.5;
+	font-size: 1em;
+	color: #000000;
+}
+.ck-lp .header-text {
+	text-align: center;
+	padding: 15px 15px 0 15px;
+}
+.ck-lp .product-container p {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	line-height: 1;
+}
+.ck-lp .ck_cta {
+	border: 2px solid #000000;
+	padding: 14px 15px 12px 15px;
+	font-size: 14px;
+	color: #000000;
+	background: none;
+	max-width: 150px;
+	margin: 0 auto;
+	transition: .2s all;
+}
+.ck-lp .ck_cta a {
+	color: #000000;
+}
+.ck-lp .ck_cta:hover {
+	background: #000000;
+	color: #ffffff;
+}
+.ck-lp .product-container {
+	margin-bottom: 25px;
+}
+.ck-lp .detail-slider {
+	margin-bottom: 15px;
+}
+.ck-lp #portslider {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+.ck-lp #ck-profile {
+	position: absolute;
+	z-index: 90;
+	padding: 25px 15px;
+}
+.ck-lp #ck-profile h3 {
+	color: #ffffff;
+	font-size: 1em;
+	letter-spacing: 1px;
+	padding: 40px 20px 0 0px;
+}
+.ck-lp .embed-container img {
+	min-width: 100%;
+}
+.ck-lp .sm-hide {
+	display: none;
+}
+}
+.ck-lp .sm-show {
+	display: block;
+}
+.mobile-margin {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.br-hide {
+	display: block;
+}
+@media (max-width: 321px) {
+	.ck-lp #ck-profile h3 {
+		font-size: .8em;
+		padding: 27px 15px 0 0;
+	}
+}
+@media (min-width: 480px) {
+	.ck-lp .ck-logo {
+		margin-top: 2%;
+		width: 50%;
+	}
+	.ck-lp .header-text {
+		padding: 0;
+		margin-top: 20px;
+	}
+}
+@media (min-width: 768px) {
+	.ck-lp {
+		margin-bottom: 60px;
+	}
+	.ck-lp .cs_container {
+		width: 100%;
+	}
+	.ck-lp .ck-section {
+		margin-top: 30px;
+	}
+	.ck-lp .header-text {
+		font-size: 1.2em;
+		text-align: center;
+	}
+	.ck-lp #logo-container {
+		margin-left: 30px;
+		width: 41.66666667%;
+		height: inherit;
+		text-align: left;
+    	top: 25%;
+    	background: none;
+	}
+	.ck-lp .ck-logo {
+		margin-top: 0;
+		width: 90%;
+	}
+	.ck-lp #full-width {
+		min-width: 100%;
+	}
+	.cs_row_padding {
+		padding: 0;
+	}
+	.mobile-margin {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.ck-lp h2 {
+		font-size: 2.2em;
+		margin-bottom: 10px;
+		line-height: 1;
+	}
+	.ck-lp .product-container {
+		margin-bottom: 30px;
+	}
+	.padding-O {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.cs_row {
+		padding: 0 !important;
+	}
+	.ck-lp .detail-slider {
+		margin-bottom: 0px;
+	}
+	.ck-lp #portslider {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+	.ck-lp #ck-profile {
+		padding: 80px 50px 0 0;
+	}
+	.ck-lp #ck-profile p {
+		color: #ffffff;
+		font-size: 1em;
+	}
+	.ck-lp #ck-profile h3 {
+		margin-bottom: 10px;
+		font-size: 1.2em;
+		padding: 0;
+	}
+	.ck-lp .sm-hide  {
+		display: block;
+	}
+	.ck-lp .sm-show {
+		display: none;
+	}
+	.ck-lp .product-container p {
+		font-size: 1.3em;
+	}
+	.swiperCarouselWrapper {
+	}
+	.br-hide {
+		display: none;
+	}
+	.ck-lp .embed-container img {
+	min-width: initial;
+	}
+}
+@media (min-width: 960px) {
+	.ck-lp .cs_container {
+		width: 960px;
+	}
+	.ck-lp #full-width {
+		min-width: 100%;
+	}
+	.ck-lp #logo-container {
+		top: 32%;
+	}
+	.ck-lp .ck-logo {
+		width: 80%;
+	}
+	.ck-lp #ck-profile {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 506px;
+		padding: 0 80px 0 0;
+	}
+	.ck-lp #ck-profile p {
+		font-size: 1.2em;
+	}
+}
+@media (min-width: 1260px) {
+
+}
+/* detailslider Swiper */
+
+@media (min-width: 960px) {
+	#detailslider .swiper-slide {
+		width: 33%;
+	}
+}
+/* headerslider Swiper */
+#headerslider .embed-container {
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+}
+#headerslider .embed-container img {
+	min-width: 100%;
+}
+#headerslider .embed-container img, .embed-container object, .embed-container embed {
+	width: auto;
+	margin-left: 0;
+}
+#headerslider .swiper-pagination {
+	margin-bottom: 15px;
+	z-index: 92;
+}
+#headerslider .swiper-pagination-bullet {
+	width: 17px;
+	height: 17px;
+	opacity: 1;
+	background: none;
+	border: 2px solid white;
+	border-radius: 100%;
+	transition: all .2s ease-in-out;
+	margin: 0 7px;
+}
+#headerslider .swiper-pagination-bullet-active {
+	background: #ffffff;
+	border: 2px solid white;
+	opacity: 1;
+}
+.swiperCarouselWrapper #headerslider {
+}
+#headerslider .swiper-slide-caption {
+	margin-top: 50px;
+	color: #444;
+	text-align: center;
+}
+@media (max-width: 480px) {
+	#headerslider .embed-container img {
+		max-width: 240% !important;
+		margin-left: -135% !important;
+	}
+}
+</style>
+
+<div class="ck-lp">
+
+	<div class="cs_container-fluid">
+		<div class="cs_row">
+			<div class="col-xs-12 padding-O">
+				<!-- Start Swiper -->
+				<div class="swiperCarouselWrapper slideCarousel">
+					<div id="headerslider" class="swiperCarousel adaCarousel swiper-container-horizontal">
+						<div class="cs_row">
+						<div id="logo-container" class="col-xs-12 col-md-4 col-md-offset-0 col-lg-4 padding-O">
+						<img class="ck-logo" src="ecom/2017/web/ckXcorcs_logo.svg?$staticlink$">
+						</div>
+						</div>
+						<div class="swiper-wrapper">
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class="embed-container"><img src="ecom/2017/web/ck_banner_avocado.jpg?$staticlink$" width="100%"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_banner_honey.jpg?$staticlink$" width="100%"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_banner_white.jpg?$staticlink$" width="100%"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_banner_ocre.jpg?$staticlink$" width="100%"></div>
+							</div>
+							<!-- end slide -->
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<!-- end swiper -->
+				</div>
+			</div>
+		</div>
+
+	<div class="cs_container ck-section">
+		<div class="cs_row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0 text-center header-text cs_row_padding">
+				<h2 class="proxima-novablack text-uppercase">Take A Walk On The Wild Side</h2>
+				<p>On September 19, 2016 renowned designer Christopher Kane surprised guests at his London Fashion Week show by unveiling his latest vision: high fashion Crocs, featuring marbled designs and embellished with rough mineral charms. This unexpected collaboration generated worldwide interest, resulting in press coverage in publications such as Vogue, Elle and Cosmopolitan. For 2017, the Christopher Kane x Crocs collaboration offers a new vision in footwear via four unique colorways. Limited quantities, and proudly not for everyone.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="cs_container ck-section">
+		<div class="cs_row cs_row_padding">
+			<div class="col-xs-12 col-md-6 col-lg-5 text-center product-container">
+			<a href="$httpUrl('Product-Show','pid','205203','cid','3R8','cgid','christopher-kane')$">
+				<img class="ck-product-img" data-alt-src="ecom/2017/web/ck_product_detail_avocado.jpg?$staticlink$" src="ecom/2017/web/ck_product_avocado.jpg?$staticlink$">
+				<p class="proxima-novablack text-uppercase">Christopher Kane x Crocs<br>Avocado Tiger Clog</p>
+				<div class="cs_row">
+					<div class="ck_cta proxima-novablack text-uppercase">
+						Shop Now
+					</div>
+				</div>
+			</a>
+			</div>
+			<div class="col-xs-12 col-md-6 col-md-offset-0 col-lg-5 col-lg-offset-2 text-center product-container">
+			<a href="$httpUrl('Product-Show','pid','205240','cid','066','cgid','christopher-kane')$">
+				<img class="ck-product-img" data-alt-src="ecom/2017/web/ck_product_detail_white.jpg?$staticlink$" src="ecom/2017/web/ck_product_white.jpg?$staticlink$">
+			 	<p class="proxima-novablack text-uppercase">Christopher Kane x Crocs<br>White Tiger Clog</p>
+				<div class="cs_row">
+					<div class="ck_cta proxima-novablack text-uppercase">
+						Shop Now
+					</div>
+				</div>
+			</a>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-5 text-center product-container">
+			<a href="$httpUrl('Product-Show','pid','205241','cid','742','cgid','christopher-kane')$">
+				<img class="ck-product-img" data-alt-src="ecom/2017/web/ck_product_detail_honey.jpg?$staticlink$" src="ecom/2017/web/ck_product_honey.jpg?$staticlink$">
+				<p class="proxima-novablack text-uppercase">Christopher Kane x Crocs<br>Honey Tiger Clog</p>
+				<div class="cs_row">
+					<div class="ck_cta proxima-novablack text-uppercase">
+						Shop Now
+					</div>
+				</div>
+			</a>
+			</div>
+			<div class="col-xs-12 col-md-6 col-md-offset-0 col-lg-5 col-lg-offset-2 text-center product-container">
+			<a href="$httpUrl('Product-Show','pid','205242','cid','83V','cgid','christopher-kane')$">
+				<img class="ck-product-img" data-alt-src="ecom/2017/web/ck_product_detail_ocre.jpg?$staticlink$" src="ecom/2017/web/ck_product_ocre.jpg?$staticlink$">
+				<p class="proxima-novablack text-uppercase">Christopher Kane x Crocs<br>Ochre Tiger Clog</p>
+				<div class="cs_row">
+					<div class="ck_cta proxima-novablack text-uppercase">
+						Shop Now
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="cs_container ck-section">
+
+		<div class="cs_row">
+			<div class="col-xs-12 text-center">
+				<h2 class="proxima-novablack text-uppercase text-center">The Collection</h2>
+			</div>
+		</div>
+
+		<div class="cs_row ck-section">
+			<div class="col-xs-12 col-md-4 col-lg-4 detail-slider">
+				<!-- Start Swiper -->
+				<div class="swiperCarouselWrapper slideCarousel">
+					<div id="detailslider" class="swiperCarousel adaCarousel swiper-container-horizontal">
+						<div class="swiper-wrapper">
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class="embed-container"><img src="ecom/2017/web/ck_detail_ocre.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_avocado-2.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_white.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_ocre-2.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_avocado.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_honey.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+						</div>
+					</div>
+				</div>
+				<!-- end swiper -->
+			</div>
+
+			<div class="col-xs-12 col-md-4 col-lg-4 detail-slider">
+				<!-- Start Swiper -->
+				<div class="swiperCarouselWrapper slideCarousel">
+					<div id="detailslider2" class="swiperCarousel adaCarousel swiper-container-horizontal">
+						<div class="swiper-wrapper">
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class="embed-container"><img src="ecom/2017/web/ck_detail_honey.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_ocre.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_avocado-2.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_white.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_ocre-2.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_avocado.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+						</div>
+					</div>
+				</div>
+				<!-- end swiper -->
+			</div>
+
+			<div class="col-xs-12 col-md-4 col-lg-4 detail-slider">
+				<!-- Start Swiper -->
+				<div class="swiperCarouselWrapper slideCarousel">
+					<div id="detailslider3" class="swiperCarousel adaCarousel swiper-container-horizontal">
+						<div class="swiper-wrapper">
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class="embed-container"><img src="ecom/2017/web/ck_detail_avocado.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_honey.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_ocre.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_avocado-2.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_white.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_detail_ocre-2.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+						</div>
+					</div>
+				</div>
+				<!-- end swiper -->
+			</div>
+
+		</div>
+	</div>
+
+	<div class="cs_container hidden-xs">
+		<div class="cs_row">
+			<div class="col-xs-12">
+				<!-- Start Swiper -->
+				<div class="swiperCarouselWrapper slideCarousel">
+					<div id="portslider" class="swiperCarousel adaCarousel swiper-container-horizontal">
+						<div class="swiper-wrapper">
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class="embed-container"><img src="ecom/2017/web/ck_portait_honey.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_portait_white.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_portait_ocre.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+							<!-- Slide -->
+							<div tabindex="" class="swiper-slide swiper-no-swiping">
+								<div class='embed-container'><img src="ecom/2017/web/ck_portait_avocado.jpg?$staticlink$" width="auto"></div>
+							</div>
+							<!-- end slide -->
+						</div>
+					</div>
+				</div>
+				<!-- end swiper -->
+			</div>
+		  </div>
+		</div>
+
+		<div class="cs_container ck-section">
+			<div class="cs_row">
+				<div class="col-xs-12 ck-section">
+					<div class="cs_row">
+						<div class="col-xs-6 col-xs-offset-6 col-md-6 col-md-offset-6" id="ck-profile">
+						<h3 class="proxima-novablack text-uppercase text-center">Who is Christopher Kane?</h3>
+						<p class="proxima-novaregular sm-hide text-center">Well known in the fashion world for his highly creative and playful signature of mixing innovation with rebellious femininity, Christopher Kane has been the recipient of many industry accolades and awards, including four British Fashion Awards - winning Designer of the Year in 2013.</p>
+						</div>
+					</div>
+
+					<img src="ecom/2017/web/christopher-profile.jpg?$staticlink$">
+				</div>
+			</div>
+		</div>
+
+		<div class="cs_container ck-section sm-show">
+			<div class="cs_row">
+				<div class="col-xs-12">
+					<p class="proxima-novaregular text-center" style="color: #000000; margin: 5px 15px;">Well known in the fashion world for his highly creative and playful signature of mixing innovation with rebellious femininity, Christopher Kane has been the recipient of many industry accolades and awards, including four British Fashion Awards - winning Designer of the Year in 2013.</p>
+				</div>
+			</div>
+
+		</div>
+    <a href= "$httpUrl('Search-Show','cgid','christopher-kane')$">
+    <div class="ck_cta proxima-novablack text-uppercase text-center" style="margin-top: 4%;">
+      Shop Collection
+    </div>
+  </a>
+
+</div><!-- /.ck-lp -->
+
+<script>
+$(document).ready(function() {
+	// IMG hover change
+	$('img.ck-product-img').hover(function(){
+		var original = $(this).attr('src');
+		var second = $(this).attr('data-alt-src');
+
+		$(this).attr('src', second);
+		$(this).attr('data-alt-src', original);
+	}, function(){
+		var original = $(this).attr('src');
+		var second = $(this).attr('data-alt-src');
+
+		$(this).attr('src', second);
+		$(this).attr('data-alt-src', original);
+	});
+	// headerslider carousel
+	app.carousel.carousels.testWideCarousel = new Swiper ("#headerslider", {
+		a11y: true,
+		nextButton: '.sideNext',
+		prevButton: '.sidePrev',
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		noSwiping: true,
+		noSwipingClass: 'swiper-no-swiping',
+		centeredSlides: true,
+		effect: 'slide'
+	});
+	// portslider carousel
+	app.carousel.carousels.testWideCarousel = new Swiper ("#portslider", {
+		noSwiping: true,
+		noSwipingClass: 'swiper-no-swiping',
+        paginationClickable: true,
+        effect: 'fade',
+        autoplay: 4500
+	});
+	// detailslider carousel
+	app.carousel.carousels.testWideCarousel = new Swiper ("#detailslider", {
+		noSwiping: true,
+		noSwipingClass: 'swiper-no-swiping',
+        paginationClickable: true,
+        effect: 'fade',
+        autoplay: 4000
+	});
+		// detailslider2 carousel
+	app.carousel.carousels.testWideCarousel = new Swiper ("#detailslider2", {
+		noSwiping: true,
+		noSwipingClass: 'swiper-no-swiping',
+        paginationClickable: true,
+        effect: 'fade',
+        autoplay: 4000
+	});
+		// detailslider3 carousel
+	app.carousel.carousels.testWideCarousel = new Swiper ("#detailslider3", {
+		noSwiping: true,
+		noSwipingClass: 'swiper-no-swiping',
+        paginationClickable: true,
+        effect: 'fade',
+        autoplay: 4000
+	});
+
+});
+</script>

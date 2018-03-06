@@ -1,0 +1,76 @@
+<style>
+.sitewide-wrapper .proxima-black {
+  font-family: 'proxima_novablack', arial, sans-serif;
+}
+.sitewide-wrapper .proxima-regular {
+  font-family: 'proxima_novaregular', arial, sans-serif;
+}
+.sitewide-wrapper.main-sitewide-wrapper {
+  background: #cc3366;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+}
+.sitewide-wrapper.main-sitewide-wrapper:hover {
+  background:#cc3366;
+}
+.sitewide-wrapper p {
+  line-height: 1.2;
+  margin:0;
+  text-transform: uppercase !important;
+    padding: 7px 0 7px 0;
+  font-size: 4.2vw;
+}
+.mobile-hide {
+  display: none;
+}
+.sitewide-wrapper span.VD-crown {
+  background: none;
+  display: inline-block;
+}
+.sitewide-wrapper .link:hover {
+  text-decoration: underline;
+}
+.sitewide-wrapper p, .sitewide-wrapper p:visited {
+  color: #fff;
+}
+.sitewide-wrapper.main-sitewide-wrapper p {
+  text-transform: none;
+  margin-top: 0;
+  letter-spacing: 0px;
+}
+.sitewide-wrapper span.CTA{
+  display: inline-block;
+}
+
+@media (min-width: 768px){
+  .sitewide-wrapper span.CTA{
+    display: inline-block;
+  }
+   .sitewide-wrapper .mobile-hide {
+    display: inline-block;
+  }
+  .sitewide-wrapper.main-sitewide-wrapper p {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+  }
+}
+
+</style>
+<a href="$httpUrl('Search-Show','cgid','footwear')$" class="sitewide-wrapper main-sitewide-wrapper"> <!--KEEP .sitewide-wrapper for sitwide banner -->
+  <div class="cs_container-fluid">
+    <div class="cs_row text-center">
+      <div class="col-xs-12">
+        <p class="proxima-regular vd-crown text-uppercase hidden-xs">LET'S GET FESTIVE WITH 30% OFF SITEWIDE!*<span class=""></span> <span class="proxima-black">SHOP NOW</span></p>
+        <p class="proxima-regular vd-crown text-uppercase hidden-sm hidden-md hidden-lg">LET'S GET FESTIVE WITH 30% OFF SITEWIDE!*<span class=""></span> <span class="proxima-black">SHOP NOW</span></p>
+      </div>
+    </div>
+  </div>
+</a>

@@ -1,0 +1,280 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+
+  .jsHero-wrapper .cx-button {
+    color: #996633;
+    border: 2px solid #996633;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #996633;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width:767px) {
+    #mobile_padding {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 1.4em;
+      line-height: 1;
+      margin-bottom: 1vh;
+      margin-top: 0vh;
+    }
+
+    .small-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 39%;
+      right: 16%;
+      line-height: 1.2;
+      font-size: 12px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 13px;
+      margin-bottom: 0vh;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 1.6em;
+      line-height: 1;
+      margin-bottom: 0.35vh;
+    }
+
+    .small-headline {
+      font-size: 2.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 36%;
+      right: 22%;
+      line-height: 1.2;
+      font-size: 12px;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 0vh;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 1.9em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 2.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 16px;
+      padding: 15px;
+    }
+    .left_container img {
+      max-width: 60%;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 1.6em;
+      line-height: 0.9;
+      margin-bottom: 0.5vh;
+    }
+
+    .small-headline {
+      font-size: 2.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 14px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 100%;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 0vh;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 75%;
+      right: 0%;
+      line-height: 1.2;
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 3.0em;
+      margin-bottom: 1vh;
+    }
+    .smallest-headline {
+      font-size: 18px;
+      margin-bottom: 0vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 18px;
+      padding: 12px;
+    }
+
+    .text-container .product_description {
+      position: absolute;
+      top: 72%;
+      right: -2%;
+      line-height: 1.2;
+      font-size: 14px;
+    }
+  }
+
+
+
+  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  #stubborn_padding {
+    margin-top: 15px;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs less-padding">
+    <div class="js_row" style="margin-top: 1vw; margin-bottom: 1vw;">
+      <div class="text-center col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0" id="mobile_padding">
+        <div class="DESKTOP right_container">
+          <a href = "$httpUrl('Product-Show','pid','204804','cid','410','cgid','new-arrivals')$">
+            <div class = "text-container mobile-image-container hidden-md hidden-lg">
+            <img src="/ecom/2017/web/NewArrivals_Footwear_Mobile.jpg?$staticlink$" title="Femmes Sandales Swiftwater Webbing" alt=""  style="margin-top: -15px;" class="" id="" />
+            <div class="cx-copy" style="color: #444; font-size: 13px; margin-top: -10px; margin-bottom: 5px;">
+              Femmes Sandales Swiftwater Webbing
+            </div>
+          </div>
+            </a>
+
+            <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #996633;">PROFITEZ D’UN RABAIS DE 15% NOUVEAUTÉS</div>
+          <div class="cta-container text-center flexbox_column" >
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 less-padding" style="margin-bottom: 0.5vw;">
+              <a href=" $httpUrl('Search-Show','cgid','new-arrivals')$" role="button" class="cx-button full-width">MAGASINER LES NOUVEAUTÉS </a>
+            </div>
+          </div>
+        </div>
+        <p class="cx-brand-font smallest-headline" style="color: #444"> Rabais appliqué dans le panier.*
+        </p>
+      </div>
+
+      <div class="left_container col-lg-6 col-md-6 col-md-offset-0 hidden-sm hidden-xs hidden-sm text-center">
+        <div class="text-container text-center">
+          <a href = "$httpUrl('Product-Show','pid','204804','cid','410','cgid','new-arrivals')$">
+          <img src="/ecom/2017/web/Swiftwater Webbing.jpg?$staticlink$" title="Femmes Sandales Swiftwater Webbing" alt="" class="" id="" />
+          <p class = "cx-brand-font product_description hidden-sm hidden-xs" style="color:#444">
+            Femmes Sandales<br />Swiftwater Webbing
+          </p>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

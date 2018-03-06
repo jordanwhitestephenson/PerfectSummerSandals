@@ -1,0 +1,273 @@
+<style>
+  /* JS17 ADDITIONS */
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .flexbox .cx-button {
+      font-size: 24px;
+      padding: 8px 25px;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 4.2em;
+      padding-top: 14px;
+      line-height: 37px;
+    }
+    .flexbox .underneath_headline {
+      font-size: 2.3em;
+      padding-bottom: 8px;
+      padding-top: 2%;
+    }
+    .flexbox .above_headline {
+      font-size: 1.6em;
+      padding-top: 1px;
+    }
+    .jsHero-wrapper .flexbox .cx-clock {
+      max-width: 31%;
+      padding-top: 3%;
+      padding-bottom: 1%;
+    }
+    .flexbox .highest_above_headline {
+      padding-top: 2px;
+      font-size: 1.1em;
+    }
+    .flexbox p.cx-copy {
+      font-size: 16px;
+      padding-bottom: 1%;
+      padding-top: 4px;
+      line-height: inherit;
+    }
+    .flexbox .cx-button.full-width {
+      width: 78%;
+    }
+  }
+
+  @media (min-width:481px) {
+    .flexbox .cx-button {
+      font-size: small;
+      padding: 13px 25px;
+    }
+    .flexbox p.cx-copy {
+      font-size: 10px;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 3.0em;
+    }
+    .flexbox .underneath_headline {
+      font-size: 1.5em;
+    }
+    .flexbox .above_headline {
+      font-size: 1.5em;
+    }
+    .jsHero-wrapper .right_image {
+      max-width: 124%;
+    }
+    .js_copy_container.flexbox .cx-clock {
+      width: 18%;
+    }
+  }
+
+  @media (min-width:768px) {
+    .flexbox .cx-button {
+      font-size: large;
+      padding: 13px 25px;
+    }
+    .flexbox p.cx-copy {
+      font-size: 10px;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 4.0em;
+      padding-top: 3px;
+    }
+    .flexbox .underneath_headline {
+      font-size: 2.0em;
+    }
+    .flexbox .above_headline {
+      font-size: 1.6em;
+    }
+    .jsHero-wrapper .right_image {
+      max-width: 124%;
+    }
+    .flexbox .headline {
+      line-height: 45px;
+    }
+    .flexbox .cx-button.full-width {
+      width: 63%;
+    }
+    .js_copy_container.flexbox .cx-clock {
+      width: 11%;
+    }
+  }
+
+  @media (min-width:960px) {
+    .flexbox .cx-button {
+      font-size: larger;
+      padding: 13px 25px;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 4.0em;
+      line-height: 41px;
+      padding-top: 10px;
+    }
+
+    .flexbox .underneath_headline {
+      font-size: 2.3em;
+      padding-top: 1px;
+    }
+    .flexbox .above_headline {
+      font-size: 1.7em;
+    }
+    .jsHero-wrapper .right_image {
+      max-width: 83%;
+    }
+    .flexbox p.cx-copy {
+      font-size: 17px;
+      line-height: normal;
+      padding-top: 1%;
+    }
+    .flexbox .headline {
+      line-height: 50px;
+    }
+    .flexbox .cx-button.full-width {
+      width: 63%;
+    }
+    .js_copy_container.flexbox .cx-clock {
+      width: 11%;
+    }
+  }
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background: none;
+  }
+
+  .flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: #444;
+  }
+
+  .flexbox .cx-button {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    margin: 3px 0;
+    border: 2px solid #cc0033;
+    color: #cc0033;
+  }
+
+  .flexbox .cx-heavy-brand-font.headline,
+  .flexbox .underneath_headline,
+  .flexbox p.cx-copy {
+    color: #cc0033;
+  }
+
+  .flexbox p.cx-copy {
+    margin-bottom: 7px;
+  }
+
+  .flexbox .highest_above_headline {
+    padding-top: 2px;
+    font-size: larger;
+  }
+
+  .jsHero-wrapper .flexbox_default {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:focus {
+    text-decoration: none;
+  }
+</style>
+<div class="jsHero-wrapper">
+  <!-- KEEP .hpHero-wrapper for Homepage Hero -->
+  <div class="cs_container">
+    <div class="cs_row container flexbox_default">
+      <div class="flexbox col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center js_copy_container">
+        <img src="/ecom/2017/web/CLOC2K.png?$staticlink$" title="" alt="" class="cx-clock" />
+        <div class="cx-heavy-brand-font highest_above_headline">HOORAY FOR FRIDAY</div>
+        <div class="cx-heavy-brand-font above_headline">24-HOUR FLASH SALE</div>
+        <div class="cx-heavy-brand-font largest text-center headline">30% OFF</div>
+        <div class="larger cx-heavy-brand-font underneath_headline">SITEWIDE</div>
+        <p class="cx-copy">*Exclusions apply. Discount applied in cart.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .jscatBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .jscatBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jscatBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .jscatBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="jscatBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

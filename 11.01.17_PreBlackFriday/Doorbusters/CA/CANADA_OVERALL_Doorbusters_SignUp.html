@@ -1,0 +1,633 @@
+<style>
+  .jsHero-wrapper-doorbusters {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .jsHero-wrapper-doorbusters.SurpriseSale .cx-button {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    color: #fff;
+    border: 2px solid #cc3333;
+    background-color: #cc3333;
+  }
+
+
+  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .jsHero-wrapper-doorbusters a:hover,
+  .jsHero-wrapper-doorbusters a:focus {
+    text-decoration: none;
+  }
+
+  .jsHero-wrapper-doorbusters.SurpriseSale .cx-button:hover,
+  .jsHero-wrapper-doorbusters.SurpriseSale .cx-button:focus {
+    color: #cc3333;
+    background-color: #fff;
+  }
+
+  .jsHero-wrapper-doorbusters .right_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 480px) {
+
+    .jsHero-wrapper-doorbusters .largest-headline {
+      font-size: 7vw;
+      line-height: 1;
+
+    }
+    .jsHero-wrapper-doorbusters .col-xs-12 {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    .jsHero-wrapper-doorbusters .overall_container_surprise {
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    .jsHero-wrapper-doorbusters .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+    .jsHero-wrapper-doorbusters.SurpriseSale .cx-button {
+      padding: 4px 40px;
+      font-size: 19px;
+      margin-top: -5px;
+    }
+    .jsHero-wrapper-doorbusters .desktop_paragraph {
+      line-height: 1.2;
+      font-size: 18px;
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+
+    }
+
+    .jsHero-wrapper-doorbusters .fancy-headline {
+      font-size: 5vw;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+    .jsHero-wrapper-doorbusters .crocs_club_logo {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      width: 30%;
+    }
+    .cant_wait {
+      font-size: 1.3em;
+      line-height: 1.1;
+      margin-top: 0.9em;
+      margin-bottom: 0.5em;
+    }
+
+    .upsell_overview_container {
+      flex-wrap: wrap;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+
+
+    .jsHero-wrapper-doorbusters .largest-headline {
+      font-size: 2.5em;
+      line-height: .9;
+      margin-bottom: 0.4em;
+    }
+
+    .jsHero-wrapper-doorbusters .small-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.5vh;
+    }
+    .cant_wait {
+      font-size: 1.3em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      line-height: 1.2;
+    }
+
+    .jsHero-wrapper-doorbusters.SurpriseSale .cx-button {
+      padding: 11px 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .jsHero-wrapper-doorbusters .overall_container_surprise {
+      margin-top: 1em;
+      margin-bottom: 1em;
+
+    }
+
+    .jsHero-wrapper-doorbusters .crocs_club_logo {
+      margin-top: 5px;
+      margin-bottom: 1em;
+
+    }
+
+    .fancy-headline {
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      margin-bottom: 0.5em;
+
+    }
+    .jsHero-wrapper-doorbusters .desktop_paragraph {
+      font-size: 1.0em;
+      margin-bottom: 1.0em;
+    }
+    .upsell_overview_container {
+      flex-wrap: wrap;
+    }
+
+
+  }
+
+  @media (min-width: 768px) {
+    .jsHero-wrapper-doorbusters .largest-headline {
+      font-size: 3.8vmax
+    }
+
+    .jsHero-wrapper-doorbusters .desktop_paragraph {
+      font-size: 1.0em;
+      margin-bottom: 1.0em;
+    }
+    .jsHero-wrapper-doorbusters .overall_container_surprise {
+      margin-top: 3em;
+      margin-bottom: 3em;
+      display: flex;
+      align-items: center;
+    }
+    .upsell_overview_container {
+      flex-wrap: nowrap;
+    }
+
+  }
+
+  @media (min-width: 960px) {
+
+    .jsHero-wrapper-doorbusters.SurpriseSale .cx-button {
+      font-size: 22px;
+      padding: 8px 9px;
+
+    }
+    .jsHero-wrapper-doorbusters .desktop_paragraph {
+      margin-bottom: 1.5em;
+      font-size: 1.2em;
+      line-height: 1.2;
+
+    }
+    .jsHero-wrapper-doorbusters .largest-headline {
+      font-size: 2.7em;
+
+    }
+    .jsHero-wrapper-doorbusters .form_width {
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
+  .fancy-headline:before,
+  .fancy-headline:after {
+    background-color: #cc3333;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .fancy-headline:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  .fancy-headline:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+  .jsHero-wrapper-doorbusters .upsell_flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2em;
+  }
+
+  .jsHero-wrapper-doorbusters .upsell_flexbox img {
+    max-width: 100%;
+  }
+
+      .hp-upsell-3 {
+        background: url("/ecom/2017/web/DoorbustersMen_NoWords.jpg?$staticlink$");
+        background-size: cover;
+        width: 280px;
+        height: 236px;
+        position: relative;
+        float: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        color: #d51b21;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 5px 5px;
+      }
+
+      .hp-upsell-2 {
+        background: url("/ecom/2017/web/DoorbustersSale_NoWords.jpg?$staticlink$");
+        background-size: cover;
+        width: 280px;
+        height: 236px;
+        position: relative;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4em;
+        font-weight: bold;
+        margin: 5px 5px;
+      }
+
+      .hp-upsell-1 {
+        background: url("/ecom/2017/web/DoorbustersWomen_NoWords.png?$staticlink$");
+        background-size: cover;
+        width: 280px;
+        height: 236px;
+        position: relative;
+        float: left;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 5px 5px;
+      }
+      .shop_headline {
+        margin-bottom: 10px;
+      }
+
+      .text-left.shop_headline {
+        margin-left: 10px;
+      }
+
+      .text-right.shop_headline {
+        margin-right: 10px;
+      }
+
+
+</style>
+
+<div class="jsHero-wrapper-doorbusters SurpriseSale ">
+  <div class="cs_container-crocs">
+    <div class="flexbox_row ">
+
+      <section class="flexbox_column text-center overall_container_surprise col-lg-11 col-md-12 col-sm-12 col-xs-12">
+        <div class="cx-brand-font text-uppercase fancy-headline text-center" style="color: #cc3333;">Sign-up for</div>
+        <div class="DESKTOP hidden-sm hidden-xs cx-heavy-brand-font text-uppercase largest-headline" style="color: #cc3333;">Doorbusters Early Access</div>
+        <div class="MOBILE hidden-md hidden-lg cx-heavy-brand-font text-uppercase largest-headline" style="color: #cc3333;">Doorbusters<br />Early Access</div>
+        <h3 class="DESKTOP hidden-sm hidden-xs cx-brand-font desktop_paragraph" style="color: #444" id = "sign_up_text">Sign up for early access to Doorbusters, Black Friday deals<br />and all of the best offers from Crocs.</h3>
+        <h3 class="MOBILE hidden-md hidden-lg cx-brand-font desktop_paragraph" style="color: #444" id = "sign_up_text">Sign up for early access to<br />Doorbusters, Black Friday deals<br />and all of the best offers from Crocs.</h3>
+
+        <form class=" cx-form cx-copy col-xs-12 col-sm-11 flexbox_column" id="jCanadaEmailSignup" >
+          <div class="col-lg-7 col-md-7 col-sm-8 col-xs-12" style="margin-right:auto; margin-left: auto" >
+            <ul class="form_width">
+              <li>
+                <label style="display: flex;"><strong class="req" aria-hidden="true">*</strong>Email Address</label>
+                <input class="email_field" type="text" value="" title="" autocomplete="off" />
+              </li>
+            </ul>
+          </div>
+          <div class="cs_row col-sm-9 flexbox_row">
+            <div class="col-lg-5 col-md-7 col-sm-9 col-xs-12">
+              <button class="cx-button submitBtn-Js full-width text-uppercase"  type="submit"><span>SIGN UP</span></button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  </section>
+</div>
+
+
+
+<script type="text/javascript">
+  (function(app, jQuery) {
+
+    var placeholder;
+    $('#jCanadaEmailSignup .email_field').click(function() {
+      if (this.value == placeholder) {
+        this.value = '';
+      }
+    });
+
+    $('#jCanadaEmailSignup .email_field').blur(function() {
+      if (this.value == '') {
+        $(this).val(placeholder);
+      }
+    });
+
+    $('#jCanadaEmailSignup').submit(function() {
+      app.ajax.loader.start();
+      var email = $('.email_field').val()
+      if (app.config.authenticated === true) {
+        location.assign('https://staging-na-crox.demandware.net/on/demandware.store/Sites-crocs_us-Site/default/Customer-CrocsClub/C865270421')
+      }
+      else {
+
+      $.ajax({
+        'type': 'POST',
+        'url': app.config.urls.home.replace("Home-Show", "Marketing-ETDataExtension?etdataextid=Holiday2017CA_EarlySignUp&EmailAddress=").replace("http:", window.location.protocol) + (email == placeholder ? "" : email),
+        'success': function(content) {
+          app.ajax.loader.end();
+          document.getElementById("sign_up_text").innerHTML = "Thank you for signing up! Check your inbox for early access to Doorbusters,<br />Black Friday deals and all of the best offers from Crocs.";
+          $('#jCanadaEmailSignup').hide()
+
+        },
+        'error': function(err) {
+          console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+          app.ajax.loader.end();
+        }
+      })
+    }
+
+      return false;
+    });
+  })(app, jQuery);
+</script>
+
+
+<style>
+  .jsHero-wrapper-doorbusters {
+    min-height: 1px;
+    margin-bottom: 2em;
+  }
+
+
+  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .jsHero-wrapper-doorbusters a:hover,
+  .jsHero-wrapper-doorbusters a:focus {
+    text-decoration: none;
+  }
+
+  /*.jsHero-wrapper-doorbusters.SurpriseSale .cx-button:hover,
+  .jsHero-wrapper-doorbusters.SurpriseSale .cx-button:focus {
+    color: #003366;
+    background-color: #fff;
+  }*/
+
+
+
+  @media (max-width: 480px) {
+
+
+    .jsHero-wrapper-doorbusters .col-xs-12 {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    .cant_wait {
+      font-size: 1.2em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      line-height: 1.1;
+    }
+    .hp-upsell-3 {
+      background: url("/ecom/2017/web/DoorbustersMen_NoWords.jpg?$staticlink$");
+      background-size: cover;
+      width: 320px;
+      height: 257px;
+      position: relative;
+      float: left;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      color: #d51b21;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 5px 5px;
+    }
+
+    .hp-upsell-2 {
+      background: url("/ecom/2017/web/DoorbustersSale_NoWords.jpg?$staticlink$");
+      background-size: cover;
+      width: 320px;
+      height: 257px;
+      position: relative;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4em;
+      font-weight: bold;
+      margin: 5px 5px;
+    }
+
+    .hp-upsell-1 {
+      background: url("/ecom/2017/web/DoorbustersWomen_NoWords.png?$staticlink$");
+      background-size: cover;
+      width: 320px;
+      height: 257px;
+      position: relative;
+      float: left;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 5px 5px;
+    }
+    .upsell_overview_container {
+      flex-wrap: wrap;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .cant_wait {
+      font-size: 1.3em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+    }
+
+
+    .hp-upsell-3 {
+      background: url("/ecom/2017/web/DoorbustersMen_NoWords.jpg?$staticlink$");
+      background-size: cover;
+      width: 280px;
+      height: 236px;
+      position: relative;
+      float: left;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      color: #d51b21;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 5px 5px;
+    }
+
+    .hp-upsell-2 {
+      background: url("/ecom/2017/web/DoorbustersSale_NoWords.jpg?$staticlink$");
+      background-size: cover;
+      width: 280px;
+      height: 236px;
+      position: relative;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 4em;
+      font-weight: bold;
+      margin: 5px 5px;
+    }
+
+    .hp-upsell-1 {
+      background: url("/ecom/2017/web/DoorbustersWomen_NoWords.png?$staticlink$");
+      background-size: cover;
+      width: 280px;
+      height: 236px;
+      position: relative;
+      float: left;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 5px 5px;
+    }
+
+    .upsell_overview_container {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .hp-upsell-3,
+    .hp-upsell-2,
+    .hp-upsell-1 {
+      width: 250px;
+      height: 216px;
+    }
+
+
+    .upsell_overview_container {
+      flex-wrap: nowrap;
+    }
+
+  }
+
+  @media (min-width: 960px) {
+
+    .hp-upsell-3,
+    .hp-upsell-2,
+    .hp-upsell-1 {
+      width: 280px;
+      height: 236px;
+    }
+    .jsHero-wrapper-doorbusters .desktop_paragraph {
+      margin-bottom: 1.5em;
+      font-size: 1.2em;
+      line-height: 1.2;
+
+    }
+
+
+  }
+
+  .jsHero-wrapper-doorbusters .upsell_flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /*margin-bottom: 2em;*/
+  }
+
+  .shop_headline {
+    margin-bottom: 10px;
+  }
+
+  .text-left.shop_headline {
+    margin-left: 10px;
+  }
+
+  .text-right.shop_headline {
+    margin-right: 10px;
+  }
+</style>
+
+<div class="jsHero-wrapper-doorbusters SurpriseSale ">
+
+  <!-- <section class="cs_container-fluid" style="border-bottom: 2px solid #ebebeb;"></section> -->
+  <div class="DESKTOP hidden-xs hidden-sm cx-brand-font text-center cant_wait" style="color: #444">
+    CAN'T WAIT? START SHOPPING FOR GREAT STYLES TODAY!
+  </div>
+  <div class="MOBILE hidden-md hidden-lg cx-brand-font text-center cant_wait" style="color: #444">
+    CAN'T WAIT? START SHOPPING<br />FOR GREAT STYLES TODAY!
+  </div>
+
+  <section class="cs_container-crocs upsell_flexbox text-center" style="margin-left: auto; margin-right: auto;">
+    <div class="upsell_overview_container col-lg-12 col-md-12 col-sm-8 col-xs-12" style="display: flex; justify-content: center;">
+      <a href="$httpUrl('Search-Show','cgid','women-footwear')$" class="hp-upsell-1">
+        <div class="cx-heavy-brand-font text-right shop_headline" style="color: #d51b21;">
+          <span class="cx-brand-font">SHOP</span><br />WOMEN'S<br />FOOTWEAR</div>
+      </a>
+
+      <a href="$httpUrl('Search-Show','cgid','outlet')$" class="hp-upsell-2">
+        <div class="cx-heavy-brand-font text-center" style="color: #fff; line-height: .85; height: 50%;">
+          <span class="cx-brand-font" style="font-size: 30px;">SHOP</span><br />SALE</div>
+      </a>
+
+      <a href="$httpUrl('Search-Show','cgid','men-footwear')$" class="hp-upsell-3">
+        <div class="cx-heavy-brand-font text-left shop_headline" style="color: #d51b21; ">
+          <span class="cx-brand-font">SHOP</span><br />MEN'S<br />FOOTWEAR</div>
+      </a>
+
+    </div>
+  </section>
+</div>

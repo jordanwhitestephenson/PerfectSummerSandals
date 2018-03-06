@@ -1,0 +1,478 @@
+<style>
+  .cx-cta {
+    color: #444;
+    font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    font-size: 15px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid #444;
+    line-height: 1;
+    padding: 14px 0 11px;
+    letter-spacing: .1px;
+    text-transform: uppercase;
+    text-align: center
+  }
+
+  .cx-cta:hover {
+    background: #444;
+    color: #fff
+  }
+
+  .cx-cta-single {
+    min-width: 150px;
+    padding: 14px 15px 11px;
+    margin: 4px auto;
+    float: none;
+    display: inline-block
+  }
+
+  .cta-group-1-xs,
+  .cta-group-2-xs,
+  .cta-group-4-xs {
+    margin-bottom: 10px;
+    overflow: hidden
+  }
+
+  .cta-group-1-xs .cx-cta {
+    width: calc(25% - 4px)
+  }
+
+  .cta-group-2-xs .cx-cta {
+    width: calc(50% - 4px)
+  }
+
+  @media (max-width:767px) {
+    .cta-group-1-xs .cx-cta:nth-of-type(even),
+    .cta-group-2-xs .cx-cta:nth-of-type(even) {
+      margin-right: 0;
+      margin-left: 2px
+    }
+    .hpHero-wrapper img.dynamic-img {
+      max-width: initial
+    }
+  }
+
+  .cta-group-4-xs .cx-cta {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0
+  }
+
+  @media (min-width:481px) {
+    .cta-group-1-sm .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+
+    .cta-group-2-sm .cx-cta {
+      width: calc(50% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-4-sm .cx-cta {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0
+    }
+  }
+
+  @media (min-width:768px) {
+    .cta-group-1-md .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-2-md .cx-cta {
+      width: calc(50% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-3-md .cx-cta {
+      width: calc(33.33333% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-4-md .cx-cta {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0
+    }
+  }
+
+  @media (min-width:960px) {
+    .cta-group-1-lg .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-2-lg .cx-cta {
+      width: calc(50% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-4-lg .cx-cta {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0
+    }
+  }
+</style>
+
+<style>
+.sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .catBanner-wrapper .proxima-black {
+    font-family: 'proxima_novablack', arial, sans-serif;
+  }
+
+  .catBanner-wrapper .proxima-regular {
+    font-family: 'proxima_novaregular', arial, sans-serif;
+  }
+
+  .catBanner-wrapper .mobile-hide {
+    display: none;
+  }
+
+  .catBanner-wrapper .mobile-show {
+    display: block;
+  }
+
+  .catBanner-wrapper {
+    display: block;
+    font-size: 20px;
+    min-height: 100px;
+    background: none;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .catBanner-wrapper .copy-container {
+    z-index: 90;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .catBanner-wrapper .flex-end {
+    display: block;
+  }
+
+  .hpHero-wrapper p {
+    color: #fff;
+    margin: 0;
+    line-height: .9;
+  }
+
+  .hpHero-wrapper p.text-md {
+    font-size: 1.3em;
+  }
+
+  .hpHero-wrapper p.text-sm {
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hpHero-wrapper p.text-xs {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .fancy {
+    line-height: 0.5;
+    text-align: center;
+  }
+
+  .fancy span {
+    display: inline-block;
+    position: relative;
+  }
+
+  .fancy span:before,
+  .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-top: 2px solid white;
+    top: 42%;
+    width: 12%;
+  }
+
+  .fancy span:before {
+    right: 100%;
+    margin-right: 7px;
+  }
+
+  .fancy span:after {
+    left: 100%;
+    margin-left: 7px;
+  }
+
+  .hpHero-wrapper .cx-cta {
+    color: #d11f6c;
+    border-color: #d11f6c;
+    transition: .2s all;
+    -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+    background: none;
+    font-size: 13px;
+    padding: 13px 0 12px;
+  }
+
+  @media (max-width: 375px) {
+    #cx-summerclearance {
+      color: white;
+      font-size: 1.5em;
+    }
+    #astrict {
+      font-size: 1em;
+      color: white;
+      padding-bottom: 1.5em;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .hpHero-wrapper p.text-md {
+      font-size: 1.2em;
+    }
+    #cx-60off {
+      font-size: 3.2em;
+    }
+    #cx-summerclearance {
+      color: white;
+      font-size: 27px;
+    }
+    .hpHero-wrapper p.text-lg {
+      font-size: 1.7em;
+    }
+    .hpHero-wrapper p.text-sm {
+      font-size: .9em;
+    }
+    .hpHero-wrapper .cx-cta {
+      font-size: 11px;
+      padding: 11px 0 10px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-wrapper {}
+    .catBanner-wrapper .flex-end {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .catBanner-wrapper .mobile-show {
+      display: none;
+    }
+    .catBanner-wrapper .mobile-hide {
+      display: block;
+    }
+    .catBanner-wrapper .copy-container {
+      padding-top: 25px;
+      padding-bottom: 20px;
+    }
+    .hpHero-wrapper p.text-lg {
+      font-size: 2.2em;
+    }
+    .hpHero-wrapper p.text-xs {
+      font-size: 12px;
+    }
+    .hpHero-wrapper p.text-md {
+      font-size: 1.6em;
+    }
+    .hpHero-wrapper .cx-cta {
+      font-size: 11px;
+      padding: 11px 0 10px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .catBanner-wrapper .copy-container {}
+    .hpHero-wrapper p.text-lg {
+      font-size: 2.4em;
+    }
+    .hpHero-wrapper p.text-xs {
+      font-size: 14px;
+    }
+    .hpHero-wrapper p.text-md {
+      font-size: 1.8em;
+    }
+    #cx-summerclearance {
+      color: white;
+      font-size: 31px;
+padding-top: 7px;
+    }
+    #cx-60off {
+      font-size: 3.6em;
+      color: white;
+    }
+  }
+
+  #cx-upto {
+    width: 1.5px;
+    margin-right: 1.5em;
+    color: white;
+  }
+
+
+
+
+
+  .cx-bottom-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+font-size: 23px;
+  }
+
+  .cx-bottom-links,
+  .cx-bottom-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 14px;
+    text-decoration: underline;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .cx-summer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    line-height: 0.1em;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
+  }
+
+  #cx-summerbox-link {
+    padding: 11px 88px 11px;
+    margin-top: 16px;
+    color: #d40000;
+    border-color: #d40000;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 2px;
+  }
+
+  #summer-sale-container {
+    background:#d40000;
+    background-size: cover;
+    background-repeat: round;
+    width: 100%;
+line-height: 1.8em;
+  }
+
+  #astrict {
+    font-size: 1em;
+    color: white;
+    padding-bottom: 1.7em;
+  }
+}
+</style>
+<div class="hpHero-wrapper catBanner-wrapper">
+  <!-- #KEEP .catBanner-wrapper AND .catBanner-wrapper for category banners -->
+  <div class="cs_container" id="summer-sale-container">
+    <div class="cs_row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 copy-container text-center">
+
+<p class="fancy text-sm text-uppercase proxima-black"><span>LAST CHANCE!</span></p>
+        <p class="text-sm text-uppercase proxima-black" id="cx-summerclearance"><span>summer clearance</span></p>
+        <div class="cx-bottom-promo">
+          <p class="text-sm text-uppercase proxima-black" id="cx-upto">up to</p>
+          <p class="text-lg text-uppercase proxima-black" id="cx-60off">60% off</p>
+          <p id="astrict"> * </p>
+        </div>
+        <div class="cx-bottom-links">
+          <a href="$httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Clogs">CLOGS</a>
+          <a href=" $httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Flip%20Flops">FLIPS</a>
+          <a href="$httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Sandals">SANDALS</a>
+          <a href=" $httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Loafers"> LOAFERS </a>
+          <a href="$httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Flats"> FLATS </a>
+        </div>
+        <div class="cta-group-2-xsx  cx-summer-box">
+
+          <p class="text-xs proxima-regular ">*Limited time, limited quantities. Prices as marked</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 370px) {
+    #cx-60off {
+      font-size: 3em
+    }
+
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="catBanner-h-wrapper ">
+  <div class="cs_container-crocs ">
+    <div class="cs_row ">
+      <div class="col-xs-12 ">
+        <!-- UPDATE HEADERS BELOW, DO NOT TRANSLATE!!! -->
+      </div>
+    </div>
+  </div>
+</div>

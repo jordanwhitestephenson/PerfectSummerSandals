@@ -1,0 +1,366 @@
+﻿<style>
+  .catBanner-wrapper {
+    background: #000;
+    padding: 15px 0;
+  }
+
+  /* CTA */
+.sitewide-wrapper.main-sitewide-wrapper {
+  display: none;
+}
+  .cx-cta {
+    color: #004976;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    font-size: 15px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid #004976;
+    line-height: 1;
+    padding: 14px 0 11px;
+    letter-spacing: .1px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .cx-cta:hover {
+    background: #004976;
+    color: #fff;
+  }
+
+  .cx-cta-single {
+    min-width: 150px;
+    padding: 14px 15px 11px;
+    margin: 4px auto;
+    float: none;
+    display: inline-block;
+  }
+
+  .starwars-lp-wrapper {
+    font-size: 14px;
+  }
+
+  .starwars-lp-wrapper img {
+    max-width: 100%;
+  }
+
+  .starwars-lp-wrapper h1 {
+    color: #000;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+
+  .starwars-lp-wrapper p {
+    color: #444;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .starwars-lp-wrapper p.header-lg {
+    color: #000;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 15px;
+    line-height: 1;
+  }
+
+  .hpHero-wrapper.star-wars-JSp .fine-print {
+    font-size: 14px;
+  }
+
+  .starwars-lp-wrapper p.product-sub-head {
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    color: #004976;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+
+
+  .starwars-lp-wrapper p.product-price {
+    font-size: 1.7em;
+    color: #004976;
+  }
+
+  .starwars-lp-wrapper .sw-container {
+    margin-top: 30px;
+  }
+
+  .starwars-lp-wrapper .sw-container-2 {
+    background: #d9f6ff;
+    padding: 15px 0;
+  }
+
+  .starwars-lp-wrapper .sw-container-3-sub {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 480px) {
+    .hpHero-wrapper.star-wars-JS {
+      background: #fff;
+      display: flex;
+    }
+    .star-wars-JS .star_wars_logo_img {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2em;
+    }
+    .star-wars-JS .col-xs-12.mobile_padding {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .starwars-lp-wrapper .star_wars_product_img, .star-wars-JSp .star_wars_product_mobile img {
+      width: 100%;
+    }
+    .starwars-lp-wrapper p.product-name {
+      font-size: 1.1em;
+      line-height: 1;
+      margin-top: -10px;
+
+    }
+    .star-wars-JS .cx-button {
+      line-height: 1.0;
+    }
+
+  }
+
+  @media (min-width: 481px) {
+
+    .starwars-lp-wrapper p.product-name {
+      font-size: 1em;
+      line-height: 1;
+      margin-top: -30px;
+    }
+    .star-wars-JS .star_wars_logo_img {
+      margin-top: 2em;
+      max-width: 80%;
+    }
+    .star-wars-JS .col-xs-12.mobile_padding {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-content: center;
+    }
+    .hpHero-wrapper.star-wars-JS {
+      background: #fff;
+      display: flex;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .starwars-lp-wrapper {
+      font-size: 15px;
+    }
+    .hpHero-wrapper.star-wars-JS {
+      background: url('/ecom/2017/web/171110_StarWarsEps8_LandingPager_02.jpg?$staticlink$');
+      background-size: cover;
+      display: flex;
+      background-position: center center;
+    }
+    .star-wars-JS .star_wars_logo_img {
+      max-width: 80%;
+    }
+
+    .starwars-lp-wrapper h1 {
+      font-size: 3em;
+    }
+    .starwars-lp-wrapper p.header-lg {
+      font-size: 2em;
+    }
+    .starwars-lp-wrapper .sw-container-3-sub {
+      margin-bottom: 0;
+    }
+    .starwars-lp-wrapper span.break-md {
+      display: block;
+    }
+    .star-wars-JS .cx-button {
+      font-size: 25px;
+    }
+
+    .star-wars-JS .star-wars-paragraph {
+      font-size: 1.2em;
+    }
+
+  }
+
+  @media (min-width: 960px) {
+    .hpHero-wrapper.star-wars-JS {
+      min-height: 490px;
+    }
+    .star-wars-JS .star_wars_logo_img {
+      margin-top: 0px;
+      max-width: 100%;
+    }
+    .star-wars-JS .star-wars-paragraph {
+      font-size: 1.4em;
+    }
+  }
+
+
+
+  .star-wars-JS .top_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .star-wars-JS .star-wars-paragraph {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .star-wars-JS .cx-button {
+    border: 2px solid #e50b14;
+    color: #e50b14;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+  }
+  .star-wars-JS .cx-button:hover, .star-wars-JS .cx-button:active {
+    border: 2px solid #e50b14;
+    color: #fff;
+    background-color: #e50b14;
+  }
+  .starwars-lp-wrapper  .grey_background {
+    width: 100%;
+    background: url("/ecom/2017/web/StarWarsBackground.jpg?$staticlink$");
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+  /*.starwars-lp-wrapper .hover-img:hover {
+    margin-top: -2em;
+    margin-bottom: 2em;
+  }*/
+  /*#chewbacca_flat {
+    display: block;
+  }
+  #chewbacca_flat:hover {
+    display: none;
+  }
+
+  #chewbacca_hover {
+    display:none;
+  }
+  #chewbacca_hover:hover {
+    display: block;
+  }*/
+</style>
+<!-- <a href="$httpUrl('Search-Show','cgid','star-wars-shoes')$"> -->
+  <div class="hpHero-wrapper star-wars-JS">
+
+    <div class="cs_container-fluid" style="display: flex;">
+      <div class="cs_row top_container">
+        <div class="col-xs-12 text-center mobile_padding">
+          <img src="/ecom/2017/web/StarWarsLogo.png?$staticlink$" class="star_wars_logo_img" alt="Star Wars"/>
+          <img src="/ecom/2017/web/171110_StarWarsEps8_LandingPager_03.jpg?$staticlink$" class="hidden-md hidden-sm hidden-lg star_wars_product_mobile" alt="" style="width: 100%;"/>
+            <img src="/ecom/2017/web/171110_StarWarsEps8_LandingPager_03.jpg?$staticlink$" class="hidden-md hidden-xs hidden-lg star_wars_product_mobile" alt="" style=""/>
+
+          <p class="star-wars-paragraph cx-brand-font hidden-xs" style="color: #444;">Préparez-vous pour <span style="font-style: italic ">Star Wars : Les derniers Jedi</span><br>Avec les sabots Star Wars de Crocs</p>
+          <div class="col-xs-12">
+            <div class="col-xs-12 hidden-xs" style = "height: 46px;">
+            </div>
+          </div>
+          <div class="cs_row">
+            <div class="col-xs-12">
+              <p class="fine-print text-center" style="color: #444">&#169; &amp; &#8482; Lucasfilm Ltd.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<!-- </a> -->
+<!-- <div class="cs_container-crocs">
+
+</div> -->
+<div class="starwars-lp-wrapper text-center">
+  <div class="sw-container sw-container-1">
+    <div class="cs_container-crocs">
+      <div class="cs_row">
+        <div class="col-xs-12 text-center">
+          <p class="header-lg" style="margin-bottom: 0px;">Collection Star Wars™</p>
+          <h1 class = "hidden-xs">FAITES UNE PROMENADE SUR<br />LE CÔTÉ CONFORTABLE</h1>
+          <h1 class = "hidden-sm hidden-md hidden-lg" style="font-size:1.8em; margin-bottom: 1em;">FAITES UNE <br /> PROMENADESURLE CÔTÉ <br />  CONFORTABLE</h1>
+        </div>
+      </div>
+    </div>
+    <div style="" class="hidden-xs grey_background">
+        <img src="/ecom/2017/web/StormtrooperFront.png?$staticlink$" alt=""/>
+    </div>
+
+    <img src="/ecom/2017/web/StormTrooper_MOBILE.jpg?$staticlink$" alt="" class="hidden-sm hidden-md hidden-lg" style="width: 100%;"/>
+  </div>
+
+  <div class="sw-container sw-container-3">
+    <div class="cs_container-crocs">
+      <div class="cs_row">
+        <div class="col-xs-12 col-md-3">
+          <a href="$httpUrl('Product-Show','pid','204135','cid','4D7','cgid','star-wars-shoes')$" class="">
+          <img src="/ecom/2017/web/1_Flat.jpg?$staticlink$" class="hidden-xs star_wars_product_img" id="OneFlat" alt="" title="Sabots Labo amusant Lights R2-D2™ de Crocs"/>
+          <img src="/ecom/2017/web/123123123_07.png?$staticlink$" class="hidden-sm hidden-md hidden-lg star_wars_product_img" alt="" title="Sabots Labo amusant Lights R2-D2™ de Crocs"/>
+          <p class="product-name hidden-xs">Sabots Labo amusant Lights R2-D2™ de Crocs</span></p>
+          <p class="product-name hidden-sm hidden-md hidden-lg">Sabots Labo amusant Lights de Crocs<br />R2-D2™ de Crocs</span></p>
+          </a>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <a href="$httpUrl('Product-Show','pid','205065','cid','001','cgid','star-wars-shoes')$" class="">
+          <img src="/ecom/2017/web/2_Flat.jpg?$staticlink$" class="hidden-xs star_wars_product_img" alt="" id="TwoFlat" title="Sabots Stormtrooper™ Creative Crocs pour enfants"/>
+          <img src="/ecom/2017/web/123123123_15.png?$staticlink$" class="hidden-sm hidden-md hidden-lg star_wars_product_img" alt="" title="Sabots Stormtrooper™ Creative Crocs pour enfants"/>
+          <p class="hidden-xs product-name">Sabots Stormtrooper™ Creative Crocs pour enfants</p>
+          <p class="hidden-sm hidden-md hidden-lg product-name">Sabots Creative Crocs pour enfants<br />Sabots Stormtrooper™</p>
+          </a>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <a href="$httpUrl('Product-Show','pid','204716','cid','014','cgid','star-wars-shoes')$" class="">
+          <img src="/ecom/2017/web/3_Flat.jpg?$staticlink$" class="hidden-xs star_wars_product_img hover-img" id="ThreeFlat" alt="" title="Sabots Labo amusant BB-8™ de Crocs"/>
+          <img src="/ecom/2017/web/123123123_23.png?$staticlink$" class="hidden-sm hidden-md hidden-lg star_wars_product_img" alt="" title="Sabots Labo amusant BB-8™ de Crocs"/>
+          <p class="product-name">Sabots Labo amusant BB-8™ de Crocs</p>
+          </a>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <a href="$httpUrl('Product-Show','pid','204715','cid','206','cgid','star-wars-shoes')$" class="">
+          <img src="/ecom/2017/web/4_Flat.jpg?$staticlink$" class="hidden-xs star_wars_product_img" id="chewbacca_flat" alt="" title="Sabots Labo amusant Chewbacca™ à doublure molletonnée de Crocs pour enfants"/>
+          <img src="/ecom/2017/web/123123123_26.png?$staticlink$" class="hidden-sm hidden-md hidden-lg star_wars_product_img" alt="" title="Sabots Labo amusant Chewbacca™ à doublure molletonnée de Crocs pour enfants"/>
+          <p class="hidden-xs product-name">Sabots Labo amusant Chewbacca™ à doublure molletonnée de Crocs pour enfants</p>
+          <p class="hidden-sm hidden-md hidden-lg text-center product-name">Sabots Labo amusant à doublure molletonnée de Crocs<br /> Sabots Chewbacca™</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$('#chewbacca_flat').hover(function() {
+  $(this).attr('src', '/ecom/2017/web/4_Hover.jpg?$staticlink$');
+}, function() {
+  $(this).attr('src', '/ecom/2017/web/4_Flat.jpg?$staticlink$');
+});
+$('#ThreeFlat').hover(function() {
+  $(this).attr('src', '/ecom/2017/web/3_Hover.jpg?$staticlink$');
+}, function() {
+  $(this).attr('src', '/ecom/2017/web/3_Flat.jpg?$staticlink$');
+});
+$('#TwoFlat').hover(function() {
+  $(this).attr('src', '/ecom/2017/web/2_Hover.jpg?$staticlink$');
+}, function() {
+  $(this).attr('src', '/ecom/2017/web/2_Flat.jpg?$staticlink$');
+});
+$('#OneFlat').hover(function() {
+  $(this).attr('src', '/ecom/2017/web/1_Hover.jpg?$staticlink$');
+}, function() {
+  $(this).attr('src', '/ecom/2017/web/1_Flat.jpg?$staticlink$');
+});
+</script>

@@ -1,0 +1,295 @@
+<style>
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .catBanner-wrapper .proxima-black {
+    font-family: 'proxima_novablack', arial, sans-serif;
+  }
+
+  .catBanner-wrapper .proxima-regular {
+    font-family: 'proxima_novaregular', arial, sans-serif;
+  }
+
+  .catBanner-wrapper .mobile-hide {
+    display: none;
+  }
+
+  .catBanner-wrapper .mobile-show {
+    display: block;
+  }
+
+  .catBanner-wrapper {
+    display: block;
+    border-bottom: 2px solid #ebebeb;
+    background: none;
+    font-size: 20px;
+    min-height: 100px;
+  }
+
+  .catBanner-wrapper .copy-container {
+    z-index: 90;
+    margin-top: 10px;
+  }
+
+  .catBanner-wrapper .flex-end {
+    display: block;
+  }
+
+  .catBanner-wrapper p {
+    margin: 0;
+    line-height: .9;
+  }
+
+  .catBanner-wrapper p.lg-head {
+    font-size: 54px;
+    color: #444;
+  }
+
+  .catBanner-wrapper p.md-head {
+    font-size: 18px;
+    color: #444;
+  }
+
+  .catBanner-wrapper p.fine-text {
+    font-size: 16px;
+    color: #444;
+    margin-top: 5px;
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-wrapper {
+      padding-bottom: 0;
+    }
+    .catBanner-wrapper .flex-end {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    .catBanner-wrapper .dynamic-img {
+      margin-bottom: -20px;
+    }
+    .catBanner-wrapper .mobile-show {
+      display: none;
+    }
+    .catBanner-wrapper .mobile-hide {
+      display: block;
+    }
+    .catBanner-wrapper .copy-container {
+      margin-top: 10px;
+    }
+    .catBanner-wrapper p.lg-head {
+      font-size: 39px;
+    }
+    .cta-group-1-xs img {
+      margin-top: 0px;
+    }
+    .catBanner-wrapper p.md-head {
+      font-size: 16px;
+    }
+    .catBanner-wrapper p.fine-text {
+      font-size: 16px;
+    }
+    .catBanner-wrapper .cs_cta {
+      font-size: 11px;
+    }
+    .crx-margin {
+      margin-bottom: 20px;
+      margin-top: 12px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .catBanner-wrapper .copy-container {
+      margin-top: 25px;
+    }
+    .catBanner-wrapper p.lg-head {
+      font-size: 54px;
+    }
+    .catBanner-wrapper p.md-head {
+      font-size: 22px;
+    }
+    .catBanner-wrapper p.fine-text {
+      font-size: 19px;
+      color: #444;
+    }
+    .catBanner-wrapper .dynamic-img {
+      margin-bottom: -30px;
+    }
+    .crx-margin {
+      margin-top: 1%;
+    }
+    .cta-group-1-xs img {
+      margin-top: 0px;
+
+    }
+  }
+
+
+
+  .cx-cta {
+    color: #444;
+    font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    font-size: 17px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid #444;
+    line-height: 1;
+    padding: 14px 0 11px;
+    letter-spacing: .1px;
+    text-transform: uppercase;
+    text-align: center
+  }
+
+  .cx-cta:hover {
+    background: #444;
+    color: #fff
+  }
+
+  .flexboxdiv {
+    display: flex;
+  }
+
+  .cta-group-1-xs,
+  .cta-group-2-xs,
+  .cta-group-4-xs {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  }
+
+  .cta-group-1-xs .cx-cta {
+    width: calc(25% - 4px)
+  }
+
+  .cta-group-2-xs .cx-cta {
+    width: calc(80% - 4px);
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+  .cta-group-3-xs .cx-cta {
+    width: calc(75% - 4px)
+  }
+  .cta-group-4-xs .cx-cta {
+    width: calc(100% - 4px)
+  }
+  #topPromoHeadline-Mobile {
+    font-size: 42px;
+  }
+  #mobile-product-description {
+    font-size: 14px;
+    color: #444;
+    font-family: 'proxima_novaregular', arial, sans-serif;
+  }
+  .cx-cta-mobile {
+    margin-bottom: 20px;
+  }
+</style>
+<div class="hpHero-wrapper catBanner-wrapper">
+  <!-- #KEEP .catBanner-wrapper AND .catBanner-wrapper for category banners -->
+  <div class="cs_container">
+    <div class="cs_row">
+      <div class="col-xs-12 col-md-6 col-lg-7 copy-container text-center">
+        <p class="lg-head proxima-black text-uppercase hidden-md hidden-lg" id= "topPromoHeadline-Mobile">BREAKDOWN  NEW BARRIERS</p>
+        <p class="lg-head proxima-black text-uppercase hidden-sm hidden-xs">BREAKDOWN <br> NEW BARRIERS</p>
+        <p class="fine-text proxima-regular">Athletic. Ambitious. Adventurous. <br> Amphibious. Just like you.</p>
+
+        <div class="cta-group hidden-sm hidden-xs">
+          <div class="cta-group-2-xs">
+            <a class="cx-cta cta-1-hover" href="$httpUrl('Search-Show','cgid','swiftwater-collection')$">SHOP ALL SWIFTWATER</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 cta-group-1-xs  col-md-6 col-lg-5 crx-margin">
+        <img title="Men's Swiftwater Wave" src="/ecom/2017/web/SwiftwaterMEN.png?$staticlink$" alt="" />
+      </div>
+      <div class="col-xs-12 cta-group-1-xs">
+      <p class="fine-text proxima-regular hidden-md hidden-lg" id = "mobile-product-description">Men's Swiftwater Wave</p>
+    </div>
+      <div class="cta-group-4-xs col-xs-12 hidden-lg hidden-md">
+        <a class="cx-cta cta-1-hover cx-cta-mobile" href="$httpUrl('Search-Show','cgid','swiftwater-collection')$">SHOP ALL SWIFTWATER</a>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .catBanner-wrapper {
+    background: none;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+  }
+
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'swiftwater-collection-mens', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'swiftwater-collection-mens', 'attr', 'CategoryH2')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

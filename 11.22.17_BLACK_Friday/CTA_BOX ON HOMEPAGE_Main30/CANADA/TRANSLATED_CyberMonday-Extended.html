@@ -1,0 +1,138 @@
+<style>
+  .bottom-holiday-container .border-red {
+    position: relative;
+    text-align: center;
+  }
+
+  .bottom-holiday-container .border-red span {
+    background: #ffffff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    color: #d41f27;
+  }
+
+  .bottom-holiday-container .border-red:before {
+    background: #d41f27;
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 0.5em;
+    width: 100%;
+  }
+
+  .bottom-holiday-container .bottom-border:after {
+    background: #d41f27;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 98.6%;
+    width: 100%;
+  }
+
+  .bottom-holiday-container .border-red:before {
+    left: 0;
+    margin-bottom: 15px;
+  }
+
+  .bottom-holiday-container .bottom-border {
+    justify-content: center;
+    border-right: 3px #d41f27 solid;
+    border-left: 3px #d41f27 solid;
+    height: 121%;
+    display: inline-flex;
+    margin-top: -10px;
+    padding-top: 30px;
+  }
+
+  @media (max-width: 480px) {
+    .bottom-holiday-container .cx-button {
+      font-size: 2.9vw;
+      padding: 10px 1px;
+      border: 2px solid #444;
+    }
+    .bottom-holiday-container .col-xs-6,
+    .bottom-holiday-container .col-xs-12 {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .black-friday-bottom-headline {
+      font-size: 20px;
+      color: #d41f27;
+      display: block;
+    }
+    .bottom-holiday-container .border-red span {
+      font-size: 18px;
+    }
+    .bottom-holiday-container .bottom-border {
+      padding-top: 30px;
+    }
+  }
+
+  @media (min-width: 481px) {
+    .bottom-holiday-container .cx-button {
+      padding: 10px 10px;
+      font-size: 12px;
+      border: 2px solid #444;
+    }
+    .bottom-holiday-container .bottom-border {
+      padding-top: 20px;
+    }
+    .bottom-holiday-container .border-red span {
+      font-size: 13px;
+    }
+    .bottom-holiday-container {
+      margin-bottom: 4%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .bottom-holiday-container .border-red span {
+      font-size: 20px;
+    }
+    .bottom-holiday-container .bottom-border {
+      padding-top: 30px;
+    }
+    .bottom-holiday-container .cx-button {
+      font-size: 15px;
+    }
+  }
+</style>
+
+
+<br />
+<br />
+<ul class="cs_row upsell-container bottom-holiday-container text-center col-lg-12" id="ccContainerScroll">
+
+  <div class="text-uppercase cx-heavy-brand-font border-red hidden-xs"><span class="black-friday-bottom-headline">Cyberlundi prolongé - RABAIS DE 40% OU PLUS SUR L'ENSEMBLE</span>
+    <div class="bottom-border">
+      <li class="col-xs-12 col-md-8 col-xs-12">
+        <div class="cs_row">
+
+          <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','women-footwear')$" class="cx-button full-width text-uppercase">Magasiner pour<br />les femmes</a></div>
+          <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','men-footwear')$" class="cx-button full-width text-uppercase">Magasiner pour<br />les hommes</a></div>
+          <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','footwear-kids')$" class="cx-button full-width text-uppercase">Magasiner pour<br />les enfants</a></div>
+          <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','fuzz-collection')$" class="cx-button full-width text-uppercase">Magasiner les<br />modèles molletonnés</a></div>
+          <div class="col-xs-12 btn-col-1">
+            <a href="$httpUrl('Search-Show','cgid','crocs-doorbusters')$" class="cx-button full-width text-uppercase" style="margin-bottom: 15px;">Magasiner les promotions d'ouverture</a>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+  <div class="text-uppercase cx-heavy-brand-font hidden-sm hidden-lg hidden-md"><span class="black-friday-bottom-headline text-center">Cyberlundi prolongé - RABAIS DE 40% OU <br /> PLUS SUR L'ENSEMBLE</span>
+    <li class="col-xs-12 col-md-8 col-xs-12">
+      <div class="cs_row">
+        <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','women-footwear')$" class="cx-button full-width text-uppercase">Magasiner pour<br />les femmes</a></div>
+        <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','men-footwear')$" class="cx-button full-width text-uppercase">Magasiner pour<br />les hommes</a></div>
+        <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','footwear-kids')$" class="cx-button full-width text-uppercase">Magasiner pour<br />les enfants</a></div>
+        <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','fuzz-collection')$" class="cx-button full-width text-uppercase">Magasiner les<br />modèles molletonnés</a></div>
+        <div class="col-xs-12 btn-col-1">
+          <a href="$httpUrl('Search-Show','cgid','crocs-doorbusters')$" class="cx-button full-width text-uppercase" style="">Magasiner les promotions d'ouverture</a>
+        </div>
+      </div>
+    </li>
+  </div>
+</ul>

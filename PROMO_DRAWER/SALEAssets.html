@@ -1,0 +1,104 @@
+<style>
+  .jsSALE-wrapper,
+  .jsSALE-wrapper .cs_container-crocs {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+
+  .jsSALE-wrapper .black_background_bottom {
+    background-color: #444;
+    height: 23%;
+  }
+
+.jsSALE-wrapper  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+.jsSALE-wrapper  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .jsSALE-wrapper .black-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+
+  .jsSALE-wrapper .larger-headline {
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 0vw;
+  }
+
+  .jsSALE-wrapper .largest-headline {
+    font-size: 5.0em;
+    margin-bottom: 0vw;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
+    line-height: 0.9;
+  }
+
+  .jsSALE-wrapper .small-headline {
+    font-size: 1.1em;
+    margin-bottom: 0.0vw;
+  }
+
+  .jsSALE-wrapper .smallest-headline {
+    font-size: 16px;
+    margin-bottom: 2vw;
+  }
+
+.jsSALE-wrapper  .fancy_text_container {
+    height: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.jsSALE-wrapper  .jsSALE-fancy::after {
+    content: '';
+    display: block;
+    border: 3px solid #fff;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px black;
+  }
+
+.jsSALE-wrapper  .jsSALE-fancy::before {
+    content: '';
+    display: block;
+    border: 3px solid #fff;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px black;
+  }
+</style>
+
+<div class="jsSALE-wrapper">
+  <a href="$httpUrl('Search-Show','cgid','outlet')$">
+    <div class="cs_container-crocs" style="height:100%; background-color: #ab8404;">
+      <section class="fancy_text_container">
+        <div class="jsSALE-fancy">
+          <div class="cx-heavy-brand-font largest-headline" style="color:#fff; padding-top: 5px;">SALE</div>
+          <div class="cx-brand-font larger-headline" style="color:#fff; padding-bottom: 6px;">SAVE UP TO 50%</div>
+        </div>
+      </section>
+      <div class="black_background_bottom flexbox_row text-center">
+        <div class="cx-brand-font small-headline black-container col-lg-12" style="color:#fff">
+          SHOP NOW
+        </div>
+      </div>
+
+    </div>
+  </a>
+</div>
