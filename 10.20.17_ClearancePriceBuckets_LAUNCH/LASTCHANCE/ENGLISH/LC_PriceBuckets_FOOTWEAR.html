@@ -1,0 +1,650 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .jsHero-wrapper .cx-button {
+    color: #7B1B30;
+    border: 2px solid #7B1B30;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #7B1B30;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+
+  .flexbox_spacearound {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .flexbox_spacearound_column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 5px 5px 5px 5px;
+  }
+
+
+
+
+  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  @media (max-width: 959px) {
+    #mobile-padding {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0vh;
+    }
+    .largest-headline {
+      font-size: 1.8em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 1.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 7%;
+      font-size: 17px;
+    }
+
+    .smallest-headline {
+      font-size: 13px;
+  margin-bottom: -0.5vh;
+  margin-top: 3px;
+    }
+
+    .jsHero-wrapper .top-headline {
+      font-size: 16px;
+      margin-bottom: 0.2em;
+    }
+
+    .box_bucket {
+      height: 120px;
+      width: 115px;
+      margin: 3% 2% 3% 2%;
+    }
+    .box_bucket-right {
+      height: 120px;
+      width: 115px;
+      margin: 2% 2% 2% 2%
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline {
+      color: #cc0000;
+      font-size: 3.5em;
+      line-height: .9;
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline span {
+      font-size: 30px
+    }
+
+    .jsHero-wrapper .price_bucket_container .shop_headline {
+      font-size: 25px;
+    }
+    .jsHero-wrapper .price_bucket_container .styles_headline {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.4em;
+      margin-bottom: 0vh;
+    }
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 0.7;
+      margin-bottom: 0.5vh;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 2.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 11%;
+      font-size: 17px;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: -0.5vh;
+      margin-top: 3px;
+    }
+    .jsHero-wrapper .top-headline {
+      font-size: 19px;
+      margin-bottom: 0.3em;
+    }
+    .box_bucket {
+      height: 130px;
+      width: 120px;
+      margin: 3% 2% 3% 2%;
+    }
+    .box_bucket-right {
+      height: 130px;
+      width: 120px;
+      margin: 2% 2% 2% 2%
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline {
+      color: #cc0000;
+      font-size: 3.5em;
+      line-height: .9;
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline span {
+      font-size: 30px
+    }
+
+    .jsHero-wrapper .price_bucket_container .shop_headline {
+      font-size: 25px;
+    }
+    .jsHero-wrapper .price_bucket_container .styles_headline {
+      font-size: 20px;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0vh;
+    }
+    .largest-headline {
+      font-size: 2.5em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 2.2vw;
+      margin-bottom: 2vh;
+    }
+    .cta-container .cx-button {
+      font-size: 18px;
+      padding: 15px;
+    }
+
+    .smallest-headline {
+      font-size: 2vw;
+        margin-bottom: 0vh;
+        margin-top: 4px;
+    }
+    .jsHero-wrapper .top-headline {
+      font-size: 20px;
+      margin-bottom: 0.3em;
+    }
+    .box_bucket {
+
+      height: 163px;
+      width: 159px;
+      margin: 5px 1% 5px 1%;
+    }
+    .box_bucket-right {
+
+      height: 163px;
+      width: 159px;
+      margin: 5px 1% 5px 1%;
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline {
+      color: #cc0000;
+      font-size: 45px;
+      line-height: .9;
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline span {
+      font-size: 30px
+    }
+
+    .jsHero-wrapper .price_bucket_container .shop_headline {
+      font-size: 25px;
+    }
+    .jsHero-wrapper .price_bucket_container .styles_headline {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.4em;
+      margin-bottom: 0vh;
+    }
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 0.9em;
+      margin-bottom: 2.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 80%;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    .jsHero-wrapper .top-headline {
+      font-size: 22px;
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+    .box_bucket {
+      height: 110px;
+      width: 115px;
+      margin: 5px 1% 5px 1%;
+    }
+    .box_bucket-right {
+      height: 110px;
+      width: 115px;
+      margin: 5px 1% 5px 1%;
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline {
+      color: #cc0000;
+      font-size: 45px;
+      line-height: 1.2;
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline span {
+      font-size: 32px;
+    }
+
+    .jsHero-wrapper .price_bucket_container .shop_headline {
+      font-size: 25px;
+    }
+    .jsHero-wrapper .price_bucket_container .styles_headline {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 1vh;
+    }
+    #mobile-padding {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    .largest-headline {
+      font-size: 2.5em;
+      line-height: 1;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 3vh;
+    }
+    .smallest-headline {
+      font-size: 17px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .box_bucket {
+      height: 153px;
+      width: 149px;
+      margin: 5px 1% 5px 1%;
+    }
+    .box_bucket-right {
+      height: 153px;
+      width: 149px;
+      margin: 5px 1% 5px 1%;
+    }
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+
+    .jsHero-wrapper .top-headline {
+      font-size: 22px;
+      margin-bottom: 0.2em;
+      margin-top: 1.5vh
+    }
+
+    .jsHero-wrapper .price_bucket_container .price_headline {
+      color: #cc0000;
+      font-size: 3.2em;
+      line-height: .9;
+    }
+    .jsHero-wrapper .price_bucket_container .price_headline span {
+      font-size: 0.8em;
+    }
+
+    .jsHero-wrapper .price_bucket_container .shop_headline {
+      font-size: 1.5em;
+    }
+    .jsHero-wrapper .price_bucket_container .styles_headline {
+      font-size: 1.4em;
+    }
+  }
+
+  .box_bucket {
+    background: #fff;
+    border: 1px solid #444;
+    height: 85%;
+  }
+
+  .box_bucket-right {
+    background: #fff;
+    border: 1px solid #444;
+    height: 85%;
+  }
+
+  .box_bucket:hover {
+    background: url("/ecom/2017/web/ClearanceBucket_Background.jpg?$staticlink$");
+    border: 1px solid #444;
+    background-size: cover;
+  }
+
+  .box_bucket-right:hover {
+    background: url("/ecom/2017/web/PriceBucketRightBackground.jpg?$staticlink$");
+    border: 1px solid #444;
+    background-size: cover;
+  }
+
+  .flexbox_spacearound_row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1.5em
+  }
+
+  .larger-headline.fancy-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .larger-headline.fancy-headline:before,
+  .larger-headline.fancy-headline:after {
+    background-color: #cc0000;
+    content: '\a0';
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 0.5em;
+  }
+
+  .larger-headline.fancy-headline:before {
+    margin-right: 10px;
+  }
+
+  .larger-headline.fancy-headline:after {
+    margin-right: 10px;
+  }
+
+  .fifty_percent {
+    width: 23%;
+    height: 75%;
+  }
+
+  .shop_headline,
+  .styles_headline {
+    color: #444;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+
+
+    <div class="text-center" style="display: flex; justify-content: center;" id="mobile-padding">
+      <section class="col-lg-7  col-md-10 col-sm-10 col-xs-12">
+        <a href="$httpUrl('Search-Show','cgid','crocs-deals')$">
+          <div class="cx-brand-font top-headline" style="color: #cc0000; letter-spacing: 3px;">
+            <center>LAST CHANCE CLEARANCE!</center>
+          </div>
+          <div class=" cx-heavy-brand-font largest largest-headline" style="color: #444;">PICK YOUR PRICE</div>
+          <div class="cx-heavy-brand-font larger larger-headline" style="color: #444;">FIND YOUR KICKS&nbsp;</div>
+          <div class="cta-container text-center hidden-sm hidden-xs">
+            <div class="cx-brand-font smallest-headline" style="color: #444;">Select styles only. Prices as marked.*</div>
+          </div>
+        </a>
+        <section class="MOBILE  price_bucket_container hidden-lg" style="display: flex;flex-wrap: wrap;align-items: center; justify-content: center;">
+          <div class="box_bucket text-center">
+            <a href="$httpUrl('Search-Show','cgid','crocs-deals')$#&pmin=0&pmax=21">
+              <div class="cx-heavy-brand-font flexbox_spacearound_column " style="height: 100%;">
+                <p class="shop_headline">SHOP</p>
+                <h2 class="price_headline cx-heavy-brand-font box_bucket_hover" style="display: flex; align-items: flex-start;"><span>$</span>20</h2>
+                <p class="cx-brand-font styles_headline">STYLES</p>
+              </div>
+            </a>
+          </div>
+          <div class="box_bucket-right text-center">
+            <a href="$httpUrl('Search-Show','cgid','crocs-deals')$#&pmin=21&pmax=26">
+              <div class="cx-heavy-brand-font flexbox_spacearound_column" style="height: 100%;">
+                <p class="shop_headline">SHOP</p>
+                <h2 class="price_headline cx-heavy-brand-font  box_bucket_hover" style="display: flex; align-items: flex-start;"><span>$</span>25</h2>
+                <p class="cx-brand-font styles_headline">STYLES</p>
+              </div>
+            </a>
+          </div>
+          <div class="box_bucket text-center">
+            <a href=" $httpUrl('Search-Show','cgid','crocs-deals')$#&pmin=26&pmax=31">
+              <div class="cx-heavy-brand-font flexbox_spacearound_column " style="height: 100%;">
+                <p class="shop_headline">SHOP</p>
+                <h2 class="price_headline cx-heavy-brand-font box_bucket_hover" style="display: flex; align-items: flex-start;"><span>$</span>30</h2>
+                <p class="cx-brand-font styles_headline">STYLES</p>
+              </div>
+            </a>
+          </div>
+          <div class="box_bucket-right text-center">
+            <a href="$httpUrl('Search-Show','cgid','crocs-deals')$">
+              <div class="cx-heavy-brand-font flexbox_spacearound_column " style="height: 100%;">
+                <p class="shop_headline">SHOP</p>
+                <h2 class="price_headline cx-heavy-brand-font box_bucket_hover" style="display: flex; align-items: flex-start;">ALL</h2>
+                <p class="cx-brand-font styles_headline">STYLES</p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <div class="cta-container text-center hidden-md hidden-lg">
+          <div class="cx-brand-font smallest-headline" style="color: #444;">Select styles only. Prices as marked.*</div>
+        </div>
+      </section>
+
+
+
+      <section class=" DESKTOP  col-lg-7 price_bucket_container flexbox_spacearound hidden-sm hidden-md hidden-xs">
+        <div class="box_bucket text-center">
+          <a href="$httpUrl('Search-Show','cgid','crocs-deals')$#&pmin=0&pmax=21">
+            <div class="cx-heavy-brand-font flexbox_spacearound_column " style="height: 100%;">
+              <p class="shop_headline">SHOP</p>
+              <h2 class="price_headline cx-heavy-brand-font box_bucket_hover" style="display: flex; align-items: flex-start;"><span>$</span>20</h2>
+              <p class="cx-brand-font styles_headline">STYLES</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="box_bucket-right text-center">
+          <a href="$httpUrl('Search-Show','cgid','crocs-deals')$#&pmin=21&pmax=26">
+            <div class="cx-heavy-brand-font flexbox_spacearound_column" style="height: 100%;">
+              <p class="shop_headline">SHOP</p>
+              <h2 class="price_headline cx-heavy-brand-font  box_bucket_hover" style="display: flex; align-items: flex-start;"><span>$</span>25</h2>
+              <p class="cx-brand-font styles_headline">STYLES</p>
+            </div>
+          </a>
+        </div>
+        <div class="box_bucket text-center">
+          <a href=" $httpUrl('Search-Show','cgid','crocs-deals')$#&pmin=26&pmax=31">
+            <div class="cx-heavy-brand-font flexbox_spacearound_column " style="height: 100%;">
+              <p class="shop_headline">SHOP</p>
+              <h2 class="price_headline cx-heavy-brand-font box_bucket_hover" style="display: flex; align-items: flex-start;"><span>$</span>30</h2>
+              <p class="cx-brand-font styles_headline">STYLES</p>
+            </div>
+          </a>
+        </div>
+        <div class="box_bucket-right text-center">
+          <a href="$httpUrl('Search-Show','cgid','crocs-deals')$">
+            <div class="cx-heavy-brand-font flexbox_spacearound_column " style="height: 100%;">
+              <p class="shop_headline">SHOP</p>
+              <h2 class="price_headline cx-heavy-brand-font box_bucket_hover" style="display: flex; align-items: flex-start;">ALL</h2>
+              <p class="cx-brand-font styles_headline">STYLES</p>
+            </div>
+          </a>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</div>
+
+<style>
+.catBanner-wrapper {
+    background: none;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+  }
+
+ .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+ .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+ .breadcrumbs {
+    display: none;
+  }
+
+ @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    #cx-anniversary-title-below {
+      color: #5a8100 ;
+      -webkit-font-smoothing: antialiased;
+      font-size: 1.4em;
+      margin-left: 10px;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+ @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+ @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+}
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

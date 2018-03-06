@@ -1,0 +1,94 @@
+<div class="holiday-homepage-carousels">
+
+    <!-- BEGIN - Shoppable Product Carousel Example 1 -->
+    <!-- Use class background-gray-light to make background gray -->
+    <div class="background-white">
+        <div class="cs_container-crocs">
+            <div class="cs_row">
+                <div class="col-xs-12 clearfix">
+                    <div class="shop-carousel-row">
+
+                        <div class="cx-brand-font cx-copy" style="padding: 15px">
+                            <span class="shop-carousel-title text-uppercase">Shop Doorbusters</span>
+                            <a href="#" class="shop-carousel-all pull-right text-gray-dark text-uppercase">Shop All <span class="sr-only">Doorbusters</span></a>
+                        </div>
+
+                        <!-- Optional: add a custom card to the end of the carousel -->
+                        <!-- class "shop-carousel-last" must be used and div must be sibling in same div "container" as carousel -->
+                        <div class="shop-carousel-last">
+                            <a href="#" class="carouselLink text-uppercase cx-heavy-brand-font"><span>Shop All<br aria-hidden="true"> Doorbusters</span></a>
+                        </div>
+
+                        <!-- Same as existing Product Carousel: https://us-bz3.devzing.com/crocs/show_bug.cgi?id=11766#c5 -->
+                        <!-- ...except there are now new parameters you can use 'shop','true' -->
+                        $include('Search-Carousel', 'cgid', 'men-footwear-loafers', 'sz', '7','shop','true')$
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END - Shoppable Product Carousel Example 1 -->
+
+    <!-- BEGIN - Shoppable Product Carousel Example 2-->
+    <!-- Use class background-gray-light to make background gray -->
+    <div class="background-gray-light">
+        <div class="cs_container-fluid">
+            <div class="cs_row">
+                <div class="col-xs-12 clearfix">
+                    <div class="shop-carousel-row">
+
+                        <div class="cx-brand-font cx-copy" style="padding: 15px">
+                            <span class="shop-carousel-title text-uppercase">Shop Sale</span>
+                            <a href="#" class="shop-carousel-all pull-right text-gray-dark text-uppercase">Shop All <span class="sr-only">Sale</span></a>
+                        </div>
+
+                        <!-- Optional: add a custom card to the end of the carousel -->
+                        <!-- class "shop-carousel-last" must be used and div must be sibling in same div "container" as carousel -->
+                        <div class="shop-carousel-last">
+                            <a href="#" class="carouselLink text-uppercase cx-heavy-brand-font"><span>Shop All<br aria-hidden="true"> Sale</span></a>
+                        </div>
+
+                        <!-- Same as existing Product Carousel: https://us-bz3.devzing.com/crocs/show_bug.cgi?id=11766#c5 -->
+                        <!-- ...except there are now new parameters you can use 'shop','true' -->
+                        $include('Search-Carousel', 'cgid', 'outlet', 'sz', '7','shop','true')$
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- END - Shoppable Product Carousel Example 2-->
+
+    <!-- BEGIN - Shoppable Product Carousel Example 3-->
+    <!-- Use class background-gray-light to make background gray -->
+
+    <!-- END - Shoppable Product Carousel Example 3-->
+
+    <!-- BEGIN - Shoppable Product Carousel Example 4-->
+    <!-- Use class background-gray-light to make background gray -->
+
+    <!-- END - Shoppable Product Carousel Example 4-->
+
+</div>
+
+<style>
+.holiday-homepage-carousels .shop-carousel-last .carouselLink {
+    display: table;
+    font-size: 21px;
+    font-family: proxima_novablack,Arial,sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.holiday-homepage-carousels .shop-carousel-last .carouselLink span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.holiday-homepage-carousels .shop-carousel-last .carouselLink:hover span,
+.holiday-homepage-carousels .shop-carousel-last .carouselLink:focus span {
+    text-decoration: underline;
+}
+</style>

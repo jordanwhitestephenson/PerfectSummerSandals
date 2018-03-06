@@ -1,0 +1,1495 @@
+<style>
+  #riskFreeContainer {
+    display: none;
+  }
+
+  .productCarousel .outsideNavigation .sideNext,
+  .productCarousel .outsideNavigation .sidePrev {
+    display: none;
+  }
+
+  .promo-drawer {
+    display: none;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    margin-top: 15px;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .display-flex-end {
+    display: flex;
+  }
+
+  .swiperCarousel .sidePrev,
+  .swiperCarousel .sideNext {
+    text-align: left;
+  }
+
+  #liteRideLaunch .MOBILE_SWIPER img {
+    max-width: 85%;
+  }
+  #liteRideLaunch .MOBILE_SWIPER {
+    margin-top: 15px;
+  }
+
+  #liteRideLaunch .cx-button,
+  .people_love .cx-button,
+  .JS_LaunchLP .cta_row .cx-button {
+    font-size: 1.3em;
+    line-height: 1.3;
+    padding: 10px 5px 9px 5px;
+    margin: auto auto auto auto;
+    border: 2px solid #444;
+  }
+
+
+  #liteRideLaunch .swiper-slide>a {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  @media (max-width: 480px) {
+    .JS_LaunchLP .parts_science h3 {
+      font-size: 2em;
+      padding-top: 0.4em;
+      line-height: 1.0;
+      margin-bottom: 0.2em;
+
+    }
+    .JS_LaunchLP .parts_science.MOBILE h3 {
+      font-size: 2em;
+      line-height: 1.0;
+      margin-bottom: 0em;
+      padding-top: 0em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .JS_LaunchLP .parts_science.MOBILE {
+      margin-top: 1em;
+    }
+    .JS_LaunchLP .product_and_tall_man {
+      flex-direction: column-reverse;
+      margin-top: 1em;
+    }
+    .JS_LaunchLP .product_and_tall_woman {
+      flex-direction: column;
+      margin-top: 1em;
+    }
+    .JS_LaunchLP .liteRideHeadline {
+      font-size: 1.5em;
+      margin-top: 2.5em;
+      margin-bottom: 0.4em;
+      line-height: 1.0;
+    }
+    .JS_LaunchLP .liteRideHeadline.revolutionary_headline_mobile {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
+    .JS_LaunchLP .lite_ride_product {
+      margin: 20px 0px 35px 0px;
+    }
+    .JS_LaunchLP .lite_ride_product_men {
+      margin: 10px 0px 25px 0px;
+    }
+    .JS_LaunchLP .green_line {
+      color: #444;
+      font-size: 1.2em;
+      padding-top: 4px;
+      margin-top: 1em;
+    }
+    .JS_LaunchLP .black_literide_background {
+      flex-direction: column;
+    }
+    #liteRideLaunch .cx-button.black_background_button,
+    .JS_LaunchLP .cta_row .cx-button {
+      background-color: #fff;
+      color: #444;
+      border: 2px #444 solid;
+      margin: 5px 0px 5px 0px;
+    }
+
+    #liteRideLaunch .cx-button.black_background_button:hover,
+    .cx-button.black_background_button:focus {
+      background-color: #444;
+      color: #fff;
+      border: 2px #fff solid;
+    }
+
+    .JS_LaunchLP .lite_ride_logo {
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+    }
+    .JS_LaunchLP .lite_ride_logo img {
+      width: 40%;
+      margin: auto 0 auto 0
+    }
+    .JS_LaunchLP .mens_product_mobile {
+      margin-top: -20px;
+    }
+    .JS_LaunchLP .disclaimer_text {
+      align-self: baseline;
+    }
+    .JS_LaunchLP .liteRidePara {
+      font-size: 4.5vw;
+    }
+    #liteThird .image-hero {
+      width: 75%;
+      margin-top: 0.5em;
+    }
+
+    #liteFirst .image-hero {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+    }
+    #liteSecond .image-hero {
+      padding-top: 2.6em;
+      width: 91%;
+    }
+    .JS_LaunchLP .disclaimer_text {
+      align-self: center;
+    }
+
+  }
+
+  @media (min-width: 481px) {
+    .JS_LaunchLP .parts_science h3 {
+      font-size: 2.0em;
+      margin-top: 1.0em;
+      margin-bottom: 0.8em;
+      display: flex;
+      justify-content: center;
+    }
+    #liteRideLaunch {
+      font-size: 80%;
+    }
+    .JS_LaunchLP .liteRideHeadline {
+      font-size: 1.5em;
+      margin-top: 1em;
+      margin-bottom: 0.4em;
+      line-height: 1.0;
+    }
+    .JS_LaunchLP .green_line {
+      color: #fff;
+      font-size: 1.5em;
+      padding-top: 8px;
+    }
+    .JS_LaunchLP .black_background_content_container.cs_container-crocs {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #liteRideLaunch .cx-button.black_background_button {
+      background-color: rgba(255, 255, 255, 0);
+      color: #fff;
+      border: 2px #fff solid;
+      margin: 5px 0px 5px 0px;
+    }
+
+    #liteRideLaunch .cx-button.black_background_button:hover,
+    .cx-button.black_background_button:focus {
+      background-color: #fff;
+      color: #444;
+      border: 2px #fff solid;
+    }
+
+    .JS_LaunchLP .lite_ride_logo {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    .JS_LaunchLP .cta_row {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+    }
+    .JS_LaunchLP .lite_ride_product {
+      margin: 20px 0px 35px 0px;
+    }
+    .JS_LaunchLP .lite_ride_product_men {
+      margin: 20px 0px 30px 0px;
+    }
+    .JS_LaunchLP .mens_product_mobile {
+      margin-top: -15px;
+    }
+    .JS_LaunchLP .disclaimer_text {
+      align-self: center;
+    }
+    .JS_LaunchLP .liteRidePara {
+      font-size: 2.5vw;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #liteRideLaunch {
+      font-size: 80%;
+    }
+    .JS_LaunchLP .liteRideHeadline {
+      font-size: 2.3em;
+    }
+    .JS_LaunchLP .black_background_content_container.cs_container-crocs {
+      height: 600px;
+    }
+    .JS_LaunchLP .parts_science h3 {
+      font-size: 2.9em;
+    }
+    .JS_LaunchLP .disclaimer_text {
+      align-self: baseline;
+    }
+    .JS_LaunchLP .liteRidePara {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    #liteRideLaunch {
+      font-size: 100%;
+    }
+    .JS_LaunchLP .black_background_content_container.cs_container-crocs {
+      width: 1370px;
+      height: 655px;
+    }
+  }
+
+  .JS_LaunchLP .black_literide_background {
+    background: url('X_LiteRide/LiteRide_Background_Horizontal_RGB.jpg?$staticlink$');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .JS_LaunchLP .flex_column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+.JS_LaunchLP  .black_content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .JS_LaunchLP .lite_ride_product,
+  .JS_LaunchLP .lite_ride_product_men {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .JS_LaunchLP .parts_science h3 span {
+    font-size: 0.5em;
+    border-bottom: 2px #81bc00 solid;
+    font-style: italic;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .JS_LaunchLP .lazy-load {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #liteRideLaunch .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  #liteRideLaunch .outsideNavigation .sideNext,
+  .outsideNavigation .sidePrev {
+    /*background: rgba(255, 255, 255, 0);*/
+  }
+
+  .JS_LaunchLP .liteRideHeadline {
+    color: #2e5185;
+  }
+
+  .JS_LaunchLP .liteRidePara {
+    line-height: 1.2;
+  }
+
+  .JS_LaunchLP .lite_product_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .JS_LaunchLP .product_and_tall_man,
+  .JS_LaunchLP .product_and_tall_woman {
+    display: flex;
+    align-items: center;
+  }
+
+  #liteRideLaunch .a_href {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #liteRideLaunch .cta_row {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #liteRideLaunch .product_description,
+  .JS_LaunchLP .product_description {
+    color: #444;
+    padding-top: 6px;
+  }
+
+  .JS_LaunchLP .lite-ride-carousels .cx-brand-font .shop-carousel-title {
+    color: #d41f27;
+  }
+
+/* //CAROUSEL STYLES// */
+  .lite-ride-carousels .shop-carousel-last .carouselLink {
+    display: table;
+    font-size: 21px;
+    font-family: proxima_novablack, Arial, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: url('X_LiteRide/LiteRide_Background_Horizontal_RGB.jpg?$staticlink$');
+  }
+
+  .lite-ride-carousels .shop-carousel-last .carouselLink span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .lite-ride-carousels .shop-carousel-last .carouselLink:hover span,
+  .lite-ride-carousels .shop-carousel-last .carouselLink:focus span {
+    text-decoration: underline;
+  }
+  /* /END CAROSEL STYLES/ */
+
+
+  .JS_LaunchLP .green_line {
+    border-top: #81bc00 2px solid;
+  }
+
+  .JS_LaunchLP .circle_container {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+  }
+
+  .JS_LaunchLP .mobile_slide_headline {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 0.2em;
+    line-height: 0.9;
+  }
+
+  .JS_LaunchLP .hundred_percent_amazing span {
+    font-size: 0.5em;
+    color: #fff
+  }
+
+  .JS_LaunchLP .hundred_percent_amazing h3 {
+    color: #fff;
+    font-size: 3em;
+    line-height: 0.5;
+  }
+
+  .JS_LaunchLP .hundred_percent_amazing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+  }
+
+  .JS_LaunchLP .hundred_percent_amazing.first_slide {
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+  }
+
+  .JS_LaunchLP .hundred_percent_amazing.second_slide {
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .JS_LaunchLP .hundred_percent_amazing.last_slide {
+    margin-top: -1.7em;
+    padding-bottom: 9px;
+  }
+
+
+  .JS_LaunchLP .disclaimer_text {
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .JS_LaunchLP .revolutionary_mobile_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0.4em;
+  }
+
+  .JS_LaunchLP .MOBILE.gray_square_container .sidePrev,
+  .JS_LaunchLP .MOBILE.gray_square_container .sideNext {
+    width: 25px;
+  }
+
+
+  .JS_LaunchLP .insideNavigation .sidePrev {
+    left: -10px;
+  }
+
+  .JS_LaunchLP .insideNavigation .sideNext {
+    right: -10px;
+  }
+
+  .JS_LaunchLP .fancy-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+  .JS_LaunchLP .fancy-headline:before,
+  .JS_LaunchLP .fancy-headline:after {
+    background-color: #444;
+    content: '\a0';
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 0.5em;
+  }
+
+  .JS_LaunchLP .fancy-headline:before {
+    margin-right: 10px;
+  }
+
+  .JS_LaunchLP .fancy-headline:after {
+    margin-left: 10px;
+  }
+
+  .JS_LaunchLP .widget_container {
+    margin-bottom: 2em;
+  }
+
+  .JS_LaunchLP.desktop_padding_top {
+    margin-top: 1.5em;
+  }
+</style>
+
+<!-- START CAYA MAIN -->
+<section class="LaunchLandingPageContainer">
+  <div id="#liteRideLaunch" class="caya-tab past JS_LaunchLP">
+    <!-- #liteRideLaunch is manditory, do not change -->
+    <div class="caya-hero-wrapper caya-div cs_container-fluid" id="liteRideLaunch">
+      <div class="cs_row position-relative">
+        <div class="hero-copy-container text-center">
+          <div class="lite_ride_logo">
+            <object data="X_LiteRide/LiteRide_Logo_RGB.svg?$staticlink$" type="image/svg+xml" alt="LiteRide&trade; Logo">
+            <img src="X_LiteRide/LiteRide_Logo_RGB.png?$staticlink$" alt = "LiteRide&trade; Logo" />
+          </object>
+          </div>
+        </div>
+
+        <div class="DESKTOP_BLACK hidden-xs black_literide_background cs_container-fluid" style="width: 100%">
+          <div class="black_background_content_container cs_container-crocs">
+            <div class="">
+              <div class="parts_science">
+                <h1 class="cx-heavy-brand-font text-center" style="color: #fff;">EQUAL PARTS SCIENCE&nbsp;  <span class = "">and </span>&nbsp; MAGIC</h1>
+              </div>
+
+              <div class="black_content_container">
+                <div class="col-sm-12 col-md-6 display-flex" style="flex-direction: column">
+                  <img src="X_LiteRide/Callouts_Square_Layout.png?$staticlink$" class="img-responsive" />
+                  <p class="cx-brand-font text-center disclaimer_text">
+                  *When LiteRide™ foam is compared to classic Croslite™ foam.
+                  </p>
+                </div>
+
+                <div class="flex_column col-md-6 hidden-sm">
+                  <h3 class="cx-heavy-brand-font text-center text-uppercase green_line" style="">Take a closer look</h3>
+                  <div class="caya-div VIDEO_CONTAINER col-xs-12 col-md-12 col-lg-9">
+                    <div class="embed-container">
+                      <iframe class="lazy-load" alt="LiteRide&trade; Video" src="https://player.vimeo.com/video/252387317?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" data-src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0"
+                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      <noscript><iframe  alt="LiteRide&trade; Video" src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></noscript>
+                    </div>
+                  </div>
+                  <div class="cta_row " style="">
+                    <div class="col-lg-6 col-md-9 col-xs-12 btn-col-1 text-center"><a href="$httpUrl('Search-Show','cgid','literide-men')$" class="cx-button black_background_button full-width text-uppercase text-center">SHOP MEN'S</a></div>
+                    <div class="col-lg-6 col-md-9 col-xs-12 btn-col-1 text-center"><a href="$httpUrl('Search-Show','cgid','literide-women')$" class="cx-button black_background_button full-width text-uppercase text-center">SHOP WOMEN'S</a></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="MOBILE_BLACK hidden-sm hidden-md hidden-lg black_literide_background position-relative" style="width: 100%;">
+          <div class="parts_science  MOBILE">
+            <!-- <h3 class="cx-heavy-brand-font text-center" style="color: #fff;"></h3> -->
+            <h1 class="cx-heavy-brand-font text-center" style="color: #fff;">EQUAL PARTS<br>SCIENCE <span class = ""> and </span> MAGIC</h1>
+          </div>
+          <div class="swiperCarouselWrapper productCarousel_liteRide_mobile sweater-slide-wrapper">
+            <div id="WaysToWearSlider" class="adaCarousel  swiper-container">
+              <div class="swiper-wrapper" style="">
+                <!-- Slide -->
+                <div tabindex="" class="swiper-slide" id="liteFirst">
+                  <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$" class="swiper-slide"><img class="lazy-load image-hero" src="X_LiteRide/Slide1.png?$staticlink$" title="LiteRide Clogs" alt="" /></a>
+                  <div class="hundred_percent_amazing first_slide">
+                    <h3 class="cx-heavy-brand-font text-center">25%</h3>
+                    <h3 class="cx-heavy-brand-font text-center"><span>LIGHTER*</span></h3>
+                  </div>
+                  <div class="circle_container">
+                    <img class="one_circle" src="X_LiteRide/WhiteCircle.png?$staticlink$" title="" alt="" />
+                    <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                    <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                  </div>
+                </div>
+                <div tabindex="" id="liteSecond" class="swiper-slide">
+                  <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$"><img class="lazy-load image-hero"  src="X_LiteRide/Slide2.png?$staticlink$" title= "LiteRide Clogs" alt="" /></a>
+                  <div class="hundred_percent_amazing second_slide">
+                    <h3 class="cx-heavy-brand-font text-center">40%</h3>
+                    <h3 class="cx-heavy-brand-font text-center"><span>SOFTER*</span></h3>
+                  </div>
+                  <div class="circle_container">
+                    <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                    <img class="one_circle" src="X_LiteRide/WhiteCircle.png?$staticlink$" title="" alt="" />
+                    <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                  </div>
+                </div>
+                <!-- end slide -->
+                <div tabindex="" id="liteThird" class="swiper-slide">
+                  <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$"><img class="lazy-load image-hero" src="X_LiteRide/Slide3_MOBILE.png?$staticlink$" title= "LiteRide Clogs" alt="" /></a>
+                  <div class="hundred_percent_amazing last_slide">
+                    <h3 class="cx-heavy-brand-font text-center">100%</h3>
+                    <h3 class="cx-heavy-brand-font text-center"><span>AMAZING</span></h3>
+                  </div>
+
+                  <div class="circle_container">
+                    <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                    <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                    <img class="one_circle" src="X_LiteRide/WhiteCircle.png?$staticlink$" title="" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="sideNext text-left">
+                <div tabindex="-1" type="bullet" class=""><span class="swiper-pagination-progressbar-fill"></span><span aria-hidden=”false”>&rsaquo;</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- end of mobile swiper  -->
+          <p class="cx-brand-font text-center disclaimer_text">
+          *When LiteRide™ foam is compared to classic Croslite™ foam.
+          </p>
+        </div>
+        <!-- end of mobile black container  -->
+      </div>
+      <!-- </div> -->
+      <div class="MOBILE_VIDEO flex_column hidden-sm hidden-md hidden-lg col-xs-12">
+        <h3 class="cx-heavy-brand-font text-center text-uppercase green_line" style="">Take a closer look</h3>
+        <div class="caya-div VIDEO_CONTAINER col-xs-12">
+          <div class="embed-container">
+            <iframe class="lazy-load" alt="LiteRide&trade; Video" src="https://player.vimeo.com/video/252387317?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" data-src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0"
+              frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <noscript><iframe alt="LiteRide&trade; Video" src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></noscript>
+          </div>
+        </div>
+        <div class="cs_row cta_row " style="margin-bottom: 2.5em;">
+          <div class="col-md-9 col-xs-12 btn-col-1 text-center"><a href="$httpUrl('Search-Show','cgid','literide-men')$" class="cx-button full-width black_background_button  text-uppercase text-center">SHOP MEN'S</a></div>
+          <div class="col-md-9 col-xs-12 btn-col-1 text-center"><a href="$httpUrl('Search-Show','cgid','literide-women')$" class="cx-button full-width black_background_button  text-uppercase text-center">SHOP WOMEN'S</a></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- //REVOLUTIONARY div// -->
+    <div class="REVOLUTIONARY cs_container-crocs">
+      <div class="text_container">
+        <h2 class="DESKTOP hidden-xs cx-heavy-brand-font text-center liteRideHeadline"> REVOLUTIONARY <img src = "X_LiteRide/greenDot.jpg?$staticlink$" style= "margin-top: auto; margin-bottom: 0.2em" /> SINK-IN SOFTNESS <br />INNOVATIVE COMFORT</h2>
+        <p class="DESKTOP hidden-xs cx-brand-font text-center liteRidePara">
+          LiteRide&trade; is the newest innovation in the legendary world of Crocs comfort.<br />This revolutionary closed-cell material is even lighter and softer than Croslite&trade;<br />foam, delivering a delightful mix of support and sink-in softness
+          underfoot.
+        </p>
+        <div class="revolutionary_mobile_container hidden-sm hidden-md hidden-lg">
+          <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> REVOLUTIONARY </div>
+          <img src="X_LiteRide/greenDot.jpg?$staticlink$" style="margin-top: auto; margin-bottom: 0.1em" />
+          <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> SINK-IN SOFTNESS</div>
+          <img src="X_LiteRide/greenDot.jpg?$staticlink$" style="margin-top: auto; margin-bottom: 0.1em" />
+          <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> INNOVATIVE COMFORT</div>
+        </div>
+        <p class="MOBILE  hidden-sm hidden-md hidden-lg cx-brand-font text-center liteRidePara">
+          LiteRide&trade; is the newest innovation<br /> in the legendary world of Crocs<br /> comfort. This revolutionary closed-cell<br /> material is even lighter and softer<br /> than Croslite&trade; foam, delivering a<br /> delightful mix of support
+          and sink-in<br /> softness underfoot.
+        </p>
+      </div>
+      <div class="product_and_tall_man">
+        <div class="lite_product_container col-sm-6">
+          <div class="lite_ride_product_men">
+            <a href="$httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$" class="a_href">
+            <img src="X_LiteRide/LightRideClog.jpg?$staticlink$" class="img-responsive" title = "LiteRide&trade; Clog"/>
+            <p class = "cx-brand-font product_description text-center mens_product_mobile">LiteRide&trade; Clog</p>
+            </a>
+          </div>
+          <div class="lite_ride_product_men">
+            <a href="$httpUrl('Product-Show','pid','205183','cid','066','cgid','literide')$" class="a_href">
+            <img src="X_LiteRide/LiteRideSlide.jpg?$staticlink$" class="img-responsive" title = "LiteRide&trade; Slide"/>
+            <p class = "cx-brand-font product_description text-center mens_product_mobile">LiteRide&trade; Slide</p>
+            </a>
+          </div>
+          <div class="cta_row ">
+            <div class="col-sm-12 col-md-9 col-xs-12 btn-col-1 text-center"><a href="$httpUrl('Search-Show','cgid','literide-men')$" class="cx-button full-width text-uppercase text-center">SHOP MEN'S</a></div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-6 display-flex">
+          <a href="$httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$">
+            <img src="X_LiteRide/MenOnFigure.jpg?$staticlink$" class="img-responsive desktop_padding_top" title = "LiteRide&trade; Clog"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- //REVOLUTIONARY div// -->
+
+    <!-- //ATHLETICALLY div// -->
+    <div class="ATHLETICALLY cs_container-crocs">
+      <div class="text_container">
+        <h2 class="DESKTOP hidden-xs cx-heavy-brand-font text-center liteRideHeadline"> ATHLETICALLY INSPIRED COMFORT</h2>
+        <p class="DESKTOP hidden-xs cx-brand-font text-center liteRidePara"> Perfect for warm-ups and cool-downs and weekends bouncing around<br />town, the LiteRide&trade; foam is the next breakthrough in world-class comfort.</p>
+        <h2 class="MOBILE hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline"> ATHLETICALLY<br /> INSPIRED COMFORT</h2>
+        <p class="MOBILE hidden-sm hidden-md hidden-lg cx-brand-font text-center liteRidePara"> Perfect for warm-ups and cool-downs<br /> and weekends bouncing around<br />town, the LiteRide&trade; foam is the next<br />breakthrough in world-class comfort.</p>
+      </div>
+      <div class="product_and_tall_woman">
+        <div class="col-xs-12 col-sm-5 col-md-6 display-flex-end">
+          <a href="$httpUrl('Product-Show','pid','204592','cid','115','cgid','literide')$">
+            <img src="X_LiteRide/WomanOnFigure.jpg?$staticlink$" class="img-responsive desktop_padding_top" title = "LiteRide&trade; Clog"/>
+          </a>
+        </div>
+        <div class="lite_product_container col-xs-12 col-sm-7 col-md-6">
+          <div class="lite_ride_product">
+            <a href="$httpUrl('Product-Show','pid','204592','cid','115','cgid','literide')$" class="a_href">
+            <img src="X_LiteRide/LiteRideClog_2.jpg?$staticlink$" class="img-responsive" title = "LiteRide&trade; Clog"/>
+            <p class = "cx-brand-font product_description text-center">LiteRide&trade; Clog</p>
+            </a>
+          </div>
+          <div class="lite_ride_product">
+            <a href="$httpUrl('Product-Show','pid','205106','cid','066','cgid','literide')$" class="a_href">
+            <img src="X_LiteRide/LiteRideSandal.jpg?$staticlink$" class="img-responsive" title = "Women's LiteRide&trade; Sandal"/>
+            <p class = "cx-brand-font product_description text-center">Women's LiteRide&trade; Sandal</p>
+          </a>
+          </div>
+          <div class="cta_row ">
+            <div class="col-sm-12 col-md-9 col-xs-12 btn-col-1 text-center"><a href="$httpUrl('Search-Show','cgid','literide-women')$" class="cx-button full-width text-uppercase text-center">SHOP WOMEN'S</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //ATHLETICALLY div// -->
+
+
+    <!-- <INTRODUCING div> -->
+    <div class="INTRODUCING ">
+      <div class="cs_container-crocs">
+        <div class="text_container">
+          <h2 class="DESKTOP hidden-xs cx-heavy-brand-font text-center liteRideHeadline">INTRODUCING LITERIDE&trade; SHOES</h2>
+          <h2 class="MOBILE hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline">INTRODUCING<br />LITERIDE&trade; SHOES</h2>
+        </div>
+      </div>
+      <div class="lite-ride-carousels js_new">
+        <div class="background-white">
+          <div class="cs_container-crocs">
+            <div class="cs_row">
+              <div class="col-xs-12 clearfix">
+                <div class="shop-carousel-row">
+                  <div class="shop-carousel-last">
+                    <a href="$httpUrl('Search-Show','cgid','literide')$" class="carouselLink text-uppercase cx-heavy-brand-font"><span style="color: #fff">Shop All<br aria-hidden="true">Literide&trade;</span></a>
+                  </div>
+                  $include('Search-Carousel', 'cgid', 'literide-carousel', 'sz', '7','shop','true')$
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center fancy-headline">#ComeAsYouAre</div>
+    <div class="cs_container-crocs widget_container">
+      <div class="olapic-header">
+        <div class="olapic-carousel-subtitle">Unique starts with you. Share your photos and #ComeAsYouAre.</div>
+        <button aria-disabled="false" type="button" class="olapic-upload-link cx-button cx-button-cta">Upload a Photo</button>
+      </div>
+      <div class="js-olapic olapic-carousel" data-source="signal" data-location="pdp-top" data-useproduct="true" data-useproductcategory="true" data-widgets="literide"></div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- END OF LAUNCH PAGE -->
+
+
+
+<!-- <***START OF COMING SOON**> -->
+<style>
+  .swiperCarousel .sidePrev,
+  .swiperCarousel .sideNext {
+    text-align: left;
+  }
+
+
+  #liteRideComingSoon .cx-button,
+  .people_love .cx-button,
+  .JS_ComingSoon .cta_row .cx-button {
+    font-size: 1.3em;
+    line-height: 1.3;
+    padding: 10px 5px 9px 5px;
+    margin: auto auto auto auto;
+    border: 2px solid #444;
+  }
+
+
+  #liteRideComingSoon .swiper-slide>a {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  @media (max-width: 480px) {
+  .JS_ComingSoon .parts_science h1 {
+      font-size: 2em;
+      padding-top: 0.4em;
+      line-height: 1.0;
+      margin-bottom: 0.2em;
+
+    }
+    .JS_ComingSoon .parts_science.MOBILE h3 {
+      font-size: 2em;
+      line-height: 1.0;
+      margin-bottom: 0em;
+      padding-top: 0em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .JS_ComingSoon .parts_science.MOBILE {
+      margin-top: 1em;
+    }
+    .JS_ComingSoon .product_and_tall_man {
+      flex-direction: column-reverse;
+      margin-top: 1em;
+    }
+    .JS_ComingSoon .product_and_tall_woman {
+      flex-direction: column;
+      margin-top: 1em;
+    }
+    .JS_ComingSoon .liteRideHeadline {
+      font-size: 1.5em;
+      margin-top: 2.5em;
+      margin-bottom: 0.4em;
+      line-height: 1.0;
+    }
+  .JS_ComingSoon  .liteRideHeadline.revolutionary_headline_mobile {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
+
+  .JS_ComingSoon  .lite_ride_product {
+      margin: 20px 0px 35px 0px;
+    }
+    .JS_ComingSoon .lite_ride_product_men {
+      margin: 10px 0px 25px 0px;
+    }
+    .JS_ComingSoon .green_line {
+      color: #444;
+      font-size: 1.2em;
+      padding-top: 4px;
+      margin-top: 1em;
+    }
+    .JS_ComingSoon .black_literide_background {
+      flex-direction: column;
+    }
+    #liteRideComingSoon .cx-button.black_background_button,
+    .JS_ComingSoon .cta_row .cx-button {
+      background-color: #fff;
+      color: #444;
+      border: 2px #444 solid;
+      margin: 5px 0px 5px 0px;
+    }
+
+    #liteRideComingSoon .cx-button.black_background_button:hover,
+    .cx-button.black_background_button:focus {
+      background-color: #444;
+      color: #fff;
+      border: 2px #fff solid;
+    }
+    .JS_ComingSoon .lite_ride_logo {
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+    }
+    .JS_ComingSoon .lite_ride_logo img {
+      width: 40%;
+      margin: auto 0 auto 0
+    }
+    .JS_ComingSoon .disclaimer_text {
+      align-self: center;
+    }
+    .JS_ComingSoon .liteRidePara {
+      font-size: 4.5vw;
+    }
+    .JS_ComingSoon .product_description.womens_coming_soon {
+      margin-top: 1em;
+    }
+
+  }
+
+  @media (min-width: 481px) {
+    .JS_ComingSoon .parts_science h1 {
+      font-size: 2.0em;
+      margin-top: 1.0em;
+      margin-bottom: 0.8em;
+      display: flex;
+      justify-content: center;
+    }
+    #liteRideComingSoon {
+      font-size: 80%;
+    }
+    .JS_ComingSoon .liteRideHeadline {
+      font-size: 1.5em;
+      margin-top: 1em;
+      margin-bottom: 0.4em;
+      line-height: 1.0;
+    }
+    .JS_ComingSoon .green_line {
+      color: #fff;
+      font-size: 1.5em;
+      padding-top: 8px;
+    }
+    .JS_ComingSoon .black_background_content_container.cs_container-crocs {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #liteRideComingSoon .cx-button.black_background_button {
+      background-color: rgba(255, 255, 255, 0);
+      color: #fff;
+      border: 2px #fff solid;
+      margin: 5px 0px 5px 0px;
+    }
+
+    #liteRideComingSoon .cx-button.black_background_button:hover,
+    .cx-button.black_background_button:focus {
+      background-color: #fff;
+      color: #444;
+      border: 2px #fff solid;
+    }
+
+    .JS_ComingSoon .lite_ride_logo {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    .JS_ComingSoon .cta_row {
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
+    }
+    .JS_ComingSoon .lite_ride_product {
+      margin: 20px 0px 35px 0px;
+    }
+    .JS_ComingSoon .lite_ride_product_men {
+      margin: 20px 0px 30px 0px;
+    }
+    .JS_ComingSoon .disclaimer_text {
+      align-self: center;
+    }
+    .JS_ComingSoon .liteRidePara {
+      font-size: 2.5vw;
+    }
+    .JS_ComingSoon .product_description.womens_coming_soon {
+      margin-top: 1em;
+    }
+
+
+
+  }
+
+  @media (min-width: 768px) {
+    #liteRideComingSoon {
+      font-size: 80%;
+    }
+    .JS_ComingSoon .liteRideHeadline {
+      font-size: 2.3em;
+    }
+    .JS_ComingSoon .black_background_content_container.cs_container-crocs {
+      height: 600px;
+    }
+    .JS_ComingSoon .parts_science h1 {
+      font-size: 2.9em;
+    }
+    .JS_ComingSoon .disclaimer_text {
+      align-self: baseline;
+    }
+    .JS_ComingSoon .liteRidePara {
+      font-size: 1.1em;
+    }
+    .JS_ComingSoon .desktop_padding_top {
+      margin-top: 1.5em;
+    }
+  }
+
+  @media (min-width: 960px) {
+    #liteRideComingSoon {
+      font-size: 100%;
+    }
+    .JS_ComingSoon .black_background_content_container.cs_container-crocs {
+      width: 1370px;
+      height: 655px;
+    }
+    /* CAYA PRODUCT SLIDER */
+  }
+
+
+  .JS_ComingSoon .black_literide_background {
+    background: url('X_LiteRide/LiteRide_Background_Horizontal_RGB.jpg?$staticlink$');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .JS_ComingSoon .flex_column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .JS_ComingSoon .black_content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .JS_ComingSoon .lite_ride_product,
+  .JS_ComingSoon .lite_ride_product_men {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+
+  .JS_ComingSoon .parts_science h1 span {
+    font-size: 0.5em;
+    border-bottom: 2px #81bc00 solid;
+    font-style: italic;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .JS_ComingSoon .lazy-load {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #liteRideComingSoon .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+
+  }
+
+  #liteRideComingSoon .outsideNavigation .sideNext,
+  .outsideNavigation .sidePrev {
+    /*background: rgba(255, 255, 255, 0);*/
+  }
+
+.JS_ComingSoon  .liteRideHeadline {
+    color: #2e5185;
+  }
+
+.JS_ComingSoon  .liteRidePara {
+    line-height: 1.2;
+  }
+
+  .JS_ComingSoon .lite_product_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+.JS_ComingSoon  .product_and_tall_man,
+.JS_ComingSoon .product_and_tall_woman {
+    display: flex;
+    align-items: center;
+  }
+
+  #liteRideComingSoon .a_href {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #liteRideComingSoon .cta_row {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #liteRideComingSoon .product_description,
+  .JS_ComingSoon .product_description {
+    color: #444;
+    padding-top: 6px;
+  }
+
+  .JS_ComingSoon .lite-ride-carousels .cx-brand-font .shop-carousel-title {
+    color: #d41f27;
+  }
+
+  .JS_ComingSoon .green_line {
+    border-top: #81bc00 2px solid;
+  }
+
+  .JS_ComingSoon .circle_container {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+  }
+
+  .JS_ComingSoon .mobile_slide_headline {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 0.2em;
+    line-height: 0.9;
+  }
+
+  .JS_ComingSoon .hundred_percent_amazing span {
+    font-size: 0.5em;
+    color: #fff
+  }
+
+.JS_ComingSoon  .hundred_percent_amazing h3 {
+    color: #fff;
+    font-size: 3em;
+    line-height: 0.5;
+  }
+
+  .JS_ComingSoon .hundred_percent_amazing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+  }
+  .JS_ComingSoon .hundred_percent_amazing.first_slide {
+    margin-top: 1.0em;
+    margin-bottom: 1em;
+  }
+  .JS_ComingSoon .hundred_percent_amazing.second_slide {
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+  }
+  .JS_ComingSoon .hundred_percent_amazing.last_slide {
+    margin-top: -1.7em;
+    padding-bottom: 9px;
+  }
+
+
+  .JS_ComingSoon .disclaimer_text {
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .revolutionary_mobile_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0.4em;
+  }
+
+
+  .JS_ComingSoon .insideNavigation .sidePrev {
+    left: -10px;
+  }
+
+  .JS_ComingSoon .insideNavigation .sideNext {
+    right: -10px;
+  }
+
+  .JS_ComingSoon .fancy-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+  .JS_ComingSoon .fancy-headline:before,
+  .JS_ComingSoon .fancy-headline:after {
+    background-color: #444;
+    content: '\a0';
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 0.5em;
+  }
+
+  .JS_ComingSoon .fancy-headline:before {
+    margin-right: 10px;
+  }
+
+  .JS_ComingSoon .fancy-headline:after {
+    margin-left: 10px;
+  }
+
+  .JS_ComingSoon .widget_container {
+    margin-bottom: 2em;
+  }
+  #liteRideComingSoon .product_description,
+  .JS_ComingSoon .product_description {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #80bc01;
+    border-bottom: 2px solid #80bc01;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.1em;
+  }
+  .JS_ComingSoon .opacity_image {
+    opacity: 0.2;
+  }
+
+</style>
+
+<!-- START COMING SOON -->
+<section class = "LiteRideComingSoon">
+<div id="#liteRideComingSoon" class="caya-tab past JS_ComingSoon">
+  <!-- #liteRideComingSoon is manditory, do not change -->
+  <div class="caya-hero-wrapper caya-div cs_container-fluid" id="liteRideComingSoon">
+    <div class="cs_row position-relative">
+      <div class="hero-copy-container text-center">
+        <div class="lite_ride_logo">
+          <object data="X_LiteRide/LiteRide_Logo_RGB.svg?$staticlink$" alt="LiteRide&trade; Logo" type="image/svg+xml">
+            <img src="X_LiteRide/LiteRide_Logo_RGB.png?$staticlink$" alt="LiteRide&trade; Logo" />
+          </object>
+        </div>
+      </div>
+
+      <div class="DESKTOP_BLACK hidden-xs black_literide_background cs_container-fluid" style="width: 100%">
+        <div class="black_background_content_container cs_container-crocs">
+          <div class="">
+            <div class="parts_science">
+              <h1 class="cx-heavy-brand-font text-center" style="color: #fff;">EQUAL PARTS SCIENCE <span class = "">and </span> MAGIC</h1>
+            </div>
+
+            <div class="black_content_container">
+              <div class="col-sm-12 col-md-6 display-flex" style="flex-direction: column">
+                <img src="X_LiteRide/Callouts_Square_Layout.png?$staticlink$" class="img-responsive" />
+                <p class="cx-brand-font text-center disclaimer_text">
+                  *When LiteRide™ foam is compared to classic Croslite™ foam.
+                </p>
+              </div>
+
+              <div class="flex_column col-md-6 hidden-sm">
+                <h3 class="cx-heavy-brand-font text-center text-uppercase green_line" style="">Take a closer look</h3>
+                <div class="caya-div VIDEO_CONTAINER col-xs-12 col-md-12 col-lg-9">
+                  <div class="embed-container">
+                    <iframe class="lazy-load" alt="LiteRide&trade; Logo"src="https://player.vimeo.com/video/252387317?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" data-src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen
+                      mozallowfullscreen allowfullscreen></iframe>
+                    <noscript><iframe src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></noscript>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="MOBILE_BLACK hidden-sm hidden-md hidden-lg black_literide_background position-relative" style="width: 100%;">
+        <div class="parts_science  MOBILE">
+          <!-- <h1 class="cx-heavy-brand-font text-center" style="color: #fff;"></h1> -->
+          <h1 class="cx-heavy-brand-font text-center" style="color: #fff;">EQUAL PARTS<br>SCIENCE <span class = ""> and </span> MAGIC</h1>
+        </div>
+        <div class="swiperCarouselWrapper productCarousel_liteRide_mobile sweater-slide-wrapper">
+          <div id="WaysToWearSlider" class="adaCarousel  swiper-container">
+            <div class="swiper-wrapper" style="">
+              <!-- Slide -->
+              <div tabindex="" class="swiper-slide" id="liteFirst">
+                <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$" class="swiper-slide"><img class="lazy-load image-hero" src="X_LiteRide/Slide1.png?$staticlink$" title="LiteRide Clogs" alt="" /></a>
+                <div class="hundred_percent_amazing first_slide">
+                  <h3 class="cx-heavy-brand-font text-center">25%</h3>
+                  <h3 class="cx-heavy-brand-font text-center"><span>LIGHTER*</span></h3>
+                </div>
+                <div class="circle_container">
+                  <img class="one_circle" src="X_LiteRide/WhiteCircle.png?$staticlink$" title="" alt="" />
+                  <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                  <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                </div>
+              </div>
+              <div tabindex="" id="liteSecond" class="swiper-slide">
+                <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$"><img class="lazy-load image-hero"  src="X_LiteRide/Slide2.png?$staticlink$" title= "LiteRide Clogs" alt="" /></a>
+                <div class="hundred_percent_amazing second_slide">
+                  <h3 class="cx-heavy-brand-font text-center">40%</h3>
+                  <h3 class="cx-heavy-brand-font text-center"><span>SOFTER*</span></h3>
+                </div>
+                <div class="circle_container">
+                  <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                  <img class="one_circle" src="X_LiteRide/WhiteCircle.png?$staticlink$" title="" alt="" />
+                  <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                </div>
+              </div>
+              <!-- end slide -->
+              <div tabindex="" id="liteThird" class="swiper-slide">
+                <a href=" $httpUrl('Product-Show','pid','204592','cid','066','cgid','literide')$"><img class="lazy-load image-hero" src="X_LiteRide/Slide3_MOBILE.png?$staticlink$" title= "LiteRide Clogs" alt="" /></a>
+                <div class="hundred_percent_amazing last_slide">
+                  <h3 class="cx-heavy-brand-font text-center">100%</h3>
+                  <h3 class="cx-heavy-brand-font text-center"><span>AMAZING</span></h3>
+                </div>
+
+                <div class="circle_container">
+                  <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                  <img class="one_circle" src="X_LiteRide/GreenCircle.png?$staticlink$" title="" alt="" />
+                  <img class="one_circle" src="X_LiteRide/WhiteCircle.png?$staticlink$" title="" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="sideNext text-left">
+              <div tabindex="-1" type="bullet" class=""><span class="swiper-pagination-progressbar-fill"></span><span aria-hidden=”false”>&rsaquo;</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- end of mobile swiper  -->
+        <p class="cx-brand-font text-center disclaimer_text">
+        *When LiteRide™ foam is compared to classic Croslite™ foam.
+        </p>
+      </div>
+
+      <!-- end of mobile black container  -->
+    </div>
+    <!-- </div> -->
+    <div class="MOBILE_VIDEO flex_column hidden-sm hidden-md hidden-lg col-xs-12">
+      <h3 class="cx-heavy-brand-font text-center text-uppercase green_line" style="">Take a closer look</h3>
+      <div class="caya-div VIDEO_CONTAINER col-xs-12">
+        <div class="embed-container">
+          <iframe class="lazy-load" alt = "LiteRide&trade;"src="https://player.vimeo.com/video/252387317?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" data-src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen
+            mozallowfullscreen allowfullscreen></iframe>
+          <noscript><iframe alt = "LiteRide&trade;" src="https://player.vimeo.com/video/206473173?color=7ab800&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></noscript>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="REVOLUTIONARY cs_container-crocs">
+    <div class="text_container">
+      <h2 class="DESKTOP hidden-xs cx-heavy-brand-font text-center liteRideHeadline"> REVOLUTIONARY <img src = "X_LiteRide/greenDot.jpg?$staticlink$" style= "margin-top: auto; margin-bottom: 0.2em" /> SINK-IN SOFTNESS <br />INNOVATIVE COMFORT</h2>
+      <p class="DESKTOP hidden-xs cx-brand-font text-center liteRidePara">
+        LiteRide&trade; is the newest innovation in the legendary world of Crocs comfort.<br />This revolutionary closed-cell material is even lighter and softer than Croslite&trade;<br />foam, delivering a delightful mix of support and sink-in softness
+        underfoot.
+      </p>
+      <div class="revolutionary_mobile_container hidden-sm hidden-md hidden-lg">
+        <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> REVOLUTIONARY </div>
+        <img src="X_LiteRide/greenDot.jpg?$staticlink$" style="margin-top: auto; margin-bottom: 0.1em" />
+        <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> SINK-IN SOFTNESS</div>
+        <img src="X_LiteRide/greenDot.jpg?$staticlink$" style="margin-top: auto; margin-bottom: 0.1em" />
+        <div class="MOBILe hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline revolutionary_headline_mobile"> INNOVATIVE COMFORT</div>
+      </div>
+      <p class="MOBILE  hidden-sm hidden-md hidden-lg cx-brand-font text-center liteRidePara">
+        LiteRide&trade; is the newest innovation<br /> in the legendary world of Crocs<br /> comfort. This revolutionary closed-cell<br /> material is even lighter and softer<br /> than Croslite&trade; foam, delivering a<br /> delightful mix of support
+        and sink-in<br /> softness underfoot.
+      </p>
+    </div>
+    <div class="product_and_tall_man">
+      <div class="lite_product_container col-sm-6">
+        <div class="lite_ride_product_men">
+          <div class="a_href">
+            <img src="X_LiteRide/LightRideClog.jpg?$staticlink$" class="img-responsive opacity_image" title = "LiteRide&trade; Clog"/>
+            <p class = "cx-brand-font product_description text-center mens_product_mobile" style= "color:#2f5184">AVAILABLE<br><span style = "font-weight: bold">03.01.2018</p>
+            </div>
+        </div>
+        <div class="lite_ride_product_men">
+          <div class="a_href">
+            <img src="X_LiteRide/LiteRideSlide.jpg?$staticlink$" class="img-responsive opacity_image" title = "LiteRide&trade; Slide"/>
+          <p class = "cx-brand-font product_description text-center mens_product_mobile" style= "color:#2f5184">AVAILABLE<br><span style = "font-weight: bold">03.01.2018</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-10 col-sm-6 display-flex">
+        <div>
+            <img src="X_LiteRide/MenOnFigure.jpg?$staticlink$" class="img-responsive desktop_padding_top" title = "LiteRide&trade; Clog"/>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- //REVOLUTIONARY div// -->
+
+  <!-- //ATHLETICALLY div// -->
+  <div class="ATHLETICALLY cs_container-crocs">
+    <div class="text_container">
+      <h2 class="DESKTOP hidden-xs cx-heavy-brand-font text-center liteRideHeadline"> ATHLETICALLY INSPIRED COMFORT</h2>
+      <p class="DESKTOP hidden-xs cx-brand-font text-center liteRidePara"> Perfect for warm-ups and cool-downs and weekends bouncing around<br />town, the LiteRide&trade; foam is the next breakthrough in world-class comfort.</p>
+      <h2 class="MOBILE hidden-sm hidden-md hidden-lg cx-heavy-brand-font text-center liteRideHeadline"> ATHLETICALLY<br /> INSPIRED COMFORT</h2>
+      <p class="MOBILE hidden-sm hidden-md hidden-lg cx-brand-font text-center liteRidePara"> Perfect for warm-ups and cool-downs<br /> and weekends bouncing around<br />town, the LiteRide&trade; foam is the next<br />breakthrough in world-class comfort.</p>
+    </div>
+    <div class="product_and_tall_woman">
+      <div class="col-xs-12 col-sm-5 col-md-6 display-flex-end">
+        <div>
+            <img src="X_LiteRide/WomanOnFigure.jpg?$staticlink$" class="img-responsive desktop_padding_top" title = "LiteRide&trade; Clog"/>
+          </div>
+      </div>
+      <div class="lite_product_container col-xs-12 col-sm-7 col-md-6">
+        <div class="lite_ride_product">
+          <div class="a_href">
+            <img src="X_LiteRide/LiteRideClog_2.jpg?$staticlink$" class="img-responsive opacity_image" title = "LiteRide&trade; Clog"/>
+          <p class = "cx-brand-font product_description text-center womens_coming_soon" style= "color:#2f5184">AVAILABLE<br><span style = "font-weight: bold">03.01.2018</p>
+          </div>
+        </div>
+        <div class="lite_ride_product">
+          <div>
+            <img src="X_LiteRide/LiteRideSandal.jpg?$staticlink$" class="img-responsive opacity_image" title = "Women's LiteRide&trade; Sandal"/>
+            <p class = "cx-brand-font product_description text-center womens_coming_soon" style= "color:#2f5184">AVAILABLE<br><span style = "font-weight: bold">03.01.2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- <END OF COMING SOON> -->
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  $(".productCarousel_liteRide_mobile>div").each(function() {
+    var $this = $(this);
+
+    var carouselID = "productCarousel" + Math.ceil(Math.random() * 1000000000000000);
+    $this.attr("id", carouselID);
+
+    $this.find("a").not(".carouselLink").attr("tabindex", "-1");
+
+    var thisSwiper = app.carousel.carousels[carouselID] = new Swiper('#' + carouselID, {
+      a11y: true,
+      roundLengths: false,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      breakpoints: {
+        // when window width is <= 320px
+        320: {
+          slidesPerView: 1,
+          centeredSlides: true,
+        },
+
+      }
+    });
+  });
+
+
+var todaysDate = new Date();
+var today = Date.parse(todaysDate);
+var comingSoonDate = Date.parse('03/01/2018');
+
+
+  if (today < comingSoonDate) {
+    $('.LiteRideComingSoon').show();
+    $('.LaunchLandingPageContainer').hide();
+  }
+  if (today >= comingSoonDate) {
+    $('.LaunchLandingPageContainer').show();
+    $('.LiteRideComingSoon').hide();
+
+  }
+</script>

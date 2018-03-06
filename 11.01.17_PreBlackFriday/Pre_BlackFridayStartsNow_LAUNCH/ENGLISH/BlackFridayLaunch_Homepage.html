@@ -1,0 +1,181 @@
+<style>
+  .jsHero-wrapper-EarlyBird {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+
+  .jsHero-wrapper-EarlyBird .cx-button {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    color: #cc3333;
+    border: 2px solid #cc3333;
+    background-color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+      padding: 9px 2px 9px 2px;
+  }
+
+  .jsHero-wrapper-EarlyBird .cx-button:hover,
+  .jsHero-wrapper-EarlyBird .cx-button:focus {
+    color: #fff;
+    background-color: #cc3333;
+  }
+
+  .jsHero-wrapper-EarlyBird .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .jsHero-wrapper-EarlyBird .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 480px) {
+    .jsHero-wrapper-EarlyBird {
+      font-size: 60%;
+    }
+    .jsHero-wrapper-EarlyBird .mobile_height {
+      height: 80vw;
+      display: flex;
+      align-items: flex-end;
+    }
+    .jsHero-wrapper-EarlyBird .first_container {
+      margin-bottom: auto;
+      margin-top: auto;
+    }
+    .jsHero-wrapper-EarlyBird .second_container {
+      width: 55%;
+      margin-right: -4em;
+    }
+    .jsHero-wrapper-EarlyBird .cs_container-crocs {
+      padding-right: 0px;
+      padding-left: 10px;
+    }
+    .jsHero-wrapper-EarlyBird .cx-button {
+      padding: 7px 11px 7px 11px;
+      font-size: 4.5vw;
+    }
+
+    .jsHero-wrapper-EarlyBird .paragraph_description {
+      font-size: 1.3em;
+      line-height: 1.3;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline {
+      font-size: 11.5vw;
+      line-height: .8;
+      margin-top: 5px;
+    }
+    .jsHero-wrapper-EarlyBird .medium-headline {
+      font-size: 1.5em;
+      letter-spacing: 4px;
+    }
+    .jsHero-wrapper-EarlyBird .fancy-headline {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      font-size: 6vw;
+      margin-bottom: 0.5em;
+    }
+    .jsHero-wrapper-EarlyBird .medium-headline-bottom {
+      font-size: 1.8em;
+      letter-spacing: 2px;
+      margin-bottom: 1px;
+      margin-top: 5px;
+    }
+
+  }
+
+  @media (min-width: 481px) {
+    .jsHero-wrapper-EarlyBird {
+      font-size: 80%;
+    }
+    .jsHero-wrapper-EarlyBird .paragraph_description {
+      font-size: 1.0em;
+      line-height: 1.3;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline {
+      font-size: 4.5em;
+      line-height: .9;
+        margin-top: 5px;
+    }
+    .jsHero-wrapper-EarlyBird .medium-headline {
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      margin-bottom: 0.1em;
+    }
+    .jsHero-wrapper-EarlyBird .medium-headline-bottom {
+      font-size: 1.5em;
+      letter-spacing: 4px;
+    }
+    .jsHero-wrapper-EarlyBird .fancy-headline {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      font-size: 2.0em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jsHero-wrapper-EarlyBird {
+      font-size: 85%;
+    }
+    .jsHero-wrapper-EarlyBird .fancy-headline {
+      font-size: 2.0em;
+    }
+    .jsHero-wrapper-EarlyBird .medium-headline {
+      margin-bottom: 0.4em;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline {
+      line-height: .85;
+      margin-top: 5px;
+      font-size: 5em;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .jsHero-wrapper-EarlyBird {
+      font-size: 100%;
+    }
+
+  }
+
+  .flexbox_spacearound {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+</style>
+
+
+<div class="jsHero-wrapper-EarlyBird">
+  <div class="cs_container-crocs">
+    <a href="$httpUrl('Search-Show','cgid','crocs-deals')$" class="flexbox_spacearound mobile_height">
+      <section class="first_container flexbox_column">
+        <div class="cx-heavy-brand-font medium-headline text-uppercase text-center" style="color: #cc3333">Why Wait?</div>
+        <div class="hidden-xs cx-brand-font medium-headline-bottom text-uppercase text-center" style="color: #cc3333">2 Days of Earlybird Deals</div>
+        <div class="MOBILE hidden-sm hidden-md hidden-lg cx-brand-font medium-headline-bottom text-uppercase text-center" style="color: #cc3333">2 Days of<br />Earlybird Deals</div>
+        <div class="cx-heavy-brand-font largest-headline text-uppercase text-center" style="color: #cc3333">50% OFF</div>
+        <div class="cx-heavy-brand-font fancy-headline text-uppercase text-center" style="color: #cc3333">SELECT STYLES</div>
+        <div class="col-lg-7 col-md-7 col-sm-10 col-xs-12">
+          <button type="button" class="cx-button full-width">SHOP NOW</button>
+        </div>
+        <div class="paragraph_description cx-brand-font text-center" style="color: #444;">Discount applied in cart.*</div>
+      </section>
+      <section class="second_container">
+        <img src="/ecom/2017/web/EarlyBirdGirlRight.jpg?$staticlink$" title="" style="margin-bottom: -2px;" />
+      </section>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,215 @@
+<style>
+  .jsHero-wrapper-EarlyBird {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    overflow: hidden;
+  }
+
+  .jsHero-wrapper-EarlyBird .cx-button {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    color: #cc3333;
+    border: 2px solid #cc3333;
+    background-color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+    padding: 10px 1px 10px 1px;
+  }
+
+  .jsHero-wrapper-EarlyBird .cx-button:hover,
+  .jsHero-wrapper-EarlyBird .cx-button:focus {
+    color: #fff;
+    background-color: #cc3333;
+  }
+
+  .jsHero-wrapper-EarlyBird .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .jsHero-wrapper-EarlyBird .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: 480px) {
+    .jsHero-wrapper-EarlyBird {
+      font-size: 68%;
+    }
+    .jsHero-wrapper-EarlyBird .mobile_height {
+      height: 70vw;
+      display: flex;
+      align-items: flex-end;
+    }
+    .jsHero-wrapper-EarlyBird .second_container {
+      margin-bottom: auto;
+      margin-top: auto;
+    }
+    .jsHero-wrapper-EarlyBird .cx-button {
+      padding: 4px 11px 4px 11px;
+      font-size: 5vw;
+    }
+
+    .jsHero-wrapper-EarlyBird .paragraph_description {
+      font-size: 1.3em;
+      line-height: 1.3;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline {
+      font-size: 7.5vw;
+      line-height: .95;
+    }
+    .jsHero-wrapper-EarlyBird .medium-headline {
+      font-size: 1.3em;
+      line-height: 1;
+      letter-spacing: 1px;
+      margin-bottom: 0.2em;
+      margin-top: 1.0em;
+      -webkit-font-smoothing: antialiased;
+    }
+    .jsHero-wrapper-EarlyBird .fancy-headline {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.5em;
+      line-height: 1.1;
+      margin-bottom: 0.1em;
+      letter-spacing: 2.5px;
+      margin-top: 0.1em;
+    }
+    .jsHero-wrapper-EarlyBird .cs_container-crocs {
+      padding-right: 5px;
+      padding-left: 0px;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline-bottom {
+      font-size: 1.4em;
+      line-height: .8;
+      margin-bottom: 0.6em;
+    }
+  }
+
+  @media (min-width: 481px) {
+    .jsHero-wrapper-EarlyBird {
+      font-size: 55%;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline-bottom {
+      font-size: 2em;
+      line-height: .8;
+    }
+    .jsHero-wrapper-EarlyBird .paragraph_description {
+      font-size: 1.0em;
+      line-height: 1.3;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline {
+      font-size: 3.5em;
+      line-height: .9;
+    }
+    .jsHero-wrapper-EarlyBird .medium-headline {
+      font-size: 1.2em;
+      letter-spacing: 4px;
+      margin-bottom: 0.1em;
+      margin-top: 0.5em;
+      -webkit-font-smoothing: antialiased;
+    }
+    .jsHero-wrapper-EarlyBird .fancy-headline {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.3em;
+      letter-spacing: 3px;
+      margin-bottom: 0.2em;
+      margin-top: 0.2em;
+    }
+    .jsHero-wrapper-EarlyBird img {
+      max-width: 80%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jsHero-wrapper-EarlyBird {
+      font-size: 75%;
+    }
+    .jsHero-wrapper-EarlyBird img {
+      max-width: 80%;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline {
+      font-size: 4.0em;
+    }
+    .jsHero-wrapper-EarlyBird .fancy-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.1em;
+      margin-top: 0.1em;
+    }
+    .jsHero-wrapper-EarlyBird .medium-headline {
+      margin-bottom: 0.3em;
+      margin-top: 0.2em;
+    }
+    .jsHero-wrapper-EarlyBird .largest-headline-bottom {
+      margin-bottom: 0.6em;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .jsHero-wrapper-EarlyBird {
+      font-size: 100%;
+    }
+    .jsHero-wrapper-EarlyBird .fancy-headline {
+      font-size: 1.3em;
+    }
+
+  }
+
+
+  .flexbox_spacearound {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+</style>
+
+
+<div class="jsHero-wrapper-EarlyBird">
+  <div class="cs_container-crocs">
+    <a href="$httpUrl('Search-Show','cgid','crocs-deals')$" class="flexbox_spacearound mobile_height">
+      <section class="first_container col-xs-6 hidden-xs">
+        <img src="/ecom/2017/web/EarlyBirdLastChanceGirlLeft.jpg?$staticlink$" class="" title="" style="margin-bottom: -2px;" />
+      </section>
+      <section class="first_container hidden-sm hidden-md hidden-lg">
+        <img src="/ecom/2017/web/LeftGirl.jpg?$staticlink$" title=""class="" style="margin-bottom: -2px;" />
+      </section>
+
+      <section class="DEKTOP hidden-xs second_container  col-xs-8 col-sm-9 col-md-8 flexbox_column">
+        <div class="DESKTOP hidden-xs cx-heavy-brand-font medium-headline text-uppercase text-center" style="color: #cc3333">Ne manquez pas!</div>
+        <div class="MOBILE hidden-sm hidden-md hidden-lg cx-heavy-brand-font medium-headline text-uppercase text-center" style="color: #cc3333">Ne manquez pas!</div>
+        <div class="DESKTOP hidden-xs hidden-sm cx-brand-font fancy-headline text-uppercase text-center" style="color: #cc3333">1 jour à gauche des offres earlybird</div>
+          <div class="MOBILE  hidden-md hidden-lg cx-brand-font fancy-headline text-uppercase text-center" style="color: #cc3333">1 jour à gauche des offres earlybird</div>
+        <div class="cx-heavy-brand-font largest-headline text-uppercase text-center" style="color: #cc3333">rabais de 50%</div>
+            <div class="cx-heavy-brand-font largest-headline-bottom text-uppercase text-center" style="color: #cc3333">sélectionner des styles</div>
+        <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12">
+          <button type="button" class="cx-button full-width">MAGASINER</button>
+        </div>
+        <div class="paragraph_description cx-brand-font text-center" style="color: #444;">Réduction appliquée dans le panier.*</div>
+      </section>
+
+      <section class="MOBILE hidden-sm hidden-md hidden-lg col-xs-10 second_container flexbox_column">
+        <div class="DESKTOP hidden-xs cx-heavy-brand-font medium-headline text-uppercase text-center" style="color: #cc3333">Ne manquez pas!</div>
+        <div class="MOBILE hidden-sm hidden-md hidden-lg cx-heavy-brand-font medium-headline text-uppercase text-center" style="color: #cc3333">Ne manquez pas!</div>
+        <div class="DESKTOP hidden-xs cx-brand-font fancy-headline text-uppercase text-center" style="color: #cc3333">1 jour à gauche des offres earlybird</div>
+          <div class="MOBILE hidden-sm hidden-md hidden-lg cx-brand-font fancy-headline text-uppercase text-center" style="color: #cc3333">1 jour à gauche des offres earlybird</div>
+        <div class="cx-heavy-brand-font largest-headline text-uppercase text-center" style="color: #cc3333">rabais de 50%</div>
+            <div class="cx-heavy-brand-font largest-headline-bottom text-uppercase text-center" style="color: #cc3333">sélectionner des styles</div>
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+          <button type="button" class="cx-button full-width">MAGASINER</button>
+        </div>
+        <div class="paragraph_description cx-brand-font text-center" style="color: #444;">Réduction appliquée dans le panier.*</div>
+      </section>
+    </a>
+  </div>
+</div>

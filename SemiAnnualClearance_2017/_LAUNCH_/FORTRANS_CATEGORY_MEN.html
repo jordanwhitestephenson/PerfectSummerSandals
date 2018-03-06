@@ -1,0 +1,400 @@
+﻿<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .jsHero-wrapper  body,
+  .jsHero-wrapper  a {
+    color: #cc0000;
+  }
+
+  .jsHero-wrapper .cx-button {
+    border: 2px solid #cc0000;
+    color: #cc0000;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    margin: 2px 0px 4px 0px;
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    border: 2px solid #cc0000;
+    color: #fff;
+    background-color: #cc0000;
+  }
+
+  .discount-headline {
+    color: #444;
+  }
+
+  .cta-container {
+    width: 100%;
+  }
+
+  .col-lg-6.less-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexbox_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 2.3em;
+      margin-bottom: 0vh;
+    }
+    .largest-headline {
+      font-size: 2.6em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      margin-bottom: 0.9vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 1vh;
+    }
+    .translation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 27px;
+      font-size: 15px;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 15px;
+      padding: 8px;
+    }
+    .mobile-container-padding {
+      padding: 15px 0px 10px 0px;
+    }
+    #smaller-mobile-font {
+      font-size: 15px;
+      margin-top: 1vh;
+    }
+    .fancy {
+      width: 60%;
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 2.3em;
+      margin-bottom: 0vh;
+    }
+    .largest-headline {
+      font-size: 2.5em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1em;
+      letter-spacing: 2px;
+      margin-bottom: 0.9vh;
+    }
+    .small-headline {
+      font-size: 1.0em;
+      letter-spacing: 2px;
+      margin-bottom: 1vh;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 20px;
+      padding: 10px;
+    }
+    .mobile-container-padding {
+      padding: 15px 0px 15px 0px;
+    }
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .fancy {
+      width: 60%;
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+    .translation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 27px;
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 3.0em;
+      margin-bottom: 0vh;
+    }
+    .largest-headline {
+      font-size: 4.0em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1.0em;
+      letter-spacing: 3px;
+      margin-bottom: 0.5vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.3vh;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 15px;
+      padding: 10px;
+    }
+    .mobile-container-padding {
+      padding: 15px 0px 10px 0px;
+    }
+    .fancy {
+      width: 35%;
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+    .translation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 27px;
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 3.3em;
+      margin-bottom: 0vh;
+    }
+    .largest-headline {
+      font-size: 4.5em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1.2em;
+      letter-spacing: 3px;
+      margin-bottom: 0vh;
+    }
+    .small-headline {
+      font-size: 1.0em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 18px;
+      padding: 10px;
+    }
+    .mobile-container-padding {
+      padding: 15px 0px 10px 0px;
+    }
+    .fancy {
+      width: 25%;
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+    .translation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 27px;
+      font-size: 18px;
+    }
+    .translation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 27px;
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 3.4em;
+      margin-bottom: 0vh;
+    }
+
+    .largest-headline {
+      font-size: 5.0em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1.1em;
+      letter-spacing: 3px;
+      margin-bottom: 0vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+
+    .jsHero-wrapper .cx-button {
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    #max-width {
+      max-width: 110%;
+    }
+    .mobile-container-padding {
+      padding: 15px 0px 10px 0px;
+    }
+    .fancy {
+      width: 21%;
+      margin-top: 3px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+
+  .fancy-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 27px;
+    font-size: 20px;
+  }
+
+  .fancy::after {
+    content: '';
+    display: block;
+    border: 1px solid #444;
+  }
+
+  .fancy::before {
+    content: '';
+    display: block;
+    border: 1px solid #444;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+
+      <div class="left_container col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mobile-container-padding">
+        <a href="$httpUrl('Search-Show','cgid','outlet')$">
+          <div class="text-container text-center">
+            <!-- <div class="col-lg-12 fancy-container margin-top-mobile cx-heavy-brand-font" style="color: #444; margin-top:3px; margin-bottom:3px">
+              <div class="fancy" style="color: #444;">
+                <center class="translation">DERNIÈRE CHANCE!</center>
+              </div>
+            </div> -->
+            <div class="cx-brand-font fine-headline">LIQUIDATION SEMESTRIELLE</div>
+            <div class="cx-heavy-brand-font larger larger-headline">MOINS </div>
+            <div class="cx-heavy-brand-font largest largest-headline">50% EN PLUS</div>
+            <div class="cx-brand-font small-headline">PRIX DE LIQUIDATION</div>
+          </div>
+          <div class="flexbox_column">
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+              <button type="button" class="cx-button full-width cx-brand-font" id="smaller-mobile-font"> MAGASINER</button>
+            </div>
+            <p class="cx-brand-font discount-headline">Rabais dans le panier.*</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<style>
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW, DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'outlet-men', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'outlet-men', 'attr', 'CategoryH2')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

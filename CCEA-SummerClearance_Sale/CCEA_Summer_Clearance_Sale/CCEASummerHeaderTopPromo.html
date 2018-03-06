@@ -1,0 +1,79 @@
+<style>
+.sitewide-wrapper .proxima-black {
+  font-family: 'proxima_novablack', arial, sans-serif;
+}
+.sitewide-wrapper .proxima-regular {
+  font-family: 'proxima_novaregular', arial, sans-serif;
+  font-weight: thin;
+}
+.sitewide-wrapper.main-sitewide-wrapper {
+  background: #d40000;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+}
+.sitewide-wrapper p {
+  line-height: 1;
+  margin:0;
+  text-transform: uppercase !important;
+    padding: 7px 0 5px 0;
+  font-size: 14px;
+}
+.mobile-hide {
+  display: none;
+}
+.sitewide-wrapper span.VD-crown {
+  background: none;
+  display: inline-block;
+}
+.sitewide-wrapper .link:hover {
+  text-decoration: underline;
+}
+.sitewide-wrapper p, .sitewide-wrapper p:visited {
+  color: #fff;
+}
+.sitewide-wrapper.main-sitewide-wrapper p {
+  text-transform: none;
+  margin-top: 0;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+.sitewide-wrapper span.CTA{
+  display: inline-block;
+}
+@media (max-width: 480px) {
+
+}
+@media (min-width: 768px){
+  .sitewide-wrapper span.CTA{
+    display: inline-block;
+  }
+   .sitewide-wrapper .mobile-hide {
+    display: inline-block;
+  }
+  .sitewide-wrapper.main-sitewide-wrapper p {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+  }
+.cx-summer-clearance-block {
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}
+}
+</style>
+<a href="$httpUrl('Search-Show','cgid','outlet')$" class="sitewide-wrapper main-sitewide-wrapper"> <!--KEEP .sitewide-wrapper for sitwide banner -->
+  <div class="cs_container-fluid">
+    <div class="cs_row text-center">
+      <div class="col-xs-12 cx-summer-clearance-block">
+        <p class="proxima-regular vd-crown text-uppercase">SUMMER CLEARANCE - CROCS CLUB 60% + EXTRA 25% OFF*<span class="pipe-break"> &#124;</span> <span class="proxima-black">Shop All</span></p>
+      </div>
+    </div>
+  </div>
+</a>

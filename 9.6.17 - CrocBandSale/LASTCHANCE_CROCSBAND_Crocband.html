@@ -1,0 +1,321 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+.sitewide-wrapper.main-sitewide-wrapper {
+  display: none;
+}
+
+  .jsHero-wrapper .cx-button {
+    color: #333366;
+    border: 2px solid #333366;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #333366;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.8em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+
+    .small-headline {
+      font-size: 0.8em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 7%;
+      font-size: 17px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 11px;
+      margin-bottom: 3vh;
+    }
+    #margin-left-mobile {
+      margin-left: 0px;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 4.3em;
+      line-height: 0.7;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+    margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      /*max-width: 70%;*/
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 11%;
+      font-size: 17px;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 3vh;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 8.8vw;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 2.2vw;
+      margin-bottom: 0.5vh;
+    }
+    .cta-container .cx-button {
+      font-size: 18px;
+      padding: 10px;
+    }
+    .left_container img {
+      max-width: 100%;
+    }
+    .smallest-headline {
+      font-size: 2vw;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 4.4em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 100%;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 2vh;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 6em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.6em;
+      margin-bottom: 1vh;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 2vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: none;
+    }
+  }
+
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+
+  .flexbox_right {
+    display: flex;
+    align-items: flex-end;
+  }
+  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+      <div class="js_row col-lg-12">
+        <div class="right_container text-container col-lg-6 col-md-6 col-sm-6 flexbox_column text-center">
+          <img src="/ecom/2017/web/CrocbandGroup.jpg?$staticlink$" style="" title="Crocband Clogs" alt="" class="hidden-sm hidden-md hidden-lg" id="mobile_image" />
+                      <div class="cx-heavy-brand-font" style="color: #cc0033; margin-bottom:5px;font-size: 24px; letter-spacing: 3px; ">LAST CHANCE!</div>
+          <div class="cx-heavy-brand-font largest largest-headline" style="color: #333366; margin-top: 2vw;">50% OFF</div>
+          <div class="cx-heavy-brand-font small-headline" style="color: #333366;"> CROCBAND&trade; AND BAYABAND</div>
+          <div class="cta-container text-center col-lg-10 col-md-12 col-xs-12">
+            <div class="cx-brand-font smallest-headline" style="color: #444;">Select styles. Discount applied in cart.*</div>
+          </div>
+        </div>
+        <div class="left_container text-center col-lg-6 col-md-6 col-sm-6 hidden-xs" style="">
+          <img src="/ecom/2017/web/CrocBand_Right_shoes_copy.jpg?$staticlink$" style="" title="Crocband Clogs" alt="" class="" id="" />
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<style>
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'crocband-sale', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'crocband-sale', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

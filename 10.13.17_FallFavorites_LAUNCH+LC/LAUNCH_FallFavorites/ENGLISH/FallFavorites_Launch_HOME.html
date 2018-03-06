@@ -1,0 +1,277 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+
+  .jsHero-wrapper .cx-button {
+    color: #7B1B30;
+    border: 2px solid #7B1B30;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #7B1B30;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+@media (max-width: 765px) {
+  #mobile-padding {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+}
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 2.2em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 3.0em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 1.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 7%;
+      font-size: 17px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 13px;
+      margin-bottom: 3vh;
+    }
+    #margin-left-mobile {
+      margin-left: 0px;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 2.3em;
+      margin-bottom: 1vh;
+    }
+    .largest-headline {
+      font-size: 4.0em;
+      line-height: 0.7;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 2.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 11%;
+      font-size: 17px;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 2vh;
+    }
+
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 3.0em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 11.8vw;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 2.2vw;
+      margin-bottom: 2vh;
+    }
+    .cta-container .cx-button {
+      font-size: 18px;
+      padding: 15px;
+    }
+    .left_container img {
+      max-width: 80%;
+    }
+    .smallest-headline {
+      font-size: 2vw;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 2.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 5.0em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 0.9em;
+      margin-bottom: 2.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 80%;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 0vh;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 3.6em;
+      margin-bottom: 0vh;
+    }
+
+    .largest-headline {
+      font-size: 5.3em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 3vh;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 0vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+    .right_container img {
+      max-width: 121%;
+    }
+  }
+
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+
+  .flexbox_right {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: centerl
+  }
+
+/*.jsHero-wrapper  .right_container img {
+    margin-left: 2vw;
+  }*/
+
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs flexbox_row">
+    <a href="$httpUrl('Search-Show','cgid','crocs-deals')$" class= "flexbox_row">
+      <!-- <div class="js_row"> -->
+        <div class="left_container  text-center col-lg-6 col-md-6 col-sm-12 col-xs-12" id="mobile-padding">
+          <div class="DESKTOP-HEADING cx-heavy-brand-font larger larger-headline" style="color: #7B1B30;">FALL FAVES</div>
+          <div class="DESKTOP-C cx-heavy-brand-font largest largest-headline" id = "colored_div">  </div>
+            <img src="/ecom/2017/web/FallFavorites_MOBILEIMG.jpg?$staticlink$" style="" title="Women's Crocs Freesail Shorty Rain Boots" alt="" class="hidden-md hidden-lg" />
+            <div class = "product_description cx-brand-font hidden-md hidden-lg" style=" font-size: 14px; margin-top: -10px; margin-bottom: 10px;">
+              Women's Crocs Freesail Shorty Rain Boots
+            </div>
+          <div class="cta-container text-center col-lg-12">
+            <button class = "cx-button full-width">SHOP ALL</button>
+            <div class="cx-brand-font smallest-headline" style="color: #444; margin-top: 10px;">Select styles. Discount applied in cart.*</div>
+          </div>
+
+        </div>
+
+        <div class="right_container text-center col-lg-6 col-md-6 hidden-sm hidden-xs" style="">
+          <img src="/ecom/2017/web/Layer-1112_EDIT.gif?$staticlink$" style="" title="" alt="" class="" id="margin-left-mobile" />
+        </div>
+
+      <!-- </div> -->
+    </a>
+  </div>
+</div>
+
+<!-- #cc6600 = yellow;
+#7B1B30 = purple;
+#e45224 = orange;
+#996633 = brown; -->
+
+<script type="text/javascript">
+   var message = "25% OFF";
+   var colors = new Array("#7B1B30","#FF5A1F","#cc6600","#996633", "#996633", "#7B1B30", "#FF5A1F" ); // red, green, blue
+   for (var i = 0; i < message.length; i++)
+      document.getElementById('colored_div').innerHTML += "<span style=\"color:" + colors[(i % colors.length)] + ";\">" + message[i] + "</span>";
+</script>

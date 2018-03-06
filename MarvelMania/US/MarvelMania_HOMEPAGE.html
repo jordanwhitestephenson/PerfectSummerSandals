@@ -1,0 +1,345 @@
+<style>
+  /* JS17 DEFAULT CLASSES */
+
+  .DESKTOP.jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background: url("/ecom/2017/web/MarvelManiaBackground.jpg?$staticlink$");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .MOBILE.jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background-image: url("/ecom/2017/web/Marvel_Background_Mosbile.jpg?$staticlink$");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+  }
+
+  .jsHero-wrapper,
+  .jsHero-wrapper h1,
+  .jsHero-wrapper h2,
+  .jsHero-wrapper h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    font-weight: bold;
+    color: #E41029;
+  }
+
+  .jsHero-wrapper .cx-button {
+    background-color: #fff;
+    border: 2px solid;
+    color: #006699;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+  }
+
+  .jsHero-wrapper .cx-button:hover {
+    background-color: #006699;
+    border: 2px solid;
+    color: #fff;
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:focus {
+    text-decoration: none;
+
+  }
+
+  .js-headline,
+  .dark-black {
+    line-height: normal;
+    color: #444;
+  }
+
+
+  .jsHero-wrapper .cx-copy {
+    font-size: 16px;
+    line-height: 1.1;
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+  }
+
+  .outside_container {
+    display: flex;
+    /*align-items: center;*/
+  }
+
+
+  .CTA_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* END JS17 DEFAULT CLASSES */
+
+  @media (max-width:375px) {
+#marval_logo {
+  max-width: 80%;
+}
+
+  }
+
+  @media (max-width: 480px) {
+    .jsHero-wrapper .cs_row {
+      flex-direction: column;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 16px;
+      padding: 10px 25px;
+    }
+    .js-headline {
+      font-size: 1.7em;
+      line-height: 0.9;
+      margin-top: 1vh;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 95%;
+    }
+
+    .jsHero-wrapper .cx-copy.larger,
+      .jsHero-wrapper .cx-copy .larger {
+      font-size: 18px;
+      margin-bottom: 0%;
+      width: 90%;
+    }
+    .jsHero-wrapper .cx-copy.largest,
+    .jsHero-wrapper  .cx-copy .largest {
+      font-size: 30px;
+    }
+    .CTA_container {
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+    .outside_container {
+      flex-direction: column-reverse;
+    }
+
+    .MOBILE .cs_container-crocs {
+      padding-top: 11vh;
+      padding-bottom: 1vh;
+      margin-top: -6vh;
+    }
+  }
+
+  @media (min-width:481px) {
+    .jsHero-wrapper .cs_row {
+      justify-content: center;
+      align-items: center;
+    }
+    .js-headline {
+      font-size: 2.5em;
+          line-height: 1;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 70%;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 18px;
+      padding: 12px 25px;
+    }
+
+    .jsHero-wrapper .cx-copy.larger,
+      .jsHero-wrapper .cx-copy .larger {
+      font-size: 20px;
+      margin-bottom: 1%;
+      width: 90%;
+    }
+    .jsHero-wrapper .cx-copy.largest,
+      .jsHero-wrapper .cx-copy .largest {
+      font-size: 32px;
+    }
+    #marval_logo {
+      max-width: 50%;
+      margin-bottom: 1vh;
+    }
+    .CTA_container {
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+
+    }
+    .outside_container {
+      flex-direction: column-reverse;
+    }
+    .DESKTOP .cs_container-crocs {
+      padding-top: 1vh;
+    }
+    .DESKTOP.jsHero-wrapper .DESKTOP-Marvel {
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width:768px) {
+    .js-headline {
+      font-size: 2.2em;
+          line-height: 0.9;
+          margin-top: 1.0vh;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 9px 25px;
+      font-size: 1em;
+    }
+
+    .jsHero-wrapper .cx-button.full-width {
+      width: 45%;
+    }
+
+    .jsHero-wrapper .cx-copy.larger,
+    .jsHero-wrapper .cx-copy .larger {
+      font-size: 20px;
+      margin-bottom: 2%;
+      width: 100%;
+    }
+    .jsHero-wrapper .cx-copy.largest,
+    .jsHero-wrapper .cx-copy .largest {
+      font-size: 32px;
+    }
+    #marval_logo {
+      max-width: 60%;
+      margin-bottom: 0vh;
+      margin-top: 1vh;
+    }
+    .outside_container {
+      flex-direction: row;
+      margin-top: 1vh;
+    }
+    .CTA_container {
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+    .DESKTOP .cs_container-crocs {
+      padding-top: 1vh;
+    }
+    .DESKTOP.jsHero-wrapper .DESKTOP-Marvel {
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width:960px) {
+    .js-headline {
+      font-size: 2.7em;
+      line-height: 45px;
+      margin-top: 0.0vh
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+      align-content: center;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 12px 25px;
+      font-size: 1.3em;
+    }
+
+    .jsHero-wrapper .cx-button.full-width {
+      width: 45%;
+    }
+
+    .jsHero-wrapper .cx-copy.larger,
+    .cx-copy .larger {
+      font-size: 23px;
+      width: 85%;
+    }
+    .jsHero-wrapper .cx-copy.largest,
+    .cx-copy .largest {
+      font-size: 32px;
+    }
+    #marval_logo {
+    max-width: 100%;
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+    }
+    .CTA_container {
+      margin-bottom: 0vh;
+      margin-top: 2vh;
+    }
+    .outside_container {
+      flex-direction: row;
+      margin-top: 2vh;
+    }
+    .DESKTOP .cs_container-crocs {
+      padding-top: 1vh;
+    }
+    .DESKTOP.jsHero-wrapper .DESKTOP-Marvel {
+      max-width: 100%;
+    }
+  }
+
+  .text_container {
+    margin-top: 1.5%;
+  }
+
+  .jsHero-wrapper .cx-copy.larger,
+  .jsHero-wrapper .cx-copy .larger {
+    background-color: #006699;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    margin-top: 1vh;
+  }
+
+</style>
+<div class="DESKTOP jsHero-wrapper hidden-xs">
+  <a href = "$httpUrl('Search-Show','cgid','marvel-footwear')$">
+  <div class="cs_container-crocs">
+    <div class="cs_row text-center col-md-12">
+      <!-- <LEFT CONTAINER> -->
+      <div class="outside_container col-md-12 col-lg-12">
+        <div class="col-lg-7 col-md-6">
+          <img src="/ecom/2017/web/MarvelManiaShoes_Desktop.png?$staticlink$" title="" alt="" class="DESKTOP-Marvel" id="" />
+        </div>
+        <!-- <END OF LEFT CONTAINER> -->
+        <!-- <RIGHT CONTAINER> -->
+        <div class="col-lg-5 col-md-6" id="">
+          <img src="/ecom/2017/web/MarvelMania_SMALL.png?$staticlink$" title="" alt="" class="DESKTOP" id="marval_logo" />
+          <h1 class="cx-heavy-brand-font js-headline dark-black">LEGENDS OF <br /> MARVEL </h1>
+        </div>
+        <!-- <END OF RIGHT CONTAINER> -->
+      </div>
+    </div>
+    <div class="CTA_container cx-heavy-brand-font text-center col-lg-12 col-md-12">
+      <button type="button" class="cx-button full-width cx-heavy-brand-font">SHOP MARVEL COLLECTION </button>
+    </div>
+  </div>
+  <div class = "cx-brand-font text-right copyright-marvel"> <p style = "color: #444; padding-bottom:3px;"> &nbsp;&copy;2017 MARVEL&nbsp;&nbsp;&nbsp; </p></div>
+</a>
+</div>
+
+
+
+
+<!-- <-MOBILE---->
+<div class="MOBILE jsHero-wrapper hidden-sm hidden-md hidden-lg">
+  <a href = "$httpUrl('Search-Show','cgid','marvel-footwear')$">
+  <div class="cs_container-crocs">
+    <div class="cs_row text-center col-sm-12">
+      <!-- <LEFT CONTAINER> -->
+      <div class="outside_container col-sm-12">
+        <div class="col-sm-12">
+          <img src="/ecom/2017/web/MarvelManiaShoes_Desktop.png?$staticlink$" title="" alt="" style= "max-width: 85%" id="" />
+        </div>
+        <!-- <END OF LEFT CONTAINER> -->
+        <!-- <RIGHT CONTAINER> -->
+        <h1 class="cx-heavy-brand-font js-headline dark-black">LEGENDS OF MARVEL </h1>
+        <div class="col-sm-12 " id="">
+          <img src="/ecom/2017/web//MarvelMania_SMALL.png?$staticlink$" title="" alt="" class="DESKTOP" id="marval_logo" />
+        </div>
+
+        <!-- <END OF RIGHT CONTAINER> -->
+      </div>
+    </div>
+    <div class=" CTA_container cx-heavy-brand-font text-center col-sm-12">
+      <button type="button" class="cx-button full-width cx-heavy-brand-font">SHOP MARVEL COLLECTION </button>
+      <div class = "cx-brand-font text-right copyright-marvel col-xs-offset-6"> <p style = "color: #444; padding-bottom:3px; padding-top:5px;"> &nbsp;&copy;2017 MARVEL&nbsp; </p></div>
+    </div>
+
+  </div>
+  </a>
+</div>

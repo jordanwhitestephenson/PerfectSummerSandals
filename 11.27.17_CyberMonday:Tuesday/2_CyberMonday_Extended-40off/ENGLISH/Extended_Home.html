@@ -1,0 +1,352 @@
+<style>
+  .cyber-monday-launch-hero {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    overflow: hidden;
+
+
+  }
+
+  .cyber-monday-launch-hero a:hover,
+  .cyber-monday-launch-hero a:focus {
+    text-decoration: none;
+  }
+
+  .cyber-monday-launch-hero .cx-button:hover,
+  .cyber-monday-launch-hero .cx-button:focus {
+    color: #fff;
+    background-color: #d41f27;
+    border-color: #fff;
+  }
+
+
+  @media (max-width: 480px) {
+    .cyber-monday-launch-hero {
+      font-size: 65%;
+    }
+    .cyber-monday-launch-hero .cx-button {
+      font-size:4vw;
+      padding: 5px 5px 4px 5px;
+      font-family: 'proxima_novablack', Arial, sans-serif;
+      border-width: 1.5px;
+    }
+    .cyber-monday-launch-hero h3:first-child {
+      margin-bottom: 0px;
+    }
+    .cyber-monday-launch-hero h2 {
+      line-height: 0.84;
+      margin-bottom: 5px;
+      margin-top: 3px;
+      font-family: 'proxima_novablack', Arial, sans-serif;
+      color: #d41f27;
+      font-size: 5em;
+      line-height: .8;
+
+    }
+    .cyber-monday-background {
+      background: url('/ecom/2017/web/Graphic.png?$staticlink$');
+      background-size: contain;
+      background-repeat: repeat-x;
+      background-position: -1px 167PX;
+      background-attachment: fixed;
+      margin-bottom: 1em;
+      margin-top: 1.5em;
+    }
+    .percentage_off {
+      font-size: 1.1em;
+    }
+
+  }
+
+  @media (min-width: 481px) {
+    .cyber-monday-launch-hero {
+      font-size: 85%;
+    }
+    .percentage_off {
+      font-size: 1.1em;
+    }
+    .cyber-monday-launch-hero .right_container {
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+    .cyber-monday-launch-hero .cx-button {
+      font-size: 19px;
+      font-family: 'proxima_novablack', Arial, sans-serif;
+      padding: 9px 5px 7px 5px;
+      border-width: 1.5px;
+    }
+    .cyber-monday-launch-hero h2,
+    .cyber-monday-launch-hero h3 {
+      line-height: 0.85em;
+
+    }
+    .right_container #shape1 {
+      position: absolute;
+      left: 68vw;
+      top: -8vw;
+      width: 36vw;
+     }
+     .cyber-monday-background .cyber-monday-container #shape2 {
+       position: absolute;
+     right: 68vw;
+     bottom: 65px;
+     }
+     .cyber-monday-background {
+       /*overflow: hidden;*/
+       width: 86%;
+       margin-left: auto;
+       margin-right: auto;
+       display: flex;
+     }
+     .cyber-monday-launch-hero h2 {
+       font-family: 'proxima_novablack', Arial, sans-serif;
+       color: #d41f27;
+       font-size: 5em;
+       line-height: .8;
+       margin-top: 7px;
+       margin-bottom: 3px;
+     }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .cyber-monday-launch-hero {
+      font-size: 85%;
+    }
+
+    .cyber-monday-launch-hero .cx-button {
+      font-size: 16px;
+      padding: 6px 5px 4px 5px;
+    }
+     .right_container #shape1 {
+       position: absolute;
+       left: 38vw;
+       top: 3vw;
+      }
+      .cyber-monday-background .cyber-monday-container #shape2 {
+        position: absolute;
+            left: -15vw;
+            width: 66%;
+            bottom: 50px;
+
+      }
+      #pink_fuzz_crocs {
+        max-width: 110%;
+      }
+
+  }
+
+  @media (min-width: 980px) {
+
+    .cyber-monday-launch-hero {
+      font-size: 100%;
+    }
+    .cyber-monday-launch-hero .right_container {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    .right_container #shape1 {
+      position: absolute;
+      left: 32em;
+      top: -65px;
+      max-width: 80%;
+    }
+    .cyber-monday-background .cyber-monday-container #shape2 {
+      position: absolute;
+      left: -11vw;
+      bottom: 83px;
+      max-width: 60%;
+    }
+
+    .cyber-monday-launch-hero .cx-button {
+      font-size: 19px;
+      padding: 10px 5px 8px 5px;
+    }
+  }
+
+
+
+
+  .cyber-monday-launch-hero h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    color: #d41f27;
+    font-size: 1.5em;
+  }
+
+  .cyber-monday-launch-hero h3:first-child {
+    font-size: 2em
+  }
+
+  .cyber-monday-launch-hero h3:nth-of-type(2) {
+    font-size: 2.5em
+  }
+
+  .cyber-monday-launch-hero .left_container,
+  .cyber-monday-launch-hero .cyber-monday-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cyber-monday-launch-hero .right_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cyber-monday-launch-hero .col-xs-6 {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .cyber-monday-launch-hero .fancy-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .fancy-headline:before,
+  .fancy-headline:after {
+    background-color: #d41f27;
+    content: '\a0';
+    flex-grow: 1;
+    height: 2px;
+    position: relative;
+    top: 0.3em;
+  }
+
+  .fancy-headline:before {
+    margin-right: 10px;
+  }
+
+  .fancy-headline:after {
+    margin-left: 10px;
+  }
+  .cyber-monday-background .cyber-monday-container, .right_container {
+    position: relative;
+  }
+
+
+
+
+</style>
+
+
+<div class="cyber-monday-launch-hero">
+  <div class="cyber-monday-background">
+
+    <div class="cs_container-crocs cyber-monday-container">
+    <img src="/ecom/2017/web/Shape1.png?$staticlink$" class="img-responsive hidden-xs"  id="shape2"/>
+      <section class="left_container col-lg-5 col-md-5 hidden-sm hidden-xs" style="margin-left: -5vw;">
+        <a href="$httpUrl('Product-Show','pid','204211','cid','206','cgid','fuzz-collection')$" >
+      <img src="/ecom/2017/web/BrownFuzzClogs.png?$staticlink$" id="pink_fuzz_crocs" style="" alt="Classic Mammoth Luxe Shearling Lined Clog" title="Classic Mammoth Luxe Shearling Lined Clog" />
+      </a>
+      </section>
+
+      <section class="right_container col-lg-7 col-md-7 col-sm-12" style="">
+        <img src="/ecom/2017/web/Shape2.png?$staticlink$" class="img-responsive hidden-xs" id="shape1" />
+        <a href = "$httpUrl('Search-Show','cgid','footwear')$" style="display: flex; justify-content: center; align-items: center; flex-direction:column;">
+        <h3 class="text-center text-uppercase" style="color:#d41f27;">Cyber Monday<span style="color: #444;"> - EXTENDED</span></h3>
+        <h2 class="text-center text-uppercase"><span class="percentage_off">40%  OFF</span><br />OR MORE</h2>
+        <h3 class="text-center text-uppercase col-lg-8 col-md-8 col-sm-8 col-xs-9 fancy-headline">Sitewide</h3>
+        </a>
+        <a href="$httpUrl('Product-Show','pid','204211','cid','206','cgid','fuzz-collection')$" style="display:flex; justify-content: center; flex-direction: column; align-items:center; margin-bottom: 0.8em;">
+      <img src="/ecom/2017/web/BrownFuzzCrocs_MOBILE.png?$staticlink$" class="hidden-md hidden-sm hidden-lg" style="" alt="Classic Mammoth Luxe Shearling Lined Clog" title="Classic Mammoth Luxe Shearling Lined Clog" />
+      <p class = "cx-brand-font text-center hidden-sm hidden-md hidden-lg" style="color:#444; font-size:15PX; margin-top: 0.2em">Classic Mammoth Luxe Shearling Lined Clog</p>
+    </a>
+        <div class="col-lg-12 col-md-12 col-sm-12" style="margin-left: auto; margin-right: auto;">
+          <div class="cs_row ">
+            <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','women-footwear')$" class="cx-button full-width text-uppercase">Shop Women's</a></div>
+            <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','men-footwear')$" class="cx-button full-width text-uppercase">Shop Men's</a></div>
+            <div class="col-xs-6 btn-col-2"><a href="$httpUrl('Search-Show','cgid','footwear-kids')$" class="cx-button full-width text-uppercase">Shop Kids'</a></div>
+            <div class="col-xs-6 btn-col-1"><a href="$httpUrl('Search-Show','cgid','fuzz-collection')$" class="cx-button full-width text-uppercase">Shop Fuzz</a></div>
+          </div>
+        </div>
+        <p class="cx-brand-font text-center" style="color:#444; margin-top: 0.5em">Prices as marked.*</p>
+      </section>
+    </div>
+  </div>
+</div>
+<style>
+  .doorbusters_banner {
+    background: url('/ecom/2017/web/DOORBUSTERSBNR.jpg?$staticlink$');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  @media (max-width: 480px) {
+    .doorbusters_banner, .doorbusters_banner .cx-button {
+      font-size: 80%;
+    }
+    .doorbusters_banner {
+      height: 150px;
+    }
+    .doorbusters_banner .largest_headline {
+      font-size: 9.5vw;
+      line-height: .9;
+    }
+  }
+
+  @media (min-width: 481px) {
+    .doorbusters_banner, .doorbusters_banner .cx-button {
+      font-size: 80%;
+    }
+    .doorbusters_banner {
+      height: 189px;
+    }
+    .doorbusters_banner .largest_headline {
+      font-size: 3.7em;
+      line-height: .9;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .doorbusters_banner {
+      font-size: 100%;
+    }
+  }
+
+  .doorbusters_banner .top_headline {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .doorbusters_banner .cx-button {
+    font-size: 1.0em;
+    padding: 0.6em;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-width: 1.5px;
+  }
+  .doorbusters_banner .cx-button:hover,   .doorbusters_banner .cx-button:active {
+    background-color:#fff;
+    color: #d41f27;
+  }
+  .doorbusters_banner .disclaimer_text {
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: -2px;
+  }
+</style>
+
+  <div class="cs_container-fluid">
+    <!-- CLOSED IN 60 -->
+    <a href="$httpUrl('Search-Show','cgid','crocs-doorbusters')$">
+    <ul class="cs_row doorbusters_banner text-center">
+      <h3 class="text-center cx-brand-font top_headline text-uppercase" style="color:#fff">Cyber Monday's Deepest Discounts</h3>
+      <h2 class="text-center cx-heavy-brand-font largest_headline text-uppercase" style="color:#fff">DOORBUSTERS</h2>
+      <div class="col-lg-4 col-md-4 col-sm-5 col-xs-11 btn-col-2">
+        <div class="cx-button  cx-heavy-brand-font full-width text-uppercase">SHOP DOORBUSTERS</div>
+      </div>
+      <p class = "cx-brand-font text-center disclaimer_text" style="margin-top: 3px;">Prices as marked.*</p>
+    </ul>
+    </a>
+  </div>

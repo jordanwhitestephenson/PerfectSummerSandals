@@ -1,0 +1,234 @@
+﻿<style>
+  /* JS17 ADDITIONS */
+.jsHero-wrapper a:hover {
+  text-decoration: none;
+}
+  @media (max-width: 480px) {
+    .flexbox .cx-button {
+      font-size: 14px;
+      padding: 8px 25px;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.0em;
+      padding-top: 13px;
+      line-height: 20px;
+    }
+    .flexbox .underneath_headline {
+      font-size: 1.3em;
+      padding-top: 5px;
+    }
+    .flexbox .above_headline {
+      font-size: 1.0em;
+    }
+    .jsHero-wrapper .flexbox .cx-clock {
+      max-width: 26%;
+      padding-top: 5%;
+    }
+    .flexbox .highest_above_headline {
+      padding-top: 2px;
+      font-size: 1.1em;
+    }
+    .flexbox p.cx-copy {
+      font-size: 15px;
+      padding-bottom: 10px;
+      padding-top: 5px;
+    }
+    .flexbox .cx-button.full-width {
+      width: 97%;
+    }
+  }
+
+  @media (min-width:481px) {
+    .flexbox .cx-button {
+      font-size: large;
+      padding: 13px 25px;
+    }
+    .flexbox p.cx-copy {
+      font-size: 13px;
+      padding-bottom: 10px;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 3.0em;
+      line-height: .9;
+      padding-top: 9px;
+    }
+    .flexbox .underneath_headline {
+      font-size: 1.5em;
+    }
+    .flexbox .above_headline {
+      font-size: 1.1em;
+    }
+    .jsHero-wrapper .right_image {
+      max-width: 124%;
+    }
+    .jsHero-wrapper .cx-clock {
+      max-width: 33%;
+      margin-top: 0.5em;
+    }
+    .flexbox .cx-button.full-width {
+      width: 80%;
+    }
+
+  }
+
+  @media (min-width:768px) {
+
+    .flexbox .cx-button.full-width {
+      width: 80%;
+    }
+    .flexbox p.cx-copy {
+      font-size: 13px;
+      padding-bottom: 6px;
+    }
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 5.5em;
+    }
+    .flexbox .underneath_headline {
+      font-size: 2.0em;
+    }
+    .flexbox .above_headline {
+      font-size: 1.5em;
+      padding-bottom: 3px;
+    }
+    .jsHero-wrapper .right_image {
+      max-width: 124%;
+    }
+    .flexbox .headline {
+      line-height: 45px;
+    }
+
+    .jsHero-wrapper {
+      font-size: 90%;
+    }
+  }
+
+  @media (min-width:960px) {
+    .flexbox .cx-button {
+      font-size: larger;
+      padding: 15px 25px;
+    }
+
+    .jsHero-wrapper {
+      font-size: 100%;
+    }
+
+    .flexbox .underneath_headline {
+      font-size: 2.5em;
+      padding-top: 4px;
+    }
+    /*.flexbox .above_headline {
+      font-size: 1.9em;
+    }*/
+    .jsHero-wrapper .right_image {
+      max-width: 83%;
+    }
+    .flexbox p.cx-copy {
+      font-size: 15px;
+      padding-top: 7px;
+      padding-bottom: 10px;
+    }
+    .flexbox .headline {
+      line-height: 50px;
+    }
+    .flexbox .cx-button.full-width {
+      width: 80%;
+      font-size: 24px;
+      margin-top: 9px;
+    }
+    .jsHero-wrapper .cx-clock {
+      max-width: 50%;
+      margin-top: 0;
+    }
+    .jsHero-wrapper .overall_container {
+      height: 430px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background: none;
+  }
+
+  .flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: #444;
+  }
+
+  .flexbox .cx-button {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    margin: 3px 0;
+    border: 2px solid #cc0033;
+    color: #cc0033;
+  }
+
+  .flexbox .cx-button:hover {
+    background-color: #cc0033;
+    color: #fff;
+  }
+
+  .flexbox .cx-heavy-brand-font.headline,
+  .flexbox .underneath_headline,
+  .flexbox p.cx-copy {
+    color: #cc0033;
+  }
+
+  .flexbox p.cx-copy {
+    margin-bottom: 0px;
+
+    font-weight: normal;
+  }
+
+  .flexbox .highest_above_headline {
+    padding-top: 2px;
+    font-size: larger;
+  }
+
+  .jsHero-wrapper .flexbox_default {
+    display: flex;
+    align-items: flex-end;
+  }
+  .jsHero-wrapper .overall_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:active {
+    text-decoration: none;
+  }
+  .cs_container img {
+    max-width: 100%;
+  }
+
+</style>
+<div class="jsHero-wrapper">
+  <div class="cs_container overall_container">
+    <a href="$httpUrl('Search-Show','cgid','crocs-deals')$">
+      <div class="cs_row container flexbox_default">
+        <div class="flexbox col-xs-12 col-sm-12 text-center js_copy_container">
+          <img src="/ecom/2017/web/CLOC2K.png?$staticlink$" title="" alt="" class="cx-clock"/>
+          <div class="cx-heavy-brand-font above_headline">SOLDE ÉCLAIR DE 24 HEURES</div>
+          <div class="cx-heavy-brand-font largest text-center headline">RABAIS DE 50%</div>
+          <div class="larger cx-heavy-brand-font underneath_headline">CERTAINS MODÈLES</div>
+            <p class="cx-copy">Se termine à minuit HNR.</p>
+          <div role="button" class="cx-button full-width cx-heavy-brand-font bold">MAGASINER MAINTENANT </div>
+          <p class="cx-copy">Rabais appliqué dans le panier.*</p>
+        </div>
+
+      </div>
+    </a>
+  </div>
+</div>

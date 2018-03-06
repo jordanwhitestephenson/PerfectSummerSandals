@@ -1,0 +1,388 @@
+<style>
+  .jsHero-wrapper.DESKTOP {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background: url("/ecom/2017/web/CrocTober_Background.jpg?$staticlink$")
+  }
+
+  .jsHero-wrapper.MOBILE {
+    min-height: 1px;
+  }
+  /*.sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }*/
+
+  body {
+    color: #444;
+  }
+
+
+  .jsHero-wrapper .cx-button {
+    color: #444;
+    border: 2px solid #444;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.8em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 1.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 20px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 7%;
+      font-size: 17px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 3vh;
+    }
+    #margin-left-mobile {
+      margin-left: 0px;
+    }
+    .mobile_croctober_orange_crocs {
+      margin-top: -40px;
+      /*margin-left: 6%;*/
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 3.0em;
+      line-height: 0.7;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 2.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 20px;
+      padding: 12px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 11%;
+      font-size: 17px;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 2vh;
+    }
+    .mobile_croctober_orange_crocs {
+      margin-top: -40px;
+      /*margin-left: 11%;*/
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 9vw;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 3.2vw;
+      margin-bottom: 2vh;
+    }
+    .cta-container .cx-button {
+      font-size: 20px;
+      padding: 15px;
+    }
+    .left_container img {
+      max-width: 80%;
+    }
+    .smallest-headline {
+      font-size: 2vw;
+      margin-bottom: 1vh;
+    }
+    .mobile_croctober_orange_crocs {
+      margin-top: -40px;
+      /*margin-left: 11%;*/
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 3.4em;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 2.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .right_container img {
+      max-width: 80%;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 2vh;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 4.3em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0vh;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 2vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+    .right_container img {
+      max-width: 120%;
+    }
+
+  }
+
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+
+  .flexbox_right {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: centerl
+  }
+
+  .right_container img {
+    margin-left: 2vw;
+  }
+
+  .mobile_overall_container {
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+
+  .halloween_mobile_background {
+    background: url("/ecom/2017/web/CrocToberMobileBackground.png?$staticlink$");
+  }
+  .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+</style>
+
+<div class="jsHero-wrapper DESKTOP hidden-xs hidden-sm">
+  <div class="cs_container-crocs">
+    <!-- <a href="$httpUrl('Search-Show','cgid','footwear')$" style=""> -->
+      <div class="js_row">
+        <div class="left_container col-lg-6 col-md-6  flexbox_column text-center" style="padding-top: 15px;">
+          <div style="background-color: #fff; border: 9px solid #fff;border-radius: 40px;">
+            <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #444;">CROCTOBER</div>
+            <div class="cx-heavy-brand-font small-headline" style="color: #444;">NEVER LOOKED MORE SPOOKY</div>
+          </div>
+        </div>
+        <div class="right_container col-lg-6 col-md-6 text-center" style="">
+          <img src="/ecom/2017/web/CrocTober_Cat_Polaroids.png?$staticlink$" title="" alt="" class="" style="margin-bottom: -5px;" />
+        </div>
+      </div>
+    <!-- </a> -->
+  </div>
+</div>
+<section class="MOBILE hidden-md hidden-lg ">
+  <div class="jsHero-wrapper MOBILE halloween_mobile_background flexbox_column">
+    <div class="cs_container-crocs flexbox_column">
+      <!-- <a href="$httpUrl('Search-Show','cgid','footwear')$" style=""> -->
+        <div class="mobile_overall_container flexbox_column text-center ">
+          <div style="background-color: #fff; border: 9px solid #fff;border-radius: 40px;">
+            <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #444;">CROCTOBER</div>
+            <div class="cx-heavy-brand-font small-headline" style="color: #444;">NEVER LOOKED MORE SPOOKY</div>
+          </div>
+        </div>
+
+    </div>
+    <!-- </a> -->
+  </div>
+  <center>
+
+<img src="/ecom/2017/web/CrocTober_Mobile_Shoes.png?$staticlink$" title="Classic Clog" alt="" class="mobile_croctober_orange_crocs" style="" />  </center>
+  <div class="flexbox_column" style= "margin-top: 10px;">
+    <p class="cx-brand-font" style= "font-size: 19px; margin-bottom: 10px;">
+      Classic Clog
+    </p>
+    <!-- <div class="cta-container text-center" style="width: 85%">
+      <button type="button" class="cx-button full-width">SHOP ALL CLOGS</button>
+    </div> -->
+  </div>
+</section>
+
+<style>
+.catBanner-wrapper {
+    background: none;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+  }
+
+ .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+ .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+ .breadcrumbs {
+    display: none;
+  }
+
+ @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    #cx-anniversary-title-below {
+      color: #5a8100 ;
+      -webkit-font-smoothing: antialiased;
+      font-size: 1.4em;
+      margin-left: 10px;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+ @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+ @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+}
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'clogs', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'clogs', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,148 @@
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-228057-19">
+</script>
+
+<script>
+  // if (new RegExp('[\?&]cy=([^&#]*)').exec(window.location.href) == null) {
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+  (function() {
+      if (urlParam("adid") != null) {
+        var adid = urlParam("adid");
+
+        if (adid.match("^exacttarget_email_")) {
+          var adidParts = adid.split("_");
+
+          if (adidParts.length >= 7 && adidParts[3].match("[0-9]{6}")) {
+            var source = adidParts[2] + "_" + adidParts[3] + "_" + adidParts[4];
+            var content = adidParts[adidParts.length - 1];
+            var campaign = (adidParts[5] == "t5" ? "none" : adidParts[5]);
+            var medium = "email";
+          } else {
+            var source = adid.substring("exacttarget_email_".length);
+            var content = "";
+            var campaign = "unknown";
+            var medium = "email";
+          }
+
+          setCampaignVars(campaign, source, medium, content);
+        } else if (adid.match("linkshare") || urlParam("siteid") != null) {
+          if (adid.match("linkshare")) {
+            var siteid = adid.substring("linkshare_".length);
+          } else {
+            var siteid = urlParam("siteid");
+          }
+
+          var source = "none";
+
+          $.ajax({
+            dataType: "jsonp",
+            url: "[lib[Affiliate Lookup Table JSON]]",
+            jsonp: false,
+            jsonpCallback: "affiliateTableUA",
+            cache: true,
+            success: function(data) {
+              if (typeof data[siteid] !== "undefined") {
+                source = data[siteid];
+              } else if (document.referrer != null && document.referrer != "") {
+                var matches = document.referrer.match(/^https?\:\/\/(?:www\.)?([^\/?#]+)(?:[\/?#]|$)/i);
+                if (matches && typeof matches[1] !== "undefined") {
+                  source = matches[1];
+                }
+              }
+              sendPageView();
+            }
+          });
+          return;
+        }
+      }
+      // sendPageView();
+
+      function sendPageView(campaign, source, medium, content) {
+        var params = {};
+        params.campaignName = campaign;
+        params.campaignSource = source;
+        params.campaignMedium = medium;
+        params.compaignContent = content;
+        params.page_location = window.location.href.replace(window.location.hash, "").replace(/(=|,)([^=]+)(%40|@)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/gi,"$1");
+
+        gtag('config', 'UA-228057-19', params);
+
+        gtag('set', {
+          '&cu': '[[Currency Code]]'
+        });
+
+        if (pageData.pageType == "product") {
+          gtag('event', 'add_to_cart', {
+            'id' : pageData.productID,
+            'name': pageData.name,
+            'category': pageData.categoryID
+          });
+          gtag('event', 'view_item');
+
+        } else if (pageData.pageType == "cart") {
+          $.each(app.config.cart.cartItems, function(index, product) {
+            addProduct(product);
+          });
+          gtag('event', 'begin_checkout');
+
+        } else if (pageData.pageType == "checkout") {
+          $.each(app.config.cart.cartItems, function(index, product) {
+            addProduct(product);
+          });
+          gtag('event', 'checkout_progress');
+
+        } else if (pageData.pageType == "confirm") {
+          $.each(pageData.orderItems, function(index, product) {
+            addProduct(product);
+          });
+          gtag('event', 'checkout_progress');
+
+          gtag('event', 'purchase', {
+            'transaction_id': pageData.orderID,
+            'value': String(pageData.orderValue),
+            'tax': String(pageData.orderTax),
+            'shipping': String(pageData.orderShipping)
+          });
+
+        }
+
+    }
+
+
+// var productPicker;
+// selectedProduct()
+// findQuant();
+// function selectedProduct() {
+//   productPicker = app.product.picker
+//   return productPicker
+// }
+// function findQuant(productPicker) {
+//   console.log(productPicker._selectedColor)
+// }
+
+    function addProduct(product, selectedQuant) {
+
+      gtag('event', 'add_to_cart', {
+        "id": pageData.prductID,
+        "name": pageData.name,
+        "category": pageData.categoryID,
+        // ***// "quantity": pageData.qty*****
+        "price": String(pageData.productValue)
+      });
+    }
+
+    function urlParam(name) {
+      var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+      if (results == null) {
+        return null;
+      } else {
+        return results[1] || 0;
+      }
+    }
+  })();
+</script>

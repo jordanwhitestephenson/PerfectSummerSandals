@@ -1,0 +1,671 @@
+<style>
+	.jibbitz-container {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid #ebebeb;
+	}
+
+	.jibbitz-mobile-bottom {
+		margin-top: 15px;
+	}
+
+	.real-input {
+		height: 0 !important;
+		width: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		border: 1px solid #FFF !important;
+		outline: none !important;
+	}
+
+	.clear-input {
+		position: absolute;
+		right: 16px;
+		font-family: symbolset;
+		top: 14px;
+		border-radius: 50%;
+		border: solid 4px rgba(255,255,255,0.75);
+		background: rgba(255,255,255,0.75);
+		height: 25px;
+		width: 25px;
+		text-align: center;
+		font-size: 16px;
+		color: #444;
+		cursor: pointer;
+	}
+
+	.real-input-wrap {
+		height: 0;
+	}
+
+	.fake-input-wrap {
+		position: relative;
+	}
+
+	.fake-input {
+		text-align: left;
+		border: 1px solid #CCCCCC;
+		padding: 5px;
+		height: 51px;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		overflow-x: auto;
+    	overflow-y: hidden;
+	}
+
+	.fake-input.focus {
+		outline: 1px solid #000;
+		outline-offset: -1px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+	}
+
+	.fake-input img {
+		height: 41px;
+	}
+
+	.fake-input .space {
+		display: inline-block;
+		height: 41px;
+		width: 30px;
+		background: #FFF;
+	}
+
+	.fake-input .fake-spacer {
+		display: inline-block;
+		height: 41px;
+		width: 3px;
+		background: #FFF;
+	}
+
+	.fake-input .cursor {
+		display: inline-block;
+		height: 41px;
+		width: 3px;
+		background-color: #444;
+		border-left: 1px solid #FFF;
+		border-right: 1px solid #FFF;
+		animation: 1s blink step-end infinite;
+		opacity: 1;
+	}
+
+	.fake-input img {
+		display: inline-block;
+	}
+
+	@-webkit-keyframes "blink" {
+		from, to {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.clear-input {
+			right: 7px;
+			top: 7px;
+		}
+
+		.fake-input {
+			text-align: left;
+			border: 1px solid #CCCCCC;
+			padding: 3px;
+			height: 40px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+
+		.fake-input img {
+			height: 32px;
+		}
+
+		.fake-input .space {
+			height: 32px;
+			width: 18px;
+		}
+
+		.fake-input .fake-spacer {
+			height: 32px;
+		}
+
+		.fake-input .cursor {
+			height: 32px;
+		}
+	}
+</style>
+<script>
+	$(function(){
+		var placeholder = "TYPE HERE",
+			height = 50,
+			cursor = 0,
+			phrase = "TYPE HERE",
+			imgPath = "http://images.crocs.com/is/image/Crocs/[productid]_001_IS?&fmt=jpeg&qlt=85,1&op_sharpen=0&resMode=sharp2&op_usm=1,1,6,0&iccEmbed=0&printRes=72&hei=[height]",
+			products = {
+				"0": "10006958",
+				"1": "10006949",
+				"2": "10006950",
+				"3": "10006951",
+				"4": "10006952",
+				"5": "10006953",
+				"6": "10006954",
+				"7": "10006955",
+				"8": "10006956",
+				"9": "10006957",
+				"A": "10006994",
+				"B": "10006995",
+				"C": "10006996",
+				"D": "10006997",
+				"E": "10006998",
+				"F": "10006999",
+				"G": "10007000",
+				"H": "10007001",
+				"I": "10007002",
+				"J": "10007003",
+				"K": "10007004",
+				"L": "10007005",
+				"M": "10007006",
+				"N": "10007007",
+				"O": "10007008",
+				"P": "10007009",
+				"Q": "10007010",
+				"R": "10007011",
+				"S": "10007012",
+				"T": "10007013",
+				"U": "10007014",
+				"V": "10007015",
+				"W": "10007016",
+				"X": "10007017",
+				"Y": "10007018",
+				"Z": "10007019"
+			};
+
+		// image preload
+		for(var i in products){
+			$('<img/>')[0].src = imgPath.replace("[productid]", products[i]).replace("[height]", height);
+		}
+
+		$(".real-input").focus(function(){
+			if(phrase == placeholder){
+				$(".fake-input").html("");
+				phrase = "";
+			}
+
+			$(".fake-input").addClass("focus");
+
+			if($(".fake-input").find(".fake-spacer, .cursor").length == 0){
+				$(".fake-input").append($("<div/>").attr("class", "cursor"));
+			} else if($(".fake-input").find(".cursor").length == 1){
+				return;
+			} else {
+				$(".fake-input").find(".fake-spacer").last().removeClass("fake-spacer").addClass("cursor");
+			}
+		});
+
+		$(".real-input").blur(function(){
+			$(".fake-input .cursor").removeClass("cursor").addClass("fake-spacer");
+			$(".fake-input").removeClass("focus");
+		});
+
+		$(".real-input").on("textInput keydown", function(e){
+			var keyCode = e.type == "textInput" ? e.originalEvent.data.charCodeAt(0) : e.which; //e.keyCode || window.event.keyCode;
+			var keyCodes = $.ui.keyCode;
+			var keyCharacter = "";
+			var $cursor = $(".fake-input .cursor");
+			var index = $(".fake-input div").not(".space").index($cursor);
+
+			if(keyCode == 229 || keyCode == keyCodes.TAB || keyCode == keyCodes.ENTER){
+				return;
+			}
+
+			if(keyCode >= 48 && keyCode <= 57 || keyCode >= 65 && keyCode <= 90 || keyCode >= 97 && keyCode <= 122){
+				keyCharacter = String.fromCharCode(keyCode).toUpperCase();
+				phrase = phrase.slice(0, index) + keyCharacter + phrase.slice(index);
+				$(".fake-input .cursor").before($("<div/>").attr("class", "fake-spacer")).before($("<img/>").attr("alt", keyCharacter).attr("src", imgPath.replace("[productid]", products[keyCharacter]).replace("[height]", height)));
+			} else if(keyCode == keyCodes.SPACE){
+				phrase = phrase.slice(0, index) + " " + phrase.slice(index);
+				$(".fake-input .cursor").before($("<div/>").attr("class", "fake-spacer")).before($("<div/>").attr("class", "space"));
+			} else if(keyCode == keyCodes.BACKSPACE){
+				if(index != 0){
+					phrase = phrase.slice(0, index - 1) + phrase.slice(index);
+					$(".fake-input .cursor").prev().remove();
+					$(".fake-input .cursor").prev().remove();
+				}
+			} else if(keyCode == keyCodes.LEFT && index != 0){
+				$cursor.prev().prev().click();
+			} else if(keyCode == keyCodes.RIGHT && index != phrase.length){
+				$cursor.next().next().click();
+			}
+
+			updateA2C();
+
+			return false;
+		});
+
+		$(".fake-input").on("click", ".fake-spacer", function(e){
+			$(".fake-input .cursor").removeClass("cursor").addClass("fake-spacer");
+			$(this).removeClass("fake-spacer").addClass("cursor");
+
+			e.stopPropagation();
+			$(".real-input").focus();
+		});
+
+		$(".fake-input").on("click", "img, .space", function(e){
+			var offset = $(this).offset();
+			var x = e.pageX - offset.left;
+			var y = e.pageY - offset.top;
+			var width = $(this).width();
+
+			if(x > width / 2){
+				//right
+				$(".fake-input .cursor").removeClass("cursor").addClass("fake-spacer");
+				$(this).next().removeClass("fake-spacer").addClass("cursor");
+			} else {
+				//left
+				$(".fake-input .cursor").removeClass("cursor").addClass("fake-spacer");
+				$(this).prev().removeClass("fake-spacer").addClass("cursor");
+			}
+
+			e.stopPropagation();
+			$(".real-input").focus();
+		});
+
+		$(".fake-input").on("click", ".cursor", function(e){
+			e.stopPropagation();
+			$(".real-input").focus();
+		});
+
+		$(".fake-input").click(function(e){
+			var offset = $(this).offset();
+			var x = e.pageX - offset.left;
+			var y = e.pageY - offset.top;
+			var width = $(this).width();
+
+			if($(this).find(".fake-spacer, .cursor").length == 0){
+				$(this).append($("<div/>").attr("class", "cursor"));
+			} else {
+				if(x > width / 2){
+					//right
+					$(".fake-input .cursor").removeClass("cursor").addClass("fake-spacer");
+					$(this).find(".fake-spacer").last().removeClass("fake-spacer").addClass("cursor");
+				} else {
+					//left
+					$(".fake-input .cursor").removeClass("cursor").addClass("fake-spacer");
+					$(this).find(".fake-spacer").first().removeClass("fake-spacer").addClass("cursor");
+				}
+			}
+
+			$(".real-input").focus();
+		});
+
+		$(".jibbitz-form").submit(function(){
+			if(phrase == placeholder){
+				return false;
+			}
+
+			var counts = {};
+			var lettersNumbers = [];
+			var trimmedPhrase = phrase.replace(" ", "");
+			for(var i = 0, len = trimmedPhrase.length; i < len; i++){
+				if(typeof counts[trimmedPhrase[i]] !== "undefined"){
+					counts[trimmedPhrase[i]]++
+				} else {
+					counts[trimmedPhrase[i]] = 1;
+					lettersNumbers.push(trimmedPhrase[i]);
+				}
+			}
+
+			var lastContent = null;
+			app.ajax.loader.start();
+			addToCart();
+
+			function addToCart(){
+				var letterNumber = lettersNumbers.pop();
+				if(typeof letterNumber !== "undefined"){
+					$.ajax({
+						type	: "POST",
+						url		: app.config.urls.searchSuggest.replace("Search-GetSuggestions", "Cart-MiniAddProduct"),
+						data	: "pid=" + products[letterNumber] + "&Quantity=" + counts[letterNumber],
+						success	: function(content){
+							lastContent = content;
+							addToCart();
+						}
+					});
+				} else {
+					// replace the content
+					$('#minicart').html(lastContent);
+
+					// for mobile, replace qty
+					$("#cartQuantity").html(typeof app.config.cart != 'undefined' ? app.config.cart.cartQty : 0);
+
+					// bind all the events
+					app.minicart.init();
+					if(!app.util.isMobile()){
+						app.minicart.useTimer = true;
+						app.minicart.slide();
+					}
+
+					app.ajax.loader.end();
+				}
+			}
+
+			return false;
+		});
+
+		$(".clear-input").click(function(){
+			$(".fake-input").html("");
+			phrase = "";
+			updateA2C();
+			$(".real-input").focus();
+		});
+
+		function updateA2C(){
+			if(phrase.length == 0){
+				$(".dollar-amount").html("$2.99 each");
+			} else {
+				$(".dollar-amount").html(" $" + Number(phrase.replace(" ", "").length * 2.99).toFixed(2));
+			}
+		}
+
+		if(app.responsive.isMobile()){
+			$(".real-input").attr("type", "password");
+		}
+	});
+</script>
+
+<style>
+
+
+  @media (max-width: 480px) {
+    .hpHero-wrapper p.headline-black {
+      font-family: 'proxima_novablack', arial, sans-serif;
+      font-size: 2.5em;
+      color: #990000;
+      line-height: 40px;
+      margin-top: 0px;
+      margin-bottom: 4px;
+    }
+    .hpHero-wrapper p.headline-black span {
+      color: #336633;
+    }
+    .hpHero-wrapper p.headline-black.smaller-headline.even-smaller-headline {
+      font-size: 1.5em;
+      margin-top: 1px;
+      line-height: 22px;
+      -webkit-font-smoothing: antialiased;
+      font-family: proxima-novaregular, arial, helvetica, sans-serif!important;
+      color: #444;
+    }
+    .hpHero-wrapper img {
+      display: block;
+      margin: 0 auto;
+      max-width: 73%;
+    }
+    #mobile_Crocs {
+      max-width: 60%;
+    }
+
+    .bottom-link-container {
+      padding-bottom: 0%;
+    }
+    .hpHero-wrapper .cs_row {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width:481px) {
+
+    .hpHero-wrapper p.headline-black {
+      font-family: 'proxima_novablack', arial, sans-serif;
+      font-size: 3.6em;
+      color: #990000;
+      line-height: 52px;
+      margin-top: 0px;
+    }
+    .hpHero-wrapper p.headline-black span {
+      color: #336633;
+    }
+    .hpHero-wrapper p.headline-black.smaller-headline.even-smaller-headline {
+      font-size: 1.6em;
+      margin-top: 1px;
+      line-height: 26px;
+      font-family: proxima-novaregular, arial, helvetica, sans-serif!important;
+      color: #444;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hpHero-wrapper img {
+      display: block;
+      margin: 0 auto;
+      max-width: 73%;
+    }
+    #mobile_Crocs {
+      max-width: 35%;
+    }
+
+    .bottom-link-container {
+      padding-bottom: 3%;
+      padding-right: 7%;
+      padding-left: 7%;
+    }
+    .hpHero-wrapper .cs_row {
+      flex-direction: column;
+    }
+  }
+
+
+  @media (min-width:768px) {
+
+    .hpHero-wrapper img {
+      display: block;
+      margin: 0 auto;
+      max-width: 117%;
+    }
+    #mobile_Crocs {
+      max-width: 132%;
+      padding-right: 0px;
+    }
+    .hpHero-wrapper p.headline-black {
+      font-family: 'proxima_novablack', arial, sans-serif;
+      font-size: 2em;
+      color: #990000;
+      line-height: 21px;
+      margin-top: 7px;
+    }
+    .hpHero-wrapper p.headline-black.smaller-headline.even-smaller-headline {
+      font-size: 1.4em;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      line-height: 26px;
+      color: #444;
+      -webkit-font-smoothing: antialiased;
+    }
+    .bottom-link-container {
+      padding-bottom: 0%;
+    }
+    .hpHero-wrapper .cs_row {
+      flex-direction: row;
+    }
+  }
+
+
+
+
+  @media (min-width: 960px) {
+    .hpHero-wrapper p.headline-black {
+      font-size: 4.0em;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      line-height: 34px;
+      font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    }
+    .hpHero-wrapper p.headline-black.smaller-headline.even-smaller-headline {
+      line-height: 29px;
+      font-size: 23px;
+      font-family: proxima-novaregular, arial, helvetica, sans-serif!important;
+      color: #444;
+      -webkit-font-smoothing: antialiased;
+    }
+    .flexbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      /*flex-direction: column;*/
+    }
+
+    .hpHero-wrapper .cx-button.full-width {
+      width: 59%;
+      margin-top: 10px;
+    }
+    .bottom-link-container {
+      padding-bottom: 0%;
+    }
+    .hpHero-wrapper .cs_row {
+      flex-direction: row;
+    }
+
+      .hpHero-wrapper img {
+        display: block;
+        margin: -5px;
+        max-width: 122%;
+      }
+  }
+
+
+
+
+
+  .hpHero-wrapper p.headline-black.smaller-headline {
+    font-size: 2.5em;
+    margin-top: 1px;
+    line-height: 32px;
+  }
+
+  .hpHero-wrapper p.headline-black.smaller-headline-mobile {
+    font-size: 2.5em;
+    margin-top: 1px;
+    line-height: 32px;
+  }
+  .hpHero-wrapper {
+    background: none;
+    /*border-bottom: 2px solid #ebebeb;*/
+    min-height: 1px
+  }
+
+  .hpHero-wrapper p.headline-black span {
+    color: #336633;
+  }
+
+  .hpHero-wrapper p.headline-black-mobile {
+    font-family: 'proxima_novablack', arial, sans-serif;
+    font-size: 4.9em;
+    color: rgb(51, 102, 102);
+    line-height: 60px;
+    margin-top: 0px;
+  }
+
+  .hpHero-wrapper p.fine-print {
+    font-size: 19px;
+    font-weight: initial;
+    color: #336666;
+    margin-top: 14px;
+    font-family: 'proxima_novaregular', arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+  .hpHero-wrapper p.headline-black.smaller-headline.even-smaller-headline-mobile {
+    font-size: 1.9em;
+    margin-top: 1px;
+    line-height: 26px;
+  }
+.hpHero-wrapper .cs_row {
+  display: flex;
+  align-items: center;
+}
+
+
+  .main-shoe-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .jscontainer a.cx-button:not(.cx-button-link) {
+    color: #990000;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+  }
+  .jscontainer a.cx-button:not(.cx-button-link):hover, .jscontainer a.cx-button:not(.cx-button-link):focus {
+    color: #fff;
+    background-color: #990000;;
+  }
+
+  .jscontainer .cx-button {
+    font-size: 24px;
+    border: 2px solid #990000;;
+    padding: 11px 25px;
+  }
+
+</style>
+<div class="jscontainer hpHero-wrapper catBanner-wrapper">
+  <!-- KEEP .hpHero-wrapper for Homepage Hero -->
+  <div class="cs_container">
+    <!--  IMPORTANT .content-container-hero sets pointer-events: none; so clickthrough the the <a> in the background image works. - .content-container-hero should be used with .img-container-hero above -->
+    <div class="cs_row">
+      <div class="col-xs-12 col-5-sm col-md-5 col-lg-5 ">
+        <div class="main-shoe-hero">
+          <img src="/ecom/2017/web/JibbitzHoliday.png?$staticlink$" title="Classic Crocs" alt="GO CROCS" class="hidden-md hidden-sm hidden-xs" />
+          <img src="/ecom/2017/web/JibbitzHoliday.png?$staticlink$" title="Classic Crocs" alt="Classic Crocs" class="hidden-lg" id="mobile_Crocs" />
+        </div>
+      </div>
+      <div class="copy-container col-xs-12 col-7-sm col-md-7 col-lg-7">
+        <p class="headline-black text-uppercase text-center">#<span>GET</span>PERSONAL</p>
+        <p class="headline-black text-center smaller-headline even-smaller-headline hidden-md hidden-sm hidden-xs">Personalize your clogs this <br> holiday season.</p>
+        <p class="headline-black text-center smaller-headline even-smaller-headline hidden-md hidden-sm hidden-lg">Personalize your clogs this holiday season.</p>
+        <p class="headline-black text-center smaller-headline even-smaller-headline hidden-lg hidden-xs">Personalize your clogs this holiday season.</p>
+        <div class="col-xs-12 flexbox bottom-link-container">
+          <a class="cx-button full-width cx-heavy-brand-font" role="button" href="$httpUrl('Search-Show','cgid','classic-styles')$">SHOP CLASSICS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jibbitz-container">
+	<div class="cs_container-crocs">
+		<form class="jibbitz-form">
+			<div class="cs_row hidden-xs hidden-sm cx-copy bold">
+				<div class="col-xs-12 padding-0-md larger">
+					Type to shop letter &amp; number charms, or explore more charms below!
+				</div>
+			</div>
+			<div class="cs_row hidden-md hidden-lg cx-copy bold">
+				<div class="col-xs-12 padding-0-md">
+					Type to shop letter &amp; number charms:
+				</div>
+			</div>
+			<div class="cs_row">
+				<div class="col-xs-12 col-md-8 padding-0-md">
+					<div class="fake-input-wrap">
+						<div class="fake-input" aria-live="polite">
+							<div class="fake-spacer"></div><img src="http://images.crocs.com/is/image/Crocs/10007013_001_IS?&amp;fmt=jpeg&amp;qlt=85,1&amp;op_sharpen=0&amp;resMode=sharp2&amp;op_usm=1,1,6,0&amp;iccEmbed=0&amp;printRes=72&amp;hei=41"><div class="fake-spacer"></div><img src="http://images.crocs.com/is/image/Crocs/10007018_001_IS?&amp;fmt=jpeg&amp;qlt=85,1&amp;op_sharpen=0&amp;resMode=sharp2&amp;op_usm=1,1,6,0&amp;iccEmbed=0&amp;printRes=72&amp;hei=41"><div class="fake-spacer"></div><img src="http://images.crocs.com/is/image/Crocs/10007009_001_IS?&amp;fmt=jpeg&amp;qlt=85,1&amp;op_sharpen=0&amp;resMode=sharp2&amp;op_usm=1,1,6,0&amp;iccEmbed=0&amp;printRes=72&amp;hei=41"><div class="fake-spacer"></div><img src="http://images.crocs.com/is/image/Crocs/10006998_001_IS?&amp;fmt=jpeg&amp;qlt=85,1&amp;op_sharpen=0&amp;resMode=sharp2&amp;op_usm=1,1,6,0&amp;iccEmbed=0&amp;printRes=72&amp;hei=41"><div class="fake-spacer"></div><div class="space"></div><div class="fake-spacer"></div><img src="http://images.crocs.com/is/image/Crocs/10007001_001_IS?&amp;fmt=jpeg&amp;qlt=85,1&amp;op_sharpen=0&amp;resMode=sharp2&amp;op_usm=1,1,6,0&amp;iccEmbed=0&amp;printRes=72&amp;hei=41"><div class="fake-spacer"></div><img src="http://images.crocs.com/is/image/Crocs/10006998_001_IS?&amp;fmt=jpeg&amp;qlt=85,1&amp;op_sharpen=0&amp;resMode=sharp2&amp;op_usm=1,1,6,0&amp;iccEmbed=0&amp;printRes=72&amp;hei=41"><div class="fake-spacer"></div><img src="http://images.crocs.com/is/image/Crocs/10007011_001_IS?&amp;fmt=jpeg&amp;qlt=85,1&amp;op_sharpen=0&amp;resMode=sharp2&amp;op_usm=1,1,6,0&amp;iccEmbed=0&amp;printRes=72&amp;hei=41"><div class="fake-spacer"></div><img src="http://images.crocs.com/is/image/Crocs/10006998_001_IS?&amp;fmt=jpeg&amp;qlt=85,1&amp;op_sharpen=0&amp;resMode=sharp2&amp;op_usm=1,1,6,0&amp;iccEmbed=0&amp;printRes=72&amp;hei=41"><div class="fake-spacer"></div>
+						</div>
+						<div class="clear-input">&#x2421;</div>
+					</div>
+					<div class="real-input-wrap">
+						<input class="real-input noSuperCute" aria-label="Type to select Jibbitz you want to add to cart." type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 padding-0-md">
+					<button type="submit" class="jibbitz-add cx-button cx-button-cta full-width">Add to Cart | <span class="dollar-amount">$2.99 each</span></button>
+				</div>
+			</div>
+			<div class="cs_row hidden-md hidden-lg cx-copy bold jibbitz-mobile-bottom">
+				<div class="col-xs-12 padding-0-md">
+					OR explore all charms below!
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

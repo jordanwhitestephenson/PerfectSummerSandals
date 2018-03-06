@@ -1,0 +1,408 @@
+﻿<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display:none;
+  }
+
+  .right_container {
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;*/
+  }
+
+  .jsHero-wrapper .cx-button {
+    color: #444;
+    border: 2px solid #444;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row-FOOTWEAR {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*@media (max-width:767px) {
+
+    }
+  }*/
+  #mobile_padding {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+      margin-top: 1vh;
+    }
+
+    .small-headline {
+      font-size: 0.8em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 23%;
+      right: 56%;
+      font-size: 12px;
+    }
+    .left_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 10px;
+      margin-bottom: 1vh;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.5em;
+          line-height: 1.2;
+          margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .left_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 19%;
+      right: 66%;
+      font-size: 12px;
+    }
+    .smallest-headline {
+      font-size: 12px;
+      margin-bottom: 1vh;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 4.0em;
+      line-height: 1;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 19px;
+      padding: 15px;
+    }
+    .left_container img {
+      max-width: 60%;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 1vh;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 4.4em;
+      line-height: 0.8;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 2.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 131%;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 1vh;
+    }
+
+    .orange-border {
+      border-right: 2px solid #cc3300;
+      border-left: 2px solid #cc3300;
+      height: 5.3em;
+      margin-bottom: 30px;
+    }
+    .orange-border-top {
+      border-right: 2px solid #cc3300;
+      border-left: 2px solid #cc3300;
+      height: 1.8em;
+      overflow: hidden;
+    }
+
+    .fancy-container-thanksgiving:before,
+    .fancy-container-thanksgiving:after {
+      background-color: #cc3300;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      vertical-align: text-top;
+      width: 25%;
+    }
+
+    .fancy-container-thanksgiving:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-thanksgiving:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:before,
+    .fancy-container-thanksgiving-bottom:after {
+      background-color: #cc3300;
+      content: "";
+      display: inline-block;
+      height: 3px;
+      position: relative;
+      vertical-align: middle;
+      width: 4.8em;
+    }
+
+    .fancy-container-thanksgiving-bottom:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 3.5em;
+      line-height: 1.5;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.5em;
+      margin-bottom: 1vh;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 1vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+    .left_container img {
+      max-width: 160%;
+    }
+
+    .orange-border {
+      border-right: 2px solid #cc3300;
+      border-left: 2px solid #cc3300;
+      height: 6.8em;
+      margin-bottom: 30px;
+    }
+    .orange-border-top {
+      border-right: 2px solid #cc3300;
+      border-left: 2px solid #cc3300;
+      height: 1.8em;
+      overflow: hidden;
+    }
+
+    .fancy-container-thanksgiving:before,
+    .fancy-container-thanksgiving:after {
+      background-color: #cc3300;
+      content: "";
+      display: inline-block;
+      height: 3px;
+      position: relative;
+      vertical-align: text-top;
+      width: 30%;
+    }
+
+    .fancy-container-thanksgiving:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-thanksgiving:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:before,
+    .fancy-container-thanksgiving-bottom:after {
+      background-color: #cc3300;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      vertical-align: middle;
+      width: 37%;
+    }
+
+    .fancy-container-thanksgiving-bottom:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    .fancy-container-thanksgiving-bottom:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+    .thin-headline.thanksgiving {
+      color: #444;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+  }
+
+
+  .jsHero-wrapper .col-lg-6.less-padding,
+  .jsHero-wrapper .cs_container-crocs.less-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs less-padding">
+    <div class="js_row-FOOTWEAR">
+      <div class="text-center col-lg-8" id="mobile_padding">
+        <div class="DESKTOP right_container ">
+
+          <!-- <img src="/ecom/2017/web/HappyThanksgiving_CANADA_pumpkin.jpg?$staticlink$" title="" alt="" style="margin-bottom:0.5vw; margin-top: 0.5vw;" class="hidden-sm hidden-xs" id="" /> -->
+        <div class="DESKTOP cx-brand-font thin-headline thanksgiving orange-border-top hidden-sm hidden-xs" style="color: #444;">
+          <span class = "fancy-container-thanksgiving">SOLDE HEUREUSE ACTION DE GRÂCES</span>
+        </div>
+        <div class="MOBILE cx-brand-font thin-headline thanksgiving orange-border-top hidden-md hidden-lg" style="color: #444; margin-bottom: 2px;">
+          <span class = "fancy-container-thanksgiving">SOLDE HEUREUSE ACTION DE GRÂCES</span>
+        </div>
+    <section class="orange-border">
+          <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #cc3300;">RABAIS DE 30%</div>
+
+          <div class="cx-heavy-brand-font small-headline fancy-container-thanksgiving-bottom" style="color: #444; overflow: hidden; "> SUR L'ENSEMBLE DE NOTRE SITE WEB</div>
+          </section>
+
+          <!-- <div class="DESKTOP cta-container text-center hidden-xs hidden-sm">
+            <div class="col-lg-6 less-padding">
+              <a href="$httpUrl('Search-Show','cgid','clogs')$" role="button" class="cx-button full-width">SHOP CLOGS </a>
+            </div>
+            <div class="col-lg-6 less-padding" style="margin-bottom:10px;">
+              <a href="$httpUrl('Search-Show','cgid','footwear')$" role="button" class="cx-button full-width">SHOP ALL</a>
+            </div>
+          </div> -->
+        </div>
+        <p class="cx-brand-font smallest-headline" style="color: #444">
+ Des exclusions s'appliquent. Rabais appliqué dans le panier.*
+        </p>
+      </div>
+
+      <!-- <div class="left_container col-lg-5 col-lg-pull-1 col-md-5 col-md-pull-1 hidden-sm hidden-xs text-center">
+        <div class="text-container text-center">
+          <a href="$httpUrl('Search-Show','cgid','footwear')$">
+          <img src="/ecom/2017/web/HappyThanksGiving_Canada_Crocs_HOME.png?$staticlink$" title="" alt="" class="" id="" />
+        </a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

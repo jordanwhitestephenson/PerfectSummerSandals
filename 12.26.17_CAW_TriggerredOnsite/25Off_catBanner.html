@@ -1,0 +1,113 @@
+<style>
+.sitewide-wrapper{
+  display: none;
+}
+.hpHero-wrapper {
+  background: none;
+  border-bottom: 2px solid #ebebeb;
+  min-height: 1px;
+}
+.hpHero-wrapper .headline-black{
+  color: #c33;
+  font-family:'proxima_novablack', arial, sans-serif;
+  font-size: 1.2em;
+}
+.hpHero-wrapper .subline-black{
+  color: #c33;
+  font-family:'proxima_novablack', arial, sans-serif;
+  font-size: 11vw;
+  margin-top: -10px;
+  line-height: 1.2;
+}
+.hpHero-wrapper .select-styles-black{
+  color: #cc3333;
+  font-family:'proxima_novablack', arial, sans-serif;
+  font-size: 1.2em;
+  margin-top: -10px;
+}
+.hpHero-wrapper p.fine-print{
+  color: #444444;
+  font-size: 14px;
+}
+.hpHero-wrapper .product-name{
+  display: visible;
+  font-size: 14px;
+  color:#444;
+  margin-top: -20px;
+}
+.hpHero-wrapper .atWork-logo{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 145px;
+}
+
+@media (min-width: 481px){
+  .hpHero-wrapper .atWork-logo{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 150px;
+  }
+  .hpHero-wrapper .subline-black{
+    font-size: 3.5em;
+    margin-top: -5px;
+  }
+
+}
+@media (min-width: 768px) {
+  .hpHero-wrapper .atWork-logo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .hpHero-wrapper .subline-black{
+    font-size: 2.5em;
+    margin-top: -0px;
+  }
+  .hpHero-wrapper .unique_headline {
+      font-size: 1.3em;
+  }
+}
+@media (min-width: 960px) {
+  .hpHero-wrapper .headline-black{
+    font-size: 1.5em;
+  }
+  .hpHero-wrapper .subline-black{
+    font-size: 3.5em;
+    margin-top: -5px;
+
+  }
+  .hpHero-wrapper .select-styles-black{
+    font-size: 1.5em;
+  }
+  .hpHero-wrapper .fine-print{
+    margin-bottom: 20px;
+  }
+  .hpHero-wrapper .atWork-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .hpHero-wrapper .unique_headline {
+      font-size: 1.5em;
+  }
+}
+.hpHero-wrapper .unique_headline {
+  letter-spacing: 1px;
+  line-height: 1.05;
+  color: #444;
+}
+</style>
+<div class="hpHero-wrapper"> <!-- KEEP .hpHero-wrapper for Homepage Hero -->
+  <div class="cs_container"> <!--  IMPORTANT .content-container-hero sets pointer-events: none; so clickthrough the the <a> in the background image works. - .content-container-hero should be used with .img-container-hero above -->
+    <div class="cs_row">
+      <div class="col-xs-12 col-md-6 pull-right">
+        <div class="copy-container">
+          <img class="atWork-logo" src="/ecom/2017/campaign/_master-web_crocsAtWork_logo.jpg?$staticlink$" alt=""/>
+          <p class="subline-black text-uppercase text-center">TAKE 25% OFF</p>
+          <p class="text-center unique_headline cx-brand-font">ENTER YOUR UNIQUE<br />COUPON CODE IN CART!</p>
+        </div>
+      </div>
+      <div class="main-shoe-hero col-xs-12 col-md-6">
+        <img class="mobile-shoe hidden-xs hidden-sm" src="/ecom/2017/web/bistro.jpg?$staticlink$" alt="" title="Bistro Graphic Clog" />
+      </div>
+    </div>
+  </div>
+</div>

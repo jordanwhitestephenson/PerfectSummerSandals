@@ -1,0 +1,389 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+
+  .left_button_container.col-lg-6,
+  .right_button_container.col-lg-6,
+  .right_button_container.col-md-6,
+  .left_button_container.col-md-6,
+  .right_button_container.col-sm-6,
+  .left_button_container.col-sm-6,
+  .right_button_container.col-xs-6,
+  .left_button_container.col-xs-6 {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .right_container {
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;*/
+  }
+
+  .jsHero-wrapper .cx-button {
+    color: #006699;
+    border: 2px solid #006699;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #006699;
+    color: #fff;
+  }
+
+  .jsHero-wrapper .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexbox_column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width:767px) {
+    #mobile_padding {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 1.5em;
+      line-height: 1;
+      margin-bottom: 1vh;
+      /*margin-top: 2vh;*/
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 10px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 23%;
+      right: 56%;
+      font-size: 12px;
+    }
+    .right_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 1vh;
+    }
+    .thin-headline {
+      font-size: 1.1em;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: 4px;
+      margin-bottom: 0.5vw;
+    }
+
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 1.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .right_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 19%;
+      right: 66%;
+      font-size: 12px;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: -2vh;
+    }
+    .thin-headline {
+      font-size: 1.1em;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: 4px;
+      margin-bottom: 0.5vw;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 3.0em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 15px;
+    }
+    .right_container img {
+      max-width: 60%;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 1vh;
+    }
+    .thin-headline {
+      font-size: 1.1em;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: 4px;
+      margin-bottom: 0.5vw;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vw;
+    }
+    .largest-headline {
+      font-size: 1.4em;
+      line-height: 0.9;
+      margin-bottom: 1vw;
+    }
+
+    .small-headline {
+      font-size: 0.6em;
+      margin-bottom: 0.5vw;
+    }
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 12px;
+    }
+    .right_container img {
+      max-width: 100%;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 2vw;
+    }
+    .left_container {
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+    }
+    .thin-headline {
+      font-size: 1.1em;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: 4px;
+      margin-bottom: 0.5vw;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vw;
+    }
+
+    .largest-headline {
+      font-size: 3.0vw;
+      line-height: 0.9;
+      margin-bottom: 0.5vw;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 0.7vw;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      margin-bottom: 2vw;
+    }
+
+    .cta-container .cx-button {
+      font-size: 16px;
+      padding: 12px;
+    }
+    .right_container img {
+      max-width: 103%;
+    }
+    .left_container {
+      margin-top: 2vw;
+      margin-bottom: 3vw;
+    }
+    .thin-headline {
+      font-size: 1.3em;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: 4px;
+      margin-bottom: 0.5vw;
+    }
+
+  }
+
+  .BMSM_BACKGROUND {
+    background: url("ecom/2017/web/BMSM_BACKGROUND.jpg?$staticlink$");
+    background-repeat: round;
+    background-size: cover;
+  }
+
+  .MOBILE_BMSM_BACKGROUND {
+    background-color: #006699;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .circle_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle_padding {
+    padding: 2px 2px 2px 2px;
+  }
+
+  .MOBILE_CONTAINER .cs_container-fluid.no_right_padding {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="BMSM_BACKGROUND hidden-xs hidden-sm">
+    <div class="cs_container-fluid no_right_padding ">
+      <div class="js_row">
+
+        <div class="left_container  col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 text-center">
+            <a href="$httpUrl('Search-Show','cgid','footwear')$">
+          <div class="left_text_container   text-center" style="margin-bottom: 5vw;">
+            <div class="cx-brand-font thin-headline" style="color: #fff;"> DERNIÈRE CHANCE!</div>
+            <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #fff;">ACHETEZ PLUS,<br />ÉCONOMISEZ PLUS</div>
+            <div class="cx-heavy-brand-font small-headline" style="color: #fff;"> AUCUNE EXCLUSION NE S'APPLIQUE</div>
+            <div class="cx-brand-font smallest-headline" style="color: #fff;"> Rabais appliqué dans le panier.*</div>
+          </a>
+          </div>
+          <a href="$httpUrl('Search-Show','cgid','footwear')$">
+          <div class="circle_container col-lg-10 col-lg-offset-1">
+            <div class="circle_1_container circle_padding col-lg-4">
+              <img src="/ecom/2017/web/BMSM_TRANS_A.jpg?$staticlink$" style="" title="" alt="Achetez 1 paire et obtenez 20 % de rabais" class="" id=""/>
+            </div>
+            <div class="circle_2_container circle_padding col-lg-4">
+              <img src="/ecom/2017/web/BMSM_TRANS_B.jpg?$staticlink$" style="" title="" alt="Achetez 2 paires et obtenez 25 % de rabais" class="" id=""/>
+            </div>
+            <div class="circle_3_container circle_padding col-lg-4">
+              <img src="/ecom/2017/web/BMSM_TRANS_C.jpg?$staticlink$" style="" title="" alt="Achetez 3 paires ou plus et obtenez 30 % de rabais*" class="" id=""/>
+
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="right_container text-center col-lg-7 col-md-7">
+          <div class="BMSM_SHOE_CONTAINER" style="float:right;">
+              <a href="$httpUrl('Search-Show','cgid','footwear')$">
+            <img src="/ecom/2017/web/BMSM_Desktop_CrocShoes.png?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw; margin-right: -3em;" title="" alt="" class="" id=""/>
+          </a>
+          </div>
+          <div class="cta-container text-center col-lg-11 col-md-12">
+            <div class="left_button_container col-lg-6 col-md-6 ">
+              <a href="$httpUrl('Search-Show','cgid','women-footwear')$" role="button" class="cx-button full-width">MAGASINEZ POUR<br />LES FEMMES </a> <a href="$httpUrl('Search-Show','cgid','girls-footwear')$" role="button" class="cx-button full-width">MAGASINEZ POUR<br />LES FILLES</a>
+            </div>
+            <div class="right_button_container col-lg-6 col-md-6">
+              <a href="$httpUrl('Search-Show','cgid','men-footwear')$" role="button" class="cx-button full-width"> MAGASINEZ POUR<br />LES HOMMES</a> <a href="$httpUrl('Search-Show','cgid','boys-footwear')$" role="button" class="cx-button full-width"> MAGASINEZ POUR<br />LES GARÇONS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden-md hidden-lg MOBILE_CONTAINER">
+    <div class="cs_container-fluid no_right_padding">
+      <div class="">
+        <div class="left_container text-center">
+          <div class="left_text_container text-center MOBILE_BMSM_BACKGROUND" style="margin-bottom: 3vw; padding-top: 4vw;">
+            <div class="cx-brand-font thin-headline" style="color: #fff;"> DERNIÈRE CHANCE!</div>
+            <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #fff; padding-top: 1vw;">ACHETEZ PLUS,<br />ÉCONOMISEZ PLUS</div>
+            <div class="cx-heavy-brand-font small-headline" style="color: #fff;"> AUCUNE EXCLUSION NE S'APPLIQUE</div>
+            <div class="cx-brand-font smallest-headline" style="color: #fff; padding-bottom: 6vw;"> Rabais appliqué dans le panier.*</div>
+          </div>
+          <div class="circle_container col-lg-12">
+            <div class="circle_1_container circle_padding col-lg-4">
+              <img src="/ecom/2017/web/BMSM_TRANS_A.jpg?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Achetez 1 paire et obtenez 20 % de rabais" class="" id=""/>
+
+            </div>
+            <div class="circle_2_container circle_padding col-lg-4">
+              <img src="/ecom/2017/web/BMSM_TRANS_B.jpg?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Achetez 2 paires et obtenez 25 % de rabais" class="" id=""/>
+            </div>
+            <div class="circle_3_container circle_padding col-lg-4">
+              <img src="/ecom/2017/web/BMSM_TRANS_C.jpg?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Achetez 3 paires ou plus et obtenez 30 % de rabais*" class="" id=""/>
+            </div>
+          </div>
+
+
+          <div class="cta-container text-center col-sm-12 col-xs-12" style="margin-bottom: 3vw">
+            <div class="left_button_container col-sm-6 col-xs-6 ">
+              <a href="$httpUrl('Search-Show','cgid','women-footwear')$" role="button" class="cx-button full-width">MAGASINEZ POUR LES FEMMES </a> <a href="$httpUrl('Search-Show','cgid','girls-footwear')$" role="button" class="cx-button full-width">MAGASINEZ POUR LES FILLES</a>
+            </div>
+            <div class="right_button_container col-sm-6 col-xs-6">
+              <a href="$httpUrl('Search-Show','cgid','men-footwear')$" role="button" class="cx-button full-width"> MAGASINEZ POUR LES HOMMES</a> <a href="$httpUrl('Search-Show','cgid','boys-footwear')$" role="button" class="cx-button full-width"> MAGASINEZ POUR LES GARÇONS</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

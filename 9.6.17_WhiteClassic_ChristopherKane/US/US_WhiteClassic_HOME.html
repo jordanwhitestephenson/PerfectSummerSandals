@@ -1,0 +1,243 @@
+<style>
+  /* JS17 DEFAULT CLASSES */
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+  }
+
+  .jsHero-wrapper .cx-button,
+  .hpCtnr h1,
+  .hpCtnr h2,
+  .hpCtnr h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    font-weight: bold;
+    color: #444;
+  }
+
+  .jsHero-wrapper .cx-button {
+    background-color: #fff;
+    border: 2px solid;
+    color: #444;
+  }
+
+  .jsHero-wrapper .cx-button:hover {
+    background-color: #444;
+    border: 2px solid;
+    color: #fff;
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:focus {
+    text-decoration: none;
+  }
+
+  .js-headline,
+  .dark-black {
+    line-height: normal;
+    color: #444;
+  }
+
+
+  .cx-copy {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .cx-copy.light-blue {
+    color: #336699;
+  }
+
+  .CTA_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* END JS17 DEFAULT CLASSES */
+
+  @media (max-width:300px) {
+    .cs_row .product_description_text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .jsHero-wrapper .cs_row {
+      flex-direction: column;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 16px;
+      padding: 10px 25px;
+    }
+    .js-headline {
+      font-size: 2.3em;
+      line-height: 1.0;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 97%;
+    }
+    .cx-brand-font.below_headline {
+      font-size: 18px;
+      margin-bottom: 5%;
+    }
+
+    .cx-brand-font.letter-spacing {
+      letter-spacing: 5px;
+      font-size: 20px;
+      margin-bottom: 1%;
+    }
+    #crocs_shoes_mobile {
+      max-width: 95%;
+      margin-bottom: 10px;
+    }
+    .overll-text-container {
+      margin-right: 0px;
+    }
+    #mobile_rock_white {
+      margin-top: 2%;
+    }
+  }
+
+  @media (min-width:481px) {
+    .jsHero-wrapper .cs_row {
+      justify-content: center;
+      align-items: center;
+    }
+    .js-headline {
+      font-size: 3.1em;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 100%;
+    }
+    .cx-brand-font.below_headline {
+      font-size: 23px;
+      margin-bottom: 5%;
+    }
+
+    .cx-brand-font.letter-spacing {
+      letter-spacing: 5px;
+      font-size: 24px;
+      margin-bottom: 1%;
+    }
+    #crocs_shoes_mobile {
+      max-width: 99%;
+      margin-bottom: 10px;
+    }
+    .overll-text-container {
+      margin-right: 0px;
+    }
+
+  }
+
+  @media (min-width:768px) {
+    .js-headline {
+      font-size: 2.3em;
+      line-height: 0.9;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 9px 25px;
+      font-size: 1em;
+    }
+
+    .jsHero-wrapper .cx-button.full-width {
+      width: 100%;
+    }
+    .cx-brand-font.below_headline {
+      font-size: 17px;
+      margin-bottom: 5%;
+    }
+
+    .cx-brand-font.letter-spacing {
+      letter-spacing: 5px;
+      font-size: 20px;
+      margin-bottom: 1%;
+    }
+    .overll-text-container {
+      margin-right: 0px;
+    }
+  }
+
+  @media (min-width:960px) {
+    .js-headline {
+      font-size: 3.3em;
+      line-height: normal;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+      align-items: center;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 15px 25px;
+      font-size: 1.6em;
+    }
+
+    .jsHero-wrapper .cx-button.full-width {
+      width: 95%;
+    }
+    .cx-copy.largest {
+      font-size: 29px;
+    }
+    .cx-brand-font.below_headline {
+      font-size: 22px;
+      margin-bottom: 5%;
+    }
+
+    .cx-brand-font.letter-spacing {
+      letter-spacing: 5px;
+      font-size: 24px;
+      margin-bottom: 1%;
+    }
+    .overll-text-container {
+      margin-right: 10px;
+    }
+  }
+
+
+
+  #crocs_shoes {
+    max-width: 111%
+  }
+</style>
+<div class="jsHero-wrapper">
+  <div class="cs_container">
+
+    <div class="cs_row text-center">
+      <!-- <LEFT CONTAINER> -->
+      <div class="col-lg-6 col-md-6 col-sm-12 overll-text-container">
+        <a href="">
+          <div class="text_container">
+            <div class="cx-brand-font letter-spacing" id = "mobile_rock_white">#ROCKWHITECROCS</div>
+            <h1 class="cx-heavy-brand-font js-headline dark-black"> NOW TRENDING:</h1>
+            <div class="cx-brand-font below_headline"> This season, white Classic Clogs <br> are making a statement during <br> New York Fashion Week.</div>
+          </div>
+        </a>
+        <div class="DESKTOP-LG CTA_container cx-heavy-brand-font text-center">
+          <img src="/ecom/2017/web/170906_Homepage-Desktop_NYFW_Christopher_Kane_FINAL.gif?$staticlink$" title="Classic Clog" alt="" class="hidden-md hidden-lg" id="crocs_shoes_mobile" />
+          <a href="$httpUrl('Search-Show','cgid','classic-styles')$" role="button" class="DESKTOP cx-button full-width cx-heavy-brand-font">SHOP CLASSIC CLOGS</a>
+        </div>
+
+      </div>
+      <!-- <END OF LEFT CONTAINER> -->
+      <!-- <RIGHT CONTAINER> -->
+      <div class="col-lg-6 col-md-6">
+        <a href="$httpUrl('Product-Show','pid','10001','cid','6EN','cgid','clogs')$" class="DESKTOP">
+            <img src="/ecom/2017/web/170906_Homepage-Desktop_NYFW_Christopher_Kane_FINAL.gif?$staticlink$" title="Classic Clog" alt="" class="hidden-xs hidden-sm" id = "crocs_shoes"/>
+        </a>
+      </div>
+      <!-- <END OF RIGHT CONTAINER> -->
+    </div>
+  </div>
+</div>

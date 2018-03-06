@@ -1,0 +1,106 @@
+<style>
+  .border-red {
+    position: relative;
+    text-align: center;
+  }
+
+  .border-red span {
+    background: #ffffff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    color: #d41f27;
+  }
+
+  .border-red:before {
+    background: #d41f27;
+    content: "";
+
+    height: 4px;
+    position: absolute;
+    top: 1em;
+    width: 100%;
+  }
+
+  .bottom-border:after {
+    background: #d41f27;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 98.6%;
+    width: 100%;
+  }
+
+  .border-red:before {
+    left: 0;
+    margin-bottom: 15px;
+  }
+
+  .bottom-border {
+    justify-content: center;
+    border-right: 3px #d41f27 solid;
+    border-left: 3px #d41f27 solid;
+    height: 121%;
+    display: inline-flex;
+    margin-top: -10px;
+    padding-top: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .bottom-holiday-container .cx-button {
+     font-size: 14px;
+     padding: 10px 10px;
+    }
+    .black-friday-bottom-headline {
+      font-size: 25px;
+      color: #d41f27;
+      display: block;
+    }
+  }
+  @media (min-width: 481px) {
+    .bottom-holiday-container .cx-button {
+      padding: 10px 25px;
+    }
+    .bottom-holiday-container {
+      margin-bottom: 4%;
+    }
+  }
+
+</style>
+
+
+<br />
+<br />
+<ul class="cs_row upsell-container bottom-holiday-container text-center col-lg-12"  id="ccContainerScroll">
+
+  <div class="text-uppercase cx-heavy-brand-font border-red hidden-xs"><span class="black-friday-bottom-headline">Black Friday - 40% OFF SALE</span>
+    <div class="bottom-border">
+      <li class="col-xs-12 col-md-8 col-xs-12">
+        <div class="cs_row">
+          <div class="col-xs-6 btn-col-1"><a href="#correctLinkNeeded" class="cx-button full-width text-uppercase">Shop Classics</a></div>
+          <div class="col-xs-6 btn-col-2"><a href="#correctLinkNeeded" class="cx-button full-width text-uppercase">Shop Women's</a></div>
+          <div class="col-xs-6 btn-col-1"><a href="#correctLinkNeeded" class="cx-button full-width text-uppercase">Shop Men's</a></div>
+          <div class="col-xs-6 btn-col-2"><a href="#correctLinkNeeded" class="cx-button full-width text-uppercase">Shop Kids'</a></div>
+          <div class="col-xs-12 btn-col-1">
+            <a href="#correctLinkNeeded" class="cx-button full-width text-uppercase" style="margin-bottom: 15px;">Shop Doorbusters</a>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+  <div class="text-uppercase cx-heavy-brand-font hidden-sm hidden-lg hidden-md"><span class="black-friday-bottom-headline text-center">Black Friday<br />40% OFF SALE</span>
+      <li class="col-xs-12 col-md-8 col-xs-12">
+        <div class="cs_row">
+          <div class="col-xs-6 btn-col-1"><a href="#correctLinkNeeded" class="cx-button full-width text-uppercase">Shop Classics</a></div>
+          <div class="col-xs-6 btn-col-2"><a href="#correctLinkNeeded" class="cx-button full-width text-uppercase">Shop Women's</a></div>
+          <div class="col-xs-6 btn-col-1"><a href="#correctLinkNeeded" class="cx-button full-width text-uppercase">Shop Men's</a></div>
+          <div class="col-xs-6 btn-col-2"><a href="#correctLinkNeeded" class="cx-button full-width text-uppercase">Shop Kids'</a></div>
+          <div class="col-xs-12 btn-col-1">
+            <a href="#correctLinkNeeded" class="cx-button full-width text-uppercase" style=" border: 2px #d41f27 solid; color:#d41f27  ">Shop Doorbusters</a>
+          </div>
+        </div>
+      </li>
+  </div>
+</ul>

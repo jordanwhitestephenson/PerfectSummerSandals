@@ -1,0 +1,118 @@
+<style type="text/css">
+
+	.email-signup-popup-error-invalid,
+	.email-signup-popup-error-exists {
+		display: none !important;
+	}
+
+ .error-invalid .email-signup-popup-error-invalid,
+ .error-exists .email-signup-popup-error-exists {
+		display: block !important;
+	}
+
+	 .email-signup-success,
+	 .signup-success form {
+		display: none;
+	}
+
+	.signup-success .email-signup-success {
+		display: block;
+	}
+
+	.email-signup-lightbox #cboxLoadedContent {
+		/*background-color: #004976;*/
+	}
+
+.email-signup-popup-desktop {
+		padding: 10px 25px;
+		width: 650px;
+	}
+
+.email-signup-popup-desktop form {
+    padding: 30px 10px;
+		background-color: #FFF;
+		background-image: url('SS18_Bus_Group_V1_0376.jpg?$staticlink$');
+		background-repeat: no-repeat;
+		background-position: -10px;
+		background-size: contain;
+	}
+	.email-signup-success {
+	 background-color: #FFF;
+	 background-image: url('SS18_Bus_Group_V1_0376.jpg?$staticlink$');
+	 background-repeat: no-repeat;
+	 background-position: left center;
+	 background-size: contain;
+	 padding: 50px 25px;
+ }
+
+	.email-signup-popup-desktop form h2 {
+		color: #156c7d;
+		font-family: 'proxima_novablack', arial, sans-serif;
+		font-size: 38px;
+		margin-top: 0;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    line-height: 1.0;
+	}
+
+.email-signup-popup-desktop form button {
+    background-color: #ffffff;
+    border-color: #444;
+    color: #444;
+    font-family: 'proxima_novablack', arial, sans-serif;
+    border-width: 2px;
+    padding: 10px 25px;
+    line-height: 1.0;
+    text-align: center;
+	}
+
+.email-signup-popup-desktop button:hover {
+    color: #fff;
+    background-color: #444;
+    border-color: #444;
+	}
+
+ .email-signup-success h2 {
+		color: #156c7d;
+		font-family: 'proxima_novablack', arial, sans-serif;
+		font-size: 40px;
+		margin-top: 0;
+		margin-bottom: 0px;
+		line-height: 1.0;
+	}
+
+
+
+.email-signup-popup-desktop .email-signup-success button {
+		font-family: 'proxima_novablack', arial, sans-serif;
+    background-color: #fff;
+    border-color: #fff;
+    color: #444;
+    text-decoration: underline;
+		padding-left: 0px;
+	}
+
+</style>
+<div class="email-signup-popup-desktop cs_container-fluid ">
+    <form class="cx-form cs_row">
+		<div class="col-xs-6" style = "float: right;">
+			<h2 class="cx-heading">COMFORT<Br />STARTS TODAY</h2>
+			<span class="cx-heading cx-brand-font smaller">Get the latest scoops on new arrivals,<br />sales, special offers and more.</span><br/>
+			<ul class="text-left cx-copy">
+				<li>
+					<label>Enter your email address</label>
+					<input type="email" style = "width: 80%;"/>
+					<span class="email-signup-popup-error-invalid errormessage">Enter a valid email</span>
+					<span class="email-signup-popup-error-exists errormessage">Already signed up!</span>
+				</li>
+			</ul>
+			<button class="cx-button" type="submit">SIGN UP</button>
+		</div>
+    </form>
+    <div class="email-signup-success cs_row">
+		<div class="col-xs-6 text-left" style = "float: right">
+			<h2 class="cx-heading">THANKS FOR SIGNING UP</h2>
+			<button class="cx-button cx-button-reverse action-close">CLOSE</button>
+		</div>
+    </div>
+</div>

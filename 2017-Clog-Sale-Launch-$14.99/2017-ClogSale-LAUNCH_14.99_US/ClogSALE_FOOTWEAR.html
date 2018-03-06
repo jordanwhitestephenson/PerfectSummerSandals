@@ -1,0 +1,317 @@
+<style>
+  /* JS17 DEFAULT CLASSES */
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display:none;
+  }
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+  }
+
+  .jsHero-wrapper,
+.jsHero-wrapper h1,
+.jsHero-wrapper h2,
+.jsHero-wrapper h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    font-weight: bold;
+    color: #444;
+  }
+
+  .jsHero-wrapper .cx-button {
+    background-color: #fff;
+    border: 2px solid;
+    color: #006699;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+  }
+
+  .jsHero-wrapper .cx-button:hover {
+    background-color: #006699;
+    border: 2px solid;
+    color: #fff;
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:focus {
+    text-decoration: none;
+    display: grid;
+  }
+
+  .js-headline,
+  .dark-black {
+    line-height: normal;
+    color: #444;
+  }
+
+
+  .jsHero-wrapper .cx-copy {
+    font-size: 16px;
+    line-height: 1.1;
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+  }
+
+
+
+  .CTA_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* END JS17 DEFAULT CLASSES */
+
+  @media (max-width:300px) {
+    .cs_row .product_description_text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .jsHero-wrapper .cs_row {
+      flex-direction: column;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 25px;
+      padding: 7px 25px;
+    }
+    .js-headline {
+      font-size: 3.0em;
+      line-height: 0.9;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 85%;
+    }
+
+    .jsHero-wrapper .cx-copy.larger {
+      font-size: 18px;
+      margin-bottom: 0%;
+      width: 80%;
+    }
+    .jsHero-wrapper .cx-copy.largest {
+      font-size: 30px;
+    }
+    #text_container_mobile {
+      margin-top: 3vh;
+      margin-bottom: 2vh;
+    }
+
+  }
+
+  @media (min-width:481px) {
+    .jsHero-wrapper .cs_row {
+      justify-content: center;
+      align-items: center;
+    }
+    .js-headline {
+      font-size: 4em;
+      line-height: 0.8;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 85%;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 25px;
+      padding: 7px 25px;
+    }
+
+    .jsHero-wrapper .cx-copy.larger {
+      font-size: 20px;
+      margin-bottom: 1%;
+      width: 90%;
+    }
+    .jsHero-wrapper .cx-copy.largest {
+      font-size: 32px;
+    }
+    #text_container_mobile {
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+    }
+  }
+
+  @media (min-width:768px) {
+    .js-headline {
+      font-size: 3.0em;
+      line-height: 0.8;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 9px 25px;
+      font-size: 1em;
+    }
+    #crocs_shoes {
+      max-width: 127%;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 63%;
+    }
+
+    .jsHero-wrapper .cx-copy.larger {
+      font-size: 20px;
+      margin-bottom: 2%;
+      width: 100%;
+    }
+    .jsHero-wrapper .cx-copy.largest {
+      font-size: 32px;
+    }
+    #text_container_mobile {
+      margin-top: 1vh;
+      margin-bottom: 0vh;
+    }
+  }
+
+  @media (min-width:960px) {
+    .js-headline {
+      font-size: 3.7em;
+      line-height: 46px;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+      align-content: center;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 12px 25px;
+      font-size: 1.3em;
+    }
+
+    #crocs_shoes {
+      max-width: 103%;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 63%;
+    }
+
+    .jsHero-wrapper .cx-copy.larger {
+      font-size: 20px;
+      width: 75%;
+      margin-bottom: 1%;
+    }
+    .jsHero-wrapper .cx-copy.largest {
+      font-size: 32px;
+    }
+    #text_container_mobile {
+      margin-top: 3vh;
+      margin-bottom: 0vh;
+    }
+  }
+
+
+  .text_container {
+    margin-top: 1.5%;
+  }
+
+  .jsHero-wrapper .cx-copy.larger{
+    background-color: #006699;
+    padding: 5px 0px 5px 0px;
+    color: #fff;
+    margin-top: 1vh;
+  }
+</style>
+<div class="jsHero-wrapper">
+  <div class="cs_container">
+
+    <div class="cs_row text-center">
+      <!-- <LEFT CONTAINER> -->
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <a href="$httpUrl('Search-Show','cgid','crocs-deals')$">
+          <div class="text_container" id="text_container_mobile">
+            <h1 class="cx-heavy-brand-font js-headline dark-black"> BAND <br /> TOGETHER</h1>
+            <center>
+              <div class="cx-copy larger cx-heavy-brand-font blue-background">CLOGS STARTING AT $14.99</div>
+            </center>
+            <div class="cx-copy smaller cx-brand-font"> Select styles only. Prices as marked.*</div>
+              <img src="/ecom/2017/web/hpHero_clogSale_Mobile.jpg?$staticlink$" title="" alt="" style= "max-width: 100%" class="MOBILE hidden-sm hidden-md hidden-lg" id = "crocs_shoes_mobile"/>
+            <div class="MOBILE CTA_container cx-heavy-brand-font text-center hidden-md hidden-lg">
+              <button type = "button" class="cx-button full-width cx-heavy-brand-font">SHOP NOW</button>
+            </div>
+            <div class="DESKTOP-LG CTA_container cx-heavy-brand-font text-center hidden-sm hidden-xs">
+              <button type="button" class="DESKTOP cx-button full-width cx-heavy-brand-font">SHOP NOW</button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- <END OF LEFT CONTAINER> -->
+      <!-- <RIGHT CONTAINER> -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm" id="container-margin-bottom">
+        <a href="$httpUrl('Search-Show','cgid','crocs-deals')$">
+          <img src="/ecom/2017/web/hpHero_clogSale_desktop.jpg?$staticlink$" title="" alt="" class="DESKTOP hidden-xs hidden-sm" id = "crocs_shoes"/>
+      </a>
+      </div>
+      <!-- <END OF RIGHT CONTAINER> -->
+    </div>
+  </div>
+</div>
+<style>
+  .jscatBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .jscatBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jscatBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .jscatBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="jscatBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

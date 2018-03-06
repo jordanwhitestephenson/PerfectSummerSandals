@@ -1,0 +1,218 @@
+<style>
+  /* JS17 ADDITIONS */
+
+  @media (max-width: 480px) {
+    .MOBILE .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.4em;
+      padding-top: 0px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 19px;
+    }
+    .MOBILE .product_discription {
+      position: absolute;
+      right: 58%;
+      top: 66%;
+      font-size: 12px;
+      line-height: 13px;
+    }
+  }
+
+  @media (min-width:481px) {
+    .MOBILE .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.4em;
+      padding-top: 0px;
+      padding-bottom: 12px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 19px;
+    }
+    .MOBILE .product_discription {
+      position: absolute;
+      right: 61%;
+      top: 62%;
+      font-size: 12px;
+      line-height: 13px;
+    }
+  }
+
+  @media (min-width:768px) {
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.4em;
+      padding-bottom: 0px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 16px;
+    }
+    .flexbox_default .product_discription {
+      position: absolute;
+      right: 61%;
+      top: 55%;
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+
+  @media (min-width:960px) {
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 3em;
+      padding-bottom: 10px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 21px;
+    }
+    .flexbox_default .product_discription {
+      position: absolute;
+      right: 62%;
+      top: 50%;
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background: none;
+  }
+
+  .flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .flexbox .cx-heavy-brand-font.headline {
+    line-height: 1em;
+    color: #444;
+    margin-bottom: 7px;
+  }
+
+  .flexbox .cx-copy.largest {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .flexbox_default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .jsHero-wrapper .flexbox img {
+    max-width: 90%;
+  }
+
+  .flexbox .cx-copy.larger {
+    margin-bottom: 0px;
+  }
+
+  .MOBILE {
+    margin-bottom: 5%;
+  }
+</style>
+
+<div class="jsHero-wrapper jscatBanner-wrapper">
+  <!-- KEEP .hpHero-wrapper for Homepage Hero -->
+  <div class="cs_container">
+    <!--  IMPORTANT .content-container-hero sets pointer-events: none; so clickthrough the the <a> in the background image works. - .content-container-hero should be used with .img-container-hero above -->
+    <div class="cs_row flexbox_default hidden-xs hidden-sm">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <a href="$httpUrl('Product-Show','pid','204686','cid','6MS','cgid','men-citilane-collection')$">
+        <img src="/ecom/2017/web/MensChukka.png?$staticlink$" title="Men's CitiLane Roka Chukka" alt="Men's Citilane Roka Chukka" class="" />
+        </a>
+        <p class="cx-copy text-center product_discription">Men's CitiLane <br> Roka Chukka</p>
+
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <div class="cx-heavy-brand-font headline text-center"> KICK IT <br> CHUKKA-STYLE </div>
+        <p class="cx-copy larger text-center hidden-xs"> Inspired by classic slip-on sneakers <br> and vintage skate shoes.</p>
+      </div>
+    </div>
+    <div class="MOBILE cs_row  hidden-md hidden-lg">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <a href="$httpUrl('Product-Show','pid','204686','cid','6MS','cgid','men-citilane-collection')$">
+        <img src="/ecom/2017/web/MensChukka_Mobile.png?$staticlink$" title="Men's Citilane Roka Chukka" alt="Men's Citilane Roka Chukka" class="" />
+        </a>
+        <p class="cx-copy text-center product_discription"> Men's CitiLane <br> Roka Chukka
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <div class="cx-heavy-brand-font headline text-center">KICK IT <br> CHUKKA-STYLE </div>
+        <p class="cx-copy larger text-center hidden-xs">Inspired by classic slip-on sneakers <br> and vintage skate shoes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<style>
+  .jscatBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .jscatBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jscatBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .jscatBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="jscatBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'mens-new', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'mens-new', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,391 @@
+<style>
+  .jsHero-wrapper-Fuzz {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    overflow: hidden;
+  }
+
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .jsHero-wrapper-Fuzz .cx-button {
+    color: #cc0000;
+    border: 2px solid #cc0000;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    display: block;
+  }
+
+  .jsHero-wrapper-Fuzz .cx-button:hover,
+  .jsHero-wrapper-Fuzz .cx-button:focus {
+    background-color: #cc0000;
+    color: #fff;
+  }
+
+  .jsHero-wrapper-Fuzz .js_row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+
+  @media (max-width: 320px) {
+    .jsHero-wrapper-Fuzz .largest-headline {
+      font-size: 3.0em;
+      line-height: .9;
+    }
+
+    .jsHero-wrapper-Fuzz .larger-headline {
+      font-size: 3.0em;
+      margin-bottom: 1vh;
+    }
+    .jsHero-wrapper-Fuzz .medium-headline {
+      font-size: 1.0em;
+    }
+    .jsHero-wrapper-Fuzz .cx-button {
+      width: 85%;
+      font-size: 1.0em;
+      padding: 8px;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline {
+      text-align: center;
+      border-bottom: 1px solid #000;
+      line-height: 0;
+      padding: 0px;
+      margin-bottom: 0.5em;
+      font-size: 0.9em;
+      width: 100%;
+      margin-top: 1em;
+    }
+    .jsHero-wrapper-Fuzz .scalable_text {
+      margin-top: 1.0em;
+      margin-bottom: 1em;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline span {
+      background: #fff;
+      padding: 0 10px;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline-container {
+      width: 80%;
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .jsHero-wrapper-Fuzz .scalable_text {
+      font-size: 75%;
+      margin-top: 1.0em;
+      margin-bottom: 1em;
+    }
+    .jsHero-wrapper-Fuzz .largest-headline {
+      font-size: 3.5em;
+      line-height: 1.2;
+    }
+
+    .jsHero-wrapper-Fuzz .larger-headline {
+      font-size: 3.0em;
+      margin-bottom: 1vh;
+    }
+    .jsHero-wrapper-Fuzz .medium-headline {
+      font-size: 1.2em;
+    }
+    .jsHero-wrapper-Fuzz .cx-button {
+      width: 100%;
+      font-size: 1.0em;
+      padding: 8px;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline {
+      text-align: center;
+      border-bottom: 1px solid #444;
+      line-height: 0;
+      padding: 0px;
+      margin-bottom: 0.8em;
+      font-size: 14px;
+      margin-top: 1em;
+      letter-spacing: 1px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline span {
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .jsHero-wrapper-Fuzz .fine-print {
+      font-size: 15px;
+      margin-top: -5px;
+      margin-bottom: 5px;
+    }
+    .jsHero-wrapper-Fuzz .middle_word_container.col-xs-12 {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline-container {
+      width: 95%;
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+    .jsHero-wrapper-Fuzz .scalable_text {
+      font-size: 85%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .jsHero-wrapper-Fuzz .largest-headline {
+      font-size: 3.0em;
+      line-height: .8;
+    }
+    .jsHero-wrapper-Fuzz .larger-headline {
+      font-size: 1.4em;
+      margin-bottom: 1vh;
+    }
+    .jsHero-wrapper-Fuzz .medium-headline {
+      font-size: 1.0em;
+      line-height: 1.7em;
+    }
+    .jsHero-wrapper-Fuzz .middle_word_container {
+      margin-bottom: auto;
+      margin-top: auto;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+
+    .jsHero-wrapper-Fuzz .cx-button {
+      width: 100%;
+      font-size: 1.0em;
+      padding: 12px;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline {
+      text-align: center;
+      border-bottom: 1px solid #444;
+      line-height: 0;
+      padding: 0px;
+      margin-bottom: 0.5em;
+      font-size: 1.2em;
+      margin-top: 0.5em;
+      letter-spacing: 2px;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline span {
+      background: #fff;
+      padding: 0 5px;
+    }
+
+    .jsHero-wrapper-Fuzz .fine-print {
+      font-size: 15px;
+      margin-top: 4px;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline-container {
+      width: 75%;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .jsHero-wrapper-Fuzz .largest-headline {
+      font-size: 5.0em;
+      line-height: .9;
+    }
+    .jsHero-wrapper-Fuzz .medium-headline {
+      font-size: 1.7em;
+      line-height: 1.4em;
+    }
+    .jsHero-wrapper-Fuzz .middle_word_container {
+      padding-top: 1.3em;
+      padding-bottom: 1em;
+    }
+    .jsHero-wrapper-Fuzz .cx-button {
+      width: 100%;
+      font-size: 1.2em;
+      padding: 12px;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline-container {
+      width: 76%;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .jsHero-wrapper-Fuzz .scalable_text {
+      font-size: 90%;
+      /*max-width: 80%;*/
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .jsHero-wrapper-Fuzz .largest-headline {
+      font-size: 4.0em;
+      line-height: .8;
+    }
+    .jsHero-wrapper-Fuzz .middle_word_container {
+      padding-top: 0.5em;
+      padding-bottom: 0em;
+    }
+    .jsHero-wrapper-Fuzz .medium-headline {
+      font-size: 1.4em;
+      line-height: 1.7em;
+    }
+    .jsHero-wrapper-Fuzz .fancy-headline-container {
+      width: 76%;
+    }
+    .jsHero-wrapper-Fuzz .cx-button {
+      width: 100%;
+      font-size: 1.4em;
+      padding: 12px;
+    }
+  }
+
+  .jsHero-wrapper-Fuzz .scalable_text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .jsHero-wrapper-Fuzz .largest-headline,
+  .jsHero-wrapper-Fuzz .larger-headline,
+  .jsHero-wrapper-Fuzz .medium-headline {
+    color: #cc0000;
+    /*line-height: 1em;*/
+  }
+
+
+  .jsHero-wrapper-Fuzz .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .jsHero-wrapper-Fuzz .flexbox_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+
+
+  .flexbox_row_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+</style>
+
+<div class="jsHero-wrapper-Fuzz">
+  <div class="cs_container-crocs">
+
+    <div class="scalable_text flexbox_row_bottom">
+
+
+
+      <section class="middle_word_container col-lg-8 col-md-12 ol-sm-12 col-xs-12 flexbox_column text-center" style="font-size: 1em;">
+        <a href="$httpUrl('Product-Show','pid','16244','cid','49U','cgid','fuzz-collection')$" class="hidden-md hidden-lg">
+          <p class="cx-brand-font hidden-md hidden-lg" style="font-size: 15px; margin-bottom: 6px; color: #444;">
+            Sabots à doublure molletonnée Ralen
+          </p>
+          <img src="/ecom/2017/web/RalenClogNoPadding.png?$staticlink$" alt="Sabots à doublure molletonnée Ralen" title="Sabots à doublure molletonnée Ralen" style="width: 80%;" />
+        </a>
+        <div class="fancy-headline-container">
+          <section class="">
+            <div class="DESKTOP cx-brand-font fancy-headline" style="color: #444;">
+              <span>DERNIÈRE CHANCE</span>
+            </div>
+          </section>
+
+          <center>
+            <div class="cx-heavy-brand-font medium-headline text-center" style="">TOUS NOS MODÈLES MOLLETONNÉS JUSQU'À</div>
+          </center>
+          <div class="cx-heavy-brand-font largest-headline text-center" style="">
+            RABAIS DE 50%
+          </div>
+          <p class="cx-brand-font fine-print" style="color: #444;">
+            Prix indiqué.*
+          </p>
+        </div>
+      </section>
+
+      <a href="$httpUrl('Product-Show','pid','16244','cid','49U','cgid','fuzz-collection')$" style="" class="hidden-sm hidden-xs hidden-md col-lg-4 col-md-4 ">
+        <section class="croc_image_container" style="display: flex;justify-content: flex-start;">
+          <img src="/ecom/2017/web/TopShoe.jpg?$staticlink$" alt="Sabots à doublure molletonnée Rale" title="Sabots à doublure molletonnée Rale" class="fuzz_right_pic" style="" />
+        </section>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  .catBanner-wrapper {
+    background: none;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+  }
+
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+    .catBanner-h-wrapper h2 {
+      display: none;
+    }
+    .breadcrumbs {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  }
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'footwear', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

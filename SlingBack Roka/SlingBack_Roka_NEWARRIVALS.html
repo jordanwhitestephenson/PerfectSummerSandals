@@ -1,0 +1,246 @@
+<style>
+  /* JS17 ADDITIONS */
+
+  @media (max-width: 480px) {
+    .MOBILE .flexbox .cx-heavy-brand-font.headline {
+      font-size: 1.9em;
+      padding-top: 28px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 19px;
+    }
+    .MOBILE .product_discription {
+      position: absolute;
+      right: 16%;
+      top: 88%;
+      font-size: 14px;
+      line-height: 15px;
+    }
+  }
+
+  @media (min-width:481px) {
+    .MOBILE .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.4em;
+      padding-top: 21px;
+      padding-bottom: 12px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 19px;
+    }
+    .MOBILE .product_discription {
+      position: absolute;
+      right: 27%;
+      top: 83%;
+      font-size: 12px;
+    }
+    .flexbox .cx-button {
+      font-size: small;
+    }
+  }
+
+  @media (min-width:768px) {
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2em;
+      padding-bottom: 7px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 16px;
+    }
+    .flexbox_default .product_discription {
+      position: absolute;
+      right: 25%;
+      top: 80%;
+      font-size: 8px;
+    }
+    .flexbox .cx-button {
+      font-size: small;
+    }
+    .flexbox.shoe-container .mens_citilane {
+        padding-bottom: 19%;
+    }
+    .flexbox.shoe-container .womens_eve {
+      position: absolute;
+      right: -4%;
+      top: 24%;
+    }
+  }
+
+  @media (min-width:960px) {
+    .flexbox .cx-heavy-brand-font.headline {
+      font-size: 2.4em;
+      padding-bottom: 10px;
+    }
+    .flexbox .cx-copy.larger {
+      font-size: 21px;
+    }
+    .flexbox_default .product_discription {
+      position: absolute;
+      right: 24%;
+      top: 83%;
+      font-size: 13px;
+      line-height: 15px;
+    }
+    .flexbox.shoe-container .mens_citilane {
+        padding-bottom: 50px;
+    }
+    .flexbox.shoe-container .womens_eve {
+      position: absolute;
+      right: -4%;
+      top: 24%;
+    }
+  }
+
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+    background: none;
+  }
+
+  .flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .flexbox .cx-heavy-brand-font.headline {
+    line-height: 1em;
+    color: #444;
+  }
+
+  .flexbox .cx-copy.largest {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .flexbox_default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .flexbox img {
+    max-width: 90%;
+    padding-bottom: 10px;
+  }
+
+  .flexbox .cx-copy.larger {
+    margin-bottom: 0px;
+  }
+
+  .MOBILE {
+    margin-bottom: 4%;
+  }
+
+  .flexbox .cx-button {
+    padding: 8px 25px;
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    margin: 3px 0;
+    border: 2px solid #444;
+  }
+
+  .flexbox .cx-button.full-width {
+    width: 90%;
+  }
+</style>
+
+<div class="jsHero-wrapper jscatBanner-wrapper">
+  <!-- KEEP .hpHero-wrapper for Homepage Hero -->
+  <div class="cs_container">
+    <!--  IMPORTANT .content-container-hero sets pointer-events: none; so clickthrough the the <a> in the background image works. - .content-container-hero should be used with .img-container-hero above -->
+    <div class="cs_row flexbox_default hidden-xs hidden-sm">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox shoe-container">
+        <img src="/ecom/2017/web/EDITBlackRoka.png?$staticlink$" title="Men's CitiLane Roka Chukka" alt="Men's CitiLane Roka Chukka" class="mens_citilane" />
+        <img src="/ecom/2017/web/EDITEveSlingback.png?$staticlink$" title="Women's Crocs Eve Graphic Slingback" alt="Women's Crocs Eve Graphic Slingback" class="womens_eve" />
+
+        <p class="cx-copy text-center product_discription">Men's CitiLane Roka Chukka <br> & Women's Crocs Eve Graphic Slingback </p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <div class="cx-heavy-brand-font headline text-center">VINTAGE UPDATES</div>
+        <a href="$httpUrl('Search-Show','cgid','womens-new')$" role="button" class="cx-button full-width cx-heavy-brand-font bold">SHOP WOMEN'S NEW ARRIVALS</a>
+        <a href="$httpUrl('Search-Show','cgid','mens-new')$" role="button" class="cx-button full-width cx-heavy-brand-font">SHOP MEN'S NEW ARRIVALS</a>
+      </div>
+    </div>
+    <div class="MOBILE cs_row  hidden-md hidden-lg">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <img src="/ecom/2017/web/RokaFootwear_MOBILE.png?$staticlink$" title="Men's CitiLane Roka Chukka & Women's Crocs Eve Graphic Slingback" alt="Men's CitiLane Roka Chukka & Women's Crocs Eve Graphic Slingback" class="" />
+        <p class="cx-copy text-center product_discription">Men's CitiLane Roka Chukka <br> & Women's Crocs Eve Graphic Slingback </p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 flexbox">
+        <div class="cx-heavy-brand-font headline text-center">VINTAGE UPDATES</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<style>
+  .jscatBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .jscatBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jscatBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .jscatBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="jscatBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW DO NOT TRANSLATE!!! -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'new-arrivals', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'new-arrivals', 'attr', 'CategoryH2')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

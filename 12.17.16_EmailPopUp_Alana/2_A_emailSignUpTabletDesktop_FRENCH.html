@@ -1,0 +1,117 @@
+<style type="text/css">
+
+	.email-signup-popup-error-invalid,
+	.email-signup-popup-error-exists {
+		display: none !important;
+	}
+
+ .error-invalid .email-signup-popup-error-invalid,
+ .error-exists .email-signup-popup-error-exists {
+		display: block !important;
+	}
+
+	 .email-signup-success,
+	 .signup-success form {
+		display: none;
+	}
+
+	.signup-success .email-signup-success {
+		display: block;
+	}
+
+	.email-signup-lightbox #cboxLoadedContent {
+		/*background-color: #004976;*/
+	}
+
+.email-signup-popup-desktop {
+		padding: 10px 25px;
+		width: 650px;
+	}
+
+.email-signup-popup-desktop form {
+    padding: 30px 10px;
+		background-color: #FFF;
+		background-image: url('10001_817_Classic_SS18_Of_Chair_Tracey_0796.jpg?$staticlink$');
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: contain;
+	}
+
+	.email-signup-popup-desktop form h2 {
+		color: #ff6633;
+		font-family: 'proxima_novablack', arial, sans-serif;
+		font-size: 38px;
+		margin-top: 0;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    line-height: 1.0;
+	}
+
+.email-signup-popup-desktop form button {
+    background-color: #ffffff;
+    border-color: #444;
+    color: #444;
+    font-family: 'proxima_novablack', arial, sans-serif;
+    border-width: 2px;
+    padding: 10px 25px;
+    line-height: 1.0;
+    text-align: center;
+	}
+
+.email-signup-popup-desktop button:hover {
+    color: #fff;
+    background-color: #444;
+    border-color: #444;
+	}
+
+ .email-signup-success h2 {
+		color: #ff6633;
+		font-family: 'proxima_novablack', arial, sans-serif;
+		font-size: 40px;
+		margin-top: 0;
+		margin-bottom: 0px;
+		line-height: 1.0;
+	}
+
+	 .email-signup-success {
+		background-color: #FFF;
+		background-image: url('10001_817_Classic_SS18_Of_Chair_Tracey_0796.jpg?$staticlink$');
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: contain;
+		padding: 50px 25px;
+	}
+
+.email-signup-popup-desktop .email-signup-success button {
+		font-family: 'proxima_novablack', arial, sans-serif;
+    background-color: #fff;
+    border-color: #fff;
+    color: #444;
+    text-decoration: underline;
+		padding-left: 0px;
+	}
+
+</style>
+<div class="email-signup-popup-desktop cs_container-fluid ">
+    <form class="cx-form cs_row">
+		<div class="col-xs-8">
+			<h2 class="cx-heading text-uppercase">CHOISISSEZ LE</h2>
+			<span class="cx-heading cx-brand-font smaller">Recevez les dernières exclusivités sur les nouveautés,les soldes, les offres spéciales et<br /> encore plus.</span><br/>
+			<ul class="text-left cx-copy" style= "margin-top: 20px;">
+				<li>
+					<label>Veuillez inscrire votre<br/> adresse de courriel</label>
+					<input type="email" style = "width: 80%;"/>
+					<span class="email-signup-popup-error-invalid errormessage">Courriel incorrect</span>
+					<span class="email-signup-popup-error-exists errormessage">Déjà inscrit!</span>
+				</li>
+			</ul>
+			<button class="cx-button text-uppercase" type="submit">S’inscrire</button>
+		</div>
+    </form>
+    <div class="email-signup-success cs_row">
+		<div class="col-xs-8 text-left">
+			<h2 class="cx-heading text-uppercase">Nous vous remercions de vous être inscrit</h2>
+			<button class="cx-button cx-button-reverse action-close text-uppercase">Fermer</button>
+		</div>
+    </div>
+</div>

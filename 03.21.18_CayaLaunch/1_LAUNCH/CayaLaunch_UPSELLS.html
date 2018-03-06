@@ -1,0 +1,50 @@
+<style>
+.padding-top {
+  padding-top: 1vh;
+}
+#ComeAsYouAreSwiftwater:hover {
+  cursor: default;
+}
+
+</style>
+
+<ul class="cs_row upsell-container text-center" id="upsellContainer">
+
+  <li class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6">
+    <div class="hp-upsell" id ="ComeAsYouAreSwiftwater" >
+      <img src="Homepage_Upsell_CAYALaunch_Drew_Swiftwater.jpg?$staticlink$" alt="" class=" " />
+        <p class="cx-brand-font">Our water-friendly, active-minded shoes for the entire family ready to travel with you everywhere.</p>
+        <div class="link-text padding-top">Shop Swiftwater</div>
+    </div>
+  </li>
+  <li class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6">
+    <a class="hp-upsell" href=" $httpUrl('Search-Show','cgid','literide')$">
+        <img src="Homepage_Upsell_CAYALaunch_Henry_LiteRide.jpg?$staticlink$" alt=""  class = ""/>
+          <p class="cx-brand-font">Revolutionary. Sink-in softness. Innovative comfort. Introducing the future of Crocs comfort.</p>
+            <div class="link-text padding-top">Shop LiteRide&trade;</div>
+      </a>
+  </li>
+  <li class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6">
+    <a class="hp-upsell" href=" $httpUrl('Search-Show','cgid','classic-styles')$">
+        <img src="Homepage_Upsell_CAYALaunch_Yoona_Crocband.jpg?$staticlink$" alt=""  class = ""/>
+          <p class="cx-brand-font">Upgraded with new graphic motifs and energy-boosting colorways.</p>
+            <div class="link-text padding-top">Shop CrocBand&trade;</div>
+      </a>
+  </li>
+</ul>
+<script>
+$( document ).ready(function() {
+  $("#ComeAsYouAreSwiftwater").on('click', function(){
+    console.log('CLICKED')
+    window.location.href = "$httpUrl('Page-Show','cid','come-as-you-are')$"
+    $(window).scrollTop($('#scollToSwiftwater').offset().top);
+  })
+});
+
+var hashlong = window.location.hash;
+var pos = hashlong.indexOf("?");
+var hash = (pos == -1 ? hashlong : hashlong.slice(0, pos));
+// Remove .active from nav
+
+
+</script>

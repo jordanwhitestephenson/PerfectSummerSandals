@@ -1,0 +1,405 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .jsHero-wrapper body {
+    color: #444;
+  }
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+
+  .jsHero-wrapper .cx-button {
+    color: #006699;
+    border: 2px solid #006699;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+  .jsHero-wrapper a,
+  .jsHero-wrapper a:hover,
+  .jsHero-wrapper a:focus {
+    text-decoration: none;
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #006699;
+    color: #fff;
+  }
+
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .flexbox_column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width:767px) {
+    #mobile_padding {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+    }
+  }
+
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 2.0em;
+      line-height: 1;
+      margin-bottom: 1vh;
+      /*margin-top: 2vh;*/
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 23%;
+      right: 56%;
+      font-size: 12px;
+    }
+    .right_container img {
+      max-width: 75%;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      /*margin-bottom: 1vh;*/
+    }
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 3em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.5em;
+      margin-bottom: -1.3vh;
+    }
+    .cta-container .cx-button {
+      font-size: 19px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .right_container img {
+      max-width: 70%;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 19%;
+      right: 66%;
+      font-size: 12px;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      /*margin-bottom: -2vh;*/
+    }
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 3.0em;
+      line-height: 0.9;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 19px;
+      padding: 15px;
+    }
+    .right_container img {
+      max-width: 60%;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      /*margin-bottom: 1vh;*/
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vw;
+    }
+    .largest-headline {
+      font-size: 2.5em;
+      line-height: 0.9;
+      margin-bottom: 1vw;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 0.7vw;
+    }
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 12px;
+    }
+    .right_container img {
+      max-width: 100%;
+    }
+    .smallest-headline {
+      font-size: 16px;
+      /*margin-bottom: 2vw;*/
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vw;
+    }
+
+    .largest-headline {
+      font-size: 4em;
+      line-height: 0.9;
+      margin-bottom: 1vw;
+    }
+
+    .small-headline {
+      font-size: 1.7em;
+      margin-bottom: 0.7vw;
+    }
+    .smallest-headline {
+      font-size: 16px;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 13px;
+    }
+    .right_container img {
+      max-width: 103%;
+    }
+  }
+
+  .BMSM_BACKGROUND {
+    background: url("ecom/2017/web/BG_GD_BACKGROUND.jpg?$staticlink$");
+    background-repeat: round;
+    background-size: cover;
+  }
+
+  .MOBILE_BMSM_BACKGROUND {
+    background-color: #006699;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .circle_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle_padding {
+    padding: 2px 2px 2px 2px;
+  }
+
+  .MOBILE_CONTAINER .cs_container-fluid.no_right_padding {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MOBILE_CONTAINER .circle_container img {
+    max-width: 100%;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="BMSM_BACKGROUND hidden-xs hidden-sm">
+    <div class="cs_container">
+      <div class="cs_row">
+        <div class="left_container  col-lg-6 col-md-6  text-center" style="background-color: #006599; padding-bottom: 1vw; padding-top: 1vw;">
+          <a href="$httpUrl('Search-Show','cgid','footwear')$">
+            <div class="left_text_container   text-center">
+              <div class="DESKTOP-HEADING cx-heavy-brand-font largest largest-headline" style="color: #fff;">BUY MORE,<br />SAVE MORE</div>
+              <div class="cx-heavy-brand-font small-headline" style="color: #fff;"> NO EXCLUSIONS</div>
+              <div class="cx-brand-font smallest-headline" style="color: #fff;"> Discount applied in cart.*</div>
+            </div>
+          </a>
+        </div>
+        <!-- <RIGHT CONTAINER> -->
+        <div class="right_container text-center " style="background-color: #fff; padding-bottom: 1vw; padding-top: 1vw;">
+          <a href="$httpUrl('Search-Show','cgid','footwear')$">
+            <div class="circle_container ">
+              <div class="circle_1_container circle_padding col-lg-4">
+                <img src="/ecom/2017/web/FirstCircle.png?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Buy 1, Take 20% Off" class="" id="" />
+              </div>
+              <div class="circle_2_container circle_padding col-lg-4">
+                <img src="/ecom/2017/web/SecondCircle.png?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Buy 2, Take 25% OFF" class="" id="" />
+              </div>
+              <div class="circle_3_container circle_padding col-lg-4">
+                <img src="/ecom/2017/web/LastCircle.png?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Buy 3 or More, Take 30% OFF" class="" id="" />
+              </div>
+            </div>
+            <div class="cta-container text-center flexbox_row ">
+              <div class="col-lg-10 col-md-10">
+                <button type="button" class="cx-button full-width">SHOP ALL</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- <END OF RIGHT CONTAINER> -->
+      </div>
+    </div>
+  </div>
+  <!-- <end of desktop background> -->
+
+
+
+
+
+
+  <div class="hidden-md hidden-lg MOBILE_CONTAINER">
+    <div class="cs_container-crocs no_right_padding">
+      <div class="">
+        <div class="left_container text-center">
+          <a href="$httpUrl('Search-Show','cgid','footwear')$">
+            <div class="left_text_container text-center MOBILE_BMSM_BACKGROUND" style="margin-bottom: 4vw;">
+              <div class="cx-heavy-brand-font largest largest-headline" style="color: #fff; padding-top: 4vw;">BUY MORE,<br />SAVE MORE</div>
+              <div class="cx-heavy-brand-font small-headline" style="color: #fff; padding-bottom: 2vh;"> NO EXCLUSIONS</div>
+
+            </div>
+            <div class="circle_container">
+              <div class="circle_1_container circle_padding col-lg-4">
+                <img src="/ecom/2017/web/FirstCircle.png?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Buy 1, Take 20% Off" class="" id="" />
+
+              </div>
+              <div class="circle_2_container circle_padding col-lg-4">
+                <img src="/ecom/2017/web/SecondCircle.png?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Buy 2, Take 25% OFF" class="" id="" />
+              </div>
+              <div class="circle_3_container circle_padding col-lg-4">
+                <img src="/ecom/2017/web/LastCircle.png?$staticlink$" style="margin-bottom: 1vw; margin-top: 1vw;" title="" alt="Buy 3 or More, Take 30% OFF" class="" id="" />
+              </div>
+            </div>
+            <div class="cta-container text-center flexbox_column ">
+              <div class="col-sm-12 col-xs-12">
+                <button type="button" class="cx-button full-width">SHOP ALL</button>
+              </div>
+              <div class="cx-brand-font smallest-headline" style="color: #444; padding-bottom: 1vw;"> Discount applied in cart.*</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'boys-footwear', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'boys-footwear', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>

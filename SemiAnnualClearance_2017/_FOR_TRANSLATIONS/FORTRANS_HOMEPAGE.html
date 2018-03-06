@@ -1,0 +1,312 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #cc0000;
+  }
+
+  .discount-headline {
+    color: #444;
+  }
+
+  .jsHero-wrapper .cx-button {
+    /*border: 2px solid #cc0000;*/
+    border: 2px solid #444;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .cta-container {
+    width: 100%;
+  }
+
+  .col-lg-6.less-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width:320px) {
+    .crocs_club_early_access {
+      width: 80%;
+      margin-bottom: 1.3vh;
+    }
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 3.5em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 0.8em;
+      letter-spacing: 2px;
+      margin-bottom: 0.9vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 7px;
+      padding: 8px;
+    }
+    .mobile-container-padding {
+      padding: 5px 0px 5px 0px;
+    }
+  }
+
+  @media (min-width: 321px) {
+    .crocs_club_early_access {
+      width: 80%;
+      margin-bottom: 1.3vh;
+    }
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.6vh;
+    }
+    .largest-headline {
+      font-size: 4.2em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1em;
+      letter-spacing: 2px;
+      margin-bottom: 0.9vh;
+    }
+    .small-headline {
+      font-size: 1.0em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 10px;
+      padding: 7px;
+    }
+    .mobile-container-padding {
+      padding: 5px 0px 5px 0px;
+    }
+    .margin-top-mobile {
+
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .fancy {
+      width: 63%;
+      margin-top: 13px;
+      margin-bottom: 7px;
+    }
+  }
+
+  @media (min-width: 481px) {
+    .crocs_club_early_access {
+      width: 60%;
+      margin-bottom: 1vh;
+    }
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 5.0em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1.1em;
+      letter-spacing: 3px;
+      margin-bottom: 0.5vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 14px;
+      padding: 15px;
+    }
+    .mobile-container-padding {
+      padding: 5px 0px 5px 0px;
+    }
+    .fancy {
+      width: 40%;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+
+    .crocs_club_early_access {
+      width: 60%;
+      margin-bottom: 1.5vh;
+    }
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size: 5.0em;
+      line-height: 0.8;
+    }
+    .fine-headline {
+      font-size: 1.1em;
+      letter-spacing: 3px;
+      margin-bottom: 0.5vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 12px;
+      padding: 12px;
+    }
+    .fancy {
+      width: 50%;
+      margin-top: 8px;
+      margin-bottom: 5px;
+    }
+    .mobile-container-padding {
+      padding: 0px 0px 0px 0px;
+    }
+    #max-width {
+      max-width: 93%;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .crocs_club_early_access {
+      width: 60%;
+      margin-bottom: 1.5vh;
+    }
+    .larger-headline {
+      font-size: 2.0em;
+      margin-bottom: 0.4vh;
+    }
+
+    .largest-headline {
+      font-size: 6.0em;
+      line-height: 0.9;
+    }
+    .fine-headline {
+      font-size: 1.1em;
+      letter-spacing: 3px;
+      margin-bottom: 1vh;
+    }
+    .small-headline {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      margin-bottom: 0.5vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 18px;
+      padding: 15px;
+    }
+
+    #max-width {
+      max-width: 110%;
+    }
+    .fancy {
+      width: 40%;
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+
+  .fancy-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 27px;
+    font-size: 20px;
+  }
+
+  .fancy::after {
+    content: '';
+    display: block;
+    border: 1px solid #444;
+  }
+
+  .fancy::before {
+    content: '';
+    display: block;
+    border: 1px solid #444;
+  }
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="left_container col-lg-7 col-md-6 col-sm-12 col-xs-12 text-center mobile-container-padding">
+
+        <div class="text-container text-center">
+          <a href="$httpUrl('Search-Show','cgid','outlet')$" style="color:#cc0000">
+            <div class="col-lg-12 fancy-container margin-top-mobile cx-heavy-brand-font" style="color: #444; margin-top:3px; margin-bottom:3px">
+              <div class="fancy" style="color: #444;">
+                <center>LAST CHANCE!</center>
+              </div>
+            </div>
+            <div class="cx-brand-font fine-headline">SEMI-ANNUAL CLEARANCE EVENT</div>
+            <div class="cx-heavy-brand-font larger larger-headline">TAKE AN ADDITIONAL</div>
+            <div class="cx-heavy-brand-font largest largest-headline">50% OFF</div>
+            <div class="cx-brand-font small-headline">CLEARANCE PRICES</div>
+          </a>
+        </div>
+
+        <div class="DESKTOP col-lg-12 col-md-12 cta-container text-center hidden-xs">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 less-padding">
+            <a href="$httpUrl('Search-Show','cgid','outlet-women')$" role="button" class="cx-button full-width"> WOMEN'S CLEARANCE </a>
+            <a href="$httpUrl('Search-Show','cgid','outlet-girls')$" role="button" class="cx-button full-width"> GIRLS' CLEARANCE </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 less-padding bottom-links">
+            <a href="$httpUrl('Search-Show','cgid','outlet-men')$" role="button" class="cx-button full-width"> MEN'S CLEARANCE </a>
+            <a href="$httpUrl('Search-Show','cgid','outlet-boys')$" role="button" class="cx-button full-width"> BOYS' CLEARANCE </a>
+          </div>
+        </div>
+        <div class="MOBILE cta-container text-center  hidden-sm hidden-md hidden-lg">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 less-padding">
+            <a href="$httpUrl('Search-Show','cgid','outlet-women')$" role="button" class="cx-button cx-button-compact"> WOMEN'S CLEARANCE </a>
+            <a href="$httpUrl('Search-Show','cgid','outlet-girls')$" role="button" class="cx-button cx-button-compact"> GIRLS' CLEARANCE </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 less-padding bottom-links">
+            <a href="$httpUrl('Search-Show','cgid','outlet-men')$" role="button" class="cx-button cx-button-compact"> MEN'S CLEARANCE </a>
+            <a href="$httpUrl('Search-Show','cgid','outlet-boys')$" role="button" class="cx-button cx-button-compact"> BOYS' CLEARANCE </a>
+          </div>
+        </div>
+        <p class="cx-brand-font discount-headline">Discount applied in cart.*</p>
+      </div>
+
+      <div class="right_container col-lg-5 col-md-6 hidden-sm hidden-xs">
+        <a href="#">
+        <img src="/ecom/2017/web/SemiAnnualClearance_Clogs.jpg?$staticlink$" title="'Duet Max Clog" alt="" class="" id="max-width"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

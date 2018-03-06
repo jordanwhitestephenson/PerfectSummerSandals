@@ -1,0 +1,480 @@
+<style>
+  /* SS17 ADDITIONS */
+a {
+text-decoration: none;
+}
+
+  .cx-cta {
+    color: #444;
+    font-family: proxima_novablack, arial, helvetica, sans-serif!important;
+    font-size: 15px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid #444;
+    line-height: 1;
+    padding: 14px 0 11px;
+    letter-spacing: .1px;
+    text-transform: uppercase;
+    text-align: center
+  }
+
+  .cx-cta:hover {
+    background: #444;
+    color: #fff
+  }
+
+  .cx-cta-single {
+    min-width: 150px;
+    padding: 14px 15px 11px;
+    margin: 4px auto;
+    float: none;
+    display: inline-block
+  }
+
+  .cta-group-1-xs,
+  .cta-group-2-xs,
+  .cta-group-4-xs {
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-group-1-xs .cx-cta {
+    width: calc(90% - 4px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-group-2-xs .cx-cta {
+    width: calc(50% - 4px)
+  }
+
+  @media (max-width:767px) {
+    .cta-group-1-xs .cx-cta:nth-of-type(even),
+    .cta-group-2-xs .cx-cta:nth-of-type(even) {
+      margin-right: 0;
+      margin-left: 2px
+    }
+    .hpHero-wrapper img.dynamic-img {
+      max-width: initial
+    }
+  }
+
+  .cta-group-4-xs .cx-cta {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0
+  }
+
+  @media (min-width:481px) {
+    .cta-group-1-sm .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-2-sm .cx-cta {
+      width: calc(50% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-4-sm .cx-cta {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0
+    }
+  #cx-summerclearance {
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 0px;
+  }
+  #copy-container-background-red {
+    background: url("img/EarlyAccessBannerBackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+height: 16em;
+  }
+  }
+
+  @media (min-width:768px) {
+    .cta-group-1-md .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-2-md .cx-cta {
+      width: calc(50% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-4-md .cx-cta {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0
+    }
+  }
+
+  @media (min-width:960px) {
+    .cta-group-1-lg .cx-cta {
+      width: calc(25% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-2-lg .cx-cta {
+      width: calc(50% - 8px);
+      margin-right: 4px;
+      margin-left: 4px
+    }
+    .cta-group-4-lg .cx-cta {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0
+    }
+  }
+
+  .proxima-novaregular {
+    font-family: proxima_novaregular, arial, helvetica, sans-serif
+  }
+
+  .proxima-novablack {
+    font-family: proxima_novablack, arial, helvetica, sans-serif
+  }
+
+  .hpHero-wrapper {
+    min-height: 1px
+  }
+
+  .hpHero-wrapper img {
+    display: inline-grid;
+    margin: 0 auto
+  }
+
+  .hpHero-wrapper.ss17 {
+    background: 0 0
+  }
+
+  .hpHero-wrapper.ss17 p {
+    font-size: 1em
+  }
+
+  .hpHero-wrapper.ss17 p.text-lg {
+    font-size: 3em
+  }
+
+  .hpHero-wrapper.ss17 p.text-md {
+    font-size: 2em
+  }
+
+  .hpHero-wrapper.ss17 p.text-sm {
+    font-size: 1.2em
+  }
+
+  .hpHero-wrapper.ss17 p.text-xs {
+    font-size: .8em
+  }
+
+  .hpHero-wrapper.ss17 p.fine-print {
+    font-family: proxima_novaregular, arial, sans-serif;
+    text-transform: none;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hpHero-wrapper.ss17 .cs_container-fluid {
+    border-bottom: 2px solid #ebebeb
+  }
+
+  .hpHero-wrapper.has-swiper .hpHero-swiper-pagination {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0
+  }
+
+  .hpHero-wrapper.has-swiper .hpHero-swiper-pagination .swiper-pagination-bullet {
+    margin: 0 5px;
+    width: 12px;
+    height: 12px
+  }
+
+  @media (min-width:768px) {
+    .hpHero-wrapper.has-swiper .hpHero-swiper-pagination .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px
+    }
+  }
+
+  .hpHero-wrapper.has-swiper .sideNext,
+  .hpHero-wrapper.has-swiper .sidePrev {
+    display: none
+  }
+
+  @media (min-width:1170px) {
+    .hpHero-wrapper.has-swiper .slide-container {
+      max-width: 1170px;
+      margin: 0 auto;
+      width: 100%
+    }
+  }
+
+  @media (min-width:768px) {
+    .hpHero-wrapper.has-swiper .swiper-slide {
+      min-height: 450px
+    }
+    .hpHero-wrapper.has-swiper .insideNavigation.swiperCarousel {
+      width: calc(100% - 80px);
+      margin-left: 40px;
+      margin-right: 40px;
+      position: relative
+    }
+    .hpHero-wrapper.has-swiper .sideNext,
+    .hpHero-wrapper.has-swiper .sidePrev {
+      display: block;
+      background: #fff
+    }
+    .hpHero-wrapper.has-swiper .sidePrev {
+      left: -40px
+    }
+    .hpHero-wrapper.has-swiper .sideNext {
+      right: -40px
+    }
+    .hpHero-wrapper .vertical-center-md {
+      display: flex;
+      align-items: center;
+      min-height: 450px
+    }
+    .hpHero-wrapper .self-vertical-baseline-md {
+      align-self: baseline
+    }
+  }
+</style>
+
+<style>
+  .sitewide-wrapper {
+    display: none;
+  }
+
+  .hpHero-wrapper {
+    background: none;
+  }
+
+  .hpHero-wrapper {
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .hpHero-wrapper p.headline-black {
+    font-family: 'proxima_novablack', arial, sans-serif;
+    font-size: 2.0em;
+    color: white;
+    text-shadow: 2px 2px #444444;
+  }
+
+  .hpHero-wrapper p.percentage-black {
+    font-family: 'proxima_novablack', arial, sans-serif;
+    font-size: 68px;
+    margin-top: -2px;
+    color: white;
+    text-shadow: 2px 2px #444444;
+  }
+
+  .hpHero-wrapper p.subhead-black {
+    font-family: 'proxima_novablack', arial, sans-serif;
+    font-size: 23px;
+    margin-top: -0.2em;
+    color: white;
+  }
+
+  .hpHero-wrapper p.fine-print {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #515e5a;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hpHero-wrapper .break {
+    display: block;
+  }
+
+  .hpHero-wrapper .cx-cta {
+    border-color: #d40000;
+    color: #d40000;
+    background: white;
+    -webkit-font-smoothing: antialiased;
+     font-size: 1.6em;
+  }
+
+  .hpHero-wrapper .cx-cta:hover {
+    border-color: #fff;
+    background: #d40000;
+    color: #fff;
+  }
+
+  @media (min-width: 768px) {
+    .hpHero-wrapper p.subhead-black {
+      font-size: 31px;
+    }
+    .hpHero-wrapper .break {
+      display: inline-block;
+    }
+#copy-container-background-red {
+    background: url(img/EarlyAccessBannerBackground.png);
+    height: 15.5em;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+  }
+
+  @media (min-width: 960px) {
+    .hpHero-wrapper p.headline-black {
+     margin-top: 1.2em;
+    font-size: 37px;
+    -webkit-margin-before: 1.1em;
+    text-shadow: 2px 2px #444444;
+    }
+    .hpHero-wrapper p.percentage-black {
+      font-size: 4em;
+    }
+  #cx-summerclearance {
+    color: white;
+    font-size: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 0.2em;
+  }
+#copy-container-background-red {
+    background: url(img/EarlyAccessBannerBackground.png);
+    height: 15.5em;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+  }
+
+  #cx-up-to {
+    width: 10px;
+    text-shadow: 2px 2px #444444;
+    padding-right: 1.6em;
+  }
+
+  .cx-bottom-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+  }
+
+  .copy-container-background {
+    background-color: #EBEBEB;
+    height: 417px;
+    padding-top: 5em;
+    max-width: 30em;
+  }
+
+  .copy-container,
+  p.copy-container {}
+
+
+
+  #shopbystyle {
+    color: #d40000;
+    text-shadow: 0px 0px;
+    margin-bottom: 0.8em;
+  }
+
+  .cx-shopbystyle-bottom {
+    margin: 10px;
+  }
+
+#cx-summerheadline {
+-webkit-margin-before: 3.0em;
+}
+#astrict {
+    font-size: 1em;
+    color: white;
+    padding-bottom: 2em;
+}
+
+#cx-disclaimer {
+margin-bottom: 0px;
+margin-top: 10px;
+}
+
+  #copy-container-background-red {
+      background: url(img/EarlyAccessBannerBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16em;
+    width: 100%;
+}
+#cx-summerclearance {
+    color: white;
+    font-size: 1.2em;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 0.2em;
+}
+
+
+
+</style>
+
+<div class="hpHero-wrapper">
+  <div class="cs_container">
+    <div class="cs_row">
+      <div class="col-xs-12 col-lg-6">
+        <a href="$httpUrl('Search-Show','cgid','outlet')$">
+          <div class="copy-container-background">
+            <div class="copy-container" id="copy-container-background-red">
+  <p class="fancy text-sm proxima-regular" id="cx-summerclearance"><span> CROCS CLUB: 60%
+ + extra 25% OFF!</span></p>
+              <div class = "cx-headline-sticky"  id = "cx-summerheadline">
+              <p class="headline-black text-uppercase text-center">SUMMER CLEARANCE</p>
+              <div class="cx-bottom-headline">
+                <p class="subhead-black text-uppercase text-center" id="cx-up-to">UP TO</p>
+                <p class="percentage-black text-uppercase text-center">60% OFF</p><p id= "astrict">*</p>
+              </div>
+              </div>
+            </div>
+
+        <div class="cta-group-1-xs" id = "cx-disclaimer">
+          <a class="cx-cta" href="$httpUrl('Search-Show','cgid','outlet')$">SHOP ALL CLEARANCE</a>
+
+        </div>
+        <p class="fine-print"><span class="break"> &#42 Limited time, limited quantities. Prices as marked.</span></p>
+        </div>
+      </div>
+    </a>
+      <div class="main-shoe-hero hidden-xs hidden-sm hidden-md col-xs-12 col-md-6">
+
+        <p class="headline-black text-uppercase text-center" id="shopbystyle">SHOP BY STYLE</p>
+        <div class="cx-shopbystyle-icons">
+          <div class="col-md-4">
+            <a href="$httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Clogs">
+             <img src="img/redcrocs.png" alt="" />
+               </a>
+          </div>
+          <div class="col-md-4">
+            <a href="$httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Flip%20Flops">
+             <img src="img/redflips.png?" alt="" /> </a>
+          </div>
+          <div class="col-md-4">
+            <a href="$httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Sandals">
+              <img src="img/redsandles.png" alt="" /></a>
+          </div>
+        </div>
+
+        <div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <a href="$httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Loafers">
+            <img src="img/redloafers.png" alt="" /></a>
+          </div>
+          <div class="col-md-4">
+            <a href="$httpUrl('Search-Show','cgid','outlet')$#&prefn5=lifestyle&prefv5=Flats"><img src="img/redflats.png" alt="" /></a>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

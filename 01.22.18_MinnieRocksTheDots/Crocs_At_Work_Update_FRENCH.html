@@ -1,0 +1,334 @@
+<style>
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  body {
+    color: #444;
+  }
+
+
+  .jsHero-wrapper .cx-button {
+    color: #333366;
+    border: 2px solid #333366;
+    font-family: 'proxima_novablack', Arial, sans-serif
+  }
+
+  .jsHero-wrapper .cx-button:hover,
+  .jsHero-wrapper .cx-button:focus {
+    background-color: #333366;
+    color: #fff;
+  }
+
+
+
+  .flexbox_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+@media (max-width: 765px) {
+  #mobile-padding {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+  }
+
+}
+  @media (max-width:320px) {
+
+    .larger-headline {
+      font-size: 1.65em;
+      margin-bottom: 1vh;
+    }
+    .largest-headline {
+      font-size: 3.8em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+      margin-top: 0vh;
+    }
+    .js_row {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 1em;
+      align-items: center;
+    }
+
+    .small-headline {
+      font-size: 1.0em;
+      margin-bottom: 1.7vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 7%;
+      font-size: 17px;
+    }
+    .jsHero-wrapper .left_container {
+      font-size: 70%
+    }
+    .jsHero-wrapper .left_container img {
+      margin-left: 10px;
+      margin-bottom: 1em;
+    }
+
+
+
+  }
+
+  @media (min-width: 321px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 1vh;
+    }
+    .largest-headline {
+      font-size: 4.5em;
+      line-height: 0.7;
+      margin-bottom: 1vh;
+    }
+
+    .small-headline {
+      font-size: 1.1em;
+      margin-bottom: 2.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 7px;
+    }
+
+    .margin-top-mobile {
+      margin-bottom: 1.5vh;
+      margin-top: 1vh;
+    }
+    .text-container .product_description {
+      position: absolute;
+      top: 2%;
+      right: 11%;
+      font-size: 17px;
+    }
+
+    .jsHero-wrapper .icon_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 0.5em;
+      margin-top: -1em;
+    }
+    .js_row {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 1em;
+      align-items: center;
+    }
+    .jsHero-wrapper .left_container {
+      font-size: 85%
+    }
+    .jsHero-wrapper .left_container img {
+      margin-left: 10px;
+      margin-bottom: 1em;
+    }
+
+  }
+
+
+
+  @media (min-width: 481px) {
+
+    .larger-headline {
+      font-size: 1.3em;
+      margin-bottom: 0.4vh;
+    }
+    .largest-headline {
+      font-size:11.8vw;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 2.2vw;
+      margin-bottom: 2vh;
+    }
+    .cta-container .cx-button {
+      font-size: 18px;
+      padding: 15px;
+    }
+    .smallest-headline {
+      font-size: 2vw;
+      margin-bottom: 1vh;
+    }
+    .jsHero-wrapper .left_container img {
+      margin-left: 10px;
+    }
+    .jsHero-wrapper .js_row {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .jsHero-wrapper .icon_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 1em;
+      margin-top: -0.3em;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .larger-headline {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      margin-top: 0.2em;
+    }
+    .largest-headline {
+      font-size: 5.0em;
+      line-height: 0.8;
+      margin-bottom: 0vh;
+    }
+    .jsHero-wrapper .js_row {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      margin-right: 5px;
+      margin-left: 5px;
+      height: 270px;
+      width: 100%;
+      flex-direction: row;
+      margin-top: 0;
+    }
+
+    .small-headline {
+      font-size: 0.9em;
+      margin-bottom: 2.7vh;
+    }
+    .cta-container .cx-button {
+      font-size: 17px;
+      padding: 12px;
+    }
+    .smallest-headline {
+      font-size: 14px;
+      margin-bottom: 0vh;
+    }
+    .jsHero-wrapper .left_container {
+      font-size: 80%
+    }
+
+    .jsHero-wrapper .icon_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 960px) {
+
+    .larger-headline {
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+      margin-top: 0.2em;
+    }
+
+    .largest-headline {
+      font-size: 5.5em;
+      line-height: 0.9;
+      margin-bottom: 0vh;
+    }
+
+    .small-headline {
+      font-size: 1.2em;
+      margin-bottom: 3vh;
+    }
+    .smallest-headline {
+      font-size: 15px;
+      margin-bottom: 0vh;
+    }
+
+    .cta-container .cx-button {
+      font-size: 24px;
+      padding: 12px;
+    }
+    .jsHero-wrapper .left_container {
+      font-size: 100%
+    }
+
+  }
+
+
+  .bottom-links {
+    margin-bottom: 5px;
+  }
+
+  .flexbox_right {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .flexbox_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: centerl
+  }
+
+.jsHero-wrapper .icon_container img {
+  margin: 5px;
+}
+
+  .jsHero-wrapper .left_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+</style>
+
+<div class="jsHero-wrapper">
+  <div class="cs_container-crocs flexbox_row">
+      <div class="js_row">
+        <div class="left_container text-center col-sm-12 col-md-6">
+              <img src="/ecom/2017/web/CrocsAtWorkLogo.jpg?$staticlink$" style="" title="" alt="Crocs au travail" class=""/>
+
+          <div class="DESKTOP-HEADING cx-heavy-brand-font larger hidden-sm hidden-xs larger-headline " style="color: #BB3E25;">CONFORT CERTIFIÉ&trade;</div>
+          <div class="MOBILE-HEADING cx-heavy-brand-font larger hidden-md hidden-lg larger-headline " style="color: #BB3E25;">CONFORT CERTIFIÉ&trade;</div>
+
+          <div class="cta-container text-center col-lg-12">
+            <div class="DESKTOP hidden-sm hidden-xs hidden-md cx-brand-font smallest-headline" style="color: #444;font-size: 1.0em;line-height: 1.3;">Les chaussures Crocs au travail&trade; vous donnent ces<br /> caractéristiques judicieuses que votre travail exige.</div>
+            <div class="DESKTOP hidden-sm hidden-xs hidden-lg cx-brand-font smallest-headline" style="color: #444;font-size: 0.9em;line-height: 1.3;">Les chaussures Crocs au travail&trade; vous donnent ces<br /> caractéristiques judicieuses que votre travail exige.</div>
+            <div class="MOBILE hidden-md hidden-lg cx-brand-font smallest-headline" style="color: #444;font-size: 0.9em;line-height: 1.3;">Les chaussures Crocs au travail&trade; vous donnent ces<br /> caractéristiques judicieuses que votre travail exige.</div>
+          </div>
+        </div>
+
+        <div class="right_container col-xs-10 col-sm-11 col-md-7 col-lg-6 text-center" style="">
+          <a href="$httpUrl('Product-Show','pid','10075','cid','001','cgid','work-shoes')$">
+          <img src="/ecom/2017/web/CrocsAtWork_BlackShoe.jpg?$staticlink$" style="" title="Sabots Bistro" alt="" class="hidden-xs hidden-sm" id="margin-left-mobile"/>
+          </a>
+          <br/>
+          <div class="icon_container">
+            <img src="/ecom/2017/web/clean_FR.jpg?$staticlink$" style="" title="" alt="Facile à nettoyer" class=""/>
+            <img src="/ecom/2017/web/lightweight_FR.jpg?$staticlink$" style="" title="" alt="Léger" class=""/>
+            <img src="/ecom/2017/web/slip_FR.jpg?$staticlink$" style="" title="" alt="Résistance au glissement"/>
+            <img src="/ecom/2017/web/waterproof_FR.jpg?$staticlink$" style="" title="" alt="Imperméables" class=""/>
+          </div>
+        </div>
+
+      </div>
+  </div>
+</div>

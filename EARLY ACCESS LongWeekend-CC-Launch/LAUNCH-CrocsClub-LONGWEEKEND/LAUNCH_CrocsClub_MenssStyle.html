@@ -1,0 +1,292 @@
+<style>
+  /* JS17 DEFAULT CLASSES */
+  .sitewide-wrapper.main-sitewide-wrapper {
+    display: none;
+  }
+  .jsHero-wrapper {
+    min-height: 1px;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  .jsHero-wrapper .cs_container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .jsHero-wrapper .cs_row {
+    display: flex;
+  }
+
+  .jsHero-wrapper .cx-button,
+  .hpCtnr h1,
+  .hpCtnr h2,
+  .hpCtnr h3 {
+    font-family: 'proxima_novablack', Arial, sans-serif;
+    font-weight: bold;
+    color: #444;
+  }
+
+  .jsHero-wrapper .cx-button {
+    background-color: #fff;
+    border: 2px solid;
+    color: #444;
+  }
+
+  .jsHero-wrapper .cx-button:hover {
+    background-color: #444;
+    border: 2px solid;
+    color: #fff;
+  }
+
+  .cs_container a,
+  .cs_container a:hover,
+  .cs_container a:focus {
+    text-decoration: none;
+  }
+
+  .js-headline,
+  .dark-black {
+    line-height: normal;
+    color: #444;
+  }
+
+
+  .cx-copy {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .cx-copy.light-blue {
+    color: #336699;
+  }
+
+  .CTA_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* END JS17 DEFAULT CLASSES */
+
+  @media (max-width:300px) {
+    .cs_row .product_description_text {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .jsHero-wrapper .cs_row {
+      flex-direction: column;
+    }
+    .jsHero-wrapper .cx-button {
+      font-size: 18px;
+      padding: 10px 25px;
+    }
+    .js-headline {
+      font-size: 4.0em;
+      line-height: 0.9;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 70%;
+    }
+    .cx-copy.largest {
+      font-size: 29px;
+      line-height: inherit;
+    }
+    .jsHero-wrapper .cx-copy.smaller,
+    .cx-copy .smaller {
+      padding-bottom: 7px;
+      line-height: normal;
+    }
+  }
+
+  @media (min-width:481px) {
+    .jsHero-wrapper .cs_row {
+      justify-content: center;
+      align-items: center;
+    }
+    .js-headline {
+      font-size: 4em;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 9px 25px;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 47%;
+    }
+    .jsHero-wrapper .cx-copy.smaller,
+    .cx-copy .smaller {
+      padding-bottom: 5px;
+      line-height: normal;
+    }
+    .cx-copy.largest {
+      font-size: 29px;
+      line-height: normal;
+    }
+  }
+
+  @media (min-width:768px) {
+    .js-headline {
+      font-size: 3.8em;
+      line-height: 0.9;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 9px 25px;
+      font-size: 1em;
+    }
+    #crocs_shoes {
+      max-width: 145%;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 33%;
+    }
+    .cx-copy.largest {
+      font-size: 29px;
+      line-height: normal;
+    }
+    .jsHero-wrapper .cx-copy.smaller,
+    .cx-copy .smaller {
+      padding-bottom: 5px;
+      line-height: normal;
+    }
+  }
+
+  @media (min-width:960px) {
+    .js-headline {
+      font-size: 4.0em;
+      line-height: 55px;
+    }
+    .jsHero-wrapper .cs_row {
+      flex-direction: row;
+      align-items: center;
+    }
+    .jsHero-wrapper .cx-button {
+      padding: 10px 25px;
+      font-size: 1.3em;
+      margin: 4px;
+    }
+
+    #crocs_shoes {
+      max-width: 107%;
+    }
+    .jsHero-wrapper .cx-button.full-width {
+      width: 25%;
+    }
+    .jsHero-wrapper .cx-copy.largest,
+    .cx-copy .largest {
+      font-size: 30px;
+    }
+    .jsHero-wrapper .cx-copy.smaller,
+    .cx-copy .smaller {
+      padding-bottom: 6px;
+      line-height: normal;
+    }
+  }
+
+  .DESKTOP {
+    display: grid;
+  }
+
+  .jsHero-wrapper .cx-copy.larger,
+  .cx-copy .larger {
+    font-size: 26px;
+  }
+
+  #labor_stripes {
+    height: 40px;
+  }
+</style>
+<div class="jsHero-wrapper">
+  <div class="cs_container">
+
+    <div class="cs_row text-center">
+      <!-- <LEFT CONTAINER> -->
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <img src="/ecom/2017/web/LaborDay_Strips_Cat.png?$staticlink$" title="" alt="" class= "hidden-xs" id="" />
+        <img src="/ecom/2017/web/LaborDay_Strips_Mobile.png?$staticlink$" title="" alt="" class="hidden-sm hidden-md hidden-lg" />
+        <a href="$httpUrl('Search-Show','cgid','footwear')$">
+          <div class="text_container">
+            <div class="cx-copy large cx-heavy-brand-font light-blue">CROCS CLUB</div>
+            <div class="cx-copy larger cx-heavy-brand-font dark-black">LABOR DAY SALE</div>
+            <h1 class="cx-heavy-brand-font js-headline dark-black"> 25% OFF</h1>
+            <div class="cx-copy largest cx-heavy-brand-font light-blue"> + EXTRA 10% OFF <br> SITEWIDE</div>
+          </div>
+        </a>
+        <div class="DESKTOP-LG CTA_container cx-heavy-brand-font text-center">
+          <a href="$httpUrl('Search-Show','cgid','footwear')$" role="button" class="DESKTOP cx-button full-width cx-heavy-brand-font">SHOP ALL</a>
+          <div class="cx-copy smaller cx-brand-font"> *Exclusions apply. Discount applied in cart. </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .catBanner-h-wrapper h1 {
+    font-size: 18px;
+    font-family: 'proxima_novablack', arial, helvetica, sans-serif;
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-top: 10px;
+  }
+
+  .catBanner-h-wrapper h2 {
+    font-size: 15px;
+    font-family: 'proxima_novaregular', arial, helvetica, sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .responsiveCategory .itemCount {
+      float: none;
+      margin-right: 0;
+      font-size: 15px;
+      color: #444;
+    }
+    .responsiveCategory .responsivePagination {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .catBanner-h-wrapper h1 {
+      text-align: left;
+      font-size: 28px;
+    }
+    .catBanner-h-wrapper h2 {
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .breadcrumbs {
+      display: block;
+    }
+  }
+</style>
+<div class="catBanner-h-wrapper">
+  <div class="cs_container-crocs">
+    <div class="cs_row">
+      <div class="col-xs-12">
+        <!-- UPDATE HEADERS BELOW -->
+        <h1>$include('Search-CategoryAttribute', 'cgid', 'men-footwear', 'attr', 'CategoryH1')$</h1>
+        <h2>$include('Search-CategoryAttribute', 'cgid', 'men-footwear', 'attr', 'HeaderSEOContent')$</h2>
+      </div>
+    </div>
+  </div>
+</div>
